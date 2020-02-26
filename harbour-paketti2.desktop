@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Name=Paketti
+Icon=harbour-paketti
+Exec=harbour-paketti
+
+X-Desktop-File-Install-Version=0.20
