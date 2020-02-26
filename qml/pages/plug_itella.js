@@ -8,7 +8,6 @@ function updatedet(index,trackid,showdet) {
         if (doc.readyState == XMLHttpRequest.DONE) {
 
             var headrivi=997;
-
             var data = JSON.parse(doc.responseText);
 
             if (!data.shipments.length) {
@@ -20,6 +19,8 @@ function updatedet(index,trackid,showdet) {
             if (Qt.locale().name.substring(0,2)=="fi") locale="fi";
             if (Qt.locale().name.substring(0,2)=="en") locale="en";
             if (Qt.locale().name.substring(0,2)=="sv") locale="sv";
+            if (Qt.locale().name.substring(0,2)=="lt") locale="lt";
+            if (Qt.locale().name.substring(0,2)=="lv") locale="lv";
 
             var ds=data.shipments[0];
 
@@ -49,7 +50,13 @@ function updatedet(index,trackid,showdet) {
 
             for (var i in data.shipments[0].events) {
                     var ev = data.shipments[0].events[i];
-                    insertShipdet(trackid,"EVT",Qt.formatDateTime(new Date(ev.timestamp), "yyyyMMddHHmmss"),ev.description[locale],ev.locationCode + " " + ev.locationName);
+                    var locline = ""
+                    if (ev.locationCode !== null && ev.locationCode !== "null")
+                        locline = ev.locationCode + " "
+                    if (ev.locationName !== null && ev.locationName !== "null")
+                        locline = locline + ev.locationName
+                    console.log(locline);
+                    insertShipdet(trackid,"EVT",Qt.formatDateTime(new Date(ev.timestamp), "yyyyMMddHHmmss"),ev.description[locale], locline);
             }
             insertShipdet(trackid,"HDR","99999999999999", "hdr_shipid", data.shipments[0].trackingCode);
 

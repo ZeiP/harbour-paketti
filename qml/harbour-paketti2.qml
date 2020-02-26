@@ -50,7 +50,7 @@ ApplicationWindow {
         if (Qt.locale().name.substring(0,2)=="fi") locale="fi";
         if (Qt.locale().name.substring(0,2)=="en") locale="en";
         if (Qt.locale().name.substring(0,2)=="sv") locale="sv";
-        return("http://www.posti.fi/henkiloasiakkaat/seuranta/api/shipments/" + koodi);
+        return("https://www.posti.fi/henkiloasiakkaat/seuranta/api/shipments/" + koodi);
     }
 
     function mhURL(koodi) {
@@ -58,8 +58,7 @@ ApplicationWindow {
         if (Qt.locale().name.substring(0,2)=="fi") locale="fi";
         if (Qt.locale().name.substring(0,2)=="sv") locale="en";
         if (Qt.locale().name.substring(0,2)=="en") locale="sv";
-        return("https://www.matkahuolto.fi/"+locale+"/seuranta/tilanne/?package_code="+koodi)
-        //return("http://mhhkiweb1.matkahuolto.fi/scripts/loginetyleinen.wsc/002tapahtuma_new?language="+locale+"&spacketnum="+koodi)
+        return("https://www.matkahuolto.fi/"+locale+"/seuranta/tilanne/?package_code="+koodi);
     }
     function pnURL(koodi) {
         var locale="en";

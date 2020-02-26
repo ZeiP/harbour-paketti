@@ -185,7 +185,10 @@ Page {
                 function(tx) {
                     var rs = tx.executeSql('select * from shipdets where trackid=? AND type=\"EVT\" order by datetime DESC limit 1;',[trackid]);
                     if (rs.rows.length>0) {
-                        historyModel.set(index, { "det": rs.rows.item(0).label + " " + rs.rows.item(0).value,  "datetime": rs.rows.item(0).datetime });
+                        var det = rs.rows.item(0).label;
+                        if (rs.rows.item(0).value !== null && rs.rows.item(0).value !== "")
+                            det = det + " "  + rs.rows.item(0).value;
+                        historyModel.set(index, { "det": det,  "datetime": rs.rows.item(0).datetime });
                     }
                 }
        );
@@ -317,7 +320,7 @@ Page {
                     menu: ContextMenu {
                             id: cmenu
                             MenuItem { text: qsTr("select") ; visible : false }
-                            MenuItem { text: "Itella" }
+                            MenuItem { text: "Posti" }
                             MenuItem { text: "Matkahuolto" }
                             MenuItem { text: "MyPack/Postnord/Posten.se" }
                             onClicked: koodiInput.forceActiveFocus();
