@@ -33,6 +33,10 @@
 – Hannu Hirvonen (ruotsinkielinen käännös)
 – Jyri-Petteri ”ZeiP” Paloposki (päivitys 2020)</translation>
     </message>
+    <message>
+        <source>Source code in GitHub</source>
+        <translation>Lähdekoodi GitHubissa</translation>
+    </message>
 </context>
 <context>
     <name>BarCodePage</name>
@@ -187,16 +191,22 @@
         <translation>Sovellus päivitetty</translation>
     </message>
     <message>
-        <source>Changelog version 0.6:
-- Posti package tracking fixed and some other minor changes.
-Thanks to Jyri-Petteri ”ZeiP” Paloposki!</source>
-        <translation>Muutokset versioon 0.6:
-- Postin pakettiseuranta korjattu ja muita pieniä muutoksia.
-Kiitokset muutoksista Jyri-Petteri ”ZeiP” Paloposkelle!</translation>
-    </message>
-    <message>
         <source>Version %1</source>
         <translation>Versio %1</translation>
+    </message>
+    <message>
+        <source>Changelog version 0.6:
+- Posti and Matkahuolto package tracking fixed and some other minor changes.
+– The PostNord tracking couldn&apos;t be tested due to lack of tracking code, if you can help add an issue to GitHub.
+– The source code for the application is now available in https://github.com/ZeiP/harbour-paketti.
+
+Thanks for the release to Jyri-Petteri ”ZeiP” Paloposki!</source>
+        <translation>Muutoksia versiossa 0.6:
+- Postin ja Matkahuollon pakettiseurannat korjattu ja tehty muita pieniä muutoksia.
+– PostNordin pakettiseurantaa ei ole testattu seurantakoodin puutteen takia. Jos voit auttaa, ota yhteyttä kehittäjiin esimerkiksi GitHubin kautta.
+– Sovelluksen lähdekoodi on nyt saatavilla osoitteessa https://github.com/ZeiP/harbour-paketti.
+
+Kiitokset julkaisusta Jyri-Petteri ”ZeiP” Paloposkelle!</translation>
     </message>
 </context>
 <context>

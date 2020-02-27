@@ -29,9 +29,13 @@
 – Hannu Hirvonen (Swedish translation)
 – Jyri-Petteri ”ZeiP” Paloposki (update in 2020)</source>
         <translation type="unfinished">Thanking:
-        – Juhana Virkkala (original version)
-        – Hannu Hirvonen (Svenska översättningen)
-        – Jyri-Petteri ”ZeiP” Paloposki (update in 2020)</translation>
+– Juhana Virkkala (original version)
+– Hannu Hirvonen (Svenska översättningen)
+– Jyri-Petteri ”ZeiP” Paloposki (update in 2020)</translation>
+    </message>
+    <message>
+        <source>Source code in GitHub</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -192,11 +196,17 @@
     </message>
     <message>
         <source>Changelog version 0.6:
-- Posti package tracking fixed and some other minor changes.
-Thanks to Jyri-Petteri ”ZeiP” Paloposki!</source>
+- Posti and Matkahuolto package tracking fixed and some other minor changes.
+– The PostNord tracking couldn&apos;t be tested due to lack of tracking code, if you can help add an issue to GitHub.
+– The source code for the application is now available in https://github.com/ZeiP/harbour-paketti.
+
+Thanks for the release to Jyri-Petteri ”ZeiP” Paloposki!</source>
         <translation type="unfinished">Ändrings version 0.6:
-- Posti package tracking fixed and some other minor changes.
-Thanks to Jyri-Petteri ”ZeiP” Paloposki!</translation>
+- Posti and Matkahuolto package tracking fixed and some other minor changes.
+– The PostNord tracking couldn&apos;t be tested due to lack of tracking code, if you can help add an issue to GitHub.
+– The source code for the application is now available in https://github.com/ZeiP/harbour-paketti.
+
+Thanks for the release to Jyri-Petteri ”ZeiP” Paloposki!</translation>
     </message>
 </context>
 <context>

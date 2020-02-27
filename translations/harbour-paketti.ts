@@ -32,7 +32,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="101"/>
+        <location filename="../qml/pages/AboutPage.qml" line="91"/>
+        <source>Source code in GitHub</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/AboutPage.qml" line="107"/>
         <source>Application author does not take any responsibility in case application will provide non-valid information. The application is not official application for couriers (Posti, Courier, MyPack / Postnord).</source>
         <translation type="unfinished"></translation>
     </message>
@@ -224,8 +229,11 @@
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="72"/>
         <source>Changelog version 0.6:
-- Posti package tracking fixed and some other minor changes.
-Thanks to Jyri-Petteri ”ZeiP” Paloposki!</source>
+- Posti and Matkahuolto package tracking fixed and some other minor changes.
+– The PostNord tracking couldn&apos;t be tested due to lack of tracking code, if you can help add an issue to GitHub.
+– The source code for the application is now available in https://github.com/ZeiP/harbour-paketti.
+
+Thanks for the release to Jyri-Petteri ”ZeiP” Paloposki!</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

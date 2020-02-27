@@ -85,6 +85,12 @@ Page {
 – Hannu Hirvonen (Swedish translation)
 – Jyri-Petteri ”ZeiP” Paloposki (update in 2020)")
             }
+
+            Button {
+                anchors.horizontalCenter: parent.horizontalCenter
+                text: qsTr("Source code in GitHub")
+                onClicked: Qt.openUrlExternally("https://github.com/ZeiP/harbour-paketti")
+            }
         }
 
         Column {

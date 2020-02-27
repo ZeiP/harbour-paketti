@@ -55,7 +55,7 @@ ApplicationWindow {
         if (Qt.locale().name.substring(0,2)=="fi") locale="fi";
         if (Qt.locale().name.substring(0,2)=="sv") locale="en";
         if (Qt.locale().name.substring(0,2)=="en") locale="sv";
-        return("https://www.matkahuolto.fi/"+locale+"/seuranta/tilanne/?package_code="+koodi);
+        return("https://wwwservice.matkahuolto.fi/search/trackingInfo?language=" + locale + "&parcelNumber=" + koodi);
     }
     function pnURL(koodi) {
         var locale="en";

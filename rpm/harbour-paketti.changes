@@ -13,7 +13,8 @@
 # - Summary of changes
 
 * Thu Feb 27 2020 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi> 0.6
-- Fixed the Posti tracking
+- Posti and Matkahuolto package tracking fixed and some other minor changes.
+- The PostNord tracking couldn't be tested due to lack of tracking code, if you can help add an issue to GitHub.
 
 * Sat Dec 12 2016 Juhana Virkkala <juhana.virkkala@toimii.fi> 0.5.3
 - Matkahuollon pakettiseuranta korjattu.
