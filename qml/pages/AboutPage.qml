@@ -42,7 +42,7 @@ Page {
             anchors.left: parent.left; anchors.leftMargin: Theme.paddingMedium
             anchors.right: parent.right; anchors.rightMargin: Theme.paddingMedium
             PageHeader {
-                title: qsTr("about_title")
+                title: qsTr("About")
             }
 
             Image {
@@ -56,7 +56,7 @@ Page {
                 Label {
                     anchors.horizontalCenter: parent.horizontalCenter
                     font.pixelSize: Theme.fontSizeHuge
-                    text: qsTr("about_appname")
+                    text: qsTr("Paketti")
                 }
 
                 Label {
@@ -64,30 +64,25 @@ Page {
                     font.pixelSize: Theme.fontSizeExtraSmall
                     color: Theme.secondaryColor
                     wrapMode: Text.WordWrap
-                    text: qsTr("about_version")+ " " + version
+                    text: qsTr("Version")+ " " + version
                 }
                 Label {
-                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.left: parent.left; anchors.right: parent.right
                     font.pixelSize: Theme.fontSizeSmall
                     color: Theme.secondaryColor
                     wrapMode: Text.WordWrap
-                    text: "Copyright © 2014 Juhana Virkkala"
+                    text: qsTr("Thanking:") + "
+– Juhana Virkkala (original version)
+– Hannu Hirvonen (Swedish translation)
+– Jyri-Petteri Paloposki (update in 2020)"
                 }
-                Label {
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    font.pixelSize: Theme.fontSizeExtraSmall
-                    color: Theme.secondaryColor
-                    wrapMode: Text.WordWrap
-                    text: qsTr("sv_trans_thanks")
-                }
-
             }
 
             Label {
                 wrapMode: Text.WordWrap
                 anchors.left: parent.left; anchors.right: parent.right
                 font.pixelSize: Theme.fontSizeSmall
-                text: qsTr("about_text")
+                text: qsTr("Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto and MyPack (Postnord) packages.")
             }
         }
 
@@ -102,7 +97,7 @@ Page {
                 wrapMode: Text.WordWrap
                 anchors.left: parent.left; anchors.right: parent.right
                 font.pixelSize: Theme.fontSizeExtraSmall
-                text: qsTr("about_note")
+                text: qsTr("Application author does not take any responsibility in case application will provide non-valid information. The application is not official application for couriers (Posti, Courier, MyPack / Postnord).")
                 color: Theme.secondaryColor
             }
         }
@@ -112,7 +107,6 @@ Page {
             anchors.top: mainCol.bottom; anchors.topMargin: Theme.paddingLarge
             anchors.left: parent.left; anchors.leftMargin: Theme.paddingMedium
             anchors.right: parent.right; anchors.rightMargin: Theme.paddingMedium
-
 
                 Button {
                     //anchors.left: parent.left; anchors.right: parent.right

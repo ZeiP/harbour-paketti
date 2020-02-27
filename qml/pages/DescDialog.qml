@@ -25,7 +25,7 @@ Dialog {
         }
 
         Label {
-            text: qsTr("desctip_text") + " " + trackid
+            text: qsTr("Enter short decription of item") + " " + trackid
             wrapMode: Text.WordWrap
             width: parent.width - (Theme.paddingLarge*2)
             color: Theme.primaryColor
@@ -38,7 +38,7 @@ Dialog {
             id: descField
             text: description
             anchors.left: parent.left
-            placeholderText: qsTr("desc_enter");
+            placeholderText: qsTr("Enter description");
             EnterKey.iconSource: "image://theme/icon-m-enter-accept"
             EnterKey.highlighted: true
         }

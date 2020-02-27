@@ -227,11 +227,11 @@ Page {
             id: pdmenu
             property bool updsel: false
             MenuItem {
-                text: qsTr("pulldown_about")
+                text: qsTr("About")
                 onClicked: pageStack.push("AboutPage.qml");
             }
             MenuItem {
-                text: qsTr("pulldown_update")
+                text: qsTr("Update")
                 //onClicked: populatedets()
                 onClicked: pdmenu.updsel=true
             }
@@ -243,7 +243,7 @@ Page {
 
         header: PageHeader {
             id: phead
-            title: qsTr("track_item")
+            title: qsTr("Track item")
         }
 
 
@@ -277,7 +277,7 @@ Page {
 
 
             function remove(title) {
-                remorseAction(qsTr("remorse_deleting"), function() {
+                remorseAction(qsTr("Deleting"), function() {
                     lista.model.remove(index);
                     deleteitm(title);
                 },3000);
@@ -314,12 +314,12 @@ Page {
                     anchors.bottom: koodiBoksi.top
                     id: courier
                     width: parent.width
-                    label: qsTr("courier") + ": "
+                    label: qsTr("Courier") + ": "
                     currentIndex: 0
                     onClicked: couerr.visible=false;
                     menu: ContextMenu {
                             id: cmenu
-                            MenuItem { text: qsTr("select") ; visible : false }
+                            MenuItem { text: qsTr("[Select]") ; visible : false }
                             MenuItem { text: "Posti" }
                             MenuItem { text: "Matkahuolto" }
                             MenuItem { text: "MyPack/Postnord/Posten.se" }
@@ -349,7 +349,7 @@ Page {
                         width: parent.width-enterIcon.width
                         inputMethodHints: Qt.ImhNoPredictiveText // Qt.ImhPreferUppercase | Qt.ImhNoAutoUppercase
                         //label: qsTr("tracking_code")
-                        placeholderText: qsTr("enter_code")
+                        placeholderText: qsTr("Enter tracking code")
                         validator: RegExpValidator { regExp: /^[0-9a-z]{5,100}$/i }
                         anchors.left: parent.left
                         onTextChanged: {
@@ -403,7 +403,7 @@ Page {
                 SectionHeader {
                     anchors.bottom: parent.bottom
                     id: historyhead
-                    text: qsTr("history");
+                    text: qsTr("History");
                     visible: historyvisible
                 }
                 Label {
@@ -411,7 +411,7 @@ Page {
                     width: parent.width - (Theme.paddingMedium*2)
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.top: koodiBoksi.bottom
-                    text: "<br>" + qsTr("first_tip")
+                    text: "<br>" + qsTr("Start by choosing a courier and entering the tracking code in the box above. Tracked shipments will be saved automatically")
                     color: Theme.secondaryHighlightColor
                     font.pixelSize: Theme.fontSizeLarge
                     wrapMode: Text.WordWrap
@@ -512,7 +512,7 @@ Page {
                         anchors.horizontalCenter: parent.horizontalCenter
                         color: Theme.primaryColor
                         font.pixelSize: Theme.fontSizeSmall
-                        text: det=="NAN" ? "<i>" + qsTr("no_status") + "</i>" : det
+                        text: det=="NAN" ? "<i>" + qsTr("No information available") + "</i>" : det
                         wrapMode: Text.WordWrap
                 }
 
@@ -522,20 +522,20 @@ Page {
                     ContextMenu {
                         //ContextMenu.onEnabled: Qt.inputMethod.hide();
                         MenuItem {
-                            text: itemdesc=="" ? qsTr("add_description") : qsTr("modify_description")
+                            text: itemdesc=="" ? qsTr("Add description") : qsTr("Modify description")
                             onClicked: pageStack.push("DescDialog.qml", {"trackid": title, "description": itemdesc});
                         }
 
                         MenuItem {
-                            text: qsTr("context_copy")
+                            text: qsTr("Copy tracking number")
                             onClicked: Clipboard.text = title
                         }
                         MenuItem {
-                            text: qsTr("copy_text")
+                            text: qsTr("Copy text")
                             onClicked: Clipboard.text = title + " " + timefield.text + "\n" + hdet.text
                         }
                         MenuItem {
-                            text: qsTr("context_remove")
+                            text: qsTr("Remove item")
                             onClicked: remove(title)
                         }
                     }

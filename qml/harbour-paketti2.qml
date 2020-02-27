@@ -1,5 +1,6 @@
 /*
 Copyright (C) 2014 Juhana Virkkala <juhana.virkkala@toimii.fi>
+Changes copyright (C) 2020 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi>
 
   All rights reserved.
 
@@ -102,9 +103,9 @@ ApplicationWindow {
        );
        if (unixlupd>0) {
            var tdiff=unixtime-unixlupd;
-           if (tdiff < 60 ) ret=qsTr("less_than_minute");
-           else if (tdiff < 3600 ) ret=Math.floor(tdiff/60) + " " + qsTr("minutes_ago");
-           else ret=Math.floor(tdiff/3600) + " " + qsTr("hours_ago");
+           if (tdiff < 60 ) ret=qsTr("less than minute ago");
+           else if (tdiff < 3600 ) ret=Math.floor(tdiff/60) + " " + qsTr("minute(s) ago");
+           else ret=Math.floor(tdiff/3600) + " " + qsTr("hour(s) ago");
        }
        return(ret);
     }

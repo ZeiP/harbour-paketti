@@ -39,7 +39,7 @@ Dialog {
             anchors.fill: parent
             spacing: Theme.paddingMedium
             DialogHeader {
-                acceptText: qsTr("ws_close")
+                acceptText: qsTr("Continue")
             }
             Image {
                 anchors.horizontalCenter: parent.horizontalCenter
@@ -54,13 +54,13 @@ Dialog {
                 anchors.horizontalCenter: parent.horizontalCenter
                 font.pixelSize: Theme.fontSizeSmall
                 color: Theme.secondaryColor
-                text: qsTr("ws_version")+ " " + version
+                text: qsTr("Version") + " " + version
             }
             Label {
                 anchors.horizontalCenter: parent.horizontalCenter
                 //anchors.left: parent.left; anchors.leftMargin: Theme.paddingMedium
                 //anchors.right: parent.right; anchors.rightMargin: Theme.paddingMedium
-                text: qsTr("ws_topic")
+                text: qsTr("Application updated")
                 color: Theme.highlightColor
                 font.bold: true
                 wrapMode: Text.WordWrap
@@ -69,7 +69,8 @@ Dialog {
             Label {
                 anchors.left: parent.left; anchors.leftMargin: Theme.paddingMedium
                 anchors.right: parent.right; anchors.rightMargin: Theme.paddingMedium
-                text: qsTr("ws_newfeatures")
+                text: qsTr("Changelog version 0.5.3:
+- Matkahuolto package tracking fixed")
                 wrapMode: Text.WordWrap
                 font.pixelSize: Theme.fontSizeSmall
             }
