@@ -74,7 +74,8 @@ CoverBackground {
             if (detstr!="NULL" && detstr) coverlabel.text=detstr;
             else coverlabel.text=newestEvt.trackid;
             coverElabel.text=newestEvt.label;
-            coverEvalue.text=newestEvt.value;
+            if (newestEvt.value !== null)
+                coverEvalue.text=newestEvt.value;
             dtime.text=convertDateBack(newestEvt.datetime);
 
             if (newestEvt.status==0) {

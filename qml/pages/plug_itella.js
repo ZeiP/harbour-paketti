@@ -31,7 +31,6 @@ function updatedet(index,trackid,showdet) {
                     if (extraServices==null) extraServices = data.shipments[0].extraServices[i][locale];
                     else extraServices=extraServices + "\n" + data.shipments[0].extraServices[i][locale];
             }
-            console.log(extraServices);
 
             for (var rd in data.shipments[0]) {
                 if (rd=="product") insertShipdet(trackid,"HDR","99999999999998","hdr_service", ds.product[locale]);
