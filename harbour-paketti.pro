@@ -10,22 +10,23 @@
 #   - translation filenames have to be changed
 
 # The name of your application
-TARGET = harbour-paketti2
+TARGET = harbour-paketti
 
 CONFIG += sailfishapp
 
-SOURCES += src/harbour-paketti2.cpp
+SOURCES += src/harbour-paketti.cpp
 
-DISTFILES += qml/harbour-paketti2.qml \
+DISTFILES += qml/harbour-paketti.qml \
     qml/cover/CoverPage.qml \
     qml/pages/FirstPage.qml \
     qml/pages/SecondPage.qml \
-    rpm/harbour-paketti2.changes.in \
-    rpm/harbour-paketti2.changes.run.in \
-    rpm/harbour-paketti2.spec \
-    rpm/harbour-paketti2.yaml \
+    rpm/harbour-paketti.changes.in \
+    rpm/harbour-paketti.changes.run.in \
+    rpm/harbour-paketti.spec \
+    rpm/harbour-paketti.yaml \
     translations/*.ts \
-    harbour-paketti2.desktop
+    harbour-paketti.desktop \
+    rpm/harbour-paketti.changes
 
 SAILFISHAPP_ICONS = 86x86 108x108 128x128 172x172
 
@@ -37,5 +38,5 @@ CONFIG += sailfishapp_i18n
 # planning to localize your app, remember to comment out the
 # following TRANSLATIONS line. And also do not forget to
 # modify the localized app name in the the .desktop file.
-TRANSLATIONS += translations/harbour-paketti2-fi.ts
-TRANSLATIONS += translations/harbour-paketti2-sv.ts
+TRANSLATIONS += translations/harbour-paketti-fi.ts
+TRANSLATIONS += translations/harbour-paketti-sv.ts

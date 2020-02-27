@@ -12,7 +12,8 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-* Sun Apr 13 2014 Jack Tar <jack.tar@example.com> 0.0.1-1
-- Scrubbed the deck
-- Hoisted the sails
+* Thu Feb 27 2020 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi> 0.6
+- Fixed the Posti tracking
 
+* Sat Dec 12 2016 Juhana Virkkala <juhana.virkkala@toimii.fi> 0.5.3
+- Matkahuollon pakettiseuranta korjattu.

@@ -55,7 +55,6 @@ function updatedet(index,trackid,showdet) {
                         locline = ev.locationCode + " "
                     if (ev.locationName !== null && ev.locationName !== "null")
                         locline = locline + ev.locationName
-                    console.log(locline);
                     insertShipdet(trackid,"EVT",Qt.formatDateTime(new Date(ev.timestamp), "yyyyMMddHHmmss"),ev.description[locale], locline);
             }
             insertShipdet(trackid,"HDR","99999999999999", "hdr_shipid", data.shipments[0].trackingCode);
