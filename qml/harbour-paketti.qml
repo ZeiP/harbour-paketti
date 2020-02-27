@@ -47,10 +47,6 @@ ApplicationWindow {
     property string donate_url: "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=F3S4CK2GRL99S&lc=FI&item_name=Paketti%20for%20Sailfish&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted"
 
     function postiURL(koodi) {
-        var locale="en"
-        if (Qt.locale().name.substring(0,2)=="fi") locale="fi";
-        if (Qt.locale().name.substring(0,2)=="en") locale="en";
-        if (Qt.locale().name.substring(0,2)=="sv") locale="sv";
         return("https://www.posti.fi/henkiloasiakkaat/seuranta/api/shipments/" + koodi);
     }
 

@@ -232,17 +232,17 @@ Thanks to Jyri-Petteri ”ZeiP” Paloposki!</source>
 <context>
     <name>harbour-paketti</name>
     <message>
-        <location filename="../qml/harbour-paketti.qml" line="106"/>
+        <location filename="../qml/harbour-paketti.qml" line="102"/>
         <source>less than minute ago</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/harbour-paketti.qml" line="107"/>
+        <location filename="../qml/harbour-paketti.qml" line="103"/>
         <source>minute(s) ago</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/harbour-paketti.qml" line="108"/>
+        <location filename="../qml/harbour-paketti.qml" line="104"/>
         <source>hour(s) ago</source>
         <translation type="unfinished"></translation>
     </message>
