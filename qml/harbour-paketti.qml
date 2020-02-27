@@ -40,7 +40,7 @@ import QtQuick.LocalStorage 2.0 as Ls
 ApplicationWindow {
     id:paketti
 
-    property string version: "0.5.3"
+    property string version: "0.6"
     property string dbName: "pakettidb"
     property string dbDescription: dbName
     property string dbVersion: "1.0"

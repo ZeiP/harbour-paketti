@@ -30,8 +30,6 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import QtQuick.XmlListModel 2.0
-
 
 Page {
     id: page
@@ -39,8 +37,8 @@ Page {
     property var koodi: koodi
 
     Component.onCompleted: {
-        extramenu.text="";
-        extramenu.url="";
+        extramenu.text = "";
+        extramenu.url = "";
         resultModel.clear();
         setEventsShown(koodi);
         getdetails(koodi);
@@ -53,7 +51,7 @@ Page {
                 var rs = tx.executeSql('select * from shipdets where trackid=? order by datetime desc',[koodi]);
                 //uid,trackid, type, datetime, label, value, status
                 for(var i = 0; i < rs.rows.length; i++) {
-                    resultModel.append({"type": rs.rows.item(i).type, "label": qsTr(rs.rows.item(i).label), "value" : rs.rows.item(i).value, "datetime" : convertDateBack(rs.rows.item(i).datetime) });
+                    resultModel.append({"type": rs.rows.item(i).type, "label": getHeader(rs.rows.item(i).label), "value" : rs.rows.item(i).value, "datetime" : convertDateBack(rs.rows.item(i).datetime) });
                 }
                 if (i==0) resultModel.append({"type": "ERR", "label": qsTr("No items were found with the item code you provided"), "value" : qsTr("This may be due to one of the following reasons:
 - Check the item code you entered. Make sure it is entered without spaces.
@@ -65,7 +63,36 @@ Page {
        );
     }
 
-
+    function getHeader(label) {
+        switch (label) {
+            case "hdr_shipid":
+                return qsTr("Shipping ID");
+                break;
+            case "hdr_service":
+                return qsTr("Service");
+                break;
+            case "extraServices":
+                return qsTr("Extra services");
+                break;
+            case "destinationCity":
+                return qsTr("Destination");
+                break;
+            case "size":
+                return qsTr("Size");
+                break;
+            case "weight":
+                return qsTr("Weight");
+                break;
+            case "codAmount":
+                return qsTr("CoD amount");
+                break;
+            case "estimatedDeliveryTime":
+                return qsTr("Estimated delivery");
+                break;
+            default:
+                return label;
+        }
+    }
 
     SilicaListView {
         id: lista
@@ -76,8 +103,8 @@ Page {
         }
         PullDownMenu {
             MenuItem  {
-                property var url : ""
-                property var textAbove : ""
+                property string url : ""
+                property string textAbove : ""
                 visible: extramenu.text!="" && url!=""
                 id: extramenu
                 text: ""
@@ -106,13 +133,13 @@ Page {
        }
 
         model: ListModel {
-                        id: resultModel
-                        ListElement {
-                            type: ""
-                            label: ""
-                            value: ""
-                            datetime: ""
-                        }
+            id: resultModel
+            ListElement {
+                type: ""
+                label: ""
+                value: ""
+                datetime: ""
+            }
         }
 
 
@@ -228,9 +255,7 @@ Page {
                     height: text.length>1 ? contentHeight : 0
                 }
             }
-
         }
-
     }
 }
 

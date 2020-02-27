@@ -14,22 +14,25 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="67"/>
-        <source>Version</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/AboutPage.qml" line="74"/>
-        <source>Thanking:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/AboutPage.qml" line="85"/>
+        <location filename="../qml/pages/AboutPage.qml" line="75"/>
         <source>Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto and MyPack (Postnord) packages.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="100"/>
+        <location filename="../qml/pages/AboutPage.qml" line="67"/>
+        <source>Version %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/AboutPage.qml" line="83"/>
+        <source>Thanking:
+– Juhana Virkkala (original version)
+– Hannu Hirvonen (Swedish translation)
+– Jyri-Petteri ”ZeiP” Paloposki (update in 2020)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/AboutPage.qml" line="101"/>
         <source>Application author does not take any responsibility in case application will provide non-valid information. The application is not official application for couriers (Posti, Courier, MyPack / Postnord).</source>
         <translation type="unfinished"></translation>
     </message>
@@ -38,7 +41,7 @@
     <name>BarCodePage</name>
     <message>
         <location filename="../qml/pages/BarCodePage.qml" line="50"/>
-        <source>Read the barcode by keeping barcode scanner perpendicular to the viewing screen, about 15-20cm away from your phone. If you can not read code try to change distance.</source>
+        <source>Read the barcode by keeping barcode scanner perpendicular to the viewing screen, about 15–20 cm away from your phone. If you can not read code try to change distance.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -58,12 +61,12 @@
 <context>
     <name>Details</name>
     <message>
-        <location filename="../qml/pages/Details.qml" line="58"/>
+        <location filename="../qml/pages/Details.qml" line="56"/>
         <source>No items were found with the item code you provided</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Details.qml" line="58"/>
+        <location filename="../qml/pages/Details.qml" line="56"/>
         <source>This may be due to one of the following reasons:
 - Check the item code you entered. Make sure it is entered without spaces.
 - The item has not yet been handed in for delivery.
@@ -73,12 +76,52 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/Details.qml" line="69"/>
+        <source>Shipping ID</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Details.qml" line="72"/>
+        <source>Service</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/pages/Details.qml" line="75"/>
+        <source>Extra services</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Details.qml" line="78"/>
+        <source>Destination</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Details.qml" line="81"/>
+        <source>Size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Details.qml" line="84"/>
+        <source>Weight</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Details.qml" line="87"/>
+        <source>CoD amount</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Details.qml" line="90"/>
+        <source>Estimated delivery</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Details.qml" line="102"/>
         <source>Shipment details</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Details.qml" line="96"/>
+        <location filename="../qml/pages/Details.qml" line="123"/>
         <source>Show barcode</source>
         <translation type="unfinished"></translation>
     </message>
@@ -121,42 +164,42 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="406"/>
+        <location filename="../qml/pages/MainPage.qml" line="405"/>
         <source>History</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="414"/>
+        <location filename="../qml/pages/MainPage.qml" line="413"/>
         <source>Start by choosing a courier and entering the tracking code in the box above. Tracked shipments will be saved automatically</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="515"/>
+        <location filename="../qml/pages/MainPage.qml" line="514"/>
         <source>No information available</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="525"/>
+        <location filename="../qml/pages/MainPage.qml" line="524"/>
         <source>Add description</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="525"/>
+        <location filename="../qml/pages/MainPage.qml" line="524"/>
         <source>Modify description</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="530"/>
+        <location filename="../qml/pages/MainPage.qml" line="529"/>
         <source>Copy tracking number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="534"/>
+        <location filename="../qml/pages/MainPage.qml" line="533"/>
         <source>Copy text</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="538"/>
+        <location filename="../qml/pages/MainPage.qml" line="537"/>
         <source>Remove item</source>
         <translation type="unfinished"></translation>
     </message>
@@ -170,7 +213,7 @@
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="57"/>
-        <source>Version</source>
+        <source>Version %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -180,8 +223,9 @@
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="72"/>
-        <source>Changelog version 0.5.3:
-- Matkahuolto package tracking fixed</source>
+        <source>Changelog version 0.6:
+- Posti package tracking fixed and some other minor changes.
+Thanks to Jyri-Petteri ”ZeiP” Paloposki!</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

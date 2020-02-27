@@ -54,7 +54,7 @@ Dialog {
                 anchors.horizontalCenter: parent.horizontalCenter
                 font.pixelSize: Theme.fontSizeSmall
                 color: Theme.secondaryColor
-                text: qsTr("Version") + " " + version
+                text: qsTr("Version %1").arg(version)
             }
             Label {
                 anchors.horizontalCenter: parent.horizontalCenter
@@ -69,8 +69,9 @@ Dialog {
             Label {
                 anchors.left: parent.left; anchors.leftMargin: Theme.paddingMedium
                 anchors.right: parent.right; anchors.rightMargin: Theme.paddingMedium
-                text: qsTr("Changelog version 0.5.3:
-- Matkahuolto package tracking fixed")
+                text: qsTr("Changelog version 0.6:
+- Posti package tracking fixed and some other minor changes.
+Thanks to Jyri-Petteri ”ZeiP” Paloposki!")
                 wrapMode: Text.WordWrap
                 font.pixelSize: Theme.fontSizeSmall
             }

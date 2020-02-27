@@ -64,17 +64,7 @@ Page {
                     font.pixelSize: Theme.fontSizeExtraSmall
                     color: Theme.secondaryColor
                     wrapMode: Text.WordWrap
-                    text: qsTr("Version")+ " " + version
-                }
-                Label {
-                    anchors.left: parent.left; anchors.right: parent.right
-                    font.pixelSize: Theme.fontSizeSmall
-                    color: Theme.secondaryColor
-                    wrapMode: Text.WordWrap
-                    text: qsTr("Thanking:") + "
-– Juhana Virkkala (original version)
-– Hannu Hirvonen (Swedish translation)
-– Jyri-Petteri Paloposki (update in 2020)"
+                    text: qsTr("Version %1").arg(version)
                 }
             }
 
@@ -83,6 +73,17 @@ Page {
                 anchors.left: parent.left; anchors.right: parent.right
                 font.pixelSize: Theme.fontSizeSmall
                 text: qsTr("Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto and MyPack (Postnord) packages.")
+            }
+
+            Label {
+                anchors.left: parent.left; anchors.right: parent.right
+                font.pixelSize: Theme.fontSizeSmall
+                color: Theme.secondaryColor
+                wrapMode: Text.WordWrap
+                text: qsTr("Thanking:
+– Juhana Virkkala (original version)
+– Hannu Hirvonen (Swedish translation)
+– Jyri-Petteri ”ZeiP” Paloposki (update in 2020)")
             }
         }
 

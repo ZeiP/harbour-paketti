@@ -12,14 +12,6 @@
         <translation>Paketti</translation>
     </message>
     <message>
-        <source>Version</source>
-        <translation>Versio</translation>
-    </message>
-    <message>
-        <source>Thanking:</source>
-        <translation>Kiitokset:</translation>
-    </message>
-    <message>
         <source>Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto and MyPack (Postnord) packages.</source>
         <translation>Paketti on SailfishOS-käyttöjärjestelmälle tehty sovellus postilähetysten seurantaan. Sovelluksella voi seurata Itellan, Matkahuollon sekä MyPack (Postnord) lähetyksiä.</translation>
     </message>
@@ -27,12 +19,26 @@
         <source>Application author does not take any responsibility in case application will provide non-valid information. The application is not official application for couriers (Posti, Courier, MyPack / Postnord).</source>
         <translation>Sovelluksen tekijä ei ota vastuuta mahdollisesta ohjelman tuottamasta virheellisestä informaatiosta. Sovellus ei ole toimittajien (Itella, Matkahuolto, MyPack/Postnord) virallinen sovellus.</translation>
     </message>
+    <message>
+        <source>Version %1</source>
+        <translation>Versio %1</translation>
+    </message>
+    <message>
+        <source>Thanking:
+– Juhana Virkkala (original version)
+– Hannu Hirvonen (Swedish translation)
+– Jyri-Petteri ”ZeiP” Paloposki (update in 2020)</source>
+        <translation>Kiitokset:
+– Juhana Virkkala (alkuperäinen sovellus)
+– Hannu Hirvonen (ruotsinkielinen käännös)
+– Jyri-Petteri ”ZeiP” Paloposki (päivitys 2020)</translation>
+    </message>
 </context>
 <context>
     <name>BarCodePage</name>
     <message>
-        <source>Read the barcode by keeping barcode scanner perpendicular to the viewing screen, about 15-20cm away from your phone. If you can not read code try to change distance.</source>
-        <translation>Lue viivakoodi pitämällä viivakoodin lukija kohtisuorassa näyttöä kohti noin 15-20cm etäisyydellä puhelimesta. Mikäli lukeminen ei onnistu muuta etäisyyttä.</translation>
+        <source>Read the barcode by keeping barcode scanner perpendicular to the viewing screen, about 15–20 cm away from your phone. If you can not read code try to change distance.</source>
+        <translation>Lue viivakoodi pitämällä viivakoodin lukija kohtisuorassa näyttöä kohti noin 15–20 cm etäisyydellä puhelimesta. Mikäli lukeminen ei onnistu muuta etäisyyttä.</translation>
     </message>
 </context>
 <context>
@@ -73,6 +79,38 @@
     <message>
         <source>Show barcode</source>
         <translation>Näytä viivakoodi</translation>
+    </message>
+    <message>
+        <source>Shipping ID</source>
+        <translation>Lähetystunnus</translation>
+    </message>
+    <message>
+        <source>Service</source>
+        <translation>Palvelu</translation>
+    </message>
+    <message>
+        <source>Extra services</source>
+        <translation>Lisäpalvelut</translation>
+    </message>
+    <message>
+        <source>Destination</source>
+        <translation>Kohde</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Koko</translation>
+    </message>
+    <message>
+        <source>Weight</source>
+        <translation>Paino</translation>
+    </message>
+    <message>
+        <source>CoD amount</source>
+        <translation>Postiennakkosumma</translation>
+    </message>
+    <message>
+        <source>Estimated delivery</source>
+        <translation>Arvioitu toimitusaika</translation>
     </message>
 </context>
 <context>
@@ -145,33 +183,35 @@
         <translation>Jatka</translation>
     </message>
     <message>
-        <source>Version</source>
-        <translation>Versio</translation>
-    </message>
-    <message>
         <source>Application updated</source>
         <translation>Sovellus päivitetty</translation>
     </message>
     <message>
-        <source>Changelog version 0.5.3:
-- Matkahuolto package tracking fixed</source>
-        <translation>Muutosloki versio 0.5.3:
-- Matkahuollon lähetysseuranta korjattu</translation>
+        <source>Changelog version 0.6:
+- Posti package tracking fixed and some other minor changes.
+Thanks to Jyri-Petteri ”ZeiP” Paloposki!</source>
+        <translation>Muutokset versioon 0.6:
+- Postin pakettiseuranta korjattu ja muita pieniä muutoksia.
+Kiitokset muutoksista Jyri-Petteri ”ZeiP” Paloposkelle!</translation>
+    </message>
+    <message>
+        <source>Version %1</source>
+        <translation>Versio %1</translation>
     </message>
 </context>
 <context>
     <name>harbour-paketti</name>
     <message>
         <source>less than minute ago</source>
-        <translation type="unfinished">alle minuutti sitten</translation>
+        <translation>alle minuutti sitten</translation>
     </message>
     <message>
         <source>minute(s) ago</source>
-        <translation type="unfinished">minuuttia sitten</translation>
+        <translation>minuuttia sitten</translation>
     </message>
     <message>
         <source>hour(s) ago</source>
-        <translation type="unfinished">tuntia sitten</translation>
+        <translation>tuntia sitten</translation>
     </message>
 </context>
 </TS>

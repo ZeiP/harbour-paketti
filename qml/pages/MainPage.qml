@@ -398,7 +398,6 @@ Page {
                         }
                         enabled: courier.currentIndex!=0 && koodiInput.text.length > 4
                     }
-
                 }
                 SectionHeader {
                     anchors.bottom: parent.bottom

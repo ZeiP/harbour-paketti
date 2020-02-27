@@ -47,7 +47,7 @@ Page {
             anchors.verticalCenter: bcpage.verticalCenter
 
             Text {
-                text: qsTr("Read the barcode by keeping barcode scanner perpendicular to the viewing screen, about 15-20cm away from your phone. If you can not read code try to change distance.")
+                text: qsTr("Read the barcode by keeping barcode scanner perpendicular to the viewing screen, about 15–20 cm away from your phone. If you can not read code try to change distance.")
                 color: "#565656"
                 anchors.top: parent.top
                 anchors.left: parent.left; anchors.leftMargin: Theme.paddingMedium
