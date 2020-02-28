@@ -54,7 +54,7 @@
     <name>DescDialog</name>
     <message>
         <location filename="../qml/pages/DescDialog.qml" line="28"/>
-        <source>Enter short decription of item</source>
+        <source>Enter short description of item %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -92,41 +92,51 @@
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="75"/>
-        <source>Extra services</source>
+        <source>Number of items</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="78"/>
-        <source>Destination</source>
+        <source>Sender</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="81"/>
-        <source>Size</source>
+        <source>Extra services</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="84"/>
-        <source>Weight</source>
+        <source>Destination</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="87"/>
-        <source>CoD amount</source>
+        <source>Size</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="90"/>
+        <source>Weight</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Details.qml" line="93"/>
+        <source>CoD amount</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Details.qml" line="96"/>
         <source>Estimated delivery</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Details.qml" line="102"/>
+        <location filename="../qml/pages/Details.qml" line="108"/>
         <source>Shipment details</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Details.qml" line="123"/>
+        <location filename="../qml/pages/Details.qml" line="129"/>
         <source>Show barcode</source>
         <translation type="unfinished"></translation>
     </message>
@@ -228,29 +238,32 @@
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="72"/>
-        <source>Changelog version 0.6:
+        <source>Changelog version 0.6.1:
+- PostNord package tracking fixed.
+
+Changelog version 0.6:
 - Posti and Matkahuolto package tracking fixed and some other minor changes.
 – The PostNord tracking couldn&apos;t be tested due to lack of tracking code, if you can help add an issue to GitHub.
 – The source code for the application is now available in https://github.com/ZeiP/harbour-paketti.
 
-Thanks for the release to Jyri-Petteri ”ZeiP” Paloposki!</source>
+Thanks for the releases to Jyri-Petteri ”ZeiP” Paloposki!</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>harbour-paketti</name>
     <message>
-        <location filename="../qml/harbour-paketti.qml" line="102"/>
+        <location filename="../qml/harbour-paketti.qml" line="103"/>
         <source>less than minute ago</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/harbour-paketti.qml" line="103"/>
+        <location filename="../qml/harbour-paketti.qml" line="104"/>
         <source>minute(s) ago</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/harbour-paketti.qml" line="104"/>
+        <location filename="../qml/harbour-paketti.qml" line="105"/>
         <source>hour(s) ago</source>
         <translation type="unfinished"></translation>
     </message>

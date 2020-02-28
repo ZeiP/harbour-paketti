@@ -12,6 +12,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Fri Feb 28 2020 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi> 0.6
+- Postnord package tracking fixed
+
 * Thu Feb 27 2020 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi> 0.6
 - Posti and Matkahuolto package tracking fixed and some other minor changes.
 - The PostNord tracking couldn't be tested due to lack of tracking code, if you can help add an issue to GitHub.

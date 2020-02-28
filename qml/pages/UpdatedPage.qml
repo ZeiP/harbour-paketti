@@ -69,12 +69,15 @@ Dialog {
             Label {
                 anchors.left: parent.left; anchors.leftMargin: Theme.paddingMedium
                 anchors.right: parent.right; anchors.rightMargin: Theme.paddingMedium
-                text: qsTr("Changelog version 0.6:
+                text: qsTr("Changelog version 0.6.1:
+- PostNord package tracking fixed.
+
+Changelog version 0.6:
 - Posti and Matkahuolto package tracking fixed and some other minor changes.
 – The PostNord tracking couldn't be tested due to lack of tracking code, if you can help add an issue to GitHub.
 – The source code for the application is now available in https://github.com/ZeiP/harbour-paketti.
 
-Thanks for the release to Jyri-Petteri ”ZeiP” Paloposki!")
+Thanks for the releases to Jyri-Petteri ”ZeiP” Paloposki!")
                 wrapMode: Text.WordWrap
                 font.pixelSize: Theme.fontSizeSmall
             }

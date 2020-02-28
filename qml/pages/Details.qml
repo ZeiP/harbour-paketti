@@ -71,6 +71,12 @@ Page {
             case "hdr_service":
                 return qsTr("Service");
                 break;
+            case "hdr_numberof":
+                return qsTr("Number of items");
+                break;
+            case "hdr_sender":
+                return qsTr("Sender");
+                break;
             case "extraServices":
                 return qsTr("Extra services");
                 break;

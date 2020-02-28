@@ -25,7 +25,7 @@ Dialog {
         }
 
         Label {
-            text: qsTr("Enter short decription of item") + " " + trackid
+            text: qsTr("Enter short description of item %1").arg(trackid)
             wrapMode: Text.WordWrap
             width: parent.width - (Theme.paddingLarge*2)
             color: Theme.primaryColor

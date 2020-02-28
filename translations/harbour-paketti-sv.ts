@@ -48,12 +48,12 @@
 <context>
     <name>DescDialog</name>
     <message>
-        <source>Enter short decription of item</source>
-        <translation>Ange kort beskrivelse av sändningen</translation>
-    </message>
-    <message>
         <source>Enter description</source>
         <translation>Ange beskrivning</translation>
+    </message>
+    <message>
+        <source>Enter short description of item %1</source>
+        <translation>Ange kort beskrivelse av sändningen %1</translation>
     </message>
 </context>
 <context>
@@ -114,6 +114,14 @@
     </message>
     <message>
         <source>Estimated delivery</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Number of items</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Sender</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -195,18 +203,24 @@
         <translation>Version %1</translation>
     </message>
     <message>
-        <source>Changelog version 0.6:
+        <source>Changelog version 0.6.1:
+- PostNord package tracking fixed.
+
+Changelog version 0.6:
 - Posti and Matkahuolto package tracking fixed and some other minor changes.
 – The PostNord tracking couldn&apos;t be tested due to lack of tracking code, if you can help add an issue to GitHub.
 – The source code for the application is now available in https://github.com/ZeiP/harbour-paketti.
 
-Thanks for the release to Jyri-Petteri ”ZeiP” Paloposki!</source>
-        <translation type="unfinished">Ändrings version 0.6:
+Thanks for the releases to Jyri-Petteri ”ZeiP” Paloposki!</source>
+        <translation type="unfinished">Ändrings version 0.6.1:
+- PostNord package tracking fixed.
+
+Ändrings version 0.6:
 - Posti and Matkahuolto package tracking fixed and some other minor changes.
 – The PostNord tracking couldn&apos;t be tested due to lack of tracking code, if you can help add an issue to GitHub.
 – The source code for the application is now available in https://github.com/ZeiP/harbour-paketti.
 
-Thanks for the release to Jyri-Petteri ”ZeiP” Paloposki!</translation>
+Thanks for the releases to Jyri-Petteri ”ZeiP” Paloposki!</translation>
     </message>
 </context>
 <context>

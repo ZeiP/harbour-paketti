@@ -40,7 +40,7 @@ import QtQuick.LocalStorage 2.0 as Ls
 ApplicationWindow {
     id:paketti
 
-    property string version: "0.6"
+    property string version: "0.6.1"
     property string dbName: "pakettidb"
     property string dbDescription: dbName
     property string dbVersion: "1.0"
@@ -62,7 +62,8 @@ ApplicationWindow {
         if (Qt.locale().name.substring(0,2)=="fi") locale="fi";
         if (Qt.locale().name.substring(0,2)=="en") locale="en";
         if (Qt.locale().name.substring(0,2)=="sv") locale="sv";
-        return("http://147.14.240.50/wsp/rest-services/ntt-service-rest/api/shipment.json?id="+koodi+"&locale="+locale+"&consumerId=e43d49af-060b-4f94-a3bf-1b3aa4663508");
+
+        return("https://www.postnord.fi/api/pnmw/shipment/" + koodi + "/" + locale);
     }
 
 
