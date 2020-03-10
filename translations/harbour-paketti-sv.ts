@@ -13,11 +13,11 @@
     </message>
     <message>
         <source>Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto and MyPack (Postnord) packages.</source>
-        <translation>Paketti är en enkel applikation för försändelseuppföljning för SailfishOS. Med applicationen kan man följa Itellas, Matkahuoltos och MyPack (Postnord) försändelser.</translation>
+        <translation>Paketti är ett enkelt program för försändelsespårning i SailfishOS. Med programmet kan man följa Finska posten (Posti), Matkahuoltos och MyPacks (Postnord) försändelser.</translation>
     </message>
     <message>
         <source>Application author does not take any responsibility in case application will provide non-valid information. The application is not official application for couriers (Posti, Courier, MyPack / Postnord).</source>
-        <translation>Ansökan författaren tar inget ansvar ifall ansökan kommer att tillhandahålla icke-giltig information. Applikationen är inte officiell ansökan om kurirer (Itella, Courier, MyPack / Postnord).</translation>
+        <translation>Programmets utvecklare tar inget ansvar för om programmet tillhandahåller ogiltig information. Programmet är inte ett officiellt program för fraktbolagen (Itella, Courier, MyPack / Postnord).</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -28,21 +28,21 @@
 – Juhana Virkkala (original version)
 – Hannu Hirvonen (Swedish translation)
 – Jyri-Petteri ”ZeiP” Paloposki (update in 2020)</source>
-        <translation type="unfinished">Thanking:
-– Juhana Virkkala (original version)
-– Hannu Hirvonen (Svenska översättningen)
-– Jyri-Petteri ”ZeiP” Paloposki (update in 2020)</translation>
+        <translation>Tackar:
+– Juhana Virkkala (originalversion)
+– Hannu Hirvonen, Åke Engelbrektson (Svensk översättning)
+– Jyri-Petteri ”ZeiP” Paloposki (uppdatering 2020)</translation>
     </message>
     <message>
         <source>Source code in GitHub</source>
-        <translation type="unfinished"></translation>
+        <translation>Källkod på GitHub</translation>
     </message>
 </context>
 <context>
     <name>BarCodePage</name>
     <message>
         <source>Read the barcode by keeping barcode scanner perpendicular to the viewing screen, about 15–20 cm away from your phone. If you can not read code try to change distance.</source>
-        <translation>Läs streckkoden genom att hålla scannern i vinkelrätt position mot skärmen på ca. 15–20 centimeters avstånd från telefonen. Om läsningen misslyckas, försök med olika avstånd.</translation>
+        <translation>Läs in streckkoden genom att hålla telefonen i vinkelrät position mot skärmen, på ca. 15–20 centimeters avstånd. Försök ändra avståndet om inläsningen misslyckas.</translation>
     </message>
 </context>
 <context>
@@ -53,14 +53,14 @@
     </message>
     <message>
         <source>Enter short description of item %1</source>
-        <translation>Ange kort beskrivelse av sändningen %1</translation>
+        <translation>Ange en kort beskrivning av försändelse %1</translation>
     </message>
 </context>
 <context>
     <name>Details</name>
     <message>
         <source>No items were found with the item code you provided</source>
-        <translation>Försändelsekoden som du skrev in gav inga träffar</translation>
+        <translation>Försändelsekoden gav inga träffar</translation>
     </message>
     <message>
         <source>This may be due to one of the following reasons:
@@ -70,15 +70,15 @@
 - The item was posted long time ago and has been already removed from couriers system
 - There is a problem with the system or the item</source>
         <translation>Orsaken kan vara någon av följande:
-- Inmatningsfel. Kontrollera försändelsekoden du skrivit in. Skriv in koden utan mellanslag.
-- Försändelsen har inte ännu lämnats in för transport.
-- Försändelsen har inte registrerats i systemet än.
-- Det är mer än 2,5 månad sedan försändelsen postades.
-- Avvikelser i systemet eller försändelsen.</translation>
+- Kontrollera försändelsekoden och tillse att den skrivits utan mellanslag.
+- Försändelsen har ännu inte lämnats in för transport.
+- Försändelsen har ännu inte registrerats i systemet.
+- Försändelsen postades för länge sedan och har redan tagits bort från fraktsystemet.
+- Problem med systemet eller försändelsen.</translation>
     </message>
     <message>
         <source>Shipment details</source>
-        <translation>Försändelsens uppgifter</translation>
+        <translation>Fraktuppgifter</translation>
     </message>
     <message>
         <source>Show barcode</source>
@@ -90,7 +90,7 @@
     </message>
     <message>
         <source>Service</source>
-        <translation type="unfinished"></translation>
+        <translation>Tjänst</translation>
     </message>
     <message>
         <source>Extra services</source>
@@ -102,7 +102,7 @@
     </message>
     <message>
         <source>Size</source>
-        <translation>Volym</translation>
+        <translation>Storlek</translation>
     </message>
     <message>
         <source>Weight</source>
@@ -110,19 +110,19 @@
     </message>
     <message>
         <source>CoD amount</source>
-        <translation type="unfinished"></translation>
+        <translation>Postförskott</translation>
     </message>
     <message>
         <source>Estimated delivery</source>
-        <translation type="unfinished"></translation>
+        <translation>Beräknad leverans</translation>
     </message>
     <message>
         <source>Number of items</source>
-        <translation type="unfinished"></translation>
+        <translation>Antal kolli</translation>
     </message>
     <message>
         <source>Sender</source>
-        <translation type="unfinished"></translation>
+        <translation>Avsändare</translation>
     </message>
 </context>
 <context>
@@ -141,11 +141,11 @@
     </message>
     <message>
         <source>Deleting</source>
-        <translation>Avlägsnas</translation>
+        <translation>Tar bort</translation>
     </message>
     <message>
         <source>Courier</source>
-        <translation>Kurir</translation>
+        <translation>Fraktbolag</translation>
     </message>
     <message>
         <source>[Select]</source>
@@ -157,11 +157,11 @@
     </message>
     <message>
         <source>History</source>
-        <translation>Historia</translation>
+        <translation>Historik</translation>
     </message>
     <message>
         <source>Start by choosing a courier and entering the tracking code in the box above. Tracked shipments will be saved automatically</source>
-        <translation>Börja med att välja en kurir och ange spårningskoden i rutan ovan. Band sändningar sparas automatiskt</translation>
+        <translation>Börja med att välja fraktbolag och ange försändelsekoden ovan. Spårade försändelser sparas automatiskt.</translation>
     </message>
     <message>
         <source>No information available</source>
@@ -177,7 +177,7 @@
     </message>
     <message>
         <source>Copy tracking number</source>
-        <translation>Kopiera försändelsekoden</translation>
+        <translation>Kopiera försändelsekod</translation>
     </message>
     <message>
         <source>Copy text</source>
@@ -196,7 +196,7 @@
     </message>
     <message>
         <source>Application updated</source>
-        <translation>Application uppdateras</translation>
+        <translation>Programmet uppdaterat</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -212,30 +212,29 @@ Changelog version 0.6:
 – The source code for the application is now available in https://github.com/ZeiP/harbour-paketti.
 
 Thanks for the releases to Jyri-Petteri ”ZeiP” Paloposki!</source>
-        <translation type="unfinished">Ändrings version 0.6.1:
-- PostNord package tracking fixed.
+        <translation>Ändringslogg version 0.6.1:
+- PostNord paketspårning fixad.
 
-Ändrings version 0.6:
-- Posti and Matkahuolto package tracking fixed and some other minor changes.
-– The PostNord tracking couldn&apos;t be tested due to lack of tracking code, if you can help add an issue to GitHub.
-– The source code for the application is now available in https://github.com/ZeiP/harbour-paketti.
+Ändringslogg version 0.6:
+- Posti och Matkahuolto paketspårning fixad och några andra mindre ändringar.
+– Källkoden finns nu tillgänglig på https://github.com/ZeiP/harbour-paketti.
 
-Thanks for the releases to Jyri-Petteri ”ZeiP” Paloposki!</translation>
+Tack för uppdateringarna till Jyri-Petteri ”ZeiP” Paloposki!</translation>
     </message>
 </context>
 <context>
     <name>harbour-paketti</name>
     <message>
         <source>less than minute ago</source>
-        <translation>under än minut sedan</translation>
+        <translation>mindre än en minut sedan</translation>
     </message>
     <message>
         <source>minute(s) ago</source>
-        <translation>minuter sedan</translation>
+        <translation>minut(er) sedan</translation>
     </message>
     <message>
         <source>hour(s) ago</source>
-        <translation>timmar sedan</translation>
+        <translation>timma(r) sedan</translation>
     </message>
 </context>
 </TS>
