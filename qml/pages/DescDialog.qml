@@ -23,7 +23,6 @@ Dialog {
             width: parent.width
             color: "transparent"
         }
-
         Label {
             text: qsTr("Enter short description of item %1").arg(trackid)
             wrapMode: Text.WordWrap
@@ -33,7 +32,6 @@ Dialog {
             anchors.horizontalCenter: parent.horizontalCenter
             height: contentHeight+40
         }
-
         TextField {
             id: descField
             text: description

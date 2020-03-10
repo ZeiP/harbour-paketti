@@ -99,10 +99,6 @@ Thanks for the releases to Jyri-Petteri ”ZeiP” Paloposki!")
                 text: qsTr("ws_donatebutton")
                 onClicked: Qt.openUrlExternally(donate_url)
             }*/
-
         }
-
     }
-
-
 }

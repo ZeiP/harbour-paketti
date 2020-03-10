@@ -60,7 +60,7 @@ Page {
 - The item was posted long time ago and has been already removed from couriers system
 - There is a problem with the system or the item") });
             }
-       );
+        );
     }
 
     function getHeader(label) {
@@ -116,14 +116,14 @@ Page {
                 text: ""
                 onClicked: {
                     Qt.openUrlExternally(url);
-               }
-               Text {
-                   font.pixelSize: Theme.fontSizeSmall
-                   anchors.verticalCenter: parent.top;
-                   anchors.horizontalCenter: parent.horizontalCenter
-                   color: Theme.secondaryColor;
-                   text: extramenu.textAbove
-               }
+                }
+                Text {
+                    font.pixelSize: Theme.fontSizeSmall
+                    anchors.verticalCenter: parent.top;
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    color: Theme.secondaryColor;
+                    text: extramenu.textAbove
+                }
             }
             MenuItem  {
                 text: qsTr("Show barcode")
@@ -132,11 +132,9 @@ Page {
                         "koodi": koodi
                     };
                     pageStack.push("BarCodePage.qml", props);
-               }
+                }
             }
-
-
-       }
+        }
 
         model: ListModel {
             id: resultModel
@@ -147,7 +145,6 @@ Page {
                 datetime: ""
             }
         }
-
 
         delegate: ListItem {
             id: listItem
@@ -218,7 +215,6 @@ Page {
                     height: 10
                     color: "transparent"
                 }
-
                 Rectangle {
                     id: erotin
                     width: parent.width
@@ -227,7 +223,6 @@ Page {
                     height: evValue.height + evLabel.contentHeight + erotinText.contentHeight
                     anchors.top: spaceri.bottom
                 }
-
                 Text {
                     id: erotinText
                     text: datetime ? datetime : ""
@@ -238,7 +233,6 @@ Page {
                     anchors.top: spaceri.bottom
                     font.pixelSize: Theme.fontSizeSmall
                 }
-
                 Text {
                     id: evLabel
                     text: label
@@ -264,5 +258,3 @@ Page {
         }
     }
 }
-
-

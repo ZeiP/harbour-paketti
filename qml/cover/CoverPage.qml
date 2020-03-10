@@ -54,8 +54,8 @@ CoverBackground {
 
     onStatusChanged: {
         if (status == Cover.Active) {
-          addLatestEvent();
-          lupdText.text=showSinceLastUpd();
+            addLatestEvent();
+            lupdText.text=showSinceLastUpd();
         }
         //var tmpdate = new Date();
     }
@@ -96,21 +96,22 @@ CoverBackground {
     function refreshAll() {
         var db = dbConnection();
         db.transaction(
-                function(tx) {
-                    var rs = tx.executeSql('SELECT * FROM history ORDER BY timestamp DESC;');
-                    for(var i = 0; i < rs.rows.length; i++) {
-                        var trackid=rs.rows.item(i).trackid;
-                        if (rs.rows.item(i).type=="FI") PlugItella.updatedet(0, trackid ,0);
-                        if (rs.rows.item(i).type=="MH") PlugMH.updatedet(0, trackid ,0);
-                        if (rs.rows.item(i).type=="PN") PlugPN.updatedet(0, trackid,0);
-                    }
+            function(tx) {
+                var rs = tx.executeSql('SELECT * FROM history ORDER BY timestamp DESC;');
+                for(var i = 0; i < rs.rows.length; i++) {
+                    var trackid=rs.rows.item(i).trackid;
+                    if (rs.rows.item(i).type=="FI") PlugItella.updatedet(0, trackid ,0);
+                    if (rs.rows.item(i).type=="MH") PlugMH.updatedet(0, trackid ,0);
+                    if (rs.rows.item(i).type=="PN") PlugPN.updatedet(0, trackid,0);
                 }
-            );
+            }
+        );
 
         addLatestEvent();
         setLastUpd();
         lupdText.text=showSinceLastUpd();
     }
+
     Image {
         id: notifyimage
         source: "../images/nurkka2.png"
@@ -126,8 +127,6 @@ CoverBackground {
         anchors.horizontalCenter: parent.horizontalCenter
         //width: parent.width
     }
-
-
     GlassItem {
         id: pimpula
         color:  "yellow"
@@ -140,7 +139,6 @@ CoverBackground {
         falloffRadius: 0.2
         visible: false
     }
-
     Rectangle {
         id: evtTausta
         anchors.leftMargin: Theme.paddingSmall
@@ -148,7 +146,6 @@ CoverBackground {
         width: parent.width - (Theme.paddingSmall*2)
         anchors.left: parent.left
         anchors.right: parent.right
-
 
         Text {
             id: coverlabel
@@ -167,7 +164,6 @@ CoverBackground {
             direction: OpacityRamp.LeftToRight
             sourceItem: coverlabel
         }
-
         Text {
             id: dtime
             color: Theme.secondaryColor
@@ -175,7 +171,6 @@ CoverBackground {
             anchors.top: coverlabel.bottom
             font.bold: coverElabel.font.bold
         }
-
         Text {
             id: coverElabel
             font.pixelSize: Theme.fontSizeMedium
@@ -195,7 +190,6 @@ CoverBackground {
             width: parent.width
             anchors.top: coverElabel.bottom
         }
-
     }
     Text {
         id: lupdText
@@ -205,37 +199,34 @@ CoverBackground {
         font.pixelSize: Theme.fontSizeSmall
         text: showSinceLastUpd()
     }
-
     Timer {
-         id: lupdtimer
-         running: (status === Cover.Active)
-         repeat: true
-         interval: 5000
-         onTriggered: {
-             lupdText.text=showSinceLastUpd();
-         }
+        id: lupdtimer
+        running: (status === Cover.Active)
+        repeat: true
+        interval: 5000
+        onTriggered: {
+            lupdText.text=showSinceLastUpd();
+        }
     }
     Timer {
-         id: updTimer
-         running: true
-         interval: 5000
-         repeat: true
-         onTriggered: {
-             var now = Math.round(Date.now()/1000);
-             if (_lastTick!=0 ) var seconds = now - _lastTick;
-             else {
-                 _lastTick = now;
-                 seconds=0;
-             }
-             if (seconds>900) {
-                 //console.log("Auto update triggered (at " + seconds + " seconds)");
-                 refreshAll();
-                 _lastTick = now;
-                 //console.log("Update");
-             }
-
+        id: updTimer
+        running: true
+        interval: 5000
+        repeat: true
+        onTriggered: {
+            var now = Math.round(Date.now()/1000);
+            if (_lastTick!=0 ) var seconds = now - _lastTick;
+            else {
+                _lastTick = now;
+                seconds=0;
+            }
+            if (seconds>900) {
+                //console.log("Auto update triggered (at " + seconds + " seconds)");
+                refreshAll();
+                _lastTick = now;
+                //console.log("Update");
+            }
          }
-
     }
 
     CoverActionList {
@@ -247,7 +238,6 @@ CoverBackground {
             onTriggered: refreshAll()
         }
     }
-
 }
 
 

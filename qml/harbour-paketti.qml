@@ -29,16 +29,13 @@ Changes copyright (C) 2020 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi
   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import "pages"
 import QtQuick.LocalStorage 2.0 as Ls
 
-
-
 ApplicationWindow {
-    id:paketti
+    id: paketti
 
     property string version: "0.6.1"
     property string dbName: "pakettidb"
@@ -57,6 +54,7 @@ ApplicationWindow {
         if (Qt.locale().name.substring(0,2)=="en") locale="sv";
         return("https://wwwservice.matkahuolto.fi/search/trackingInfo?language=" + locale + "&parcelNumber=" + koodi);
     }
+
     function pnURL(koodi) {
         var locale="en";
         if (Qt.locale().name.substring(0,2)=="fi") locale="fi";
@@ -66,7 +64,6 @@ ApplicationWindow {
         return("https://www.postnord.fi/api/pnmw/shipment/" + koodi + "/" + locale);
     }
 
-
     function dbConnection() {
         var db = Ls.LocalStorage.openDatabaseSync(dbName, dbVersion, dbDescription);
         db.transaction(
@@ -75,65 +72,69 @@ ApplicationWindow {
                 tx.executeSql('CREATE TABLE IF NOT EXISTS shipdets (uid NOT NULL UNIQUE,trackid, type, datetime, label, value, status)');
                 tx.executeSql('CREATE TABLE IF NOT EXISTS settings (id NOT NULL UNIQUE,value)');
             }
-                    );
+        );
         return db;
     }
+
     function setLastUpd() {
         var db = dbConnection();
         var unixtime = Math.round(Date.now()/1000);
         db.transaction(
-           function(tx) {
-               tx.executeSql('INSERT OR REPLACE INTO settings (id,value) VALUES ("lastupd",?);',[unixtime]);
-           }
+            function(tx) {
+                tx.executeSql('INSERT OR REPLACE INTO settings (id,value) VALUES ("lastupd",?);',[unixtime]);
+            }
         );
     }
+
     function showSinceLastUpd() {
-       var db = dbConnection();
-       var unixtime = Math.round(Date.now()/1000);
-       var ret = "";
-       var unixlupd=0;
-       db.transaction(
+        var db = dbConnection();
+        var unixtime = Math.round(Date.now()/1000);
+        var ret = "";
+        var unixlupd=0;
+        db.transaction(
             function(tx) {
                 var rs = tx.executeSql('select * from settings WHERE id="lastupd"');
                 if (rs.rows.length>0) unixlupd=rs.rows.item(0).value;
             }
-       );
-       if (unixlupd>0) {
-           var tdiff=unixtime-unixlupd;
-           if (tdiff < 60 ) ret=qsTr("less than minute ago");
-           else if (tdiff < 3600 ) ret=Math.floor(tdiff/60) + " " + qsTr("minute(s) ago");
-           else ret=Math.floor(tdiff/3600) + " " + qsTr("hour(s) ago");
-       }
-       return(ret);
+        );
+        if (unixlupd>0) {
+            var tdiff=unixtime-unixlupd;
+            if (tdiff < 60 ) ret=qsTr("less than minute ago");
+            else if (tdiff < 3600 ) ret=Math.floor(tdiff/60) + " " + qsTr("minute(s) ago");
+            else ret=Math.floor(tdiff/3600) + " " + qsTr("hour(s) ago");
+        }
+        return(ret);
     }
 
     function insertShipdet(trackid,sdetType,sdetDatetime,sdetArrLabel,sdetArrValue) {
         var db = dbConnection();
         var md5=Qt.md5(trackid+sdetArrValue+sdetDatetime);
         db.transaction(
-           function(tx) {
-               tx.executeSql('INSERT OR IGNORE INTO shipdets (uid,trackid, type, datetime, label, value, status) VALUES (?,?,?,?,?,?,?);',[md5,trackid,sdetType,sdetDatetime,sdetArrLabel,sdetArrValue,0]);
-           }
+            function(tx) {
+                tx.executeSql('INSERT OR IGNORE INTO shipdets (uid,trackid, type, datetime, label, value, status) VALUES (?,?,?,?,?,?,?);',[md5,trackid,sdetType,sdetDatetime,sdetArrLabel,sdetArrValue,0]);
+            }
         );
         //console.log(sdetType + ":" + sdetDatetime + ": " + sdetArrLabel + " : "+ sdetArrValue);
-
     }
+
     function setEventsShown(trackid) {
         var db = dbConnection();
         db.transaction(
-           function(tx) {
-               var rs = tx.executeSql('UPDATE shipdets SET status=1 WHERE trackid=?;', [trackid]);
-                }
-          );
+            function(tx) {
+                var rs = tx.executeSql('UPDATE shipdets SET status=1 WHERE trackid=?;', [trackid]);
+            }
+        );
     }
+
     function addDesc(trackid,descr) {
         var db = dbConnection();
         db.transaction(
-           function(tx) {
-               var rs = tx.executeSql('UPDATE history SET detstr=? WHERE trackid=?;', [descr,trackid]);
-                }
-          );
+            function(tx) {
+                var rs = tx.executeSql('UPDATE history SET detstr=? WHERE trackid=?;', [descr,trackid]);
+            }
+        );
     }
+
     function getDesc(trackid) {
         var db = dbConnection();
         var status = "NULL";
@@ -142,8 +143,8 @@ ApplicationWindow {
                 var rs = tx.executeSql('SELECT detstr FROM history WHERE trackid=?;', [trackid]);
                 if (rs.rows.item(0).detstr!="") status=rs.rows.item(0).detstr;
             }
-       );
-       return(status);
+        );
+        return(status);
     }
 
     function getLatestEvt(trackid) {
@@ -155,10 +156,11 @@ ApplicationWindow {
                 var rs = tx.executeSql('select * from shipdets WHERE trackid=? AND type="EVT" order by datetime DESC LIMIT 1;', [trackid]);
                 retArr=rs.rows.item(0);
             }
-       );
+        );
 
-       return(retArr);
+        return(retArr);
     }
+
     function getNewestEvt() {
         var db = dbConnection();
         var status = 1;
@@ -168,9 +170,9 @@ ApplicationWindow {
                 var rs = tx.executeSql('select * from shipdets WHERE type="EVT" order by datetime DESC LIMIT 1;');
                 retArr=rs.rows.item(0);
             }
-       );
+        );
 
-       return(retArr);
+        return(retArr);
     }
 
     function getStatus(trackid) {
@@ -183,10 +185,9 @@ ApplicationWindow {
                     if (rs.rows.item(i).status=="0") status=0;
                 }
             }
-       );
-       return(status);
+        );
+        return(status);
     }
-
 
     function dbVerConnection() {
         var db = Ls.LocalStorage.openDatabaseSync(dbName, dbVersion, dbDescription);
@@ -194,7 +195,7 @@ ApplicationWindow {
             function(tx) {
                 tx.executeSql('CREATE TABLE IF NOT EXISTS version (vstr, date, PRIMARY KEY(vstr))');
             }
-                    );
+        );
         return db;
     }
 
@@ -210,17 +211,17 @@ ApplicationWindow {
                     if (rs.rows.item(i).vstr==str) tmphit=true;
                 }
             }
-       );
-       if (tmphit==false && tothit > 0) return true;
-       else return false;
+        );
+        if (tmphit==false && tothit > 0) return true;
+        else return false;
     }
 
     function storeVersion(str) {
         var db = dbVerConnection();
         db.transaction(
-           function(tx) {
-               tx.executeSql('INSERT OR REPLACE INTO version (vstr) VALUES (?);', [str]);
-           }
+            function(tx) {
+                tx.executeSql('INSERT OR REPLACE INTO version (vstr) VALUES (?);', [str]);
+            }
         );
     }
 
@@ -279,7 +280,6 @@ ApplicationWindow {
         return(outputdate);
     }
 
-
     initialPage: Component { MainPage { } }
 
     Component.onCompleted: {
@@ -289,7 +289,6 @@ ApplicationWindow {
         } //else pageStack.push("pages/MainPage.qml");
         storeVersion(version);
     }
-
 
     cover: Qt.resolvedUrl("cover/CoverPage.qml")
 }

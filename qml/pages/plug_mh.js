@@ -1,5 +1,4 @@
 function updatedet(index,trackid,showdet) {
-
     itemUpdStarted(index);
     console.log("UPD" + trackid);
 
@@ -26,5 +25,4 @@ function updatedet(index,trackid,showdet) {
     }
     doc.open("GET", mhURL(trackid));
     doc.send();
-
 }

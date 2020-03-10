@@ -44,12 +44,10 @@ Page {
             PageHeader {
                 title: qsTr("About")
             }
-
             Image {
                 anchors.horizontalCenter: parent.horizontalCenter
                 source: "../images/ptl.png"
             }
-
             Column {
                 anchors.left: parent.left; anchors.right: parent.right
                 spacing: Theme.paddingSmall
@@ -58,7 +56,6 @@ Page {
                     font.pixelSize: Theme.fontSizeHuge
                     text: qsTr("Paketti")
                 }
-
                 Label {
                     anchors.horizontalCenter: parent.horizontalCenter
                     font.pixelSize: Theme.fontSizeExtraSmall
@@ -67,14 +64,12 @@ Page {
                     text: qsTr("Version %1").arg(version)
                 }
             }
-
             Label {
                 wrapMode: Text.WordWrap
                 anchors.left: parent.left; anchors.right: parent.right
                 font.pixelSize: Theme.fontSizeSmall
                 text: qsTr("Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto and MyPack (Postnord) packages.")
             }
-
             Label {
                 anchors.left: parent.left; anchors.right: parent.right
                 font.pixelSize: Theme.fontSizeSmall
@@ -85,7 +80,6 @@ Page {
 – Hannu Hirvonen (Swedish translation)
 – Jyri-Petteri ”ZeiP” Paloposki (update in 2020)")
             }
-
             Button {
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: qsTr("Source code in GitHub")

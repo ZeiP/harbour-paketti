@@ -40,20 +40,20 @@ Page {
 
 
     Connections {
-      target: paketti
-      onApplicationActiveChanged: {
-          if (paketti.applicationActive) reloadhistory(false);
-      }
+        target: paketti
+        onApplicationActiveChanged: {
+            if (paketti.applicationActive) reloadhistory(false);
+        }
     }
 
     onStatusChanged: {
         //console.log("Status changed " + status);
-              if (status == PageStatus.Active) {
-                  mainpage.forceActiveFocus();
-                  //Qt.inputMethod.hide();
-                  reloadhistory(false);
-              }
-     }
+        if (status == PageStatus.Active) {
+            mainpage.forceActiveFocus();
+            //Qt.inputMethod.hide();
+            reloadhistory(false);
+        }
+    }
 
     Component.onCompleted: {
         reloadhistory(true);
@@ -61,7 +61,6 @@ Page {
 
     property bool historyvisible: historyvisible;
     property bool cautoset: false;
-
 
     function itemUpdStarted(index) {
         historyModel.set(index,{"itmrun": "true" });
@@ -93,27 +92,23 @@ Page {
         else historyModel.set(index,{ "status": getStatus(historyModel.get(index).title) });
         //setEventsShown(historyModel.get(index).title);
         saveitem(index);
-
-
     }
-
 
     function deleteitm(trackid) {
         var db = dbConnection();
         db.transaction(
-           function(tx) {
-               tx.executeSql('DELETE FROM shipdets WHERE trackid=UPPER(?);', [trackid]);
-               var rs = tx.executeSql('DELETE FROM history WHERE trackid=UPPER(?);', [trackid]);
-                    if (rs.rowsAffected > 0) {
-                        console.log("Deleted: " + trackid + " [OK]")
-                        if (historyModel.count==1) historyvisible=false;
-                    } else {
-                        console.error("ERROR: Failed to delete : " + trackid );
-                    }
+            function(tx) {
+                tx.executeSql('DELETE FROM shipdets WHERE trackid=UPPER(?);', [trackid]);
+                var rs = tx.executeSql('DELETE FROM history WHERE trackid=UPPER(?);', [trackid]);
+                if (rs.rowsAffected > 0) {
+                    console.log("Deleted: " + trackid + " [OK]")
+                    if (historyModel.count==1) historyvisible=false;
+                } else {
+                    console.error("ERROR: Failed to delete : " + trackid );
                 }
-          );
+            }
+        );
     }
-
 
     function populatedets() {
         for (var i=1; i < historyModel.count; i++) {
@@ -152,29 +147,27 @@ Page {
                 saveitem(index);
             }
             updateitem(index,1);
-
         }
     }
-
 
     function reloadhistory(upd) {
         //console.log("Reload history..");
         var db = dbConnection();
         db.transaction(
-                function(tx) {
-                    var rs = tx.executeSql('SELECT * FROM history ORDER BY timestamp DESC;');
-                    for(var i = 0; i < rs.rows.length; i++) {
-                        historyModel.set(i+1, {"type": rs.rows.item(i).type,"det": "NAN", "title": rs.rows.item(i).trackid, "datetime": rs.rows.item(i).timestamp, "itemdesc" : rs.rows.item(i).detstr });
-                        if (rs.rows.item(i).type=="FI") historyModel.set(i+1, { "typec" : "#ff9600" });
-                        if (rs.rows.item(i).type=="MH") historyModel.set(i+1, { "typec" : "#1e00ff" });
-                        if (rs.rows.item(i).type=="PN") historyModel.set(i+1, { "typec" : "#00a9cd" });
-                        historyModel.set(i+1,{ "status": getStatus(rs.rows.item(i).trackid) });
-                        lastActivityToList(i+1);
-                    }
-                    if (rs.rows.length!=0) historyvisible=true;
-                    else historyvisible=false;
+            function(tx) {
+                var rs = tx.executeSql('SELECT * FROM history ORDER BY timestamp DESC;');
+                for(var i = 0; i < rs.rows.length; i++) {
+                    historyModel.set(i+1, {"type": rs.rows.item(i).type,"det": "NAN", "title": rs.rows.item(i).trackid, "datetime": rs.rows.item(i).timestamp, "itemdesc" : rs.rows.item(i).detstr });
+                    if (rs.rows.item(i).type=="FI") historyModel.set(i+1, { "typec" : "#ff9600" });
+                    if (rs.rows.item(i).type=="MH") historyModel.set(i+1, { "typec" : "#1e00ff" });
+                    if (rs.rows.item(i).type=="PN") historyModel.set(i+1, { "typec" : "#00a9cd" });
+                    historyModel.set(i+1,{ "status": getStatus(rs.rows.item(i).trackid) });
+                    lastActivityToList(i+1);
                 }
-            );
+                if (rs.rows.length!=0) historyvisible=true;
+                else historyvisible=false;
+            }
+        );
         if (upd==true) populatedets();
     }
 
@@ -182,15 +175,15 @@ Page {
         var trackid=historyModel.get(index).title;
         var db = dbConnection();
         db.transaction(
-                function(tx) {
-                    var rs = tx.executeSql('select * from shipdets where trackid=? AND type=\"EVT\" order by datetime DESC limit 1;',[trackid]);
-                    if (rs.rows.length>0) {
-                        var det = rs.rows.item(0).label;
-                        if (rs.rows.item(0).value !== null && rs.rows.item(0).value !== "")
-                            det = det + " "  + rs.rows.item(0).value;
-                        historyModel.set(index, { "det": det,  "datetime": rs.rows.item(0).datetime });
-                    }
+            function(tx) {
+                var rs = tx.executeSql('select * from shipdets where trackid=? AND type=\"EVT\" order by datetime DESC limit 1;',[trackid]);
+                if (rs.rows.length>0) {
+                    var det = rs.rows.item(0).label;
+                    if (rs.rows.item(0).value !== null && rs.rows.item(0).value !== "")
+                        det = det + " "  + rs.rows.item(0).value;
+                    historyModel.set(index, { "det": det,  "datetime": rs.rows.item(0).datetime });
                 }
+            }
        );
     }
 
@@ -201,23 +194,21 @@ Page {
         var itemdescr=historyModel.get(index).itemdescr;
         var db = dbConnection();
         db.transaction(
-           function(tx) {
-               var rz = tx.executeSql('INSERT OR IGNORE INTO history (trackid) VALUES (?);', [trackid]);
-               var rs = tx.executeSql('UPDATE history SET type=?, timestamp=? WHERE trackid=?;', [type, timestamp, trackid]);
+            function(tx) {
+                var rz = tx.executeSql('INSERT OR IGNORE INTO history (trackid) VALUES (?);', [trackid]);
+                var rs = tx.executeSql('UPDATE history SET type=?, timestamp=? WHERE trackid=?;', [type, timestamp, trackid]);
 
-               //var rs = tx.executeSql('INSERT OR REPLACE INTO history (type, trackid, timestamp, detstr) VALUES (?,UPPER(?),?,?);', [type, trackid, timestamp, itemdescr]);
-               //var rs = tx.executeSql('INSERT INTO history (type, trackid, timestamp) VALUES (?,UPPER(?),?) ON DUPLICATE KEY UPDATE type=?,timestamp=?;', [type, trackid, timestamp,type,timestamp]);
+                //var rs = tx.executeSql('INSERT OR REPLACE INTO history (type, trackid, timestamp, detstr) VALUES (?,UPPER(?),?,?);', [type, trackid, timestamp, itemdescr]);
+                //var rs = tx.executeSql('INSERT INTO history (type, trackid, timestamp) VALUES (?,UPPER(?),?) ON DUPLICATE KEY UPDATE type=?,timestamp=?;', [type, trackid, timestamp,type,timestamp]);
 
-                    if (rs.rowsAffected > 0) {
-                        console.log("saved: " + trackid + " [OK]")
-                    } else {
-                        console.error("ERROR: Failed to save : " + trackid );
-                    }
+                if (rs.rowsAffected > 0) {
+                    console.log("saved: " + trackid + " [OK]")
+                } else {
+                    console.error("ERROR: Failed to save : " + trackid );
                 }
-          );
+            }
+        );
     }
-
-
 
     SilicaListView {
         id: lista
@@ -240,14 +231,10 @@ Page {
                 updsel=false;
             }
         }
-
         header: PageHeader {
             id: phead
             title: qsTr("Track item")
         }
-
-
-
         model: ListModel {
             id: historyModel
             ListElement { title: ""; itemdesc: ""; det: " " ; type: "" ; itmrun: "" ; itmcolor: "" ; typec: "" ; datetime : "fuu" ; status : 0}
@@ -260,11 +247,11 @@ Page {
             onClicked: {
                 historyModel.set(index,{ "status": 1 });
                 var props = {
-                     "koodi": title
-                 };
-                 if (index!=0) {
-                     pageStack.push("Details.qml", props);
-                 }
+                    "koodi": title
+                };
+                if (index!=0) {
+                    pageStack.push("Details.qml", props);
+                }
             }
             onPressed: {
                 if (index!=0) {
@@ -274,7 +261,6 @@ Page {
                 }
             }
             ListView.onRemove: animateRemoval(listitem)
-
 
             function remove(title) {
                 remorseAction(qsTr("Deleting"), function() {
@@ -291,7 +277,6 @@ Page {
                 visible: itmrun=="true" ? true : false
                 //onDataChanged: console.log("Changed..")
             }
-
             Rectangle {
                 id:hrect
                 color: "transparent"
@@ -309,7 +294,6 @@ Page {
                     color: "#88FF0000"
                     visible: false
                 }
-
                 ComboBox {
                     anchors.bottom: koodiBoksi.top
                     id: courier
@@ -318,16 +302,15 @@ Page {
                     currentIndex: 0
                     onClicked: couerr.visible=false;
                     menu: ContextMenu {
-                            id: cmenu
-                            MenuItem { text: qsTr("[Select]") ; visible : false }
-                            MenuItem { text: "Posti" }
-                            MenuItem { text: "Matkahuolto" }
-                            MenuItem { text: "MyPack/Postnord/Posten.se" }
-                            onClicked: koodiInput.forceActiveFocus();
+                        id: cmenu
+                        MenuItem { text: qsTr("[Select]") ; visible : false }
+                        MenuItem { text: "Posti" }
+                        MenuItem { text: "Matkahuolto" }
+                        MenuItem { text: "MyPack/Postnord/Posten.se" }
+                        onClicked: koodiInput.forceActiveFocus();
                     }
 
                 }
-
                 Rectangle {
                     id: koodiBoksi
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -336,7 +319,6 @@ Page {
                     height: koodiInput.height
                     color: "transparent"
                     //color: "#000000"
-
 
                     //Search
                     TextField {
@@ -375,15 +357,14 @@ Page {
                         EnterKey.text: "OK"
                         EnterKey.highlighted: true
                         EnterKey.onClicked: {
-                                if (courier.currentIndex==1) var cStr="FI"
-                                if (courier.currentIndex==2) var cStr="MH"
-                                if (courier.currentIndex==3) var cStr="PN"
-                                addTrackable(cStr,koodiInput.text);
-                                koodiInput.text="";
-                                courier.currentIndex=0;
+                            if (courier.currentIndex==1) var cStr="FI"
+                            if (courier.currentIndex==2) var cStr="MH"
+                            if (courier.currentIndex==3) var cStr="PN"
+                            addTrackable(cStr,koodiInput.text);
+                            koodiInput.text="";
+                            courier.currentIndex=0;
                         }
                     }
-
                     IconButton {
                         id: enterIcon
                         icon.source: "image://theme/icon-m-enter-accept"
@@ -417,7 +398,6 @@ Page {
                     visible: !historyvisible
                 }
             }
-
 
             Rectangle {
                 property bool menuOpen: contextMenu != null && contextMenu.parent === hitemrow
@@ -472,19 +452,18 @@ Page {
                 }
 
                 Label {
-                        width: parent.width - (Theme.paddingMedium*2)
-                        id: htitle
-                        text: title
-                        anchors.left: parent.left
-                        anchors.leftMargin: Theme.paddingMedium
-                        font.capitalization: Font.AllUppercase
-                        //width: parent.width - (Theme.paddingMedium*2) - timefield.width
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        anchors.top: erotin.top
-                        color: Theme.highlightColor
-                        font.pixelSize: Theme.fontSizeSmall
-                 }
-
+                    width: parent.width - (Theme.paddingMedium*2)
+                    id: htitle
+                    text: title
+                    anchors.left: parent.left
+                    anchors.leftMargin: Theme.paddingMedium
+                    font.capitalization: Font.AllUppercase
+                    //width: parent.width - (Theme.paddingMedium*2) - timefield.width
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.top: erotin.top
+                    color: Theme.highlightColor
+                    font.pixelSize: Theme.fontSizeSmall
+                }
 
                 OpacityRampEffect {
                     //TODO: RampEffect size shoud follow screen width/available space
@@ -505,26 +484,24 @@ Page {
                     height: itemdesc=="" ? 0 : descLabel.contentHeight
                 }
                 Label {
-                        id: hdet
-                        anchors.top: descLabel.bottom
-                        width: parent.width - (Theme.paddingMedium*2)
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        color: Theme.primaryColor
-                        font.pixelSize: Theme.fontSizeSmall
-                        text: det=="NAN" ? "<i>" + qsTr("No information available") + "</i>" : det
-                        wrapMode: Text.WordWrap
+                    id: hdet
+                    anchors.top: descLabel.bottom
+                    width: parent.width - (Theme.paddingMedium*2)
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    color: Theme.primaryColor
+                    font.pixelSize: Theme.fontSizeSmall
+                    text: det=="NAN" ? "<i>" + qsTr("No information available") + "</i>" : det
+                    wrapMode: Text.WordWrap
                 }
 
-
                 Component {
-                id: contextMenu
+                    id: contextMenu
                     ContextMenu {
                         //ContextMenu.onEnabled: Qt.inputMethod.hide();
                         MenuItem {
                             text: itemdesc=="" ? qsTr("Add description") : qsTr("Modify description")
                             onClicked: pageStack.push("DescDialog.qml", {"trackid": title, "description": itemdesc});
                         }
-
                         MenuItem {
                             text: qsTr("Copy tracking number")
                             onClicked: Clipboard.text = title
@@ -540,15 +517,7 @@ Page {
                     }
                 }
             }
-
-
        }
         VerticalScrollDecorator {}
-
     }
-
-
-
-
-
 }

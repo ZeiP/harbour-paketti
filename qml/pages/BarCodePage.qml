@@ -38,61 +38,58 @@ Page {
 
     FontLoader { id: bcFont; source: "../fonts/free3of9.ttf" }
 
-        Rectangle {
-            id: tausta
-            rotation: 90
-            width: bcpage.height
-            height: bcpage.width
-            anchors.horizontalCenter:  bcpage.horizontalCenter
-            anchors.verticalCenter: bcpage.verticalCenter
+    Rectangle {
+        id: tausta
+        rotation: 90
+        width: bcpage.height
+        height: bcpage.width
+        anchors.horizontalCenter:  bcpage.horizontalCenter
+        anchors.verticalCenter: bcpage.verticalCenter
 
-            Text {
-                text: qsTr("Read the barcode by keeping barcode scanner perpendicular to the viewing screen, about 15–20 cm away from your phone. If you can not read code try to change distance.")
-                color: "#565656"
-                anchors.top: parent.top
-                anchors.left: parent.left; anchors.leftMargin: Theme.paddingMedium
-                anchors.right: parent.right; anchors.rightMargin: Theme.paddingMedium
-                wrapMode: Text.WordWrap
-                horizontalAlignment: Text.AlignHCenter
-            }
-
-            Text {
-                id: koodi1
-                text: "*" + koodi + "*"
-                font.family: bcFont.name
-                color: "black"
-                font.pixelSize: 120 //Was 92
-                //scale:
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.bottom: parent.verticalCenter
-                height: contentHeight-1
-            }
-            Component.onCompleted: {
-                var fonttiKoko=120;
-                if ( koodi1.paintedWidth > (tausta.width-50) ) fonttiKoko = 120*((tausta.width-50) / koodi1.paintedWidth);
-                koodi1.font.pixelSize=fonttiKoko;
-                koodi2.font.pixelSize=fonttiKoko;
-            }
-
-            Text {
-                id: koodi2
-                text: "*" + koodi + "*"
-                font.family: bcFont.name
-                color: "black"
-                font.pixelSize: 120 //Was 92
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.top: koodi1.bottom
-            }
-            Text {
-                id: kooditext
-                text: koodi
-                color: "black"
-                font.pixelSize: 50
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.top: koodi2.bottom
-            }
+        Text {
+            text: qsTr("Read the barcode by keeping barcode scanner perpendicular to the viewing screen, about 15–20 cm away from your phone. If you can not read code try to change distance.")
+            color: "#565656"
+            anchors.top: parent.top
+            anchors.left: parent.left; anchors.leftMargin: Theme.paddingMedium
+            anchors.right: parent.right; anchors.rightMargin: Theme.paddingMedium
+            wrapMode: Text.WordWrap
+            horizontalAlignment: Text.AlignHCenter
         }
-
+        Text {
+            id: koodi1
+            text: "*" + koodi + "*"
+            font.family: bcFont.name
+            color: "black"
+            font.pixelSize: 120 //Was 92
+            //scale:
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.bottom: parent.verticalCenter
+            height: contentHeight-1
+        }
+        Component.onCompleted: {
+            var fonttiKoko=120;
+            if ( koodi1.paintedWidth > (tausta.width-50) ) fonttiKoko = 120*((tausta.width-50) / koodi1.paintedWidth);
+            koodi1.font.pixelSize=fonttiKoko;
+            koodi2.font.pixelSize=fonttiKoko;
+        }
+        Text {
+            id: koodi2
+            text: "*" + koodi + "*"
+            font.family: bcFont.name
+            color: "black"
+            font.pixelSize: 120 //Was 92
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: koodi1.bottom
+        }
+        Text {
+            id: kooditext
+            text: koodi
+            color: "black"
+            font.pixelSize: 50
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: koodi2.bottom
+        }
+    }
 }
 
 
