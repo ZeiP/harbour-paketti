@@ -5,41 +5,35 @@ Dialog {
     property string description
     property string trackid
 
+    SilicaFlickable {
+        anchors.fill: parent
+        Column {
+            anchors.fill: parent
+            DialogHeader {
+                acceptText: qsTr("Save")
+            }
+            Label {
+                text: qsTr("Enter short description of item %1").arg(trackid)
+                wrapMode: Text.WordWrap
+                width: parent.width - (Theme.paddingLarge*2)
+                color: Theme.primaryColor
+                font.pixelSize: Theme.fontSizeMedium
+                anchors.horizontalCenter: parent.horizontalCenter
+                height: contentHeight+40
+            }
+            TextField {
+                width: parent.width
+                id: descField
+                text: description
+                anchors.left: parent.left
+                placeholderText: qsTr("Enter description");
+                EnterKey.iconSource: "image://theme/icon-m-enter-accept"
+                EnterKey.highlighted: true
+            }
+        }
+    }
     Component.onCompleted: {
         descField.forceActiveFocus();
-    }
-
-    DialogHeader {
-        id: dheader
-        //acceptText: qsTr("ws_close")
-    }
-
-    Column {
-        anchors.top: dheader.bottom
-        width: parent.width
-
-        Rectangle {
-            height: 100
-            width: parent.width
-            color: "transparent"
-        }
-        Label {
-            text: qsTr("Enter short description of item %1").arg(trackid)
-            wrapMode: Text.WordWrap
-            width: parent.width - (Theme.paddingLarge*2)
-            color: Theme.primaryColor
-            font.pixelSize: Theme.fontSizeMedium
-            anchors.horizontalCenter: parent.horizontalCenter
-            height: contentHeight+40
-        }
-        TextField {
-            id: descField
-            text: description
-            anchors.left: parent.left
-            placeholderText: qsTr("Enter description");
-            EnterKey.iconSource: "image://theme/icon-m-enter-accept"
-            EnterKey.highlighted: true
-        }
     }
     onDone: {
         if (result == DialogResult.Accepted) {

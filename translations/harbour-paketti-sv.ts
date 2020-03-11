@@ -55,6 +55,10 @@
         <source>Enter short description of item %1</source>
         <translation>Ange en kort beskrivning av försändelse %1</translation>
     </message>
+    <message>
+        <source>Save</source>
+        <translation>Spara</translation>
+    </message>
 </context>
 <context>
     <name>Details</name>

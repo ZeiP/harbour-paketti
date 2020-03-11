@@ -55,6 +55,10 @@
         <source>Enter short description of item %1</source>
         <translation>Anna lyhyt kuvaus lähetykselle %1</translation>
     </message>
+    <message>
+        <source>Save</source>
+        <translation>Tallenna</translation>
+    </message>
 </context>
 <context>
     <name>Details</name>
