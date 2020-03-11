@@ -261,5 +261,9 @@ Kiitokset julkaisuista Jyri-Petteri ”ZeiP” Paloposkelle!</translation>
         <source>Posti Oy</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Hermes (Germany)</source>
+        <translation>Hermes (Saksa)</translation>
+    </message>
 </context>
 </TS>

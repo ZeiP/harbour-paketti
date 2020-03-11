@@ -33,6 +33,7 @@ import Sailfish.Silica 1.0
 import "plug_itella.js" as PlugItella
 import "plug_mh.js" as PlugMH
 import "plug_pn.js" as PlugPN
+import "plug_herde.js" as PlugHerDe
 
 Page {
     id: mainpage
@@ -126,7 +127,7 @@ Page {
         }
     }
 
-    function updateitem(index,showdet) {
+    function updateitem(index, showdet) {
         var trackid = historyModel.get(index).title;
         if (historyModel.get(index).type == "FI") {
             PlugItella.updatedet(index, trackid ,showdet);
@@ -139,6 +140,10 @@ Page {
         else if (historyModel.get(index).type == "PN") {
             PlugPN.updatedet(index, trackid, showdet);
             historyModel.set(index, {"typec": "#00a9cd"});
+        }
+        else if (historyModel.get(index).type == "HERDE") {
+            PlugHerDe.updatedet(index, trackid, showdet);
+            historyModel.set(index, {"typec": "#0091cd"});
         }
     }
 
@@ -244,10 +249,6 @@ Page {
         }
         else if (trackingCode.match(/^(MH)/)) {
             return "MH";
-        }
-        // PostNord seems to be a long number.
-        else if (trackingCode.match(/^[0-9]{10,}$/)) {
-            return "PN";
         }
         return false;
     }

@@ -57,6 +57,10 @@ ApplicationWindow {
             name: QT_TR_NOOP("PostNord")
             identifier: "PN"
         }
+        ListElement {
+            name: QT_TR_NOOP("Hermes (Germany)")
+            identifier: "HERDE"
+        }
 
         function getCourierByIdentifier(identifier) {
             for (var i = 0; i < couriers.count; i++) {
