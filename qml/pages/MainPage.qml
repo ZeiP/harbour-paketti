@@ -142,7 +142,7 @@ Page {
         }
     }
 
-    function addTrackable(type,trackid) {
+    function addTrackable(type, trackid, description) {
         if (trackid != "") {
             var index = 999;
             historyvisible = true;
@@ -158,7 +158,7 @@ Page {
             if (index == 999) {
                 index = 1;
                 var tmpdate = Qt.formatDateTime(new Date(), "yyyyMMddHHmmss");
-                historyModel.insert(index, {"type": type, "title": trackid, "det": "NAN", "statusstr": "", "datetime": tmpdate, "itemdesc": ""});
+                historyModel.insert(index, {"type": type, "title": trackid, "det": "NAN", "statusstr": "", "datetime": tmpdate, "itemdesc": description});
                 saveitem(index);
             }
             updateitem(index, 1);
@@ -326,13 +326,19 @@ Page {
                 color: "transparent"
                 visible: index==0
                 width: lista.width
-                height: courier.height + historyhead.height + koodiInput.height
+                height: courier.height + historyhead.height + koodiInput.height + descField.height
                 onHeightChanged: {
                     if (index == 0) {
                         listitem.height = hrect.height
                     }
                 }
 
+                TextField {
+                    width: parent.width
+                    id: descField
+                    anchors.left: parent.left
+                    placeholderText: qsTr("Description")
+                }
                 ComboBox {
                     anchors.bottom: koodiBoksi.top
                     id: courier
@@ -421,8 +427,9 @@ Page {
                         EnterKey.text: "OK"
                         EnterKey.highlighted: true
                         EnterKey.onClicked: {
-                            addTrackable(courier.currentItem.value, koodiInput.text);
+                            addTrackable(courier.currentItem.value, koodiInput.text, descField.text);
                             koodiInput.text = "";
+                            descField.text = "";
                             courier.currentIndex = 0;
                         }
                     }
@@ -431,8 +438,9 @@ Page {
                         icon.source: "image://theme/icon-m-enter-accept"
                         anchors.right: parent.right
                         onClicked: {
-                            addTrackable(courier.currentItem.value, koodiInput.text);
+                            addTrackable(courier.currentItem.value, koodiInput.text, descField.text);
                             koodiInput.text = "";
+                            descField.text = "";
                             courier.currentIndex = 0;
                         }
                         enabled: courier.currentIndex!=0 && koodiInput.text.length > 4
