@@ -41,7 +41,32 @@ ApplicationWindow {
     property string dbName: "pakettidb"
     property string dbDescription: dbName
     property string dbVersion: "1.0"
-    property string donate_url: "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=F3S4CK2GRL99S&lc=FI&item_name=Paketti%20for%20Sailfish&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted"
+
+    ListModel {
+        id: couriers
+
+        ListElement {
+            name: QT_TR_NOOP("Posti Oy")
+            identifier: "FI"
+        }
+        ListElement {
+            name: QT_TR_NOOP("Matkahuolto")
+            identifier: "MH"
+        }
+        ListElement {
+            name: QT_TR_NOOP("PostNord")
+            identifier: "PN"
+        }
+
+        function getCourierByIdentifier(identifier) {
+            for (var i = 0; i < couriers.count; i++) {
+                var value = couriers.get(i);
+                if (identifier === value.identifier) {
+                    return value;
+                }
+            }
+        }
+    }
 
     function postiURL(koodi) {
         return("https://www.posti.fi/henkiloasiakkaat/seuranta/api/shipments/" + koodi);

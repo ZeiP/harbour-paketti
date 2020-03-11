@@ -236,5 +236,17 @@ Tack för uppdateringarna till Jyri-Petteri ”ZeiP” Paloposki!</translation>
         <source>hour(s) ago</source>
         <translation>timma(r) sedan</translation>
     </message>
+    <message>
+        <source>Matkahuolto</source>
+        <translation type="unfinished">Matkahuolto</translation>
+    </message>
+    <message>
+        <source>PostNord</source>
+        <translation type="unfinished">PostNord</translation>
+    </message>
+    <message>
+        <source>Posti Oy</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 </TS>

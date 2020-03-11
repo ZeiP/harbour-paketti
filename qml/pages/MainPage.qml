@@ -237,6 +237,21 @@ Page {
         );
     }
 
+    function detectCourierByTrackingCode(trackingCode) {
+        trackingCode = trackingCode.toUpperCase();
+        if (trackingCode.match(/^(JJFI)|(MX)/)) {
+            return "FI";
+        }
+        else if (trackingCode.match(/^(MH)/)) {
+            return "MH";
+        }
+        // PostNord seems to be a long number.
+        else if (trackingCode.match(/^[0-9]{10,}$/)) {
+            return "PN";
+        }
+        return false;
+    }
+
     SilicaListView {
         id: lista
         anchors.fill: parent
@@ -317,29 +332,41 @@ Page {
                         listitem.height = hrect.height
                     }
                 }
-                Rectangle {
-                    id: couerr
-                    anchors.verticalCenter: courier.verticalCenter
-                    height: Theme.fontSizeMedium
-                    width: mainpage.width + 5
-                    color: "#88FF0000"
-                    visible: false
-                }
+
                 ComboBox {
                     anchors.bottom: koodiBoksi.top
                     id: courier
                     width: parent.width
                     label: qsTr("Courier") + ": "
                     currentIndex: 0
-                    onClicked: couerr.visible=false;
+                    function setValueByIdentifier(value) {
+                        for(var i = 0; i < couriers.count; ++i) {
+                            if (couriers.get(i).identifier === value) {
+                                // Adding 1 to the index to account for the [Select] option.
+                                courier.currentIndex = i+1;
+                                break;
+                            }
+                        }
+                    }
+
                     menu: ContextMenu {
                         id: cmenu
-                        MenuItem { text: qsTr("[Select]") ; visible : false }
-                        MenuItem { text: "Posti" }
-                        MenuItem { text: "Matkahuolto" }
-                        MenuItem { text: "MyPack/Postnord/Posten.se" }
-                        onClicked: koodiInput.forceActiveFocus();
+                        MenuItem { text: qsTr("[Select]"); visible: false }
+                        Repeater {
+                            model: couriers
+
+                            delegate: MenuItem {
+                                text: qsTranslate("main", model.name)
+                                property string value: model.identifier
+                            }
+                        }
+                        onClicked: {
+                            cautoset = false;
+                            courier.valueColor = Theme.highlightColor;
+                            koodiInput.forceActiveFocus();
+                        }
                     }
+                    description: qsTr("The courier is autoselected when entering a tracking code if possible.")
                 }
                 Rectangle {
                     id: koodiBoksi
@@ -368,27 +395,23 @@ Page {
                         validator: RegExpValidator { regExp: /^[0-9a-z]{5,100}$/i }
                         anchors.left: parent.left
                         onTextChanged: {
-                            // Automatically set courier type based on tracking code
-                            if (text.toUpperCase().match(/^(JJFI)|(MH)|(MX)/)) {
+                            var cauto = detectCourierByTrackingCode(text);
+                            if (cauto && courier.currentIndex == 0) {
                                 cautoset = true;
-                                if (text.toUpperCase().match(/^(JJFI)|(MX)/)) {
-                                    courier.currentIndex = 1;
-                                }
-                                if (text.toUpperCase().match(/^(MH)/)) {
-                                    courier.currentIndex = 2;
-                                }
+                                courier.setValueByIdentifier(cauto);
                             }
-                            if (cautoset == true) {
-                                if (!text.toUpperCase().match(/^(JJFI)|(MH)|(MX)/)) {
-                                    cautoset = false;
-                                    courier.currentIndex = 0;
-                                }
+                            // The courier was previously auto-set, but the code no longer matches.
+                            else if (!cauto && cautoset === true) {
+                                cautoset = false;
+                                courier.currentIndex = 0;
                             }
+
+                            // Remind the user of setting the courier.
                             if (courier.currentIndex == 0 && text.length != 0) {
-                                couerr.visible = true;
+                                courier.valueColor = "red"
                             }
                             else {
-                                couerr.visible = false;
+                                courier.valueColor = Theme.highlightColor
                             }
                         }
 
@@ -398,16 +421,7 @@ Page {
                         EnterKey.text: "OK"
                         EnterKey.highlighted: true
                         EnterKey.onClicked: {
-                            if (courier.currentIndex == 1) {
-                                var cStr = "FI"
-                            }
-                            if (courier.currentIndex == 2) {
-                                var cStr = "MH"
-                            }
-                            if (courier.currentIndex == 3) {
-                                var cStr = "PN"
-                            }
-                            addTrackable(cStr, koodiInput.text);
+                            addTrackable(courier.currentItem.value, koodiInput.text);
                             koodiInput.text = "";
                             courier.currentIndex = 0;
                         }
@@ -417,16 +431,7 @@ Page {
                         icon.source: "image://theme/icon-m-enter-accept"
                         anchors.right: parent.right
                         onClicked: {
-                            if (courier.currentIndex == 1) {
-                                var cStr = "FI"
-                            }
-                            if (courier.currentIndex == 2) {
-                                var cStr = "MH"
-                            }
-                            if (courier.currentIndex == 3) {
-                                var cStr = "PN"
-                            }
-                            addTrackable(cStr, koodiInput.text);
+                            addTrackable(courier.currentItem.value, koodiInput.text);
                             koodiInput.text = "";
                             courier.currentIndex = 0;
                         }
