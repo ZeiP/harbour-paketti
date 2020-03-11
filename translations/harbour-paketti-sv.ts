@@ -67,20 +67,6 @@
         <translation>Försändelsekoden gav inga träffar</translation>
     </message>
     <message>
-        <source>This may be due to one of the following reasons:
-- Check the item code you entered. Make sure it is entered without spaces.
-- The item has not yet been handed in for delivery.
-- The item has not yet been entered in the system.
-- The item was posted long time ago and has been already removed from couriers system
-- There is a problem with the system or the item</source>
-        <translation>Orsaken kan vara någon av följande:
-- Kontrollera försändelsekoden och tillse att den skrivits utan mellanslag.
-- Försändelsen har ännu inte lämnats in för transport.
-- Försändelsen har ännu inte registrerats i systemet.
-- Försändelsen postades för länge sedan och har redan tagits bort från fraktsystemet.
-- Problem med systemet eller försändelsen.</translation>
-    </message>
-    <message>
         <source>Shipment details</source>
         <translation>Fraktuppgifter</translation>
     </message>
@@ -127,6 +113,24 @@
     <message>
         <source>Sender</source>
         <translation>Avsändare</translation>
+    </message>
+    <message>
+        <source>This may be due to one of the following reasons:
+– Check the item code you entered. Make sure it is entered without spaces.
+– The item has not yet been handed in for delivery.
+– The item has not yet been entered in the system.
+– The item was posted long time ago and has been already removed from couriers system
+– There is a problem with the system or the item</source>
+        <translation>Orsaken kan vara någon av följande:
+– Kontrollera försändelsekoden och tillse att den skrivits utan mellanslag.
+– Försändelsen har ännu inte lämnats in för transport.
+– Försändelsen har ännu inte registrerats i systemet.
+– Försändelsen postades för länge sedan och har redan tagits bort från fraktsystemet.
+– Problem med systemet eller försändelsen.</translation>
+    </message>
+    <message>
+        <source>Courier</source>
+        <translation>Fraktbolag</translation>
     </message>
 </context>
 <context>

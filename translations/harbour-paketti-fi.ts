@@ -67,20 +67,6 @@
         <translation>Antamallasi lähetystunnuksella ei löytynyt yhtään lähetystä</translation>
     </message>
     <message>
-        <source>This may be due to one of the following reasons:
-- Check the item code you entered. Make sure it is entered without spaces.
-- The item has not yet been handed in for delivery.
-- The item has not yet been entered in the system.
-- The item was posted long time ago and has been already removed from couriers system
-- There is a problem with the system or the item</source>
-        <translation>Syynä saattaa olla jokin seuraavista:
-- Näppäilyvirhe. Tarkista syöttämäsi lähetystunnus. Syötä tunnus ilman välilyöntejä.
-- Lähetystä ei ole vielä jätetty kuljetettavaksi.
-- Lähetystä ei vielä ole kirjattu järjestelmään.
-- Lähetyksen postittamisesta on aikaa niin paljon että lähetys on jo poistettu kuriirin järjestelmästä.
-- Järjestelmässä tai lähetyksessä on poikkeavuuksia.</translation>
-    </message>
-    <message>
         <source>Shipment details</source>
         <translation>Lähetyksen tiedot</translation>
     </message>
@@ -127,6 +113,24 @@
     <message>
         <source>Sender</source>
         <translation>Lähettäjä</translation>
+    </message>
+    <message>
+        <source>This may be due to one of the following reasons:
+– Check the item code you entered. Make sure it is entered without spaces.
+– The item has not yet been handed in for delivery.
+– The item has not yet been entered in the system.
+– The item was posted long time ago and has been already removed from couriers system
+– There is a problem with the system or the item</source>
+        <translation>Syynä saattaa olla jokin seuraavista:
+– Näppäilyvirhe. Tarkista syöttämäsi lähetystunnus. Syötä tunnus ilman välilyöntejä.
+– Lähetystä ei ole vielä jätetty kuljetettavaksi.
+– Lähetystä ei vielä ole kirjattu järjestelmään.
+– Lähetyksen postittamisesta on aikaa niin paljon että lähetys on jo poistettu kuriirin järjestelmästä.
+– Järjestelmässä tai lähetyksessä on poikkeavuuksia.</translation>
+    </message>
+    <message>
+        <source>Courier</source>
+        <translation>Kuriiri</translation>
     </message>
 </context>
 <context>

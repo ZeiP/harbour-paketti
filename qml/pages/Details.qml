@@ -48,6 +48,12 @@ Page {
         var db = dbVerConnection();
         db.transaction(
             function(tx) {
+                // Fetch the history table data and print out the courier.
+                var history = tx.executeSql('SELECT * FROM history WHERE trackid = ?', [koodi]);
+                history = history.rows.item(0);
+                resultModel.append({"type": "HDR", "label": qsTr("Courier"), "value": qsTr(couriers.getCourierByIdentifier(history.type).name), "datetime": new Date()});
+
+                // Fetch the actual headers and events and print them out.
                 var rs = tx.executeSql('SELECT * FROM shipdets WHERE trackid = ? ORDER BY datetime DESC', [koodi]);
                 //uid,trackid, type, datetime, label, value, status
                 for (var i = 0; i < rs.rows.length; i++) {
