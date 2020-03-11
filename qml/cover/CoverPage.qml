@@ -133,11 +133,12 @@ CoverBackground {
     }
     Image {
         id: coverimage
-        source: "../images/cover_trans.png"
+        source: "../images/cover_trans.svg"
         opacity: 0.1
         anchors.top: parent.top
         anchors.horizontalCenter: parent.horizontalCenter
-        //width: parent.width
+        width: parent.width
+        height: parent.height
     }
     GlassItem {
         id: pimpula
