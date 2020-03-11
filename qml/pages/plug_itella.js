@@ -9,8 +9,8 @@ function updatedet(index,trackid,showdet) {
             var data = JSON.parse(doc.responseText);
 
             if (!data.shipments.length) {
-                  itemUpdReady(index,"OK",showdet);
-                  return;
+                itemUpdReady(index, "OK", showdet);
+                return;
             }
 
             var locale="en"
@@ -20,14 +20,18 @@ function updatedet(index,trackid,showdet) {
             if (Qt.locale().name.substring(0,2)=="lt") locale="lt";
             if (Qt.locale().name.substring(0,2)=="lv") locale="lv";
 
-            var ds=data.shipments[0];
+            var ds = data.shipments[0];
 
             var codAmnt;
             var extraServices;
 
             for (var i in data.shipments[0].extraServices) {
-                    if (extraServices==null) extraServices = data.shipments[0].extraServices[i][locale];
-                    else extraServices=extraServices + "\n" + data.shipments[0].extraServices[i][locale];
+                if (extraServices == null) {
+                    extraServices = data.shipments[0].extraServices[i][locale];
+                }
+                else {
+                    extraServices=extraServices + "\n" + data.shipments[0].extraServices[i][locale];
+                }
             }
 
             for (var rd in data.shipments[0]) {
@@ -43,15 +47,19 @@ function updatedet(index,trackid,showdet) {
                headrivi--;
             }
 
-            if (extraServices!=null) insertShipdet(trackid,"HDR","99999999999" + headrivi,"extraServices", extraServices);
+            if (extraServices!=null) {
+                insertShipdet(trackid,"HDR","99999999999" + headrivi,"extraServices", extraServices);
+            }
 
             for (var i in data.shipments[0].events) {
                 var ev = data.shipments[0].events[i];
                 var locline = ""
-                if (ev.locationCode !== null && ev.locationCode !== "null")
+                if (ev.locationCode !== null && ev.locationCode !== "null") {
                     locline = ev.locationCode + " "
-                if (ev.locationName !== null && ev.locationName !== "null")
+                }
+                if (ev.locationName !== null && ev.locationName !== "null") {
                     locline = locline + ev.locationName
+                }
                 insertShipdet(trackid,"EVT",Qt.formatDateTime(new Date(ev.timestamp), "yyyyMMddHHmmss"),ev.description[locale], locline);
             }
             insertShipdet(trackid,"HDR","99999999999999", "hdr_shipid", data.shipments[0].trackingCode);
@@ -63,4 +71,3 @@ function updatedet(index,trackid,showdet) {
     doc.open("GET", postiURL(trackid));
     doc.send();
 }
-

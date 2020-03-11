@@ -41,7 +41,9 @@ Page {
     Connections {
         target: paketti
         onApplicationActiveChanged: {
-            if (paketti.applicationActive) reloadhistory(false);
+            if (paketti.applicationActive) {
+                reloadhistory(false);
+            }
         }
     }
 
@@ -305,7 +307,7 @@ Page {
                 //onDataChanged: console.log("Changed..")
             }
             Rectangle {
-                id:hrect
+                id: hrect
                 color: "transparent"
                 visible: index==0
                 width: lista.width
@@ -362,7 +364,6 @@ Page {
                         }
                         width: parent.width-enterIcon.width
                         inputMethodHints: Qt.ImhNoPredictiveText // Qt.ImhPreferUppercase | Qt.ImhNoAutoUppercase
-                        //label: qsTr("tracking_code")
                         placeholderText: qsTr("Enter tracking code")
                         validator: RegExpValidator { regExp: /^[0-9a-z]{5,100}$/i }
                         anchors.left: parent.left
