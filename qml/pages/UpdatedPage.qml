@@ -81,24 +81,6 @@ Thanks for the releases to Jyri-Petteri ”ZeiP” Paloposki!")
                 wrapMode: Text.WordWrap
                 font.pixelSize: Theme.fontSizeSmall
             }
-            /*
-            Label {
-                anchors.left: parent.left; anchors.leftMargin: Theme.paddingMedium
-                anchors.right: parent.right; anchors.rightMargin: Theme.paddingMedium
-                //: A message for asking for donations.
-                //% "Please consider a donation to help improving Friends."
-                text: qsTr("ws_please_donate")
-                wrapMode: Text.WordWrap
-                font.pixelSize: Theme.fontSizeSmall
-            }
-            */
-
-            /*
-            Button {
-                anchors.horizontalCenter: parent.horizontalCenter
-                text: qsTr("ws_donatebutton")
-                onClicked: Qt.openUrlExternally(donate_url)
-            }*/
         }
     }
 }

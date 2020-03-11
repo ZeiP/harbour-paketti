@@ -69,8 +69,8 @@ ApplicationWindow {
         db.transaction(
             function(tx) {
                 tx.executeSql('CREATE TABLE IF NOT EXISTS history (type, trackid, statusstr, detstr, timestamp, PRIMARY KEY(trackid))');
-                tx.executeSql('CREATE TABLE IF NOT EXISTS shipdets (uid NOT NULL UNIQUE,trackid, type, datetime, label, value, status)');
-                tx.executeSql('CREATE TABLE IF NOT EXISTS settings (id NOT NULL UNIQUE,value)');
+                tx.executeSql('CREATE TABLE IF NOT EXISTS shipdets (uid NOT NULL UNIQUE, trackid, type, datetime, label, value, status)');
+                tx.executeSql('CREATE TABLE IF NOT EXISTS settings (id NOT NULL UNIQUE, value)');
             }
         );
         return db;
@@ -81,7 +81,7 @@ ApplicationWindow {
         var unixtime = Math.round(Date.now()/1000);
         db.transaction(
             function(tx) {
-                tx.executeSql('INSERT OR REPLACE INTO settings (id,value) VALUES ("lastupd",?);',[unixtime]);
+                tx.executeSql('INSERT OR REPLACE INTO settings (id, value) VALUES ("lastupd", ?);', [unixtime]);
             }
         );
     }
@@ -90,38 +90,46 @@ ApplicationWindow {
         var db = dbConnection();
         var unixtime = Math.round(Date.now()/1000);
         var ret = "";
-        var unixlupd=0;
+        var unixlupd = 0;
         db.transaction(
             function(tx) {
-                var rs = tx.executeSql('select * from settings WHERE id="lastupd"');
-                if (rs.rows.length>0) unixlupd=rs.rows.item(0).value;
+                var rs = tx.executeSql('SELECT * FROM settings WHERE id = "lastupd"');
+                if (rs.rows.length > 0) {
+                    unixlupd=rs.rows.item(0).value;
+                }
             }
         );
-        if (unixlupd>0) {
-            var tdiff=unixtime-unixlupd;
-            if (tdiff < 60 ) ret=qsTr("less than minute ago");
-            else if (tdiff < 3600 ) ret=Math.floor(tdiff/60) + " " + qsTr("minute(s) ago");
-            else ret=Math.floor(tdiff/3600) + " " + qsTr("hour(s) ago");
+        if (unixlupd > 0) {
+            var tdiff = unixtime-unixlupd;
+            if (tdiff < 60 ) {
+                ret = qsTr("less than minute ago");
+            }
+            else if (tdiff < 3600) {
+                ret = Math.floor(tdiff/60) + " " + qsTr("minute(s) ago");
+            }
+            else {
+                ret = Math.floor(tdiff/3600) + " " + qsTr("hour(s) ago");
+            }
         }
         return(ret);
     }
 
-    function insertShipdet(trackid,sdetType,sdetDatetime,sdetArrLabel,sdetArrValue) {
+    function insertShipdet(trackid, sdetType, sdetDatetime, sdetArrLabel, sdetArrValue) {
         var db = dbConnection();
-        var md5=Qt.md5(trackid+sdetArrValue+sdetDatetime);
+        var md5 = Qt.md5(trackid+sdetArrValue+sdetDatetime);
         db.transaction(
             function(tx) {
-                tx.executeSql('INSERT OR IGNORE INTO shipdets (uid,trackid, type, datetime, label, value, status) VALUES (?,?,?,?,?,?,?);',[md5,trackid,sdetType,sdetDatetime,sdetArrLabel,sdetArrValue,0]);
+                var vals = [md5, trackid, sdetType, sdetDatetime, sdetArrLabel, sdetArrValue, 0];
+                tx.executeSql('INSERT OR IGNORE INTO shipdets (uid, trackid, type, datetime, label, value, status) VALUES (?, ?, ?, ?, ?, ?, ?);', vals);
             }
         );
-        //console.log(sdetType + ":" + sdetDatetime + ": " + sdetArrLabel + " : "+ sdetArrValue);
     }
 
     function setEventsShown(trackid) {
         var db = dbConnection();
         db.transaction(
             function(tx) {
-                var rs = tx.executeSql('UPDATE shipdets SET status=1 WHERE trackid=?;', [trackid]);
+                var rs = tx.executeSql('UPDATE shipdets SET status = 1 WHERE trackid = ?;', [trackid]);
             }
         );
     }
@@ -130,7 +138,7 @@ ApplicationWindow {
         var db = dbConnection();
         db.transaction(
             function(tx) {
-                var rs = tx.executeSql('UPDATE history SET detstr=? WHERE trackid=?;', [descr,trackid]);
+                var rs = tx.executeSql('UPDATE history SET detstr = ? WHERE trackid = ?;', [descr, trackid]);
             }
         );
     }
@@ -140,8 +148,10 @@ ApplicationWindow {
         var status = "NULL";
         db.transaction(
             function(tx) {
-                var rs = tx.executeSql('SELECT detstr FROM history WHERE trackid=?;', [trackid]);
-                if (rs.rows.item(0).detstr!="") status=rs.rows.item(0).detstr;
+                var rs = tx.executeSql('SELECT detstr FROM history WHERE trackid = ?;', [trackid]);
+                if (rs.rows.item(0).detstr != "") {
+                    status = rs.rows.item(0).detstr;
+                }
             }
         );
         return(status);
@@ -150,11 +160,11 @@ ApplicationWindow {
     function getLatestEvt(trackid) {
         var db = dbConnection();
         var status = 1;
-        var retArr = { "label": "Ei tietoja..", "value": "Null" };
+        var retArr = {"label": "Ei tietoja..", "value": "Null"};
         db.transaction(
             function(tx) {
-                var rs = tx.executeSql('select * from shipdets WHERE trackid=? AND type="EVT" order by datetime DESC LIMIT 1;', [trackid]);
-                retArr=rs.rows.item(0);
+                var rs = tx.executeSql('SELECT * FROM shipdets WHERE trackid = ? AND type = "EVT" ORDER BY datetime DESC LIMIT 1;', [trackid]);
+                retArr = rs.rows.item(0);
             }
         );
 
@@ -164,11 +174,11 @@ ApplicationWindow {
     function getNewestEvt() {
         var db = dbConnection();
         var status = 1;
-        var retArr = { "label": "Ei tietoja..", "value": "Null" };
+        var retArr = {"label": "Ei tietoja..", "value": "Null"};
         db.transaction(
             function(tx) {
-                var rs = tx.executeSql('select * from shipdets WHERE type="EVT" order by datetime DESC LIMIT 1;');
-                retArr=rs.rows.item(0);
+                var rs = tx.executeSql('SELECT * FROM shipdets WHERE type = "EVT" ORDER BY datetime DESC LIMIT 1;');
+                retArr = rs.rows.item(0);
             }
         );
 
@@ -180,9 +190,11 @@ ApplicationWindow {
         var status = 1;
         db.transaction(
             function(tx) {
-                var rs = tx.executeSql('SELECT status FROM shipdets WHERE type="EVT" AND trackid=?;', [trackid]);
+                var rs = tx.executeSql('SELECT status FROM shipdets WHERE type = "EVT" AND trackid = ?;', [trackid]);
                 for(var i = 0; i < rs.rows.length; i++) {
-                    if (rs.rows.item(i).status=="0") status=0;
+                    if (rs.rows.item(i).status == "0") {
+                        status = 0;
+                    }
                 }
             }
         );
@@ -202,18 +214,24 @@ ApplicationWindow {
     function chkNewVersion(str) {
         var db = dbVerConnection();
         var tmphit = false;
-        var tothit=0;
+        var tothit = 0;
         db.transaction(
             function(tx) {
                 var rs = tx.executeSql('SELECT * FROM version ORDER BY vstr');
-                tothit=rs.rows.length;
-                for(var i = 0; i < rs.rows.length; i++) {
-                    if (rs.rows.item(i).vstr==str) tmphit=true;
+                tothit = rs.rows.length;
+                for (var i = 0; i < rs.rows.length; i++) {
+                    if (rs.rows.item(i).vstr == str) {
+                        tmphit = true;
+                    }
                 }
             }
         );
-        if (tmphit==false && tothit > 0) return true;
-        else return false;
+        if (tmphit == false && tothit > 0) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     function storeVersion(str) {
@@ -226,16 +244,14 @@ ApplicationWindow {
     }
 
     function convertDate(inputdate) {
-        //console.log("#" + inputdate + "#");
-        inputdate=inputdate.replace(/[a-z]/gmi," ");
-        inputdate=inputdate.replace(/,/gmi,"");
-        inputdate=inputdate.replace(/[\ ]{2,100}/gm," ");
-        inputdate=inputdate.replace(/\ /gm,".");
-        inputdate=inputdate.replace(/:/gm,".");
-        console.log(inputdate);
-        var biitit=inputdate.split(".");
+        inputdate = inputdate.replace(/[a-z]/gmi," ");
+        inputdate = inputdate.replace(/,/gmi,"");
+        inputdate = inputdate.replace(/[\ ]{2,100}/gm," ");
+        inputdate = inputdate.replace(/\ /gm,".");
+        inputdate = inputdate.replace(/:/gm,".");
+        var biitit = inputdate.split(".");
         var tmpdate = new Date();
-        if (biitit.length>4) {
+        if (biitit.length > 4) {
             tmpdate.setFullYear(biitit[2]);
             tmpdate.setMonth(biitit[1]-1);
             tmpdate.setDate(biitit[0]);
@@ -247,16 +263,15 @@ ApplicationWindow {
         }
         return(tmpdate);
     }
+
     function convertIsoDate(inputdate) {
         // 2013-10-04T12:04:00 , Date.parse is not working as that stores time as UTC
-        inputdate=inputdate.replace(/T/gm,".");
-        inputdate=inputdate.replace(/-/gm,".");
-        inputdate=inputdate.replace(/:/gm,".");
-        var biitit=inputdate.split(".");
-
+        inputdate = inputdate.replace(/T/gm,".");
+        inputdate = inputdate.replace(/-/gm,".");
+        inputdate = inputdate.replace(/:/gm,".");
+        var biitit = inputdate.split(".");
         var tmpdate = new Date(Date.parse(inputdate));
-
-        if (biitit.length>4) {
+        if (biitit.length > 4) {
             tmpdate.setFullYear(biitit[0]);
             tmpdate.setMonth(biitit[1]-1);
             tmpdate.setDate(biitit[2]);
@@ -268,14 +283,15 @@ ApplicationWindow {
         }
         return(tmpdate);
     }
+
     function convertDateBack(inputdate) {
         var tmpdate = new Date();
-        tmpdate.setFullYear(inputdate.substring(0,4));
-        tmpdate.setMonth(inputdate.substring(4,6)-1);
-        tmpdate.setDate(inputdate.substring(6,8));
-        tmpdate.setHours(inputdate.substring(8,10));
-        tmpdate.setMinutes(inputdate.substring(10,12));
-        tmpdate.setSeconds(inputdate.substring(12,14));
+        tmpdate.setFullYear(inputdate.substring(0, 4));
+        tmpdate.setMonth(inputdate.substring(4, 6)-1);
+        tmpdate.setDate(inputdate.substring(6, 8));
+        tmpdate.setHours(inputdate.substring(8, 10));
+        tmpdate.setMinutes(inputdate.substring(10, 12));
+        tmpdate.setSeconds(inputdate.substring(12, 14));
         var outputdate = Qt.formatDateTime(tmpdate, "dd.MM.yyyy  HH:mm");
         return(outputdate);
     }
@@ -283,14 +299,11 @@ ApplicationWindow {
     initialPage: Component { MainPage { } }
 
     Component.onCompleted: {
-        if(chkNewVersion(version)) {
-            console.log("NEW VERSION INSTALLED");
+        if (chkNewVersion(version)) {
             pageStack.push("pages/UpdatedPage.qml");
-        } //else pageStack.push("pages/MainPage.qml");
+        }
         storeVersion(version);
     }
 
     cover: Qt.resolvedUrl("cover/CoverPage.qml")
 }
-
-

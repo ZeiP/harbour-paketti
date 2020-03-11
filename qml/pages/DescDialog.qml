@@ -43,8 +43,8 @@ Dialog {
     }
     onDone: {
         if (result == DialogResult.Accepted) {
-            description=descField.text
-            addDesc(trackid,descField.text);
+            description = descField.text
+            addDesc(trackid, descField.text);
         }
     }
 }

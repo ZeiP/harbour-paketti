@@ -48,17 +48,19 @@ Page {
         var db = dbVerConnection();
         db.transaction(
             function(tx) {
-                var rs = tx.executeSql('select * from shipdets where trackid=? order by datetime desc',[koodi]);
+                var rs = tx.executeSql('SELECT * FROM shipdets WHERE trackid = ? ORDER BY datetime DESC', [koodi]);
                 //uid,trackid, type, datetime, label, value, status
-                for(var i = 0; i < rs.rows.length; i++) {
-                    resultModel.append({"type": rs.rows.item(i).type, "label": getHeader(rs.rows.item(i).label), "value" : rs.rows.item(i).value, "datetime" : convertDateBack(rs.rows.item(i).datetime) });
+                for (var i = 0; i < rs.rows.length; i++) {
+                    resultModel.append({"type": rs.rows.item(i).type, "label": getHeader(rs.rows.item(i).label), "value": rs.rows.item(i).value, "datetime": convertDateBack(rs.rows.item(i).datetime)});
                 }
-                if (i==0) resultModel.append({"type": "ERR", "label": qsTr("No items were found with the item code you provided"), "value" : qsTr("This may be due to one of the following reasons:
-- Check the item code you entered. Make sure it is entered without spaces.
-- The item has not yet been handed in for delivery.
-- The item has not yet been entered in the system.
-- The item was posted long time ago and has been already removed from couriers system
-- There is a problem with the system or the item") });
+                if (i == 0) {
+                    resultModel.append({"type": "ERR", "label": qsTr("No items were found with the item code you provided"), "value" : qsTr("This may be due to one of the following reasons:
+– Check the item code you entered. Make sure it is entered without spaces.
+– The item has not yet been handed in for delivery.
+– The item has not yet been entered in the system.
+– The item was posted long time ago and has been already removed from couriers system
+– There is a problem with the system or the item") });
+                }
             }
         );
     }

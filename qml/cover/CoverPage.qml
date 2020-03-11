@@ -34,62 +34,68 @@ import "../pages/plug_itella.js" as PlugItella
 import "../pages/plug_mh.js" as PlugMH
 import "../pages/plug_pn.js" as PlugPN
 
-
 CoverBackground {
     id: tausta
     property var bcount: 0
     property int _lastTick: 0;
 
-
     function itemUpdStarted(index) {
-        pimpula.visible=true;
+        pimpula.visible = true;
         bcount = bcount + 1;
     }
 
-    function itemUpdReady(index,okStr,showdet) {
+    function itemUpdReady(index, okStr, showdet) {
         addLatestEvent();
-        bcount=bcount-1;
-        if (bcount==0) pimpula.visible=false
+        bcount = bcount-1;
+        if (bcount == 0) {
+            pimpula.visible = false
+        }
     }
 
     onStatusChanged: {
         if (status == Cover.Active) {
             addLatestEvent();
-            lupdText.text=showSinceLastUpd();
+            lupdText.text = showSinceLastUpd();
         }
-        //var tmpdate = new Date();
     }
 
     //Component.onCompleted: {
     //    addLatestEvent();
     //}
     Component.onCompleted: {
-        lupdText.text=showSinceLastUpd();
+        lupdText.text = showSinceLastUpd();
     }
 
     function addLatestEvent() {
-        var newestEvt=getNewestEvt();
+        var newestEvt = getNewestEvt();
         if (newestEvt) {
-            var detstr=getDesc(newestEvt.trackid);
-            if (detstr!="NULL" && detstr) coverlabel.text=detstr;
-            else coverlabel.text=newestEvt.trackid;
-            coverElabel.text=newestEvt.label;
-            if (newestEvt.value !== null)
-                coverEvalue.text=newestEvt.value;
-            dtime.text=convertDateBack(newestEvt.datetime);
-
-            if (newestEvt.status==0) {
-                notifyimage.visible=true;
-                coverElabel.font.bold=true;
-            } else {
-                notifyimage.visible=false;
-                coverElabel.font.bold=false;
+            var detstr = getDesc(newestEvt.trackid);
+            if (detstr != "NULL" && detstr) {
+                coverlabel.text = detstr;
             }
-        } else {
-            coverlabel.text="";
-            coverElabel.text="";
-            coverEvalue.text="";
-            dtime.text="";
+            else {
+                coverlabel.text = newestEvt.trackid;
+            }
+            coverElabel.text = newestEvt.label;
+            if (newestEvt.value !== null) {
+                coverEvalue.text=newestEvt.value;
+            }
+            dtime.text = convertDateBack(newestEvt.datetime);
+
+            if (newestEvt.status == 0) {
+                notifyimage.visible = true;
+                coverElabel.font.bold = true;
+            }
+            else {
+                notifyimage.visible = false;
+                coverElabel.font.bold = false;
+            }
+        }
+        else {
+            coverlabel.text = "";
+            coverElabel.text = "";
+            coverEvalue.text = "";
+            dtime.text = "";
         }
     }
 
@@ -98,18 +104,24 @@ CoverBackground {
         db.transaction(
             function(tx) {
                 var rs = tx.executeSql('SELECT * FROM history ORDER BY timestamp DESC;');
-                for(var i = 0; i < rs.rows.length; i++) {
-                    var trackid=rs.rows.item(i).trackid;
-                    if (rs.rows.item(i).type=="FI") PlugItella.updatedet(0, trackid ,0);
-                    if (rs.rows.item(i).type=="MH") PlugMH.updatedet(0, trackid ,0);
-                    if (rs.rows.item(i).type=="PN") PlugPN.updatedet(0, trackid,0);
+                for (var i = 0; i < rs.rows.length; i++) {
+                    var trackid = rs.rows.item(i).trackid;
+                    if (rs.rows.item(i).type == "FI") {
+                        PlugItella.updatedet(0, trackid, 0);
+                    }
+                    else if (rs.rows.item(i).type == "MH") {
+                        PlugMH.updatedet(0, trackid, 0);
+                    }
+                    else if (rs.rows.item(i).type == "PN") {
+                        PlugPN.updatedet(0, trackid, 0);
+                    }
                 }
             }
         );
 
         addLatestEvent();
         setLastUpd();
-        lupdText.text=showSinceLastUpd();
+        lupdText.text = showSinceLastUpd();
     }
 
     Image {
@@ -205,7 +217,7 @@ CoverBackground {
         repeat: true
         interval: 5000
         onTriggered: {
-            lupdText.text=showSinceLastUpd();
+            lupdText.text = showSinceLastUpd();
         }
     }
     Timer {
@@ -215,18 +227,18 @@ CoverBackground {
         repeat: true
         onTriggered: {
             var now = Math.round(Date.now()/1000);
-            if (_lastTick!=0 ) var seconds = now - _lastTick;
+            if (_lastTick != 0 ) {
+                var seconds = now - _lastTick;
+            }
             else {
                 _lastTick = now;
-                seconds=0;
+                seconds = 0;
             }
-            if (seconds>900) {
-                //console.log("Auto update triggered (at " + seconds + " seconds)");
+            if (seconds > 900) {
                 refreshAll();
                 _lastTick = now;
-                //console.log("Update");
             }
-         }
+        }
     }
 
     CoverActionList {

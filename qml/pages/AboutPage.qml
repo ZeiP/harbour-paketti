@@ -102,21 +102,7 @@ Page {
                 color: Theme.secondaryColor
             }
         }
-/*
-        Column {
-            id: nappulaCol
-            anchors.top: mainCol.bottom; anchors.topMargin: Theme.paddingLarge
-            anchors.left: parent.left; anchors.leftMargin: Theme.paddingMedium
-            anchors.right: parent.right; anchors.rightMargin: Theme.paddingMedium
 
-                Button {
-                    //anchors.left: parent.left; anchors.right: parent.right
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    text: qsTr("about_donate")
-                    onClicked: Qt.openUrlExternally(donate_url)
-                }
-        }
-*/
         VerticalScrollDecorator {}
     }
 }
