@@ -13,12 +13,7 @@ function updatedet(index,trackid,showdet) {
                 return;
             }
 
-            var locale="en"
-            if (Qt.locale().name.substring(0,2)=="fi") locale="fi";
-            if (Qt.locale().name.substring(0,2)=="en") locale="en";
-            if (Qt.locale().name.substring(0,2)=="sv") locale="sv";
-            if (Qt.locale().name.substring(0,2)=="lt") locale="lt";
-            if (Qt.locale().name.substring(0,2)=="lv") locale="lv";
+            var locale = getLocale(["fi", "en", "sv", "lt", "lv"]);
 
             var ds = data.shipments[0];
 

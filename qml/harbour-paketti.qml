@@ -47,20 +47,25 @@ ApplicationWindow {
         return("https://www.posti.fi/henkiloasiakkaat/seuranta/api/shipments/" + koodi);
     }
 
+    function getLocale(allowedLocales) {
+        var i = 0;
+        var qtLocale = Qt.locale().name.substring(0, 2);
+        // Array.includes() would be cleaner, but didn't work for me.
+        while (i < allowedLocales.length){
+            if (allowedLocales[i++] == qtLocale) {
+                return qtLocale;
+            }
+        }
+        return "en";
+    }
+
     function mhURL(koodi) {
-        var locale="en";
-        if (Qt.locale().name.substring(0,2)=="fi") locale="fi";
-        if (Qt.locale().name.substring(0,2)=="sv") locale="en";
-        if (Qt.locale().name.substring(0,2)=="en") locale="sv";
+        var locale = getLocale(["fi", "en", "sv"]);
         return("https://wwwservice.matkahuolto.fi/search/trackingInfo?language=" + locale + "&parcelNumber=" + koodi);
     }
 
     function pnURL(koodi) {
-        var locale="en";
-        if (Qt.locale().name.substring(0,2)=="fi") locale="fi";
-        if (Qt.locale().name.substring(0,2)=="en") locale="en";
-        if (Qt.locale().name.substring(0,2)=="sv") locale="sv";
-
+        var locale = getLocale(["fi", "en", "sv"]);
         return("https://www.postnord.fi/api/pnmw/shipment/" + koodi + "/" + locale);
     }
 
