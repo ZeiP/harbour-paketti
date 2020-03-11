@@ -160,6 +160,10 @@
         <translation>[Välj]</translation>
     </message>
     <message>
+        <source>The courier is autoselected when entering a tracking code if possible.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Enter tracking code</source>
         <translation>Ange försändelsekod</translation>
     </message>
