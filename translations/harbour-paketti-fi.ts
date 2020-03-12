@@ -215,7 +215,7 @@
         <translation>Versio %1</translation>
     </message>
     <message>
-        <source>Changelog version 0.6.2:
+        <source>Changelog version 0.6.3:
 – Added Hermes (Germany) package tracking.
 – Minor UI fixes and enhancements.
 – Updated the Swedish translation.
@@ -225,7 +225,7 @@ Changelog versions 0.6 and 0.6.1:
 – The source code for the application is now available in https://github.com/ZeiP/harbour-paketti.
 
 Thanks for the releases to Jyri-Petteri ”ZeiP” Paloposki!</source>
-        <translation>Muutoksia versiossa 0.6.2:
+        <translation>Muutoksia versiossa 0.6.3:
 – Lisätty Hermes.de:n pakettiseuranta.
 – Pieniä käyttöliittymäkorjauksia ja -parannuksia.
 – Päivitetty ruotsinkielinen käännös.

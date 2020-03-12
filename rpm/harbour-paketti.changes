@@ -12,7 +12,12 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-* Fri Feb 28 2020 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi> 0.6
+* Thu Mar 12 2020 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi> 0.6.3
+– Added Hermes (Germany) package tracking.
+– Minor UI fixes and enhancements.
+– Updated the Swedish translation.
+
+* Fri Feb 28 2020 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi> 0.6.1
 - Postnord package tracking fixed
 
 * Thu Feb 27 2020 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi> 0.6

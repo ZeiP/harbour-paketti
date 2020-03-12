@@ -253,7 +253,7 @@
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="72"/>
-        <source>Changelog version 0.6.2:
+        <source>Changelog version 0.6.3:
 – Added Hermes (Germany) package tracking.
 – Minor UI fixes and enhancements.
 – Updated the Swedish translation.

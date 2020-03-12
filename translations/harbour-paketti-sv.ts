@@ -215,7 +215,7 @@
         <translation>Version %1</translation>
     </message>
     <message>
-        <source>Changelog version 0.6.2:
+        <source>Changelog version 0.6.3:
 – Added Hermes (Germany) package tracking.
 – Minor UI fixes and enhancements.
 – Updated the Swedish translation.
