@@ -121,7 +121,7 @@
 – The item has not yet been entered in the system.
 – The item was posted long time ago and has been already removed from couriers system
 – There is a problem with the system or the item</source>
-        <translation>Orsaken kan vara någon av följande:
+        <translation>Orsaken kan vara något av följande:
 – Kontrollera försändelsekoden och tillse att den skrivits utan mellanslag.
 – Försändelsen har ännu inte lämnats in för transport.
 – Försändelsen har ännu inte registrerats i systemet.
@@ -161,7 +161,7 @@
     </message>
     <message>
         <source>The courier is autoselected when entering a tracking code if possible.</source>
-        <translation type="unfinished"></translation>
+        <translation>Fraktbolag väljs automatiskt när en försändelsekod anges, om möjligt.</translation>
     </message>
     <message>
         <source>Enter tracking code</source>
@@ -250,15 +250,15 @@ Tack för uppdateringarna till Jyri-Petteri ”ZeiP” Paloposki!</translation>
     </message>
     <message>
         <source>Matkahuolto</source>
-        <translation type="unfinished">Matkahuolto</translation>
+        <translation>Matkahuolto</translation>
     </message>
     <message>
         <source>PostNord</source>
-        <translation type="unfinished">PostNord</translation>
+        <translation>PostNord</translation>
     </message>
     <message>
         <source>Posti Oy</source>
-        <translation type="unfinished"></translation>
+        <translation>Posti Oy</translation>
     </message>
     <message>
         <source>Hermes (Germany)</source>
