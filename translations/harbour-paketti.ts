@@ -14,13 +14,13 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="71"/>
-        <source>Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto and MyPack (Postnord) packages.</source>
+        <location filename="../qml/pages/AboutPage.qml" line="64"/>
+        <source>Version %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="64"/>
-        <source>Version %1</source>
+        <location filename="../qml/pages/AboutPage.qml" line="71"/>
+        <source>Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto, PostNord and Hermes.de packages.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -253,12 +253,13 @@
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="72"/>
-        <source>Changelog version 0.6.1:
-- PostNord package tracking fixed.
+        <source>Changelog version 0.6.2:
+– Added Hermes (Germany) package tracking.
+– Minor UI fixes and enhancements.
+– Updated the Swedish translation.
 
-Changelog version 0.6:
-- Posti and Matkahuolto package tracking fixed and some other minor changes.
-– The PostNord tracking couldn&apos;t be tested due to lack of tracking code, if you can help add an issue to GitHub.
+Changelog versions 0.6 and 0.6.1:
+– Posti, Matkahuolto and PostNord package tracking fixed and some other minor changes.
 – The source code for the application is now available in https://github.com/ZeiP/harbour-paketti.
 
 Thanks for the releases to Jyri-Petteri ”ZeiP” Paloposki!</source>

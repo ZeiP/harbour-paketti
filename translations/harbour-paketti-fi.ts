@@ -12,10 +12,6 @@
         <translation>Paketti</translation>
     </message>
     <message>
-        <source>Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto and MyPack (Postnord) packages.</source>
-        <translation>Paketti on SailfishOS-käyttöjärjestelmälle tehty sovellus postilähetysten seurantaan. Sovelluksella voi seurata Itellan, Matkahuollon sekä MyPack (Postnord) lähetyksiä.</translation>
-    </message>
-    <message>
         <source>Application author does not take any responsibility in case application will provide non-valid information. The application is not official application for couriers (Posti, Courier, MyPack / Postnord).</source>
         <translation>Sovelluksen tekijä ei ota vastuuta mahdollisesta ohjelman tuottamasta virheellisestä informaatiosta. Sovellus ei ole toimittajien (Itella, Matkahuolto, MyPack/Postnord) virallinen sovellus.</translation>
     </message>
@@ -36,6 +32,10 @@
     <message>
         <source>Source code in GitHub</source>
         <translation>Lähdekoodi GitHubissa</translation>
+    </message>
+    <message>
+        <source>Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto, PostNord and Hermes.de packages.</source>
+        <translation>Paketti on SailfishOS-käyttöjärjestelmälle tehty sovellus postilähetysten seurantaan. Sovelluksella voi seurata Postin, Matkahuollon, PostNordin (MyPack) sekä Hermes.de:n lähetyksiä.</translation>
     </message>
 </context>
 <context>
@@ -215,21 +215,23 @@
         <translation>Versio %1</translation>
     </message>
     <message>
-        <source>Changelog version 0.6.1:
-- PostNord package tracking fixed.
+        <source>Changelog version 0.6.2:
+– Added Hermes (Germany) package tracking.
+– Minor UI fixes and enhancements.
+– Updated the Swedish translation.
 
-Changelog version 0.6:
-- Posti and Matkahuolto package tracking fixed and some other minor changes.
-– The PostNord tracking couldn&apos;t be tested due to lack of tracking code, if you can help add an issue to GitHub.
+Changelog versions 0.6 and 0.6.1:
+– Posti, Matkahuolto and PostNord package tracking fixed and some other minor changes.
 – The source code for the application is now available in https://github.com/ZeiP/harbour-paketti.
 
 Thanks for the releases to Jyri-Petteri ”ZeiP” Paloposki!</source>
-        <translation>Muutoksia versiossa 0.6.1:
-- PostNordin pakettiseuranta korjattu.
+        <translation>Muutoksia versiossa 0.6.2:
+– Lisätty Hermes.de:n pakettiseuranta.
+– Pieniä käyttöliittymäkorjauksia ja -parannuksia.
+– Päivitetty ruotsinkielinen käännös.
 
-Muutoksia versiossa 0.6:
-- Postin ja Matkahuollon pakettiseurannat korjattu ja tehty muita pieniä muutoksia.
-– PostNordin pakettiseurantaa ei ole testattu seurantakoodin puutteen takia. Jos voit auttaa, ota yhteyttä kehittäjiin esimerkiksi GitHubin kautta.
+Muutoksia versioissa 0.6 ja 0.6.1:
+– Postin, Matkahuollon ja PostNordin pakettiseurannat korjattu ja tehty muita pieniä muutoksia.
 – Sovelluksen lähdekoodi on nyt saatavilla osoitteessa https://github.com/ZeiP/harbour-paketti.
 
 Kiitokset julkaisuista Jyri-Petteri ”ZeiP” Paloposkelle!</translation>

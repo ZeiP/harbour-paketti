@@ -9,11 +9,11 @@ Name:       harbour-paketti
 # << macros
 
 Summary:    Paketti
-Version:    0.6.1
+Version:    0.6.2
 Release:    1
 Group:      Qt/Qt
 License:    BSD
-URL:        http://example.org/
+URL:        https://github.com/ZeiP/harbour-paketti/
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  harbour-paketti.yaml
 Requires:   sailfishsilica-qt5 >= 0.10.9

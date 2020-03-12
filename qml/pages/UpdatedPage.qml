@@ -69,12 +69,13 @@ Dialog {
             Label {
                 anchors.left: parent.left; anchors.leftMargin: Theme.paddingMedium
                 anchors.right: parent.right; anchors.rightMargin: Theme.paddingMedium
-                text: qsTr("Changelog version 0.6.1:
-- PostNord package tracking fixed.
+                text: qsTr("Changelog version 0.6.3:
+– Added Hermes (Germany) package tracking.
+– Minor UI fixes and enhancements.
+– Updated the Swedish translation.
 
-Changelog version 0.6:
-- Posti and Matkahuolto package tracking fixed and some other minor changes.
-– The PostNord tracking couldn't be tested due to lack of tracking code, if you can help add an issue to GitHub.
+Changelog versions 0.6 and 0.6.1:
+– Posti, Matkahuolto and PostNord package tracking fixed and some other minor changes.
 – The source code for the application is now available in https://github.com/ZeiP/harbour-paketti.
 
 Thanks for the releases to Jyri-Petteri ”ZeiP” Paloposki!")
