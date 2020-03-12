@@ -258,7 +258,7 @@ Tack för uppdateringarna till Jyri-Petteri ”ZeiP” Paloposki!</translation>
     </message>
     <message>
         <source>Posti Oy</source>
-        <translation></translation>
+        <translation>Posti Oy</translation>
     </message>
     <message>
         <source>Hermes (Germany)</source>
