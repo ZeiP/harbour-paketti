@@ -19,13 +19,15 @@ function updatedet(index,trackid,showdet) {
 
             var codAmnt;
             var extraServices;
-
             for (var i in data.shipments[0].extraServices) {
+                if (data.shipments[0].extraServices[i]["name"] == null) {
+                    continue;
+                }
                 if (extraServices == null) {
-                    extraServices = data.shipments[0].extraServices[i][locale];
+                    extraServices = data.shipments[0].extraServices[i]["name"][locale];
                 }
                 else {
-                    extraServices=extraServices + "\n" + data.shipments[0].extraServices[i][locale];
+                    extraServices=extraServices + "\n" + data.shipments[0].extraServices[i]["name"][locale];
                 }
             }
 

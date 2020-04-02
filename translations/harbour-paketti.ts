@@ -253,12 +253,13 @@
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="72"/>
-        <source>Changelog version 0.6.3:
+        <source>Changelog version 0.6.4:
+– Fixed reading the extra services from the Posti API.
+
+Changelog versions 0.6, 0.6.1 and 0.6.3:
 – Added Hermes (Germany) package tracking.
 – Minor UI fixes and enhancements.
 – Updated the Swedish translation.
-
-Changelog versions 0.6 and 0.6.1:
 – Posti, Matkahuolto and PostNord package tracking fixed and some other minor changes.
 – The source code for the application is now available in https://github.com/ZeiP/harbour-paketti.
 

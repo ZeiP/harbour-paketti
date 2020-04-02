@@ -215,22 +215,24 @@
         <translation>Version %1</translation>
     </message>
     <message>
-        <source>Changelog version 0.6.3:
+        <source>Changelog version 0.6.4:
+– Fixed reading the extra services from the Posti API.
+
+Changelog versions 0.6, 0.6.1 and 0.6.3:
 – Added Hermes (Germany) package tracking.
 – Minor UI fixes and enhancements.
 – Updated the Swedish translation.
-
-Changelog versions 0.6 and 0.6.1:
 – Posti, Matkahuolto and PostNord package tracking fixed and some other minor changes.
 – The source code for the application is now available in https://github.com/ZeiP/harbour-paketti.
 
 Thanks for the releases to Jyri-Petteri ”ZeiP” Paloposki!</source>
         <translation type="unfinished">Ändringslogg version 0.6.2:
+– Fixed reading the extra services from the Posti API.
+
+Ändringslogg versions 0.6, 0.6.1 och 0.6.3:
 – Added Hermes (Germany) package tracking.
 – Minor UI fixes and enhancements.
 – Updated the Swedish translation.
-
-Ändringslogg versions 0.6 och 0.6.1:
 – Posti, Matkahuolto och PostNord paketspårning fixad och några andra mindre ändringar.
 – Källkoden finns nu tillgänglig på https://github.com/ZeiP/harbour-paketti.
 
