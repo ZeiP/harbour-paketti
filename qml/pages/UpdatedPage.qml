@@ -69,10 +69,11 @@ Dialog {
             Label {
                 anchors.left: parent.left; anchors.leftMargin: Theme.paddingMedium
                 anchors.right: parent.right; anchors.rightMargin: Theme.paddingMedium
-                text: qsTr("Changelog version 0.6.4:
-– Fixed reading the extra services from the Posti API.
+                text: qsTr("Changelog version 0.6.5:
+– Fixed reading data from changed Posti API.
 
-Changelog versions 0.6, 0.6.1 and 0.6.3:
+Changelog versions 0.6, 0.6.1, 0.6.3 and 0.6.4:
+– Fixed reading the extra services from the Posti API.
 – Added Hermes (Germany) package tracking.
 – Minor UI fixes and enhancements.
 – Updated the Swedish translation.

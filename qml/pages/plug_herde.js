@@ -7,6 +7,13 @@ function updatedet(index,trackid,showdet) {
 
     doc.onreadystatechange = function() {
         if (doc.readyState == XMLHttpRequest.DONE) {
+            if (doc.status == 204) {
+                // 204 No Content means not found /expired
+                console.log("Not found / expired");
+                itemUpdReady(index, "ERR", showdet);
+                return false;
+            }
+
             var data = JSON.parse(doc.responseText);
             data = data[0];
 

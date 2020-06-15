@@ -9,7 +9,7 @@ Name:       harbour-paketti
 # << macros
 
 Summary:    Paketti
-Version:    0.6.4
+Version:    0.6.5
 Release:    1
 Group:      Qt/Qt
 License:    BSD

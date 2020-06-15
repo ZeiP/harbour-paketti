@@ -215,10 +215,11 @@
         <translation>Versio %1</translation>
     </message>
     <message>
-        <source>Changelog version 0.6.4:
-– Fixed reading the extra services from the Posti API.
+        <source>Changelog version 0.6.5:
+– Fixed reading data from changed Posti API.
 
-Changelog versions 0.6, 0.6.1 and 0.6.3:
+Changelog versions 0.6, 0.6.1, 0.6.3 and 0.6.4:
+– Fixed reading the extra services from the Posti API.
 – Added Hermes (Germany) package tracking.
 – Minor UI fixes and enhancements.
 – Updated the Swedish translation.
@@ -226,10 +227,11 @@ Changelog versions 0.6, 0.6.1 and 0.6.3:
 – The source code for the application is now available in https://github.com/ZeiP/harbour-paketti.
 
 Thanks for the releases to Jyri-Petteri ”ZeiP” Paloposki!</source>
-        <translation>Muutoksia versiossa 0.6.4:
-– Korjattu lisäpalveluiden lukeminen Postin rajapinnasta.
+        <translation>Muutoksia versiossa 0.6.5:
+– Korjattu tietojen lukeminen muuttuneesta Postin rajapinnasta.
 
-Muutoksia versioissa 0.6, 0.6.1 ja 0.6.3:
+Muutoksia versioissa 0.6, 0.6.1, 0.6.3 ja 0.6.4:
+– Korjattu lisäpalveluiden lukeminen Postin rajapinnasta.
 – Lisätty Hermes.de:n pakettiseuranta.
 – Pieniä käyttöliittymäkorjauksia ja -parannuksia.
 – Päivitetty ruotsinkielinen käännös.
@@ -255,15 +257,15 @@ Kiitokset julkaisuista Jyri-Petteri ”ZeiP” Paloposkelle!</translation>
     </message>
     <message>
         <source>Matkahuolto</source>
-        <translation type="unfinished">Matkahuolto</translation>
+        <translation>Matkahuolto</translation>
     </message>
     <message>
         <source>PostNord</source>
-        <translation type="unfinished">PostNord (MyPack)</translation>
+        <translation>PostNord (MyPack)</translation>
     </message>
     <message>
         <source>Posti Oy</source>
-        <translation type="unfinished"></translation>
+        <translation>Posti Oy</translation>
     </message>
     <message>
         <source>Hermes (Germany)</source>

@@ -253,10 +253,11 @@
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="72"/>
-        <source>Changelog version 0.6.4:
-– Fixed reading the extra services from the Posti API.
+        <source>Changelog version 0.6.5:
+– Fixed reading data from changed Posti API.
 
-Changelog versions 0.6, 0.6.1 and 0.6.3:
+Changelog versions 0.6, 0.6.1, 0.6.3 and 0.6.4:
+– Fixed reading the extra services from the Posti API.
 – Added Hermes (Germany) package tracking.
 – Minor UI fixes and enhancements.
 – Updated the Swedish translation.
