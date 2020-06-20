@@ -32,7 +32,7 @@ function updatedet(index,trackid,showdet) {
             }
 
             for (var rd in data.shipments[0]) {
-                if (rd=="product") insertShipdet(trackid,"HDR","99999999999998","hdr_service", ds.product.name[locale]);
+                if (rd=="product" && ds.product.name !== null) insertShipdet(trackid,"HDR","99999999999998","hdr_service", ds.product.name[locale]);
                 if (typeof ds[rd] === 'string') {
                     if (rd=="estimatedDeliveryTime") insertShipdet(trackid,"HDR","99999999999" + headrivi,"estimatedDeliveryTime",Qt.formatDateTime(new Date(ds.estimatedDeliveryTime)),"yyyyMMddHHmmss");
                     if (rd=="codAmount") insertShipdet(trackid,"HDR","99999999999" + headrivi,"codAmount", ds.codAmount + " " + ds.codCurrency);

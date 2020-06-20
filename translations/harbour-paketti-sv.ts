@@ -215,7 +215,7 @@
         <translation>Version %1</translation>
     </message>
     <message>
-        <source>Changelog version 0.6.5:
+        <source>Changelog version 0.6.6:
 – Fixed reading data from changed Posti API.
 
 Changelog versions 0.6, 0.6.1, 0.6.3 and 0.6.4:
@@ -227,7 +227,7 @@ Changelog versions 0.6, 0.6.1, 0.6.3 and 0.6.4:
 – The source code for the application is now available in https://github.com/ZeiP/harbour-paketti.
 
 Thanks for the releases to Jyri-Petteri ”ZeiP” Paloposki!</source>
-        <translation>Ändringslogg version 0.6.5:
+        <translation>Ändringslogg version 0.6.6:
 – Fixed reading data from changed Posti API.
 
 Ändringslogg versions 0.6, 0.6.1, 0.6.3 och 0.6.4:

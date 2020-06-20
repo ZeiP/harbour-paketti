@@ -253,7 +253,7 @@
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="72"/>
-        <source>Changelog version 0.6.5:
+        <source>Changelog version 0.6.6:
 – Fixed reading data from changed Posti API.
 
 Changelog versions 0.6, 0.6.1, 0.6.3 and 0.6.4:

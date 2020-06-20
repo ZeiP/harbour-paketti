@@ -12,6 +12,12 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sat Jun 20 2020 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi> 0.6.6
+– Fix reading empty product name from the Posti API.
+
+* Mon Jun 15 2020 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi> 0.6.5
+– Fix reading empty event descriptions from the Posti API.
+
 * Fri Apr 04 2020 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi> 0.6.4
 – Fixed reading the extra services from the Posti API.
 
