@@ -20,22 +20,19 @@
         <translation>Versio %1</translation>
     </message>
     <message>
-        <source>Thanking:
-– Juhana Virkkala (original version)
-– Hannu Hirvonen (Swedish translation)
-– Jyri-Petteri ”ZeiP” Paloposki (update in 2020)</source>
-        <translation>Kiitokset:
-– Juhana Virkkala (alkuperäinen sovellus)
-– Hannu Hirvonen (ruotsinkielinen käännös)
-– Jyri-Petteri ”ZeiP” Paloposki (päivitys 2020)</translation>
-    </message>
-    <message>
         <source>Source code in GitHub</source>
         <translation>Lähdekoodi GitHubissa</translation>
     </message>
     <message>
         <source>Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto, PostNord and Hermes.de packages.</source>
         <translation>Paketti on SailfishOS-käyttöjärjestelmälle tehty sovellus postilähetysten seurantaan. Sovelluksella voi seurata Postin, Matkahuollon, PostNordin (MyPack) sekä Hermes.de:n lähetyksiä.</translation>
+    </message>
+    <message>
+        <source>Thanking:
+– Juhana Virkkala (original version)
+– Hannu Hirvonen (Swedish translation)
+– Jyri-Petteri ”ZeiP” Paloposki (update in 2020)</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -227,18 +224,7 @@ Changelog versions 0.6, 0.6.1, 0.6.3 and 0.6.4:
 – The source code for the application is now available in https://github.com/ZeiP/harbour-paketti.
 
 Thanks for the releases to Jyri-Petteri ”ZeiP” Paloposki!</source>
-        <translation>Muutoksia versiossa 0.6.6:
-– Korjattu tietojen lukeminen muuttuneesta Postin rajapinnasta.
-
-Muutoksia versioissa 0.6, 0.6.1, 0.6.3 ja 0.6.4:
-– Korjattu lisäpalveluiden lukeminen Postin rajapinnasta.
-– Lisätty Hermes.de:n pakettiseuranta.
-– Pieniä käyttöliittymäkorjauksia ja -parannuksia.
-– Päivitetty ruotsinkielinen käännös.
-– Postin, Matkahuollon ja PostNordin pakettiseurannat korjattu ja tehty muita pieniä muutoksia.
-– Sovelluksen lähdekoodi on nyt saatavilla osoitteessa https://github.com/ZeiP/harbour-paketti.
-
-Kiitokset julkaisuista Jyri-Petteri ”ZeiP” Paloposkelle!</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -270,6 +256,10 @@ Kiitokset julkaisuista Jyri-Petteri ”ZeiP” Paloposkelle!</translation>
     <message>
         <source>Hermes (Germany)</source>
         <translation>Hermes (Saksa)</translation>
+    </message>
+    <message>
+        <source>LaPoste/Colissimo/Chronopost (France)</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

@@ -1,3 +1,4 @@
 qml-w
 *.autosave
 *.qm
+*.pro.user
