@@ -32,7 +32,10 @@
 – Juhana Virkkala (original version)
 – Hannu Hirvonen (Swedish translation)
 – Jyri-Petteri ”ZeiP” Paloposki (update in 2020)</source>
-        <translation type="unfinished"></translation>
+        <translation>Tackar:
+– Juhana Virkkala (originalversion)
+– Hannu Hirvonen, Åke Engelbrektson (Svensk översättning)
+– Jyri-Petteri ”ZeiP” Paloposki (uppdatering 2020)</translation>
     </message>
 </context>
 <context>
@@ -224,7 +227,18 @@ Changelog versions 0.6, 0.6.1, 0.6.3 and 0.6.4:
 – The source code for the application is now available in https://github.com/ZeiP/harbour-paketti.
 
 Thanks for the releases to Jyri-Petteri ”ZeiP” Paloposki!</source>
-        <translation type="unfinished"></translation>
+        <translation>Ändringslogg version 0.6.6:
+– Fixed reading data from changed Posti API.
+
+Ändringslogg versions 0.6, 0.6.1, 0.6.3 och 0.6.4:
+– Fixed reading the extra services from the Posti API.
+– Added Hermes (Germany) package tracking.
+– Minor UI fixes and enhancements.
+– Updated the Swedish translation.
+– Posti, Matkahuolto och PostNord paketspårning fixad och några andra mindre ändringar.
+– Källkoden finns nu tillgänglig på https://github.com/ZeiP/harbour-paketti.
+
+Tack för uppdateringarna till Jyri-Petteri ”ZeiP” Paloposki!</translation>
     </message>
 </context>
 <context>
