@@ -14,7 +14,8 @@ TARGET = harbour-paketti
 
 CONFIG += sailfishapp
 
-SOURCES += src/harbour-paketti.cpp
+SOURCES += src/harbour-paketti.cpp \
+    src/courierapi.cpp
 
 DISTFILES += qml/harbour-paketti.qml \
     qml/cover/CoverPage.qml \
@@ -40,3 +41,6 @@ CONFIG += sailfishapp_i18n
 # modify the localized app name in the the .desktop file.
 TRANSLATIONS += translations/harbour-paketti-fi.ts
 TRANSLATIONS += translations/harbour-paketti-sv.ts
+
+HEADERS += \
+    src/courierapi.h

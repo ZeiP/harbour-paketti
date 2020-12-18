@@ -1,8 +1,4 @@
-// Authorization key for LaPoste API
-// Generate a production (or a test) one at : https://developer.laposte.fr/products/suivi/latest
-var xokapikey = ''
-
-function updatedet(index,trackid,showdet) {
+function updatedet(index,trackid,showdet,laposteKey) {
 	itemUpdStarted(index);
 	console.log("UPD" + trackid);
 
@@ -31,7 +27,7 @@ function updatedet(index,trackid,showdet) {
 	doc.open("GET", laposteURL(trackid));
 
 	doc.setRequestHeader('Accept', 'application/json')
-	doc.setRequestHeader('X-Okapi-Key', xokapikey)
+    doc.setRequestHeader('X-Okapi-Key', laposteKey)
 
 	doc.send();
 }
