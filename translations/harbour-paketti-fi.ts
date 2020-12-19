@@ -253,7 +253,7 @@ Sovelluksen ylläpitäjä on Jyri-Petteri ”ZeiP” Paloposki.</translation>
     </message>
     <message>
         <source>PostNord (Nordics)</source>
-        <translation type="unfinished"></translation>
+        <translation>PostNord (pohjoismaat)</translation>
     </message>
     <message numerus="yes">
         <source>%n minute(s) ago</source>

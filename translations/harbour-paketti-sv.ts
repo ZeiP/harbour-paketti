@@ -253,7 +253,7 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</transla
     </message>
     <message>
         <source>PostNord (Nordics)</source>
-        <translation type="unfinished"></translation>
+        <translation>PostNord (Norden)</translation>
     </message>
     <message numerus="yes">
         <source>%n minute(s) ago</source>
