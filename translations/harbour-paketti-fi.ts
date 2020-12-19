@@ -236,14 +236,6 @@ Sovelluksen ylläpitäjä on Jyri-Petteri ”ZeiP” Paloposki.</translation>
         <translation>alle minuutti sitten</translation>
     </message>
     <message>
-        <source>minute(s) ago</source>
-        <translation>minuuttia sitten</translation>
-    </message>
-    <message>
-        <source>hour(s) ago</source>
-        <translation>tuntia sitten</translation>
-    </message>
-    <message>
         <source>Hermes (Germany)</source>
         <translation>Hermes (Saksa)</translation>
     </message>
@@ -262,6 +254,20 @@ Sovelluksen ylläpitäjä on Jyri-Petteri ”ZeiP” Paloposki.</translation>
     <message>
         <source>PostNord (Nordics)</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n minute(s) ago</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n hour(s) ago</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
 </context>
 </TS>

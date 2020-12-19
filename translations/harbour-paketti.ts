@@ -294,15 +294,19 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
         <source>less than minute ago</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
+    <message numerus="yes">
         <location filename="../qml/harbour-paketti.qml" line="132"/>
-        <source>minute(s) ago</source>
-        <translation type="unfinished"></translation>
+        <source>%n minute(s) ago</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+        </translation>
     </message>
-    <message>
+    <message numerus="yes">
         <location filename="../qml/harbour-paketti.qml" line="135"/>
-        <source>hour(s) ago</source>
-        <translation type="unfinished"></translation>
+        <source>%n hour(s) ago</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+        </translation>
     </message>
 </context>
 </TS>

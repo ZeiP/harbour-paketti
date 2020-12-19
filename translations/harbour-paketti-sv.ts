@@ -236,14 +236,6 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</transla
         <translation>mindre än en minut sedan</translation>
     </message>
     <message>
-        <source>minute(s) ago</source>
-        <translation>minut(er) sedan</translation>
-    </message>
-    <message>
-        <source>hour(s) ago</source>
-        <translation>timma(r) sedan</translation>
-    </message>
-    <message>
         <source>Hermes (Germany)</source>
         <translation>Hermes (Tyskland)</translation>
     </message>
@@ -262,6 +254,20 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</transla
     <message>
         <source>PostNord (Nordics)</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n minute(s) ago</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n hour(s) ago</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
 </context>
 </TS>

@@ -129,10 +129,10 @@ ApplicationWindow {
                 ret = qsTr("less than minute ago");
             }
             else if (tdiff < 3600) {
-                ret = Math.floor(tdiff/60) + " " + qsTr("minute(s) ago");
+                ret = qsTr("%n minute(s) ago", "", Math.floor(tdiff/60));
             }
             else {
-                ret = Math.floor(tdiff/3600) + " " + qsTr("hour(s) ago");
+                ret = qsTr("%n hour(s) ago", "", Math.floor(tdiff/3600));
             }
         }
         return(ret);
