@@ -1,40 +1,30 @@
-function updatedet(index,trackid,showdet,laposteKey) {
+function updatedet(index, trackid, showdet) {
 	itemUpdStarted(index);
 	console.log("UPD" + trackid);
 
 	var db = dbConnection();
-	var doc = new XMLHttpRequest();
 
-	doc.onreadystatechange = function() {
-		if (doc.readyState == XMLHttpRequest.DONE) {
-			var data = JSON.parse(doc.responseText);
+    var response = laPosteApi.requestResponse(laposteURL(trackid));
+    var data = JSON.parse(response);
 
-			insertShipdet(trackid, "HDR", "99999999999998", "hdr_service", data.shipment.product);
+    insertShipdet(trackid, "HDR", "99999999999998", "hdr_service", data.shipment.product);
 
-			var dateOptions = {day: "numeric", month: "long", year: "numeric", hour: "numeric", minute: "2-digit"}
+    var dateOptions = {day: "numeric", month: "long", year: "numeric", hour: "numeric", minute: "2-digit"}
 
-			for (var i in data.shipment.event) {
-				var ev = data.shipment.event[i];
-				var dateEvent = Qt.formatDateTime(new Date(ev.date), "yyyyMMddHHmmss")
-				var descriptionLabel = getTextOfCodeLaPoste(ev.code) + ": " + ev.label
-				insertShipdet(trackid, "EVT", dateEvent, descriptionLabel, "");
-			}
-			insertShipdet(trackid, "HDR", "99999999999999", "hdr_shipid", data.shipment.idShip);
+    for (var i in data.shipment.event) {
+        var ev = data.shipment.event[i];
+        var dateEvent = Qt.formatDateTime(new Date(ev.date), "yyyyMMddHHmmss")
+        var descriptionLabel = getTextOfCodeLaPoste(ev.code) + ": " + ev.label
+        insertShipdet(trackid, "EVT", dateEvent, descriptionLabel, "");
+    }
+    insertShipdet(trackid, "HDR", "99999999999999", "hdr_shipid", data.shipment.idShip);
 
-			itemUpdReady(index, "HIT", showdet);
-		}
-	}
-    doc.open("GET", laposteURL(trackid));
-
-    doc.setRequestHeader('Accept', 'application/json')
-    doc.setRequestHeader('X-Okapi-Key', laposteKey)
-
-	doc.send();
+    itemUpdReady(index, "HIT", showdet);
 }
 
 function laposteURL(koodi) {
     //var locale = getLocale(["fr_FR"]);
-    return("https://api.laposte.fr/suivi/v2/idships/" + koodi + "?lang=fr_FR");
+    return("https://api.laposte.fr/suivi/v2/idships/" + koodi + "?lang=" + getLocale(["fr_FR"]));
 }
 
 function getTextOfCodeLaPoste(code) {

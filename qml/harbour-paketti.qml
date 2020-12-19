@@ -62,9 +62,9 @@ ApplicationWindow {
             identifier: "HERDE"
         }
         ListElement {
-			name: QT_TR_NOOP("LaPoste/Colissimo/Chronopost (France)")
-			identifier: "LAPOSTE"
-		}
+            name: QT_TR_NOOP("La Poste/Colissimo/Chronopost (France)")
+            identifier: "LAPOSTE"
+        }
 
         function getCourierByIdentifier(identifier) {
             for (var i = 0; i < couriers.count; i++) {
@@ -89,7 +89,7 @@ ApplicationWindow {
                 return qtLocale;
             }
         }
-        return "en";
+        return allowedLocales[0];
     }
 
     function mhURL(koodi) {

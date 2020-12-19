@@ -272,7 +272,7 @@ Tack för uppdateringarna till Jyri-Petteri ”ZeiP” Paloposki!</translation>
         <translation>Hermes (Tyskland)</translation>
     </message>
     <message>
-        <source>LaPoste/Colissimo/Chronopost (France)</source>
+        <source>La Poste/Colissimo/Chronopost (France)</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

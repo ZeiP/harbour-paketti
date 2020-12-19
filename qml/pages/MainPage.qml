@@ -42,10 +42,6 @@ Page {
     id: mainpage
     property var lastupd
 
-    CourierAPI {
-        id: courierAPI
-    }
-
     Connections {
         target: paketti
         onApplicationActiveChanged: {
@@ -153,9 +149,9 @@ Page {
             historyModel.set(index, {"typec": "#0091cd"});
         }
         else if (historyModel.get(index).type == "LAPOSTE") {
-            PlugLaPoste.updatedet(index, trackid, showdet, courierAPI.get_laposte_key());
-			historyModel.set(index, {"typec": "#f2e435"});
-		}
+            PlugLaPoste.updatedet(index, trackid, showdet);
+            historyModel.set(index, {"typec": "#f2e435"});
+        }
     }
 
     function addTrackable(type,trackid) {
@@ -196,6 +192,9 @@ Page {
                     }
                     if (rs.rows.item(i).type == "PN") {
                         historyModel.set(i+1, {"typec" : "#00a9cd"});
+                    }
+                    else if (rs.rows.item(i).type == "LAPOSTE") {
+                        historyModel.set(i+1, {"typec" : "#f2e435"});
                     }
                     historyModel.set(i+1, {"status": getStatus(rs.rows.item(i).trackid)});
                     lastActivityToList(i+1);
