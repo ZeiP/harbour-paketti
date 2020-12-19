@@ -128,7 +128,7 @@
 – Lähetystä ei ole vielä jätetty kuljetettavaksi.
 – Lähetystä ei vielä ole kirjattu järjestelmään.
 – Lähetyksen postittamisesta on aikaa niin paljon että lähetys on jo poistettu kuriirin järjestelmästä.
-– Järjestelmässä tai lähetyksessä on poikkeavuuksia.</translation>
+– Järjestelmässä tai lähetyksessä on poikkeavuuksia</translation>
     </message>
     <message>
         <source>Courier</source>
