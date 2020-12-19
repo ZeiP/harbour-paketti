@@ -23,7 +23,6 @@ function updatedet(index, trackid, showdet) {
 }
 
 function laposteURL(koodi) {
-    //var locale = getLocale(["fr_FR"]);
     return("https://api.laposte.fr/suivi/v2/idships/" + koodi + "?lang=" + getLocale(["fr_FR"]));
 }
 

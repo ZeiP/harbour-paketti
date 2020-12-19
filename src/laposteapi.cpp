@@ -1,5 +1,4 @@
 #include "laposteapi.h"
-#include <curl/curl.h>
 #include <QUrl>
 #include <QNetworkRequest>
 #include <QNetworkAccessManager>
@@ -30,16 +29,14 @@ QString LaPosteAPI::requestResponse(QString url)
         if(reply->error() == QNetworkReply::NoError)
         {
             QByteArray response = reply->readAll();
-            qDebug(response);
             return response;
         }
         else // handle error
         {
             qDebug(reply->errorString().toUtf8());
+            return "";
         }
 //    });
-//    connect(manager, SIGNAL(finished(QNetworkReply*)), this, SLOT(process_tracking_providers_reply(QNetworkReply*)));
-    return 0;
 }
 
 QString LaPosteAPI::getApiKey() {
