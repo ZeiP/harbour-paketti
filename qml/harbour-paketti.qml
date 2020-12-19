@@ -61,7 +61,7 @@ ApplicationWindow {
             name: QT_TR_NOOP("Hermes (Germany)")
             identifier: "HERDE"
         }
-		ListElement {
+        ListElement {
 			name: QT_TR_NOOP("LaPoste/Colissimo/Chronopost (France)")
 			identifier: "LAPOSTE"
 		}

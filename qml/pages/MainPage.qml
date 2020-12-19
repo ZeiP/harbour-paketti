@@ -152,7 +152,7 @@ Page {
             PlugHerDe.updatedet(index, trackid, showdet);
             historyModel.set(index, {"typec": "#0091cd"});
         }
-		else if (historyModel.get(index).type == "LAPOSTE") {
+        else if (historyModel.get(index).type == "LAPOSTE") {
             PlugLaPoste.updatedet(index, trackid, showdet, courierAPI.get_laposte_key());
 			historyModel.set(index, {"typec": "#f2e435"});
 		}
