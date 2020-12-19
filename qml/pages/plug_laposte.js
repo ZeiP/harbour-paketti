@@ -33,8 +33,8 @@ function updatedet(index,trackid,showdet,laposteKey) {
 }
 
 function laposteURL(koodi) {
-	var locale = getLocale(["fr_FR"]);
-	return("https://api.laposte.fr/suivi/v2/idships/" + koodi + "?lang=" + locale);
+    //var locale = getLocale(["fr_FR"]);
+    return("https://api.laposte.fr/suivi/v2/idships/" + koodi + "?lang=fr_FR");
 }
 
 function getTextOfCodeLaPoste(code) {
