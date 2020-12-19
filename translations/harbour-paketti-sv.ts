@@ -257,16 +257,16 @@ Underhåller appen gör Jyri-Petteri ”ZeiP” Paloposki.</translation>
     </message>
     <message numerus="yes">
         <source>%n minute(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n minut sedan</numerusform>
+            <numerusform>%n minuter sedan</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n timma sedan</numerusform>
+            <numerusform>%n timmar sedan</numerusform>
         </translation>
     </message>
 </context>
