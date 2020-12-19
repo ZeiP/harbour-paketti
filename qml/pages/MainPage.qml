@@ -34,10 +34,17 @@ import "plug_itella.js" as PlugItella
 import "plug_mh.js" as PlugMH
 import "plug_pn.js" as PlugPN
 import "plug_herde.js" as PlugHerDe
+import "plug_laposte.js" as PlugLaPoste
+
+import harbour.org.paketti 1.0
 
 Page {
     id: mainpage
     property var lastupd
+
+    CourierAPI {
+        id: courierAPI
+    }
 
     Connections {
         target: paketti
@@ -145,6 +152,10 @@ Page {
             PlugHerDe.updatedet(index, trackid, showdet);
             historyModel.set(index, {"typec": "#0091cd"});
         }
+        else if (historyModel.get(index).type == "LAPOSTE") {
+            PlugLaPoste.updatedet(index, trackid, showdet, courierAPI.get_laposte_key());
+			historyModel.set(index, {"typec": "#f2e435"});
+		}
     }
 
     function addTrackable(type,trackid) {

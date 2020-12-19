@@ -61,6 +61,10 @@ ApplicationWindow {
             name: QT_TR_NOOP("Hermes (Germany)")
             identifier: "HERDE"
         }
+        ListElement {
+			name: QT_TR_NOOP("LaPoste/Colissimo/Chronopost (France)")
+			identifier: "LAPOSTE"
+		}
 
         function getCourierByIdentifier(identifier) {
             for (var i = 0; i < couriers.count; i++) {
