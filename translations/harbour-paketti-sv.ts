@@ -33,7 +33,7 @@
 – Juhana Virkkala (original version)
 – Adel Noureddine (La Poste tracking)
 – Hannu Hirvonen and Åke Engelbrektson (Swedish translation)</source>
-        <translation>Tackar:
+        <translation type="unfinished">Tackar:
 – Jyri-Petteri ”ZeiP” Paloposki (maintainer since 2020)
 – Juhana Virkkala (originalversion)
 – Adel Noureddine (La Poste tracking)
@@ -128,7 +128,7 @@
 – Försändelsen har ännu inte lämnats in för transport.
 – Försändelsen har ännu inte registrerats i systemet.
 – Försändelsen postades för länge sedan och har redan tagits bort från fraktsystemet.
-– Problem med systemet eller försändelsen.</translation>
+– Problem med systemet eller försändelsen</translation>
     </message>
     <message>
         <source>Courier</source>
@@ -175,7 +175,7 @@
     </message>
     <message>
         <source>Start by choosing a courier and entering the tracking code in the box above. Tracked shipments will be saved automatically</source>
-        <translation>Börja med att välja fraktbolag och ange försändelsekoden ovan. Spårade försändelser sparas automatiskt.</translation>
+        <translation>Börja med att välja fraktbolag och ange försändelsekoden ovan. Spårade försändelser sparas automatiskt</translation>
     </message>
     <message>
         <source>No information available</source>
@@ -222,7 +222,7 @@
 – Fixed some minor UI and API handling bugs.
 
 The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation>Ändringslogg version 0.7:
+        <translation type="unfinished">Ändringslogg version 0.7:
 – Added La Poste (France) package tracking. Thanks to Adel Noureddine!
 – Fixed some minor UI and API handling bugs.
 
