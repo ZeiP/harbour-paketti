@@ -54,7 +54,7 @@ ApplicationWindow {
             identifier: "MH"
         }
         ListElement {
-            name: QT_TR_NOOP("PostNord (Nordic)")
+            name: QT_TR_NOOP("PostNord (Nordics)")
             identifier: "PN"
         }
         ListElement {

@@ -256,12 +256,12 @@ Sovelluksen ylläpitäjä on Jyri-Petteri ”ZeiP” Paloposki.</translation>
         <translation>La Poste/Colissimo/Chronopost (Ranska)</translation>
     </message>
     <message>
-        <source>PostNord (Nordic)</source>
-        <translation>PostNord (Pohjoismaat)</translation>
-    </message>
-    <message>
         <source>Posti (Finland)</source>
         <translation>Posti</translation>
+    </message>
+    <message>
+        <source>PostNord (Nordics)</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

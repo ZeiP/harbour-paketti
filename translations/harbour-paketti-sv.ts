@@ -256,12 +256,12 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</transla
         <translation>La Poste/Colissimo/Chronopost (Frankrike)</translation>
     </message>
     <message>
-        <source>PostNord (Nordic)</source>
-        <translation>PostNord (Norden)</translation>
-    </message>
-    <message>
         <source>Posti (Finland)</source>
         <translation>Posti (Finland)</translation>
+    </message>
+    <message>
+        <source>PostNord (Nordics)</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

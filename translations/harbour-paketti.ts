@@ -281,7 +281,7 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="57"/>
-        <source>PostNord (Nordic)</source>
+        <source>PostNord (Nordics)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
