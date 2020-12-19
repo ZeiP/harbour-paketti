@@ -24,9 +24,9 @@ function updatedet(index,trackid,showdet,laposteKey) {
 			itemUpdReady(index, "HIT", showdet);
 		}
 	}
-	doc.open("GET", laposteURL(trackid));
+    doc.open("GET", laposteURL(trackid));
 
-	doc.setRequestHeader('Accept', 'application/json')
+    doc.setRequestHeader('Accept', 'application/json')
     doc.setRequestHeader('X-Okapi-Key', laposteKey)
 
 	doc.send();
