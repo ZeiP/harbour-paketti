@@ -133,11 +133,11 @@ Page {
     function updateitem(index, showdet) {
         var trackid = historyModel.get(index).title;
         if (historyModel.get(index).type == "FI") {
-            PlugItella.updatedet(index, trackid ,showdet);
+            PlugItella.updatedet(index, trackid, showdet);
             historyModel.set(index, {"typec": "#ff9600"});
         }
         else if (historyModel.get(index).type == "MH") {
-            PlugMH.updatedet(index, trackid ,showdet);
+            PlugMH.updatedet(index, trackid, showdet);
             historyModel.set(index, {"typec": "#1e00ff"});
         }
         else if (historyModel.get(index).type == "PN") {
@@ -187,10 +187,13 @@ Page {
                     if (rs.rows.item(i).type == "FI") {
                         historyModel.set(i+1, {"typec" : "#ff9600"});
                     }
-                    if (rs.rows.item(i).type == "MH") {
+                    else if (rs.rows.item(i).type == "MH") {
                         historyModel.set(i+1, {"typec" : "#1e00ff"});
                     }
-                    if (rs.rows.item(i).type == "PN") {
+                    else if (rs.rows.item(i).type == "PN") {
+                        historyModel.set(i+1, {"typec" : "#00a9cd"});
+                    }
+                    else if (rs.rows.item(i).type == "HERDE") {
                         historyModel.set(i+1, {"typec" : "#00a9cd"});
                     }
                     else if (rs.rows.item(i).type == "LAPOSTE") {

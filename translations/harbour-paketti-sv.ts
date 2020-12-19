@@ -256,20 +256,20 @@ Tack för uppdateringarna till Jyri-Petteri ”ZeiP” Paloposki!</translation>
         <translation>timma(r) sedan</translation>
     </message>
     <message>
-        <source>Matkahuolto</source>
-        <translation>Matkahuolto</translation>
-    </message>
-    <message>
-        <source>PostNord</source>
-        <translation>PostNord</translation>
-    </message>
-    <message>
-        <source>Posti Oy</source>
-        <translation>Posti Oy</translation>
-    </message>
-    <message>
         <source>Hermes (Germany)</source>
         <translation>Hermes (Tyskland)</translation>
+    </message>
+    <message>
+        <source>Posti Oy (Finland)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Matkahuolto (Finland)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>PostNord (Nordic))</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>La Poste/Colissimo/Chronopost (France)</source>

@@ -1,4 +1,4 @@
-function updatedet(index,trackid,showdet) {
+function updatedet(index, trackid, showdet) {
     itemUpdStarted(index);
     console.log("UPD" + trackid);
 
@@ -65,4 +65,9 @@ function updatedet(index,trackid,showdet) {
 
     doc.open("GET", pnURL(trackid));
     doc.send();
+}
+
+function pnURL(code) {
+    var locale = getLocale(["en", "fi", "sv"]);
+    return("https://www.postnord.fi/api/pnmw/shipment/" + code + "/" + locale);
 }

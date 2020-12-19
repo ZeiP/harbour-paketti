@@ -1,4 +1,4 @@
-function updatedet(index,trackid,showdet) {
+function updatedet(index, trackid, showdet) {
     itemUpdStarted(index);
     console.log("UPD" + trackid);
 
@@ -34,6 +34,6 @@ function updatedet(index,trackid,showdet) {
     doc.send();
 }
 
-function hermesDeURL(koodi) {
-    return("https://www.myhermes.de/services/tracking/shipments?search=" + koodi);
+function hermesDeURL(code) {
+    return("https://www.myhermes.de/services/tracking/shipments?search=" + code);
 }

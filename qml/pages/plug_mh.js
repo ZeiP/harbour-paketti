@@ -1,4 +1,4 @@
-function updatedet(index,trackid,showdet) {
+function updatedet(index, trackid, showdet) {
     itemUpdStarted(index);
     console.log("UPD" + trackid);
 
@@ -25,4 +25,9 @@ function updatedet(index,trackid,showdet) {
     }
     doc.open("GET", mhURL(trackid));
     doc.send();
+}
+
+function mhURL(code) {
+    var locale = getLocale(["en", "fi", "sv"]);
+    return("https://wwwservice.matkahuolto.fi/search/trackingInfo?language=" + locale + "&parcelNumber=" + code);
 }

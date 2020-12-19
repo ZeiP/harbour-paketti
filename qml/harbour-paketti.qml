@@ -46,15 +46,15 @@ ApplicationWindow {
         id: couriers
 
         ListElement {
-            name: QT_TR_NOOP("Posti Oy")
+            name: QT_TR_NOOP("Posti Oy (Finland)")
             identifier: "FI"
         }
         ListElement {
-            name: QT_TR_NOOP("Matkahuolto")
+            name: QT_TR_NOOP("Matkahuolto (Finland)")
             identifier: "MH"
         }
         ListElement {
-            name: QT_TR_NOOP("PostNord")
+            name: QT_TR_NOOP("PostNord (Nordic)")
             identifier: "PN"
         }
         ListElement {
@@ -76,10 +76,6 @@ ApplicationWindow {
         }
     }
 
-    function postiURL(koodi) {
-        return("https://www.posti.fi/henkiloasiakkaat/seuranta/api/shipments/" + koodi);
-    }
-
     function getLocale(allowedLocales) {
         var i = 0;
         var qtLocale = Qt.locale().name.substring(0, 2);
@@ -90,16 +86,6 @@ ApplicationWindow {
             }
         }
         return allowedLocales[0];
-    }
-
-    function mhURL(koodi) {
-        var locale = getLocale(["fi", "en", "sv"]);
-        return("https://wwwservice.matkahuolto.fi/search/trackingInfo?language=" + locale + "&parcelNumber=" + koodi);
-    }
-
-    function pnURL(koodi) {
-        var locale = getLocale(["fi", "en", "sv"]);
-        return("https://www.postnord.fi/api/pnmw/shipment/" + koodi + "/" + locale);
     }
 
     function dbConnection() {

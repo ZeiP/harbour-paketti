@@ -1,4 +1,4 @@
-function updatedet(index,trackid,showdet) {
+function updatedet(index, trackid, showdet) {
     itemUpdStarted(index);
     console.log("UPD" + trackid);
 
@@ -69,4 +69,8 @@ function updatedet(index,trackid,showdet) {
 
     doc.open("GET", postiURL(trackid));
     doc.send();
+}
+
+function postiURL(code) {
+    return("https://www.posti.fi/henkiloasiakkaat/seuranta/api/shipments/" + code);
 }
