@@ -8,7 +8,11 @@ function updatedet(index, trackid, showdet) {
     doc.onreadystatechange = function() {
         if (doc.readyState == XMLHttpRequest.DONE) {
             var data = JSON.parse(doc.responseText);
-
+            if (data.error != null) {
+                console.log("Cannot parse JSON");
+                itemUpdReady(index,"ERR", 0);
+                return false;
+            }
             insertShipdet(trackid, "HDR", "99999999999998", "hdr_service", data.productCategory);
 
             for (var i in data.trackingEvents) {

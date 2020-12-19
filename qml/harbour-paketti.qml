@@ -37,7 +37,7 @@ import QtQuick.LocalStorage 2.0 as Ls
 ApplicationWindow {
     id: paketti
 
-    property string version: "0.6.6"
+    property string version: "0.7"
     property string dbName: "pakettidb"
     property string dbDescription: dbName
     property string dbVersion: "1.0"
@@ -46,7 +46,7 @@ ApplicationWindow {
         id: couriers
 
         ListElement {
-            name: QT_TR_NOOP("Posti Oy (Finland)")
+            name: QT_TR_NOOP("Posti (Finland)")
             identifier: "FI"
         }
         ListElement {

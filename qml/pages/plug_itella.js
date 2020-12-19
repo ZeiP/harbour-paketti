@@ -7,9 +7,14 @@ function updatedet(index, trackid, showdet) {
         if (doc.readyState == XMLHttpRequest.DONE) {
             var headrivi=997;
             var data = JSON.parse(doc.responseText);
-
+            if (data.error != null) {
+                console.log("Cannot parse JSON");
+                itemUpdReady(index,"ERR", 0);
+                return false;
+            }
             if (!data.shipments.length) {
-                itemUpdReady(index, "OK", showdet);
+                console.log("Empty shipment data");
+                itemUpdReady(index, "ERR", 0);
                 return;
             }
 

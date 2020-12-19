@@ -68,7 +68,7 @@ Page {
                 wrapMode: Text.WordWrap
                 anchors.left: parent.left; anchors.right: parent.right
                 font.pixelSize: Theme.fontSizeSmall
-                text: qsTr("Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto, PostNord and Hermes.de packages.")
+                text: qsTr("Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto, PostNord, Hermes.de and La Poste packages.")
             }
             Label {
                 anchors.left: parent.left; anchors.right: parent.right
@@ -76,9 +76,10 @@ Page {
                 color: Theme.secondaryColor
                 wrapMode: Text.WordWrap
                 text: qsTr("Thanking:
+– Jyri-Petteri ”ZeiP” Paloposki (maintainer since 2020)
 – Juhana Virkkala (original version)
-– Hannu Hirvonen (Swedish translation)
-– Jyri-Petteri ”ZeiP” Paloposki (update in 2020)")
+– Adel Noureddine (La Poste tracking)
+– Hannu Hirvonen and Åke Engelbrektson (Swedish translation)")
             }
             Button {
                 anchors.horizontalCenter: parent.horizontalCenter
@@ -98,7 +99,7 @@ Page {
                 wrapMode: Text.WordWrap
                 anchors.left: parent.left; anchors.right: parent.right
                 font.pixelSize: Theme.fontSizeExtraSmall
-                text: qsTr("Application author does not take any responsibility in case application will provide non-valid information. The application is not official application for couriers (Posti, Courier, MyPack / Postnord).")
+                text: qsTr("Application author does not take any responsibility in case application will provide non-valid information. This is not an official application for the couriers.")
                 color: Theme.secondaryColor
             }
         }

@@ -69,18 +69,11 @@ Dialog {
             Label {
                 anchors.left: parent.left; anchors.leftMargin: Theme.paddingMedium
                 anchors.right: parent.right; anchors.rightMargin: Theme.paddingMedium
-				text: qsTr("Changelog version 0.6.6:
-– Fixed reading data from changed Posti API.
+                text: qsTr("Changelog version 0.7:
+– Added La Poste (France) package tracking. Thanks to Adel Noureddine!
+– Fixed some minor UI and API handling bugs.
 
-Changelog versions 0.6, 0.6.1, 0.6.3 and 0.6.4:
-– Fixed reading the extra services from the Posti API.
-– Added Hermes (Germany) package tracking.
-– Minor UI fixes and enhancements.
-– Updated the Swedish translation.
-– Posti, Matkahuolto and PostNord package tracking fixed and some other minor changes.
-– The source code for the application is now available in https://github.com/ZeiP/harbour-paketti.
-
-Thanks for the releases to Jyri-Petteri ”ZeiP” Paloposki!")
+The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.")
                 wrapMode: Text.WordWrap
                 font.pixelSize: Theme.fontSizeSmall
             }

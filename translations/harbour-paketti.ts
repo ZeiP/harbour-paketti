@@ -20,25 +20,26 @@
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="71"/>
-        <source>Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto, PostNord and Hermes.de packages.</source>
+        <source>Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto, PostNord, Hermes.de and La Poste packages.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="78"/>
         <source>Thanking:
+– Jyri-Petteri ”ZeiP” Paloposki (maintainer since 2020)
 – Juhana Virkkala (original version)
-– Hannu Hirvonen (Swedish translation)
-– Jyri-Petteri ”ZeiP” Paloposki (update in 2020)</source>
+– Adel Noureddine (La Poste tracking)
+– Hannu Hirvonen and Åke Engelbrektson (Swedish translation)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="85"/>
+        <location filename="../qml/pages/AboutPage.qml" line="102"/>
+        <source>Application author does not take any responsibility in case application will provide non-valid information. This is not an official application for the couriers.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/AboutPage.qml" line="86"/>
         <source>Source code in GitHub</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/AboutPage.qml" line="101"/>
-        <source>Application author does not take any responsibility in case application will provide non-valid information. The application is not official application for couriers (Posti, Courier, MyPack / Postnord).</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -253,18 +254,11 @@
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="72"/>
-        <source>Changelog version 0.6.6:
-– Fixed reading data from changed Posti API.
+        <source>Changelog version 0.7:
+– Added La Poste (France) package tracking. Thanks to Adel Noureddine!
+– Fixed some minor UI and API handling bugs.
 
-Changelog versions 0.6, 0.6.1, 0.6.3 and 0.6.4:
-– Fixed reading the extra services from the Posti API.
-– Added Hermes (Germany) package tracking.
-– Minor UI fixes and enhancements.
-– Updated the Swedish translation.
-– Posti, Matkahuolto and PostNord package tracking fixed and some other minor changes.
-– The source code for the application is now available in https://github.com/ZeiP/harbour-paketti.
-
-Thanks for the releases to Jyri-Petteri ”ZeiP” Paloposki!</source>
+The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -277,7 +271,7 @@ Thanks for the releases to Jyri-Petteri ”ZeiP” Paloposki!</source>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="49"/>
-        <source>Posti Oy (Finland)</source>
+        <source>Posti (Finland)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -287,7 +281,7 @@ Thanks for the releases to Jyri-Petteri ”ZeiP” Paloposki!</source>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="57"/>
-        <source>PostNord (Nordic))</source>
+        <source>PostNord (Nordic)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -296,17 +290,17 @@ Thanks for the releases to Jyri-Petteri ”ZeiP” Paloposki!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/harbour-paketti.qml" line="143"/>
+        <location filename="../qml/harbour-paketti.qml" line="129"/>
         <source>less than minute ago</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/harbour-paketti.qml" line="146"/>
+        <location filename="../qml/harbour-paketti.qml" line="132"/>
         <source>minute(s) ago</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/harbour-paketti.qml" line="149"/>
+        <location filename="../qml/harbour-paketti.qml" line="135"/>
         <source>hour(s) ago</source>
         <translation type="unfinished"></translation>
     </message>

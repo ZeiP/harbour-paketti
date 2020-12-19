@@ -12,6 +12,10 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sat Dec 19 2020 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi> 0.7
+– Added La Poste (France) package tracking. Thanks to Adel Noureddine!
+– Fixed some minor UI and API handling bugs.
+
 * Sat Jun 20 2020 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi> 0.6.6
 – Fix reading empty product name from the Posti API.
 

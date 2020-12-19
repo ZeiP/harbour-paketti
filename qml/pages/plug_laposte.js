@@ -6,6 +6,11 @@ function updatedet(index, trackid, showdet) {
 
     var response = laPosteApi.requestResponse(laposteURL(trackid));
     var data = JSON.parse(response);
+    if (data.error != null) {
+        console.log("Cannot parse JSON");
+        itemUpdReady(index,"ERR", 0);
+        return false;
+    }
 
     insertShipdet(trackid, "HDR", "99999999999998", "hdr_service", data.shipment.product);
 

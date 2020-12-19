@@ -9,8 +9,16 @@ function updatedet(index, trackid, showdet) {
             var jsonObj = JSON.parse(doc.responseText);
             if (jsonObj.error != null) {
                 console.log("Cannot parse JSON");
+                itemUpdReady(index,"ERR", 0);
+                return false;
+            }
+            if (jsonObj.response.trackingInformationResponse.shipments.length == 0) {
+                console.log("Empty shipment information.");
+                itemUpdReady(index,"ERR", 0);
+                return false;
             }
             var respObj = jsonObj.response.trackingInformationResponse.shipments[0];
+
             var rivi=999;
             if ("shipmentId" in respObj)
                 insertShipdet(trackid,"HDR","99999999999"+rivi,"hdr_shipid",respObj.shipmentId);

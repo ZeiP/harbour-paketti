@@ -10,11 +10,16 @@ function updatedet(index, trackid, showdet) {
             if (doc.status == 204) {
                 // 204 No Content means not found /expired
                 console.log("Not found / expired");
-                itemUpdReady(index, "ERR", showdet);
+                itemUpdReady(index, "ERR", 0);
                 return false;
             }
 
             var data = JSON.parse(doc.responseText);
+            if (data.error != null) {
+                console.log("Cannot parse JSON");
+                itemUpdReady(index,"ERR", 0);
+                return false;
+            }
             data = data[0];
 
             for (var i in data.statusHistory) {

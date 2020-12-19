@@ -12,10 +12,6 @@
         <translation>Paketti</translation>
     </message>
     <message>
-        <source>Application author does not take any responsibility in case application will provide non-valid information. The application is not official application for couriers (Posti, Courier, MyPack / Postnord).</source>
-        <translation>Sovelluksen tekijä ei ota vastuuta mahdollisesta ohjelman tuottamasta virheellisestä informaatiosta. Sovellus ei ole toimittajien (Itella, Matkahuolto, MyPack/Postnord) virallinen sovellus.</translation>
-    </message>
-    <message>
         <source>Version %1</source>
         <translation>Versio %1</translation>
     </message>
@@ -24,18 +20,24 @@
         <translation>Lähdekoodi GitHubissa</translation>
     </message>
     <message>
-        <source>Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto, PostNord and Hermes.de packages.</source>
-        <translation>Paketti on SailfishOS-käyttöjärjestelmälle tehty sovellus postilähetysten seurantaan. Sovelluksella voi seurata Postin, Matkahuollon, PostNordin (MyPack) sekä Hermes.de:n lähetyksiä.</translation>
+        <source>Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto, PostNord, Hermes.de and La Poste packages.</source>
+        <translation>Paketti on SailfishOS-käyttöjärjestelmälle tehty sovellus postilähetysten seurantaan. Sovelluksella voi seurata Postin, Matkahuollon, PostNordin (MyPack), Hermes.de:n sekä La Posten lähetyksiä.</translation>
+    </message>
+    <message>
+        <source>Application author does not take any responsibility in case application will provide non-valid information. This is not an official application for the couriers.</source>
+        <translation>Sovelluksen tekijä ei ota vastuuta mahdollisesta ohjelman tuottamasta virheellisestä informaatiosta. Sovellus ei ole kuriirien virallinen sovellus.</translation>
     </message>
     <message>
         <source>Thanking:
+– Jyri-Petteri ”ZeiP” Paloposki (maintainer since 2020)
 – Juhana Virkkala (original version)
-– Hannu Hirvonen (Swedish translation)
-– Jyri-Petteri ”ZeiP” Paloposki (update in 2020)</source>
+– Adel Noureddine (La Poste tracking)
+– Hannu Hirvonen and Åke Engelbrektson (Swedish translation)</source>
         <translation>Kiitokset:
+– Jyri-Petteri ”ZeiP” Paloposki (ylläpitäjä 2020 alkaen)
 – Juhana Virkkala (alkuperäinen sovellus)
-– Hannu Hirvonen (ruotsinkielinen käännös)
-– Jyri-Petteri ”ZeiP” Paloposki (päivitys 2020)</translation>
+– Adel Noureddine (La Poste -tuki)
+– Hannu Hirvonen ja Åke Engelbrektson (ruotsinkielinen käännös)</translation>
     </message>
 </context>
 <context>
@@ -215,30 +217,16 @@
         <translation>Versio %1</translation>
     </message>
     <message>
-        <source>Changelog version 0.6.6:
-– Fixed reading data from changed Posti API.
+        <source>Changelog version 0.7:
+– Added La Poste (France) package tracking. Thanks to Adel Noureddine!
+– Fixed some minor UI and API handling bugs.
 
-Changelog versions 0.6, 0.6.1, 0.6.3 and 0.6.4:
-– Fixed reading the extra services from the Posti API.
-– Added Hermes (Germany) package tracking.
-– Minor UI fixes and enhancements.
-– Updated the Swedish translation.
-– Posti, Matkahuolto and PostNord package tracking fixed and some other minor changes.
-– The source code for the application is now available in https://github.com/ZeiP/harbour-paketti.
+The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
+        <translation>Muutoksia versiossa 0.7:
+– Lisätty tuki La Posten (Ranska) seurannalle. Kiitos Adel Noureddinelle!
+– Korjattu pieniä käyttöliittymä- ja rajapintabugeja.
 
-Thanks for the releases to Jyri-Petteri ”ZeiP” Paloposki!</source>
-        <translation>Muutoksia versiossa 0.6.6:
-– Korjattu tietojen lukeminen muuttuneesta Postin rajapinnasta.
-
-Muutoksia versioissa 0.6, 0.6.1, 0.6.3 ja 0.6.4:
-– Korjattu lisäpalveluiden lukeminen Postin rajapinnasta.
-– Lisätty Hermes.de:n pakettiseuranta.
-– Pieniä käyttöliittymäkorjauksia ja -parannuksia.
-– Päivitetty ruotsinkielinen käännös.
-– Postin, Matkahuollon ja PostNordin pakettiseurannat korjattu ja tehty muita pieniä muutoksia.
-– Sovelluksen lähdekoodi on nyt saatavilla osoitteessa https://github.com/ZeiP/harbour-paketti.
-
-Kiitokset julkaisuista Jyri-Petteri ”ZeiP” Paloposkelle!</translation>
+Sovelluksen ylläpitäjä on Jyri-Petteri ”ZeiP” Paloposki.</translation>
     </message>
 </context>
 <context>
@@ -260,20 +248,20 @@ Kiitokset julkaisuista Jyri-Petteri ”ZeiP” Paloposkelle!</translation>
         <translation>Hermes (Saksa)</translation>
     </message>
     <message>
-        <source>Posti Oy (Finland)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Matkahuolto (Finland)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>PostNord (Nordic))</source>
-        <translation type="unfinished"></translation>
+        <translation>Matkahuolto</translation>
     </message>
     <message>
         <source>La Poste/Colissimo/Chronopost (France)</source>
-        <translation type="unfinished"></translation>
+        <translation>La Poste/Colissimo/Chronopost (Ranska)</translation>
+    </message>
+    <message>
+        <source>PostNord (Nordic)</source>
+        <translation>PostNord (Pohjoismaat)</translation>
+    </message>
+    <message>
+        <source>Posti (Finland)</source>
+        <translation>Posti</translation>
     </message>
 </context>
 </TS>
