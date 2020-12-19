@@ -15,7 +15,7 @@ TARGET = harbour-paketti
 CONFIG += sailfishapp
 
 SOURCES += src/harbour-paketti.cpp \
-    src/courierapi.cpp
+    src/laposteapi.cpp
 
 DISTFILES += qml/harbour-paketti.qml \
     qml/cover/CoverPage.qml \
@@ -43,4 +43,4 @@ TRANSLATIONS += translations/harbour-paketti-fi.ts
 TRANSLATIONS += translations/harbour-paketti-sv.ts
 
 HEADERS += \
-    src/courierapi.h
+    src/laposteapi.h

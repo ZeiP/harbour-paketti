@@ -272,7 +272,7 @@ Kiitokset julkaisuista Jyri-Petteri ”ZeiP” Paloposkelle!</translation>
         <translation>Hermes (Saksa)</translation>
     </message>
     <message>
-        <source>LaPoste/Colissimo/Chronopost (France)</source>
+        <source>La Poste/Colissimo/Chronopost (France)</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

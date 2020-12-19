@@ -292,7 +292,7 @@ Thanks for the releases to Jyri-Petteri ”ZeiP” Paloposki!</source>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="65"/>
-        <source>LaPoste/Colissimo/Chronopost (France)</source>
+        <source>La Poste/Colissimo/Chronopost (France)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
