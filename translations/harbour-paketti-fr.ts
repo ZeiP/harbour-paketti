@@ -6,22 +6,22 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="45"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>À propos</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="57"/>
         <source>Paketti</source>
-        <translation type="unfinished"></translation>
+        <translation>Paketti</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="64"/>
         <source>Version %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Version %1</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="71"/>
         <source>Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto, PostNord, Hermes.de and La Poste packages.</source>
-        <translation type="unfinished"></translation>
+        <translation>Paketti est une application de suivi d’expédition simple pour SailfishOS. Vous pouvez suivre les colis du service postal finlandais (Posti), Matkahuolto, PostNord, Hermes.de et La Poste (France).</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="78"/>
@@ -30,17 +30,21 @@
 – Juhana Virkkala (original version)
 – Adel Noureddine (La Poste tracking)
 – Hannu Hirvonen and Åke Engelbrektson (Swedish translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>Remerciement :
+- Jyri-Petteri « ZeiP » Paloposki (mainteneur depuis 2020)
+- Juhana Virkkala (version originale)
+- Adel Noureddine (suivi La Poste)
+- Hannu Hirvonen et Åke Engelbrektson (traduction en suédois)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="102"/>
         <source>Application author does not take any responsibility in case application will provide non-valid information. This is not an official application for the couriers.</source>
-        <translation type="unfinished"></translation>
+        <translation>L’auteur de l’application n’assume aucune responsabilité au cas où l’application fournirait des informations invalides. Ceci n’est pas une application officielle pour les coursiers.</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="86"/>
         <source>Source code in GitHub</source>
-        <translation type="unfinished"></translation>
+        <translation>Code source dans GitHub</translation>
     </message>
 </context>
 <context>
@@ -109,7 +113,7 @@
     <message>
         <location filename="../qml/pages/Details.qml" line="83"/>
         <source>Number of items</source>
-        <translation type="unfinished"></translation>
+        <translation>Nombre d’éléments</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="86"/>
