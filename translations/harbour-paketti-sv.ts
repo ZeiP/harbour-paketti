@@ -36,7 +36,7 @@
         <translation type="unfinished">Tackar:
 – Jyri-Petteri ”ZeiP” Paloposki (maintainer since 2020)
 – Juhana Virkkala (originalversion)
-– Adel Noureddine (La Poste tracking)
+– Adel Noureddine (La Poste-spårning)
 – Hannu Hirvonen och Åke Engelbrektson (Svensk översättning)</translation>
     </message>
 </context>
@@ -222,11 +222,11 @@
 – Fixed some minor UI and API handling bugs.
 
 The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation type="unfinished">Ändringslogg version 0.7:
-– Added La Poste (France) package tracking. Thanks to Adel Noureddine!
-– Fixed some minor UI and API handling bugs.
+        <translation>Ändringslogg version 0.7:
+– Lade till La Poste (Frankrike) paketspårning. Tack till Adel Noureddine!
+– Fixade några mindre UI- och API-hanteringsfel.
 
-The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</translation>
+Underhåller appen gör Jyri-Petteri ”ZeiP” Paloposki.</translation>
     </message>
 </context>
 <context>
@@ -257,16 +257,16 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</transla
     </message>
     <message numerus="yes">
         <source>%n minute(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n minut sedan</numerusform>
+            <numerusform>%n minuter sedan</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n timma sedan</numerusform>
+            <numerusform>%n timmar sedan</numerusform>
         </translation>
     </message>
 </context>
