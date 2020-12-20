@@ -6,22 +6,22 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="45"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Über</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="57"/>
         <source>Paketti</source>
-        <translation type="unfinished"></translation>
+        <translation>Paketti</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="64"/>
         <source>Version %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Version %1</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="71"/>
         <source>Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto, PostNord, Hermes.de and La Poste packages.</source>
-        <translation type="unfinished"></translation>
+        <translation>Paketti ist eine einfache Sendungsverfolgungsanwendung für SailfishOS. Sie können die Pakete von Posti (der finnischen Post), Matkahuolto, PostNord, Hermes.de und La Poste (Frankreich) verfolgen.</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="78"/>
@@ -30,7 +30,11 @@
 – Juhana Virkkala (original version)
 – Adel Noureddine (La Poste tracking)
 – Hannu Hirvonen and Åke Engelbrektson (Swedish translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>Danke:
+- Jyri-Petteri „ZeiP“ Paloposki (Betreuer seit 2020)
+- Juhana Virkkala (Originalversion)
+- Adel Noureddine (Verfolgung von La Poste)
+- Hannu Hirvonen und Åke Engelbrektson (schwedische Übersetzung)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="102"/>
@@ -40,7 +44,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="86"/>
         <source>Source code in GitHub</source>
-        <translation type="unfinished"></translation>
+        <translation>Quellcode in GitHub</translation>
     </message>
 </context>
 <context>
@@ -48,7 +52,7 @@
     <message>
         <location filename="../qml/pages/BarCodePage.qml" line="50"/>
         <source>Read the barcode by keeping barcode scanner perpendicular to the viewing screen, about 15–20 cm away from your phone. If you can not read code try to change distance.</source>
-        <translation type="unfinished"></translation>
+        <translation>Lesen Sie den Strichcode, indem Sie den Strichcode-Scanner senkrecht zum Bildschirm halten, etwa 15 bis 20 cm von Ihrem Telefon entfernt. Wenn Sie den Code nicht lesen können, versuchen Sie, die Entfernung zu ändern.</translation>
     </message>
 </context>
 <context>
@@ -56,17 +60,17 @@
     <message>
         <location filename="../qml/pages/DescDialog.qml" line="13"/>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>Speichern</translation>
     </message>
     <message>
         <location filename="../qml/pages/DescDialog.qml" line="16"/>
         <source>Enter short description of item %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Geben Sie eine kurze Beschreibung von Artikel %1 ein</translation>
     </message>
     <message>
         <location filename="../qml/pages/DescDialog.qml" line="29"/>
         <source>Enter description</source>
-        <translation type="unfinished"></translation>
+        <translation>Beschreibung eingeben</translation>
     </message>
 </context>
 <context>
@@ -79,7 +83,7 @@
     <message>
         <location filename="../qml/pages/Details.qml" line="63"/>
         <source>No items were found with the item code you provided</source>
-        <translation type="unfinished"></translation>
+        <translation>Mit dem von Ihnen angegebenen Artikelcode wurden keine Artikel gefunden</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="63"/>
@@ -109,7 +113,7 @@
     <message>
         <location filename="../qml/pages/Details.qml" line="86"/>
         <source>Sender</source>
-        <translation type="unfinished"></translation>
+        <translation>Absender</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="89"/>
@@ -119,37 +123,37 @@
     <message>
         <location filename="../qml/pages/Details.qml" line="92"/>
         <source>Destination</source>
-        <translation type="unfinished"></translation>
+        <translation>Ziel</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="95"/>
         <source>Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Größe</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="98"/>
         <source>Weight</source>
-        <translation type="unfinished"></translation>
+        <translation>Gewicht</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="101"/>
         <source>CoD amount</source>
-        <translation type="unfinished"></translation>
+        <translation>Nachnahme</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="104"/>
         <source>Estimated delivery</source>
-        <translation type="unfinished"></translation>
+        <translation>Geschätzte Lieferungzeit</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="116"/>
         <source>Shipment details</source>
-        <translation type="unfinished"></translation>
+        <translation>Versanddetails</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="137"/>
         <source>Show barcode</source>
-        <translation type="unfinished"></translation>
+        <translation>Strichcode anzeigen</translation>
     </message>
 </context>
 <context>
@@ -157,22 +161,22 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="277"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Über</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="281"/>
         <source>Update</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktualisieren</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="294"/>
         <source>Track item</source>
-        <translation type="unfinished"></translation>
+        <translation>Element suchen</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="324"/>
         <source>Deleting</source>
-        <translation type="unfinished"></translation>
+        <translation>Löschen …</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="354"/>
@@ -197,7 +201,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="458"/>
         <source>History</source>
-        <translation type="unfinished"></translation>
+        <translation>Verlauf</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="466"/>
@@ -207,32 +211,32 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="565"/>
         <source>No information available</source>
-        <translation type="unfinished"></translation>
+        <translation>Keine Informationen verfügbar</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="574"/>
         <source>Add description</source>
-        <translation type="unfinished"></translation>
+        <translation>Beschreibung hinzufügen</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="574"/>
         <source>Modify description</source>
-        <translation type="unfinished"></translation>
+        <translation>Beschreibung bearbeiten</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="578"/>
         <source>Copy tracking number</source>
-        <translation type="unfinished"></translation>
+        <translation>Verfolgungsnummer kopieren</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="582"/>
         <source>Copy text</source>
-        <translation type="unfinished"></translation>
+        <translation>Text kopieren</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="586"/>
         <source>Remove item</source>
-        <translation type="unfinished"></translation>
+        <translation>Element entfernen</translation>
     </message>
 </context>
 <context>
@@ -240,17 +244,17 @@
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="42"/>
         <source>Continue</source>
-        <translation type="unfinished"></translation>
+        <translation>Fortfahren</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="57"/>
         <source>Version %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Version %1</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="63"/>
         <source>Application updated</source>
-        <translation type="unfinished"></translation>
+        <translation>Anwendung aktualisiert</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="72"/>
@@ -259,7 +263,11 @@
 – Fixed some minor UI and API handling bugs.
 
 The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation type="unfinished"></translation>
+        <translation>Änderungsprotokollversion 0.7:
+- Paketverfolgung für La Poste (Frankreich) hinzugefügt. Vielen Dank an Adel Noureddine!
+- Einige kleinere Fehler in der Benutzeroberfläche und API wurden behoben.
+
+Der Betreuer der Anwendung ist Jyri-Petteri „ZeiP“ Paloposki.</translation>
     </message>
 </context>
 <context>
@@ -267,45 +275,47 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="61"/>
         <source>Hermes (Germany)</source>
-        <translation type="unfinished"></translation>
+        <translation>Hermes (Deutschland)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="49"/>
         <source>Posti (Finland)</source>
-        <translation type="unfinished"></translation>
+        <translation>Posti (Finnland)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="53"/>
         <source>Matkahuolto (Finland)</source>
-        <translation type="unfinished"></translation>
+        <translation>Matkahuolto (Finnland)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="57"/>
         <source>PostNord (Nordics)</source>
-        <translation type="unfinished"></translation>
+        <translation>PostNord (Nordische Länder)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="65"/>
         <source>La Poste/Colissimo/Chronopost (France)</source>
-        <translation type="unfinished"></translation>
+        <translation>La Poste/Colissimo/Chronopost (Frankreich)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="129"/>
         <source>less than minute ago</source>
-        <translation type="unfinished"></translation>
+        <translation>vor weniger als einer Minute</translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/harbour-paketti.qml" line="132"/>
         <source>%n minute(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>vor %n Minute</numerusform>
+            <numerusform>vor %n Minuten</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/harbour-paketti.qml" line="135"/>
         <source>%n hour(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>vor %n Stunde</numerusform>
+            <numerusform>vor %n Stunden</numerusform>
         </translation>
     </message>
 </context>
