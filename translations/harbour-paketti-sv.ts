@@ -136,7 +136,7 @@
     </message>
     <message>
         <source>Next step</source>
-        <translation type="unfinished"></translation>
+        <translation>Nästa steg</translation>
     </message>
 </context>
 <context>
