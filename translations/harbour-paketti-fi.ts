@@ -162,10 +162,6 @@
         <translation>Kuriiri</translation>
     </message>
     <message>
-        <source>[Select]</source>
-        <translation>[Valitse]</translation>
-    </message>
-    <message>
         <source>The courier is autoselected when entering a tracking code if possible.</source>
         <translation>Kuriiri valitaan automaattisesti seurantakoodia syötettäessä jos mahdollista.</translation>
     </message>
@@ -204,6 +200,10 @@
     <message>
         <source>Remove item</source>
         <translation>Poista</translation>
+    </message>
+    <message>
+        <source>Select</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

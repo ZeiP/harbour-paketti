@@ -9,10 +9,9 @@ public:
     Q_INVOKABLE QString requestResponse(QString url);
 private:
     QString getApiKey();
-    // Authorization key for LaPoste API
+    // Authorization key for the API
     // Generate an API key at https://developer.laposte.fr/products/suivi/latest
     QString apiKey = "";
-    QString response;
 };
 
 #endif // LAPOSTEAPI_H

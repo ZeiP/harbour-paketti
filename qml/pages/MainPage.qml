@@ -67,6 +67,7 @@ Page {
 
     property bool historyvisible: historyvisible;
     property bool cautoset: false;
+    property variant currentCourier: "";
 
     function itemUpdStarted(index) {
         historyModel.set(index, {"itmrun": "true"});
@@ -360,26 +361,18 @@ Page {
                     id: courier
                     width: parent.width
                     label: qsTr("Courier") + ": "
-                    currentIndex: 0
-                    function setValueByIdentifier(value) {
-                        for(var i = 0; i < couriers.count; ++i) {
-                            if (couriers.get(i).identifier === value) {
-                                // Adding 1 to the index to account for the [Select] option.
-                                courier.currentIndex = i+1;
-                                break;
-                            }
-                        }
-                    }
+                    value: qsTr("Select")
+                    description: qsTr("The courier is autoselected when entering a tracking code if possible.")
 
                     menu: ContextMenu {
-                        id: cmenu
-                        MenuItem { text: qsTr("[Select]"); visible: false }
                         Repeater {
                             model: couriers
-
-                            delegate: MenuItem {
+                            MenuItem {
                                 text: qsTranslate("main", model.name)
-                                property string value: model.identifier
+                                onClicked: {
+                                    courier.value = name
+                                    mainpage.currentCourier = identifier
+                                }
                             }
                         }
                         onClicked: {
@@ -388,8 +381,8 @@ Page {
                             koodiInput.forceActiveFocus();
                         }
                     }
-                    description: qsTr("The courier is autoselected when entering a tracking code if possible.")
                 }
+
                 Rectangle {
                     id: koodiBoksi
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -453,9 +446,10 @@ Page {
                         icon.source: "image://theme/icon-m-enter-accept"
                         anchors.right: parent.right
                         onClicked: {
-                            addTrackable(courier.currentItem.value, koodiInput.text);
+                            addTrackable(mainpage.currentCourier, koodiInput.text);
                             koodiInput.text = "";
-                            courier.currentIndex = 0;
+                            courier.value = qsTr("Select");
+                            mainpage.currentCourier = "";
                         }
                         enabled: courier.currentIndex!=0 && koodiInput.text.length > 4
                     }

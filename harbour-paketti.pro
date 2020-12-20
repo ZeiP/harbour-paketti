@@ -41,8 +41,11 @@ CONFIG += sailfishapp_i18n
 # planning to localize your app, remember to comment out the
 # following TRANSLATIONS line. And also do not forget to
 # modify the localized app name in the the .desktop file.
-TRANSLATIONS += translations/harbour-paketti-fi.ts
-TRANSLATIONS += translations/harbour-paketti-sv.ts
+TRANSLATIONS += translations/harbour-paketti-fi.ts \
+    translations/harbour-paketti-sv.ts \
+    translations/harbour-paketti-fr.ts \
+    translations/harbour-paketti-de.ts \
+    translations/harbour-paketti-nb_NO.ts \
 
 HEADERS += \
     src/dhlapi.h \

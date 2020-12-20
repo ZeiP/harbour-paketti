@@ -134,6 +134,10 @@
         <source>Courier</source>
         <translation>Fraktbolag</translation>
     </message>
+    <message>
+        <source>Next step</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MainPage</name>
@@ -156,10 +160,6 @@
     <message>
         <source>Courier</source>
         <translation>Fraktbolag</translation>
-    </message>
-    <message>
-        <source>[Select]</source>
-        <translation>[Välj]</translation>
     </message>
     <message>
         <source>The courier is autoselected when entering a tracking code if possible.</source>
@@ -200,6 +200,10 @@
     <message>
         <source>Remove item</source>
         <translation>Ta bort</translation>
+    </message>
+    <message>
+        <source>Select</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
