@@ -33,7 +33,7 @@
 – Juhana Virkkala (original version)
 – Adel Noureddine (La Poste tracking)
 – Hannu Hirvonen and Åke Engelbrektson (Swedish translation)</source>
-        <translation>Tackar:
+        <translation type="unfinished">Tackar:
 – Jyri-Petteri ”ZeiP” Paloposki (maintainer since 2020)
 – Juhana Virkkala (originalversion)
 – Adel Noureddine (La Poste-spårning)
