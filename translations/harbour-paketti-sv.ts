@@ -33,7 +33,7 @@
 – Juhana Virkkala (original version)
 – Adel Noureddine (La Poste tracking)
 – Hannu Hirvonen and Åke Engelbrektson (Swedish translation)</source>
-        <translation type="unfinished">Tackar:
+        <translation>Tackar:
 – Jyri-Petteri ”ZeiP” Paloposki (maintainer since 2020)
 – Juhana Virkkala (originalversion)
 – Adel Noureddine (La Poste-spårning)
@@ -203,7 +203,7 @@
     </message>
     <message>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj</translation>
     </message>
 </context>
 <context>
@@ -275,7 +275,7 @@ Underhåller appen gör Jyri-Petteri ”ZeiP” Paloposki.</translation>
     </message>
     <message>
         <source>DHL</source>
-        <translation type="unfinished"></translation>
+        <translation>DHL</translation>
     </message>
 </context>
 </TS>

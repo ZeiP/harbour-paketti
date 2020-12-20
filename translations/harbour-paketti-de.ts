@@ -39,7 +39,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="102"/>
         <source>Application author does not take any responsibility in case application will provide non-valid information. This is not an official application for the couriers.</source>
-        <translation type="unfinished"></translation>
+        <translation>Der Autor der Anwendung übernimmt keine Verantwortung für den Fall, dass die Anwendung ungültige Informationen liefert. Dies ist kein offizieller Anwendung für Kuriere.</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="86"/>
@@ -98,7 +98,7 @@
     <message>
         <location filename="../qml/pages/Details.qml" line="77"/>
         <source>Shipping ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Versand-ID</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="80"/>
@@ -108,7 +108,7 @@
     <message>
         <location filename="../qml/pages/Details.qml" line="83"/>
         <source>Number of items</source>
-        <translation type="unfinished"></translation>
+        <translation>Anzahl der Artikel</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="86"/>
