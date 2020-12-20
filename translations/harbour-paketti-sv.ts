@@ -203,7 +203,7 @@
     </message>
     <message>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj</translation>
     </message>
 </context>
 <context>
@@ -275,7 +275,7 @@ Underhåller appen gör Jyri-Petteri ”ZeiP” Paloposki.</translation>
     </message>
     <message>
         <source>DHL</source>
-        <translation type="unfinished"></translation>
+        <translation>DHL</translation>
     </message>
 </context>
 </TS>
