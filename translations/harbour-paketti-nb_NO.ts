@@ -33,14 +33,14 @@
 – J. Lavoie (German and French translation)
 – S. Fournial (French translation)
 – Allan Nordhøy (Norwegian translation)</source>
-        <translation type="unfinished">Takk til:
+        <translation>Takk til:
 – Jyri-Petteri ”ZeiP” Paloposki (vedlikeholder siden 2020)
 – Juhana Virkkala (opprinnelig versjon)
 – Adel Noureddine (La Poste-sporing)
 – Hannu Hirvonen og Åke Engelbrektson (Svensk oversettelse)
 – J. Lavoie (German and French translation)
 – S. Fournial (French translation)
-– Allan Nordhøy (Norwegian translation)</translation>
+– Allan Nordhøy (Denne oversettelsen)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="105"/>
