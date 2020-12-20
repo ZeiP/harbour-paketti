@@ -32,12 +32,11 @@
 – Jyri-Petteri ”ZeiP” Paloposki (maintainer since 2020)
 – Juhana Virkkala (original version)
 – Adel Noureddine (La Poste tracking)
-– Hannu Hirvonen and Åke Engelbrektson (Swedish translation)</source>
-        <translation>Kiitokset:
-– Jyri-Petteri ”ZeiP” Paloposki (ylläpitäjä 2020 alkaen)
-– Juhana Virkkala (alkuperäinen sovellus)
-– Adel Noureddine (La Poste -tuki)
-– Hannu Hirvonen ja Åke Engelbrektson (ruotsinkielinen käännös)</translation>
+– Hannu Hirvonen and Åke Engelbrektson (Swedish translation)
+– J. Lavoie (German and French translation)
+– S. Fournial (French translation)
+– Allan Nordhøy (Norwegian translation)</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -221,16 +220,20 @@
         <translation>Versio %1</translation>
     </message>
     <message>
-        <source>Changelog version 0.7:
+        <source>Changelog version 0.7.1:
+– Added DHL package tracking.
+– Added new translations for:
+  – German – thanks to J. Lavoie!
+  – French – thanks to J. Lavoie and S. Fournial!
+  – Norwegian – thanks to Allan Nordhøy!
+... and of course updated existing translations, see the about page for credits.
+
+Changelog version 0.7:
 – Added La Poste (France) package tracking. Thanks to Adel Noureddine!
 – Fixed some minor UI and API handling bugs.
 
 The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation>Muutoksia versiossa 0.7:
-– Lisätty tuki La Posten (Ranska) seurannalle. Kiitos Adel Noureddinelle!
-– Korjattu pieniä käyttöliittymä- ja rajapintabugeja.
-
-Sovelluksen ylläpitäjä on Jyri-Petteri ”ZeiP” Paloposki.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

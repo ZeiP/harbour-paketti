@@ -69,7 +69,15 @@ Dialog {
             Label {
                 anchors.left: parent.left; anchors.leftMargin: Theme.paddingMedium
                 anchors.right: parent.right; anchors.rightMargin: Theme.paddingMedium
-                text: qsTr("Changelog version 0.7:
+                text: qsTr("Changelog version 0.7.1:
+– Added DHL package tracking.
+– Added new translations for:
+  – German – thanks to J. Lavoie!
+  – French – thanks to J. Lavoie and S. Fournial!
+  – Norwegian – thanks to Allan Nordhøy!
+... and of course updated existing translations, see the about page for credits.
+
+Changelog version 0.7:
 – Added La Poste (France) package tracking. Thanks to Adel Noureddine!
 – Fixed some minor UI and API handling bugs.
 

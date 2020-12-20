@@ -29,20 +29,19 @@
 – Jyri-Petteri ”ZeiP” Paloposki (maintainer since 2020)
 – Juhana Virkkala (original version)
 – Adel Noureddine (La Poste tracking)
-– Hannu Hirvonen and Åke Engelbrektson (Swedish translation)</source>
-        <translation>Takk til:
-– Jyri-Petteri ”ZeiP” Paloposki (vedlikeholder siden 2020)
-– Juhana Virkkala (opprinnelig versjon)
-– Adel Noureddine (La Poste-sporing)
-– Hannu Hirvonen og Åke Engelbrektson (Svensk oversettelse)</translation>
+– Hannu Hirvonen and Åke Engelbrektson (Swedish translation)
+– J. Lavoie (German and French translation)
+– S. Fournial (French translation)
+– Allan Nordhøy (Norwegian translation)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="102"/>
+        <location filename="../qml/pages/AboutPage.qml" line="105"/>
         <source>Application author does not take any responsibility in case application will provide non-valid information. This is not an official application for the couriers.</source>
         <translation>Programutvikleren tar ikke ansvar i fall programmet viser uriktig informasjon. Dette er ikke et offisielt program for noen av fraktfirmaene.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="86"/>
+        <location filename="../qml/pages/AboutPage.qml" line="89"/>
         <source>Source code in GitHub</source>
         <translation>Kildekode på GitHub</translation>
     </message>
@@ -151,12 +150,17 @@
         <translation>Anslått levering</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Details.qml" line="116"/>
+        <location filename="../qml/pages/Details.qml" line="107"/>
+        <source>Next step</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Details.qml" line="119"/>
         <source>Shipment details</source>
         <translation>Fraktdetaljer</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Details.qml" line="137"/>
+        <location filename="../qml/pages/Details.qml" line="140"/>
         <source>Show barcode</source>
         <translation>Vis strekkode</translation>
     </message>
@@ -164,82 +168,83 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="277"/>
+        <location filename="../qml/pages/MainPage.qml" line="286"/>
         <source>About</source>
         <translation>Om</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="281"/>
+        <location filename="../qml/pages/MainPage.qml" line="290"/>
         <source>Update</source>
         <translation>Oppdater</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="294"/>
+        <location filename="../qml/pages/MainPage.qml" line="303"/>
         <source>Track item</source>
         <translation>Spor forsendelse</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="324"/>
+        <location filename="../qml/pages/MainPage.qml" line="333"/>
         <source>Deleting</source>
         <translation>Sletter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="354"/>
+        <location filename="../qml/pages/MainPage.qml" line="363"/>
         <source>Courier</source>
         <translation>Fraktfirma</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="368"/>
-        <source>[Select]</source>
-        <translation>[Velg]</translation>
+        <location filename="../qml/pages/MainPage.qml" line="364"/>
+        <location filename="../qml/pages/MainPage.qml" line="451"/>
+        <source>Select</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="383"/>
+        <location filename="../qml/pages/MainPage.qml" line="365"/>
         <source>The courier is autoselected when entering a tracking code if possible.</source>
         <translation>Fraktfirma velges automatisk ved innskriving av sporingskoden hvis det er mulig.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="408"/>
+        <location filename="../qml/pages/MainPage.qml" line="409"/>
         <source>Enter tracking code</source>
         <translation>Skriv inn sporingskode</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="458"/>
+        <location filename="../qml/pages/MainPage.qml" line="460"/>
         <source>History</source>
         <translation>Historikk</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="466"/>
+        <location filename="../qml/pages/MainPage.qml" line="468"/>
         <source>Start by choosing a courier and entering the tracking code in the box above. Tracked shipments will be saved automatically</source>
         <translation>Start ved å velge fraktfirma og skriv inn sporingskoden ovenfor. Forsendelser med sporings vil bli lagret automatisk.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="565"/>
+        <location filename="../qml/pages/MainPage.qml" line="567"/>
         <source>No information available</source>
         <translation>Ingen info tilgjengelig</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="574"/>
+        <location filename="../qml/pages/MainPage.qml" line="576"/>
         <source>Add description</source>
         <translation>Legg til beskrivelse</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="574"/>
+        <location filename="../qml/pages/MainPage.qml" line="576"/>
         <source>Modify description</source>
         <translation>Endre beskrivelse</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="578"/>
+        <location filename="../qml/pages/MainPage.qml" line="580"/>
         <source>Copy tracking number</source>
         <translation>Kopier sporingsnummer</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="582"/>
+        <location filename="../qml/pages/MainPage.qml" line="584"/>
         <source>Copy text</source>
         <translation>Kopier tekst</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="586"/>
+        <location filename="../qml/pages/MainPage.qml" line="588"/>
         <source>Remove item</source>
         <translation type="unfinished">Fjern</translation>
     </message>
@@ -263,16 +268,20 @@
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="72"/>
-        <source>Changelog version 0.7:
+        <source>Changelog version 0.7.1:
+– Added DHL package tracking.
+– Added new translations for:
+  – German – thanks to J. Lavoie!
+  – French – thanks to J. Lavoie and S. Fournial!
+  – Norwegian – thanks to Allan Nordhøy!
+... and of course updated existing translations, see the about page for credits.
+
+Changelog version 0.7:
 – Added La Poste (France) package tracking. Thanks to Adel Noureddine!
 – Fixed some minor UI and API handling bugs.
 
 The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation>Endringslogg, versjon 0.7:
-– La Poste (Frankrike)-pakkesporing lagt til. Takk til Adel Noureddine!
- - Fikset noen små grensesnitt- og API-håndteringstingsfeil.
- 
- Vedlikeholder for programmet er Jyri-Petteri ”ZeiP” Paloposki.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -303,12 +312,17 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
         <translation>La Poste/Colissimo/Chronopost (Frankrike)</translation>
     </message>
     <message>
-        <location filename="../qml/harbour-paketti.qml" line="129"/>
+        <location filename="../qml/harbour-paketti.qml" line="69"/>
+        <source>DHL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/harbour-paketti.qml" line="133"/>
         <source>less than minute ago</source>
         <translation>mindre enn ett minutt siden</translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/harbour-paketti.qml" line="132"/>
+        <location filename="../qml/harbour-paketti.qml" line="136"/>
         <source>%n minute(s) ago</source>
         <translation>
             <numerusform>%n minutt siden</numerusform>
@@ -316,7 +330,7 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/harbour-paketti.qml" line="135"/>
+        <location filename="../qml/harbour-paketti.qml" line="139"/>
         <source>%n hour(s) ago</source>
         <translation>
             <numerusform>%n time siden</numerusform>

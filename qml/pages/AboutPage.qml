@@ -79,7 +79,10 @@ Page {
 – Jyri-Petteri ”ZeiP” Paloposki (maintainer since 2020)
 – Juhana Virkkala (original version)
 – Adel Noureddine (La Poste tracking)
-– Hannu Hirvonen and Åke Engelbrektson (Swedish translation)")
+– Hannu Hirvonen and Åke Engelbrektson (Swedish translation)
+– J. Lavoie (German and French translation)
+– S. Fournial (French translation)
+– Allan Nordhøy (Norwegian translation)")
             }
             Button {
                 anchors.horizontalCenter: parent.horizontalCenter

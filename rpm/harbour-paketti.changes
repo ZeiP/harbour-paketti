@@ -12,6 +12,10 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sun Dec 20 2020 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi> 0.7.1
+– Added DHL package tracking.
+– Added new translations for German (thanks to J. Lavoie), French (thanks to J. Lavoie and S. Fournial) and Norwegian (thanks to Allan Nordhoy)
+
 * Sat Dec 19 2020 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi> 0.7
 – Added La Poste (France) package tracking. Thanks to Adel Noureddine!
 – Fixed some minor UI and API handling bugs.
