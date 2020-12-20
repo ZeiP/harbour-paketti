@@ -33,7 +33,14 @@
 – J. Lavoie (German and French translation)
 – S. Fournial (French translation)
 – Allan Nordhøy (Norwegian translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>Danke:
+– Jyri-Petteri „ZeiP“ Paloposki (Betreuer seit 2020)
+– Juhana Virkkala (Originalversion)
+– Adel Noureddine (Verfolgung von La Poste)
+– Hannu Hirvonen und Åke Engelbrektson (schwedische Übersetzung)
+– J. Lavoie (German and French translation)
+– S. Fournial (French translation)
+– Allan Nordhøy (Norwegian translation)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="105"/>
@@ -276,7 +283,19 @@ Changelog version 0.7:
 – Fixed some minor UI and API handling bugs.
 
 The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Änderungsprotokollversion 0.7.1:
+– Paketverfolgung für DHL hinzugefügt.
+– Added new translations for:
+  – German – thanks to J. Lavoie!
+  – French – thanks to J. Lavoie and S. Fournial!
+  – Norwegian – thanks to Allan Nordhøy!
+... and of course updated existing translations, see the about page for credits.
+
+Änderungsprotokollversion 0.7:
+– Paketverfolgung für La Poste (Frankreich) hinzugefügt. Vielen Dank an Adel Noureddine!
+– Einige kleinere Fehler in der Benutzeroberfläche und API wurden behoben.
+
+Der Betreuer der Anwendung ist Jyri-Petteri „ZeiP“ Paloposki.&lt;</translation>
     </message>
 </context>
 <context>
@@ -309,7 +328,7 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="69"/>
         <source>DHL</source>
-        <translation type="unfinished"></translation>
+        <translation>DHL</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="133"/>
