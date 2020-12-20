@@ -103,6 +103,9 @@ Page {
             case "estimatedDeliveryTime":
                 return qsTr("Estimated delivery");
                 break;
+            case "nextStep":
+                return qsTr("Next step");
+                break;
             default:
                 return label;
         }

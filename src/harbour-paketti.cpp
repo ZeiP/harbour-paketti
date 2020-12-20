@@ -5,6 +5,7 @@
 #include <sailfishapp.h>
 
 #include "laposteapi.h"
+#include "dhlapi.h"
 
 int main(int argc, char *argv[])
 {
@@ -20,6 +21,10 @@ int main(int argc, char *argv[])
     qmlRegisterType<LaPosteAPI>("harbour.org.paketti", 1, 0, "LaPosteAPI");
     LaPosteAPI *laPosteApi = new LaPosteAPI();
     v->rootContext()->setContextProperty("laPosteApi", laPosteApi);
+
+    qmlRegisterType<DHLAPI>("harbour.org.paketti", 1, 0, "DHLAPI");
+    DHLAPI *dhlApi = new DHLAPI();
+    v->rootContext()->setContextProperty("dhlApi", dhlApi);
 
     // Start the application.
     v->setSource(SailfishApp::pathTo("qml/harbour-paketti.qml"));

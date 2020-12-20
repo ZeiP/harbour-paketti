@@ -15,12 +15,14 @@ TARGET = harbour-paketti
 CONFIG += sailfishapp
 
 SOURCES += src/harbour-paketti.cpp \
+    src/dhlapi.cpp \
     src/laposteapi.cpp
 
 DISTFILES += qml/harbour-paketti.qml \
     qml/cover/CoverPage.qml \
     qml/pages/FirstPage.qml \
     qml/pages/SecondPage.qml \
+    qml/pages/plug_dhl.js \
     rpm/harbour-paketti.changes.in \
     rpm/harbour-paketti.changes.run.in \
     rpm/harbour-paketti.spec \
@@ -43,4 +45,5 @@ TRANSLATIONS += translations/harbour-paketti-fi.ts
 TRANSLATIONS += translations/harbour-paketti-sv.ts
 
 HEADERS += \
+    src/dhlapi.h \
     src/laposteapi.h

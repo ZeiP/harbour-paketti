@@ -35,6 +35,7 @@ import "plug_mh.js" as PlugMH
 import "plug_pn.js" as PlugPN
 import "plug_herde.js" as PlugHerDe
 import "plug_laposte.js" as PlugLaPoste
+import "plug_dhl.js" as PlugDHL
 
 import harbour.org.paketti 1.0
 
@@ -148,6 +149,10 @@ Page {
             PlugHerDe.updatedet(index, trackid, showdet);
             historyModel.set(index, {"typec": "#0091cd"});
         }
+        else if (historyModel.get(index).type == "DHL") {
+            PlugDHL.updatedet(index, trackid, showdet);
+            historyModel.set(index, {"typec": "#D40511"});
+        }
         else if (historyModel.get(index).type == "LAPOSTE") {
             PlugLaPoste.updatedet(index, trackid, showdet);
             historyModel.set(index, {"typec": "#f2e435"});
@@ -195,6 +200,9 @@ Page {
                     }
                     else if (rs.rows.item(i).type == "HERDE") {
                         historyModel.set(i+1, {"typec" : "#00a9cd"});
+                    }
+                    else if (rs.rows.item(i).type == "DHL") {
+                        historyModel.set(i+1, {"typec" : "#D40511"});
                     }
                     else if (rs.rows.item(i).type == "LAPOSTE") {
                         historyModel.set(i+1, {"typec" : "#f2e435"});

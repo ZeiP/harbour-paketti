@@ -269,5 +269,9 @@ Underhåller appen gör Jyri-Petteri ”ZeiP” Paloposki.</translation>
             <numerusform>%n timmar sedan</numerusform>
         </translation>
     </message>
+    <message>
+        <source>DHL</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 </TS>

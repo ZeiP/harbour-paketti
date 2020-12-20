@@ -65,6 +65,10 @@ ApplicationWindow {
             name: QT_TR_NOOP("La Poste/Colissimo/Chronopost (France)")
             identifier: "LAPOSTE"
         }
+        ListElement {
+            name: QT_TR_NOOP("DHL")
+            identifier: "DHL"
+        }
 
         function getCourierByIdentifier(identifier) {
             for (var i = 0; i < couriers.count; i++) {

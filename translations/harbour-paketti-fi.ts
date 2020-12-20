@@ -134,6 +134,10 @@
         <source>Courier</source>
         <translation>Kuriiri</translation>
     </message>
+    <message>
+        <source>Next step</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MainPage</name>
@@ -268,6 +272,10 @@ Sovelluksen ylläpitäjä on Jyri-Petteri ”ZeiP” Paloposki.</translation>
             <numerusform>%n tunti sitten</numerusform>
             <numerusform>%n tuntia sitten</numerusform>
         </translation>
+    </message>
+    <message>
+        <source>DHL</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
