@@ -33,7 +33,14 @@
 – J. Lavoie (German and French translation)
 – S. Fournial (French translation)
 – Allan Nordhøy (Norwegian translation)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Remerciement :
+– Jyri-Petteri « ZeiP » Paloposki (mainteneur depuis 2020)
+– Juhana Virkkala (version originale)
+– Adel Noureddine (suivi La Poste)
+– Hannu Hirvonen et Åke Engelbrektson (traduction en suédois)
+– J. Lavoie (German and French translation)
+– S. Fournial (French translation)
+– Allan Nordhøy (Norwegian translation)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="105"/>
@@ -196,7 +203,7 @@
         <location filename="../qml/pages/MainPage.qml" line="364"/>
         <location filename="../qml/pages/MainPage.qml" line="451"/>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>Sélectionner</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="365"/>
@@ -281,7 +288,19 @@ Changelog version 0.7:
 – Fixed some minor UI and API handling bugs.
 
 The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Version du journal des modifications 0.7.1 :
+– Ajout du suivi des colis DHL.
+– Added new translations for:
+  – German – thanks to J. Lavoie!
+  – French – thanks to J. Lavoie and S. Fournial!
+  – Norwegian – thanks to Allan Nordhøy!
+... and of course updated existing translations, see the about page for credits.
+
+Version du journal des modifications 0.7 :
+– Ajout du suivi des colis La Poste (France). Merci à Adel Noureddine !
+– Correction de quelques erreurs mineures de gestion de l’interface utilisateur et de l’API.
+
+Le mainteneur de l’application est Jyri-Petteri « ZeiP » Paloposki.</translation>
     </message>
 </context>
 <context>
@@ -314,7 +333,7 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="69"/>
         <source>DHL</source>
-        <translation type="unfinished"></translation>
+        <translation>DHL</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="133"/>
