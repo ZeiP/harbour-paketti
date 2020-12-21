@@ -20,8 +20,8 @@
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="71"/>
-        <source>Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto, PostNord, Hermes.de and La Poste packages.</source>
-        <translation>Paketti est une application de suivi d’expédition simple pour SailfishOS. Vous pouvez suivre les colis du service postal finlandais (Posti), Matkahuolto, PostNord, Hermes.de et La Poste (France).</translation>
+        <source>Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto, PostNord, Hermes.de, La Poste and DHL packages.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="78"/>
@@ -32,23 +32,17 @@
 – Hannu Hirvonen and Åke Engelbrektson (Swedish translation)
 – J. Lavoie (German and French translation)
 – S. Fournial (French translation)
-– Allan Nordhøy (Norwegian translation)</source>
-        <translation>Remerciement :
-– Jyri-Petteri « ZeiP » Paloposki (mainteneur depuis 2020)
-– Juhana Virkkala (version originale)
-– Adel Noureddine (suivi La Poste)
-– Hannu Hirvonen et Åke Engelbrektson (traduction en suédois)
-– J. Lavoie (traduction en allemand et français)
-– Swann Fournial (traduction en français)
-– Allan Nordhøy (traduction en norvégien)</translation>
+– Allan Nordhøy (Norwegian translation)
+– atlochowski (Polish translation)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="105"/>
+        <location filename="../qml/pages/AboutPage.qml" line="106"/>
         <source>Application author does not take any responsibility in case application will provide non-valid information. This is not an official application for the couriers.</source>
         <translation>L’auteur de l’application n’assume aucune responsabilité au cas où l’application fournirait des informations invalides. Ceci n’est pas une application officielle pour les coursiers.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="89"/>
+        <location filename="../qml/pages/AboutPage.qml" line="90"/>
         <source>Source code in GitHub</source>
         <translation>Code source dans GitHub</translation>
     </message>

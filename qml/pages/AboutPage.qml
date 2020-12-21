@@ -68,7 +68,7 @@ Page {
                 wrapMode: Text.WordWrap
                 anchors.left: parent.left; anchors.right: parent.right
                 font.pixelSize: Theme.fontSizeSmall
-                text: qsTr("Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto, PostNord, Hermes.de and La Poste packages.")
+                text: qsTr("Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto, PostNord, Hermes.de, La Poste and DHL packages.")
             }
             Label {
                 anchors.left: parent.left; anchors.right: parent.right
@@ -82,7 +82,8 @@ Page {
 – Hannu Hirvonen and Åke Engelbrektson (Swedish translation)
 – J. Lavoie (German and French translation)
 – S. Fournial (French translation)
-– Allan Nordhøy (Norwegian translation)")
+– Allan Nordhøy (Norwegian translation)
+– atlochowski (Polish translation)")
             }
             Button {
                 anchors.horizontalCenter: parent.horizontalCenter

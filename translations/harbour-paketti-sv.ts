@@ -20,10 +20,6 @@
         <translation>Källkod på GitHub</translation>
     </message>
     <message>
-        <source>Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto, PostNord, Hermes.de and La Poste packages.</source>
-        <translation>Paketti är ett enkelt program för försändelsespårning i SailfishOS. Med programmet kan man följa Finska posten (Posti), Matkahuoltos, PostNords (MyPack), Hermes.des och La Postes försändelser.</translation>
-    </message>
-    <message>
         <source>Application author does not take any responsibility in case application will provide non-valid information. This is not an official application for the couriers.</source>
         <translation>Programmets utvecklare tar inget ansvar för om programmet tillhandahåller ogiltig information. Programmet är inte ett officiellt program för fraktbolagen.</translation>
     </message>
@@ -35,15 +31,13 @@
 – Hannu Hirvonen and Åke Engelbrektson (Swedish translation)
 – J. Lavoie (German and French translation)
 – S. Fournial (French translation)
-– Allan Nordhøy (Norwegian translation)</source>
-        <translation>Tackar:
-– Jyri-Petteri ”ZeiP” Paloposki (Programunderhåll sedan 2020)
-– Juhana Virkkala (Originalversion)
-– Adel Noureddine (La Poste-spårning)
-– Hannu Hirvonen och Åke Engelbrektson (Svensk översättning)
-– J. Lavoie (Tysk och Fransk översättning)
-– S. Fournial (Fransk översättning)
-– Allan Nordhøy (Norsk översättning)</translation>
+– Allan Nordhøy (Norwegian translation)
+– atlochowski (Polish translation)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto, PostNord, Hermes.de, La Poste and DHL packages.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

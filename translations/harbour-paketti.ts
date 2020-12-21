@@ -20,7 +20,7 @@
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="71"/>
-        <source>Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto, PostNord, Hermes.de and La Poste packages.</source>
+        <source>Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto, PostNord, Hermes.de, La Poste and DHL packages.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -32,16 +32,17 @@
 – Hannu Hirvonen and Åke Engelbrektson (Swedish translation)
 – J. Lavoie (German and French translation)
 – S. Fournial (French translation)
-– Allan Nordhøy (Norwegian translation)</source>
+– Allan Nordhøy (Norwegian translation)
+– atlochowski (Polish translation)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="105"/>
+        <location filename="../qml/pages/AboutPage.qml" line="106"/>
         <source>Application author does not take any responsibility in case application will provide non-valid information. This is not an official application for the couriers.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="89"/>
+        <location filename="../qml/pages/AboutPage.qml" line="90"/>
         <source>Source code in GitHub</source>
         <translation type="unfinished"></translation>
     </message>

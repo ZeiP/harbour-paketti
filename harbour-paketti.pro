@@ -45,6 +45,7 @@ TRANSLATIONS += translations/harbour-paketti-fi.ts \
     translations/harbour-paketti-sv.ts \
     translations/harbour-paketti-fr.ts \
     translations/harbour-paketti-de.ts \
+    translations/harbour-paketti-pl.ts \
     translations/harbour-paketti-nb_NO.ts \
 
 HEADERS += \
