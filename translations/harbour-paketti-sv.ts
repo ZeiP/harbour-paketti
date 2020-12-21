@@ -41,7 +41,7 @@
 – Juhana Virkkala (Originalversion)
 – Adel Noureddine (La Poste-spårning)
 – Hannu Hirvonen och Åke Engelbrektson (Svensk översättning)
-– J. Lavoie (Tysk och and Fransk översättning)
+– J. Lavoie (Tysk och Fransk översättning)
 – S. Fournial (Fransk översättning)
 – Allan Nordhøy (Norsk översättning)</translation>
     </message>
