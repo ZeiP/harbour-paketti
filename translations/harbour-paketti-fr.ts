@@ -269,32 +269,22 @@
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="72"/>
-        <source>Changelog version 0.7.1:
+        <source>Changelog version 1.0:
+– Added new translations for:
+  – Polish – thanks to atlochowski!
+
+Changelog versions 0.7 and 0.7.1:
+– Added La Poste (France) package tracking. Thanks to Adel Noureddine!
 – Added DHL package tracking.
+– Fixed some minor UI and API handling bugs.
 – Added new translations for:
   – German – thanks to J. Lavoie!
   – French – thanks to J. Lavoie and S. Fournial!
   – Norwegian – thanks to Allan Nordhøy!
 ... and of course updated existing translations, see the about page for credits.
 
-Changelog version 0.7:
-– Added La Poste (France) package tracking. Thanks to Adel Noureddine!
-– Fixed some minor UI and API handling bugs.
-
 The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation>Version du journal des modifications 0.7.1 :
-– Ajout du suivi des colis DHL.
-– Ajout de nouvelles traductions pour :
-  – allemand – grâce à J. Lavoie !
-  – français – grâce à J. Lavoie et Swann Fournial !
-  – norvégien – grâce à Allan Nordhøy !
-... et bien sûr mise à jour des traductions existantes, voir la page À propos pour les crédits.
-
-Version du journal des modifications 0.7 :
-– Ajout du suivi des colis La Poste (France). Merci à Adel Noureddine !
-– Correction de quelques erreurs mineures de gestion de l’interface utilisateur et de l’API.
-
-Le mainteneur de l’application est Jyri-Petteri « ZeiP » Paloposki.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

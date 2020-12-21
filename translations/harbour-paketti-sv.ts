@@ -221,32 +221,22 @@
         <translation>Version %1</translation>
     </message>
     <message>
-        <source>Changelog version 0.7.1:
+        <source>Changelog version 1.0:
+– Added new translations for:
+  – Polish – thanks to atlochowski!
+
+Changelog versions 0.7 and 0.7.1:
+– Added La Poste (France) package tracking. Thanks to Adel Noureddine!
 – Added DHL package tracking.
+– Fixed some minor UI and API handling bugs.
 – Added new translations for:
   – German – thanks to J. Lavoie!
   – French – thanks to J. Lavoie and S. Fournial!
   – Norwegian – thanks to Allan Nordhøy!
 ... and of course updated existing translations, see the about page for credits.
 
-Changelog version 0.7:
-– Added La Poste (France) package tracking. Thanks to Adel Noureddine!
-– Fixed some minor UI and API handling bugs.
-
 The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation>Ändringslogg version 0.7.1:
-– Lade till DHL paketspårning.
-– Lade till nya översättnngar:
-  – Tyska – Tack till J. Lavoie!
-  – Franska – Tack till J. Lavoie och S. Fournial!
-  – Norska – Tack till Allan Nordhøy!
-... och självklart uppdatering av tidigare översättningar, se Om-sidan för översättare.
-
-Ändringslogg version 0.7:
-– Lade till La Poste (Frankrike) paketspårning. Tack till Adel Noureddine!
-– Fixade några mindre UI- och API-hanteringsfel.
-
-Underhåller appen gör Jyri-Petteri ”ZeiP” Paloposki.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
