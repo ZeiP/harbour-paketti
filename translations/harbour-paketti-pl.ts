@@ -21,7 +21,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="71"/>
         <source>Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto, PostNord, Hermes.de, La Poste and DHL packages.</source>
-        <translation type="unfinished"></translation>
+        <translation>Paketti to prosta aplikacja do śledzenia przesyłek dla SailfishOS. Możesz śledzić przesyłki fińskiej poczty (Posti), Matkahuolto, PostNord, Hermes.de, La Poste i DHL.</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="78"/>
@@ -34,7 +34,15 @@
 – S. Fournial (French translation)
 – Allan Nordhøy (Norwegian translation)
 – atlochowski (Polish translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>Podziękowania:
+– Jyri-Petteri ”ZeiP” Paloposki (utrzymania od 2020)
+– Juhana Virkkala (oryginalna wersja)
+– Adel Noureddine (traking La Poste)
+– Hannu Hirvonen and Åke Engelbrektson (szwedzkie tłumaczenie)
+– J. Lavoie (niemieckie i francuskie tłumaczenie)
+– S. Fournial (francuskie tłumaczenie)
+– Allan Nordhøy (norweskie tłumaczenie)
+– atlochowski (polskie tłumaczenie)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="106"/>
@@ -290,32 +298,32 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="61"/>
         <source>Hermes (Germany)</source>
-        <translation type="unfinished"></translation>
+        <translation>Hermes (Niemcy)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="49"/>
         <source>Posti (Finland)</source>
-        <translation type="unfinished"></translation>
+        <translation>Posti (Finlandia)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="53"/>
         <source>Matkahuolto (Finland)</source>
-        <translation type="unfinished"></translation>
+        <translation>Matkahuolto (Finlandia)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="57"/>
         <source>PostNord (Nordics)</source>
-        <translation type="unfinished"></translation>
+        <translation>PostNord (kraje nordyckie)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="65"/>
         <source>La Poste/Colissimo/Chronopost (France)</source>
-        <translation type="unfinished"></translation>
+        <translation>La Poste/Colissimo/Chronopost (Francja)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="69"/>
         <source>DHL</source>
-        <translation type="unfinished"></translation>
+        <translation>DHL</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="133"/>
