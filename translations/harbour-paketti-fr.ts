@@ -33,7 +33,14 @@
 – J. Lavoie (German and French translation)
 – S. Fournial (French translation)
 – Allan Nordhøy (Norwegian translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>Remerciement :
+– Jyri-Petteri « ZeiP » Paloposki (mainteneur depuis 2020)
+– Juhana Virkkala (version originale)
+– Adel Noureddine (suivi La Poste)
+– Hannu Hirvonen et Åke Engelbrektson (traduction en suédois)
+– J. Lavoie (traduction en allemand et français)
+– Swann Fournial (traduction en français)
+– Allan Nordhøy (traduction en norvégien)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="105"/>
@@ -152,7 +159,7 @@
     <message>
         <location filename="../qml/pages/Details.qml" line="107"/>
         <source>Next step</source>
-        <translation type="unfinished"></translation>
+        <translation>Étape suivante</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="119"/>
@@ -196,7 +203,7 @@
         <location filename="../qml/pages/MainPage.qml" line="364"/>
         <location filename="../qml/pages/MainPage.qml" line="451"/>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>Sélectionner</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="365"/>
@@ -281,7 +288,19 @@ Changelog version 0.7:
 – Fixed some minor UI and API handling bugs.
 
 The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation type="unfinished"></translation>
+        <translation>Version du journal des modifications 0.7.1 :
+– Ajout du suivi des colis DHL.
+– Ajout de nouvelles traductions pour :
+  – allemand – grâce à J. Lavoie !
+  – français – grâce à J. Lavoie et Swann Fournial !
+  – norvégien – grâce à Allan Nordhøy !
+... et bien sûr mise à jour des traductions existantes, voir la page À propos pour les crédits.
+
+Version du journal des modifications 0.7 :
+– Ajout du suivi des colis La Poste (France). Merci à Adel Noureddine !
+– Correction de quelques erreurs mineures de gestion de l’interface utilisateur et de l’API.
+
+Le mainteneur de l’application est Jyri-Petteri « ZeiP » Paloposki.</translation>
     </message>
 </context>
 <context>
@@ -314,7 +333,7 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="69"/>
         <source>DHL</source>
-        <translation type="unfinished"></translation>
+        <translation>DHL</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="133"/>

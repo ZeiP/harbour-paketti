@@ -36,7 +36,14 @@
 – J. Lavoie (German and French translation)
 – S. Fournial (French translation)
 – Allan Nordhøy (Norwegian translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>Tackar:
+– Jyri-Petteri ”ZeiP” Paloposki (Programunderhåll sedan 2020)
+– Juhana Virkkala (Originalversion)
+– Adel Noureddine (La Poste-spårning)
+– Hannu Hirvonen och Åke Engelbrektson (Svensk översättning)
+– J. Lavoie (Tysk och Fransk översättning)
+– S. Fournial (Fransk översättning)
+– Allan Nordhøy (Norsk översättning)</translation>
     </message>
 </context>
 <context>
@@ -233,7 +240,19 @@ Changelog version 0.7:
 – Fixed some minor UI and API handling bugs.
 
 The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ändringslogg version 0.7.1:
+– Lade till DHL paketspårning.
+– Lade till nya översättnngar:
+  – Tyska – Tack till J. Lavoie!
+  – Franska – Tack till J. Lavoie och S. Fournial!
+  – Norska – Tack till Allan Nordhøy!
+... och självklart uppdatering av tidigare översättningar, se Om-sidan för översättare.
+
+Ändringslogg version 0.7:
+– Lade till La Poste (Frankrike) paketspårning. Tack till Adel Noureddine!
+– Fixade några mindre UI- och API-hanteringsfel.
+
+Underhåller appen gör Jyri-Petteri ”ZeiP” Paloposki.</translation>
     </message>
 </context>
 <context>

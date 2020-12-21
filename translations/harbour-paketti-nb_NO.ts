@@ -33,7 +33,14 @@
 – J. Lavoie (German and French translation)
 – S. Fournial (French translation)
 – Allan Nordhøy (Norwegian translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>Takk til:
+– Jyri-Petteri ”ZeiP” Paloposki (vedlikeholder siden 2020)
+– Juhana Virkkala (opprinnelig versjon)
+– Adel Noureddine (La Poste-sporing)
+– Hannu Hirvonen og Åke Engelbrektson (Svensk oversettelse)
+– J. Lavoie (German and French translation)
+– S. Fournial (French translation)
+– Allan Nordhøy (Denne oversettelsen)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="105"/>
@@ -196,7 +203,7 @@
         <location filename="../qml/pages/MainPage.qml" line="364"/>
         <location filename="../qml/pages/MainPage.qml" line="451"/>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>Velg</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="365"/>
@@ -281,7 +288,19 @@ Changelog version 0.7:
 – Fixed some minor UI and API handling bugs.
 
 The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation type="unfinished"></translation>
+        <translation>Endringslogg, versjon 0.7.1:
+– DHL-pakkesporing lagt til.
+– Added new translations for:
+  – German – thanks to J. Lavoie!
+  – French – thanks to J. Lavoie and S. Fournial!
+  – Norwegian – thanks to Allan Nordhøy!
+... and of course updated existing translations, see the about page for credits.
+
+Endringslogg, versjon 0.7:
+– La Poste (Frankrike)-pakkesporing lagt til. Takk til Adel Noureddine!
+– Fikset noen små grensesnitt- og API-håndteringstingsfeil.
+
+Vedlikeholder for programmet er Jyri-Petteri ”ZeiP” Paloposki.</translation>
     </message>
 </context>
 <context>
@@ -314,7 +333,7 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="69"/>
         <source>DHL</source>
-        <translation type="unfinished"></translation>
+        <translation>DHL</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="133"/>
