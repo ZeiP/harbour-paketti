@@ -10,4 +10,4 @@ The translations can be modified and new ones added in [Weblate](https://hosted.
 
 ## Building
 
-If you want to build La Poste support, remember to add your API key to src/laposteapi.h.
+If you want to build La Poste or DHL support, remember to add your API keys correspondingly to src/laposteapi.h and src/dhlapi.h.
