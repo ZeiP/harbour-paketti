@@ -12,6 +12,10 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sun Jan 03 2021 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi> 0.8
+– Added new translations for Polish – thanks to atlochowski!
+– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!
+
 * Sun Dec 20 2020 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi> 0.7.1
 – Added DHL package tracking.
 – Added new translations for German (thanks to J. Lavoie), French (thanks to J. Lavoie and S. Fournial) and Norwegian (thanks to Allan Nordhoy)
