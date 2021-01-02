@@ -6,18 +6,21 @@ function updatedet(index, trackid, showdet) {
     var doc = new XMLHttpRequest();
     doc.onreadystatechange = function() {
         if (doc.readyState == XMLHttpRequest.DONE) {
-            var jsonObj = JSON.parse(doc.responseText);
-            if (jsonObj.error != null) {
-                console.log("Cannot parse JSON");
-                itemUpdReady(index,"ERR", 0);
+            var response = doc.responseText;
+
+            try {
+                var data = JSON.parse(response);
+            }
+            catch (e) {
+                setShipmentError(index, "Failed to parse JSON.");
                 return false;
             }
-            if (jsonObj.response.trackingInformationResponse.shipments.length == 0) {
-                console.log("Empty shipment information.");
-                itemUpdReady(index,"ERR", 0);
+
+            if (data.response.trackingInformationResponse.shipments.length == 0) {
+                setShipmentError(index, "Empty shipment information.");
                 return false;
             }
-            var respObj = jsonObj.response.trackingInformationResponse.shipments[0];
+            var respObj = data.response.trackingInformationResponse.shipments[0];
 
             var rivi=999;
             if ("shipmentId" in respObj)

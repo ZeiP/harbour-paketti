@@ -69,9 +69,10 @@ Dialog {
             Label {
                 anchors.left: parent.left; anchors.leftMargin: Theme.paddingMedium
                 anchors.right: parent.right; anchors.rightMargin: Theme.paddingMedium
-                text: qsTr("Changelog version 1.0:
+                text: qsTr("Changelog version 0.8:
 – Added new translations for:
   – Polish – thanks to atlochowski!
+– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!
 
 Changelog versions 0.7 and 0.7.1:
 – Added La Poste (France) package tracking. Thanks to Adel Noureddine!

@@ -48,28 +48,33 @@ ApplicationWindow {
         ListElement {
             name: QT_TR_NOOP("Posti (Finland)")
             identifier: "FI"
+            brandColour: "#ff9600"
         }
         ListElement {
             name: QT_TR_NOOP("Matkahuolto (Finland)")
             identifier: "MH"
+            brandColour: "#1e00ff"
         }
         ListElement {
             name: QT_TR_NOOP("PostNord (Nordics)")
             identifier: "PN"
+            brandColour: "#00a9cd"
         }
         ListElement {
             name: QT_TR_NOOP("Hermes (Germany)")
             identifier: "HERDE"
+            brandColour: "#0091cd"
         }
         ListElement {
             name: QT_TR_NOOP("La Poste/Colissimo/Chronopost (France)")
             identifier: "LAPOSTE"
+            brandColour: "#f2e435"
         }
         ListElement {
             name: QT_TR_NOOP("DHL")
             identifier: "DHL"
+            brandColour: "#D40511"
         }
-
         function getCourierByIdentifier(identifier) {
             for (var i = 0; i < couriers.count; i++) {
                 var value = couriers.get(i);
@@ -77,23 +82,51 @@ ApplicationWindow {
                     return value;
                 }
             }
+            console.error("Didn't found the courier being seeked " + identifier);
         }
     }
 
-    function getLocale(allowedLocales) {
+    function httpStatusIsError(statusCode) {
+        var firstNum = String(statusCode).substring(0, 1);
+        return (firstNum == "4" || firstNum == "5");
+    }
+
+    /**
+     * Returns the correct one of the allowed locales or the first one if none match.
+     * Specify the string "*" if any locale is acceptable (the API has a working fallback functionality).
+     * The second argument specifies if the API requires the locale in the long format (fi_FI instead of fi).
+     */
+    function getLocale(allowedLocales, longLocale) {
+        longLocale = (typeof longLocale !== 'undefined') ?  longLocale : false
         var i = 0;
-        var qtLocale = Qt.locale().name.substring(0, 2);
+        var localeName = Qt.locale().name;
+        // qtLocale is sometimes just C
+        var qtLocale;
+        if (localeName == 'C') {
+            qtLocale = longLocale ? 'en_GB' : 'en';
+        }
+        else {
+            qtLocale = localeName.substring(0, (longLocale ? 5 : 2))
+        }
+
         if (allowedLocales == '*') {
             return qtLocale;
         }
+
+        var langCandidate = "";
 
         // Array.includes() would be cleaner, but didn't work for me.
         while (i < allowedLocales.length){
             if (allowedLocales[i++] == qtLocale) {
                 return qtLocale;
             }
+            // It wasn't an exact match, but if the language is same, save the first one
+            // (ie. the most preferable by allowed order) as a fallback candidate.
+            else if (allowedLocales[i++].substring(0, 2) == qtLocale.substring(0, 2) && langCandidate == "") {
+                langCandidate = allowedLocales[i++];
+            }
         }
-        return allowedLocales[0];
+        return langCandidate == "" ? allowedLocales[0] : langCandidate;
     }
 
     function dbConnection() {
@@ -231,6 +264,15 @@ ApplicationWindow {
             }
         );
         return(status);
+    }
+
+    function setStatus(trackid, str) {
+        var db = dbConnection();
+        db.transaction(
+            function(tx) {
+                var rs = tx.executeSql('UPDATE history SET statusstr = ? WHERE trackid = ?;', [str, trackid]);
+            }
+        );
     }
 
     function dbVerConnection() {

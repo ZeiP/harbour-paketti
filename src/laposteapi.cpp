@@ -34,7 +34,8 @@ QString LaPosteAPI::requestResponse(QString url)
         else // handle error
         {
             qDebug(reply->errorString().toUtf8());
-            return "";
+            QByteArray response = reply->readAll();
+            return response;
         }
 //    });
 }

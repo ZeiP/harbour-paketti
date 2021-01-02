@@ -5,16 +5,22 @@ function updatedet(index, trackid, showdet) {
 	var db = dbConnection();
 
     var response = dhlApi.requestResponse(dhlURL(trackid));
-    var data = JSON.parse(response);
-    if (data.error != null) {
-        console.log("Cannot parse JSON");
-        itemUpdReady(index,"ERR", 0);
+
+    try {
+        var data = JSON.parse(response);
+    }
+    catch (e) {
+        setShipmentError(index, "Failed to parse JSON.");
+        return false;
+    }
+
+    if (httpStatusIsError(data.status)) {
+        setShipmentError(index, "JSON contained an error: " + data.detail);
         return false;
     }
 
     if (data.shipments.length == 0) {
-        console.log("Empty shipment information.");
-        itemUpdReady(index,"ERR", 0);
+        setShipmentError(index, "Empty shipment information.");
         return false;
     }
     var respObj = data.shipments[0];

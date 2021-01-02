@@ -9,17 +9,24 @@ function updatedet(index, trackid, showdet) {
         if (doc.readyState == XMLHttpRequest.DONE) {
             if (doc.status == 204) {
                 // 204 No Content means not found /expired
-                console.log("Not found / expired");
-                itemUpdReady(index, "ERR", 0);
+                setShipmentError(index, "Not found / expired");
                 return false;
             }
 
-            var data = JSON.parse(doc.responseText);
-            if (data.error != null) {
-                console.log("Cannot parse JSON");
-                itemUpdReady(index,"ERR", 0);
+            var response = doc.responseText;
+            try {
+                var data = JSON.parse(response);
+            }
+            catch (e) {
+                setShipmentError(index, "Failed to parse JSON.");
                 return false;
             }
+
+            if (data.message != null) {
+                setShipmentError(index, "JSON contained a message: " + data.message);
+                return false;
+            }
+
             data = data[0];
 
             for (var i in data.statusHistory) {

@@ -3,12 +3,18 @@ function updatedet(index, trackid, showdet) {
 	console.log("UPD" + trackid);
 
 	var db = dbConnection();
-
     var response = laPosteApi.requestResponse(laposteURL(trackid));
-    var data = JSON.parse(response);
-    if (data.error != null) {
-        console.log("Cannot parse JSON");
-        itemUpdReady(index,"ERR", 0);
+
+    try {
+        var data = JSON.parse(response);
+    }
+    catch (e) {
+        setShipmentError(index, "Failed to parse JSON.");
+        return false;
+    }
+
+    if (httpStatusIsError(data.returnCode)) {
+        setShipmentError(index, "JSON contained an error: " + data.returnMessage);
         return false;
     }
 
@@ -27,8 +33,11 @@ function updatedet(index, trackid, showdet) {
     itemUpdReady(index, "HIT", showdet);
 }
 
-function laposteURL(koodi) {
-    return("https://api.laposte.fr/suivi/v2/idships/" + koodi + "?lang=" + getLocale(["fr_FR"]));
+function laposteURL(code) {
+    // Despite the API documentation La Poste API returns a ”code not found error” for other
+    // locales except these (the list is based on experimentation, so it may be missing some...)
+    var langs = ["en_GB", "fr_FR", "de_DE", "it_IT", "nl_NL", "es_ES"];
+    return("https://api.laposte.fr/suivi/v2/idships/" + code + "?lang=" + getLocale(langs, true));
 }
 
 function getTextOfCodeLaPoste(code) {

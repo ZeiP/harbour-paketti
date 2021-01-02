@@ -68,7 +68,7 @@ Page {
                 wrapMode: Text.WordWrap
                 anchors.left: parent.left; anchors.right: parent.right
                 font.pixelSize: Theme.fontSizeSmall
-                text: qsTr("Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto, PostNord, Hermes.de, La Poste and DHL packages.")
+                text: qsTr("Paketti is a simple shipment tracking application for SailfishOS.")
             }
             Label {
                 anchors.left: parent.left; anchors.right: parent.right
@@ -76,8 +76,8 @@ Page {
                 color: Theme.secondaryColor
                 wrapMode: Text.WordWrap
                 text: qsTr("Thanking:
-– Jyri-Petteri ”ZeiP” Paloposki (maintainer since 2020)
-– Juhana Virkkala (original version)
+– Jyri-Petteri ”ZeiP” Paloposki (maintainer)
+– Juhana Virkkala (original author)
 – Adel Noureddine (La Poste tracking)
 – Hannu Hirvonen and Åke Engelbrektson (Swedish translation)
 – J. Lavoie (German and French translation)
@@ -87,7 +87,7 @@ Page {
             }
             Button {
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: qsTr("Source code in GitHub")
+                text: qsTr("GitHub (source codes and issues)")
                 onClicked: Qt.openUrlExternally("https://github.com/ZeiP/harbour-paketti")
             }
         }
@@ -103,7 +103,7 @@ Page {
                 wrapMode: Text.WordWrap
                 anchors.left: parent.left; anchors.right: parent.right
                 font.pixelSize: Theme.fontSizeExtraSmall
-                text: qsTr("Application author does not take any responsibility in case application will provide non-valid information. This is not an official application for the couriers.")
+                text: qsTr("Author does not take any responsibility for the information provided by the application. This is not an official application for the couriers.")
                 color: Theme.secondaryColor
             }
         }

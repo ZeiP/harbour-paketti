@@ -75,7 +75,7 @@ Page {
         historyModel.set(index, {"status": 1});
     }
 
-    function itemUpdReady(index,okStr,showdet) {
+    function itemUpdReady(index, okStr, showdet) {
         var trackid = historyModel.get(index).title;
         lastActivityToList(index);
         historyModel.set(index, {"itmrun": "false"});
@@ -96,12 +96,11 @@ Page {
         }
 
         if (showdet == 1) {
-            pageStack.push("Details.qml", {"koodi": trackid});
+            pageStack.push("Details.qml", {"code": trackid});
         }
         else {
             historyModel.set(index, {"status": getStatus(historyModel.get(index).title)});
         }
-        //setEventsShown(historyModel.get(index).title);
         saveitem(index);
     }
 
@@ -133,30 +132,27 @@ Page {
     }
 
     function updateitem(index, showdet) {
+        var courierData = couriers.getCourierByIdentifier(historyModel.get(index).type)
+        historyModel.set(index, {"typec" : courierData.brandColour});
+
         var trackid = historyModel.get(index).title;
         if (historyModel.get(index).type == "FI") {
             PlugItella.updatedet(index, trackid, showdet);
-            historyModel.set(index, {"typec": "#ff9600"});
         }
         else if (historyModel.get(index).type == "MH") {
             PlugMH.updatedet(index, trackid, showdet);
-            historyModel.set(index, {"typec": "#1e00ff"});
         }
         else if (historyModel.get(index).type == "PN") {
             PlugPN.updatedet(index, trackid, showdet);
-            historyModel.set(index, {"typec": "#00a9cd"});
         }
         else if (historyModel.get(index).type == "HERDE") {
             PlugHerDe.updatedet(index, trackid, showdet);
-            historyModel.set(index, {"typec": "#0091cd"});
         }
         else if (historyModel.get(index).type == "DHL") {
             PlugDHL.updatedet(index, trackid, showdet);
-            historyModel.set(index, {"typec": "#D40511"});
         }
         else if (historyModel.get(index).type == "LAPOSTE") {
             PlugLaPoste.updatedet(index, trackid, showdet);
-            historyModel.set(index, {"typec": "#f2e435"});
         }
     }
 
@@ -191,24 +187,9 @@ Page {
                 var rs = tx.executeSql('SELECT * FROM history ORDER BY timestamp DESC;');
                 for (var i = 0; i < rs.rows.length; i++) {
                     historyModel.set(i+1, {"type": rs.rows.item(i).type, "det": "NAN", "title": rs.rows.item(i).trackid, "datetime": rs.rows.item(i).timestamp, "itemdesc": rs.rows.item(i).detstr});
-                    if (rs.rows.item(i).type == "FI") {
-                        historyModel.set(i+1, {"typec" : "#ff9600"});
-                    }
-                    else if (rs.rows.item(i).type == "MH") {
-                        historyModel.set(i+1, {"typec" : "#1e00ff"});
-                    }
-                    else if (rs.rows.item(i).type == "PN") {
-                        historyModel.set(i+1, {"typec" : "#00a9cd"});
-                    }
-                    else if (rs.rows.item(i).type == "HERDE") {
-                        historyModel.set(i+1, {"typec" : "#00a9cd"});
-                    }
-                    else if (rs.rows.item(i).type == "DHL") {
-                        historyModel.set(i+1, {"typec" : "#D40511"});
-                    }
-                    else if (rs.rows.item(i).type == "LAPOSTE") {
-                        historyModel.set(i+1, {"typec" : "#f2e435"});
-                    }
+                    var courierData = couriers.getCourierByIdentifier(rs.rows.item(i).type)
+                    historyModel.set(i+1, {"typec" : courierData.brandColour});
+
                     historyModel.set(i+1, {"status": getStatus(rs.rows.item(i).trackid)});
                     lastActivityToList(i+1);
                 }
@@ -225,19 +206,34 @@ Page {
         }
     }
 
+    function setShipmentError(index, errormsg) {
+        var trackid = historyModel.get(index).title;
+        console.log(errormsg);
+        setStatus(trackid, errormsg);
+        itemUpdReady(index, "ERR", 0);
+    }
+
     function lastActivityToList(index) {
         var trackid = historyModel.get(index).title;
         var db = dbConnection();
         db.transaction(
             function(tx) {
                 var rs = tx.executeSql('SELECT * FROM shipdets WHERE trackid = ? AND type = \"EVT\" ORDER BY datetime DESC LIMIT 1;', [trackid]);
+                var det;
                 if (rs.rows.length > 0) {
-                    var det = rs.rows.item(0).label;
+                    det = rs.rows.item(0).label;
                     if (rs.rows.item(0).value !== null && rs.rows.item(0).value !== "") {
-                        det = det + " "  + rs.rows.item(0).value;
+                        det = det + " " + rs.rows.item(0).value;
                     }
-                    historyModel.set(index, {"det": det, "datetime": rs.rows.item(0).datetime});
                 }
+                else {
+                    var rs = tx.executeSql('SELECT statusstr FROM history WHERE trackid = ?;', [trackid]);
+                    if (rs.rows.length > 0) {
+                        det = rs.rows.item(0).statusstr;
+                    }
+                }
+
+                historyModel.set(index, {"det": det, "datetime": rs.rows.item(0).datetime});
             }
         );
     }
@@ -315,7 +311,7 @@ Page {
             onClicked: {
                 historyModel.set(index, {"status": 1});
                 var props = {
-                    "koodi": title
+                    "code": title
                 };
                 if (index != 0) {
                     pageStack.push("Details.qml", props);
@@ -385,6 +381,7 @@ Page {
                     function setValueByIdentifier(identifier) {
                         var courierdata = couriers.getCourierByIdentifier(identifier);
                         courier.value = courierdata.name
+                        courier.valueColor = Theme.highlightColor
                         mainpage.currentCourier = identifier
                     }
 
@@ -585,6 +582,10 @@ Page {
                         MenuItem {
                             text: itemdesc == "" ? qsTr("Add description") : qsTr("Modify description")
                             onClicked: pageStack.push("DescDialog.qml", {"trackid": title, "description": itemdesc});
+                        }
+                        MenuItem {
+                            text: qsTr("Show barcode")
+                            onClicked: pageStack.push("BarCodePage.qml", {"code": title});
                         }
                         MenuItem {
                             text: qsTr("Copy tracking number")

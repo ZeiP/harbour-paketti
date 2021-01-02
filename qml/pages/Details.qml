@@ -34,27 +34,26 @@ import Sailfish.Silica 1.0
 Page {
     id: page
 
-    property var koodi: koodi
+    property var code: code
 
     Component.onCompleted: {
         extramenu.text = "";
         extramenu.url = "";
         resultModel.clear();
-        setEventsShown(koodi);
-        getdetails(koodi);
+        setEventsShown(code);
+        getdetails(code);
     }
 
-    function getdetails(koodi) {
+    function getdetails(code) {
         var db = dbVerConnection();
         db.transaction(
             function(tx) {
                 // Fetch the history table data and print out the courier.
-                var history = tx.executeSql('SELECT * FROM history WHERE trackid = ?', [koodi]);
+                var history = tx.executeSql('SELECT * FROM history WHERE trackid = ?', [code]);
                 history = history.rows.item(0);
-                resultModel.append({"type": "HDR", "label": qsTr("Courier"), "value": qsTr(couriers.getCourierByIdentifier(history.type).name), "datetime": new Date()});
-
+                resultModel.append({"type": "HDR", "label": qsTr("Courier"), "value": qsTr(couriers.getCourierByIdentifier(history.type).name), "datetime": convertDateBack("99999999999999")});
                 // Fetch the actual headers and events and print them out.
-                var rs = tx.executeSql('SELECT * FROM shipdets WHERE trackid = ? ORDER BY datetime DESC', [koodi]);
+                var rs = tx.executeSql('SELECT * FROM shipdets WHERE trackid = ? ORDER BY datetime DESC', [code]);
                 //uid,trackid, type, datetime, label, value, status
                 for (var i = 0; i < rs.rows.length; i++) {
                     resultModel.append({"type": rs.rows.item(i).type, "label": getHeader(rs.rows.item(i).label), "value": rs.rows.item(i).value, "datetime": convertDateBack(rs.rows.item(i).datetime)});
@@ -140,7 +139,7 @@ Page {
                 text: qsTr("Show barcode")
                 onClicked: {
                     var props = {
-                        "koodi": koodi
+                        "code": code
                     };
                     pageStack.push("BarCodePage.qml", props);
                 }

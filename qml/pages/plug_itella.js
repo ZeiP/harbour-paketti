@@ -6,15 +6,18 @@ function updatedet(index, trackid, showdet) {
     doc.onreadystatechange = function() {
         if (doc.readyState == XMLHttpRequest.DONE) {
             var headrivi=997;
-            var data = JSON.parse(doc.responseText);
-            if (data.error != null) {
-                console.log("Cannot parse JSON");
-                itemUpdReady(index,"ERR", 0);
+            var response = doc.responseText;
+
+            try {
+                var data = JSON.parse(response);
+            }
+            catch (e) {
+                setShipmentError(index, "Failed to parse JSON.");
                 return false;
             }
+
             if (!data.shipments.length) {
-                console.log("Empty shipment data");
-                itemUpdReady(index, "ERR", 0);
+                setShipmentError(index, "Empty shipment data");
                 return;
             }
 
