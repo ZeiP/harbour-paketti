@@ -31,36 +31,38 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 
+import "../js/helpers.js" as PHelpers
+import "../js/database.js" as PDatabase
+
 Page {
     id: page
 
-    property var koodi: koodi
+    property var code: code
 
     Component.onCompleted: {
         extramenu.text = "";
         extramenu.url = "";
         resultModel.clear();
-        setEventsShown(koodi);
-        getdetails(koodi);
+        PDatabase.setEventsShown(code);
+        getdetails(code);
     }
 
-    function getdetails(koodi) {
-        var db = dbVerConnection();
+    function getdetails(code) {
+        var db = dbConnection();
         db.transaction(
             function(tx) {
                 // Fetch the history table data and print out the courier.
-                var history = tx.executeSql('SELECT * FROM history WHERE trackid = ?', [koodi]);
+                var history = tx.executeSql('SELECT * FROM history WHERE trackid = ?', [code]);
                 history = history.rows.item(0);
-                resultModel.append({"type": "HDR", "label": qsTr("Courier"), "value": qsTr(couriers.getCourierByIdentifier(history.type).name), "datetime": new Date()});
-
+                resultModel.append({"type": "HDR", "label": qsTr("Courier"), "value": qsTr(couriers.getCourierByIdentifier(history.type).name), "datetime": PHelpers.convertDateBack("99999999999999")});
                 // Fetch the actual headers and events and print them out.
-                var rs = tx.executeSql('SELECT * FROM shipdets WHERE trackid = ? ORDER BY datetime DESC', [koodi]);
+                var rs = tx.executeSql('SELECT * FROM shipdets WHERE trackid = ? ORDER BY datetime DESC', [code]);
                 //uid,trackid, type, datetime, label, value, status
                 for (var i = 0; i < rs.rows.length; i++) {
-                    resultModel.append({"type": rs.rows.item(i).type, "label": getHeader(rs.rows.item(i).label), "value": rs.rows.item(i).value, "datetime": convertDateBack(rs.rows.item(i).datetime)});
+                    resultModel.append({"type": rs.rows.item(i).type, "label": getHeader(rs.rows.item(i).label), "value": rs.rows.item(i).value, "datetime": PHelpers.convertDateBack(rs.rows.item(i).datetime)});
                 }
                 if (i == 0) {
-                    resultModel.append({"type": "ERR", "label": qsTr("No items were found with the item code you provided"), "value" : qsTr("This may be due to one of the following reasons:
+                    resultModel.append({"type": "ERR", "label": qsTr("No items were found with the item code you provided"), "value" : qsTr("The following error was returned: %1.").arg(history.statusstr) + "\n\n" + qsTr("This may be due to one of the following reasons:
 – Check the item code you entered. Make sure it is entered without spaces.
 – The item has not yet been handed in for delivery.
 – The item has not yet been entered in the system.
@@ -140,7 +142,7 @@ Page {
                 text: qsTr("Show barcode")
                 onClicked: {
                     var props = {
-                        "koodi": koodi
+                        "code": code
                     };
                     pageStack.push("BarCodePage.qml", props);
                 }

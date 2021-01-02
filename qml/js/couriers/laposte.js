@@ -1,18 +1,27 @@
 function updatedet(index, trackid, showdet) {
-	itemUpdStarted(index);
+    PAPIData.itemUpdStarted(index);
 	console.log("UPD" + trackid);
 
 	var db = dbConnection();
-
     var response = laPosteApi.requestResponse(laposteURL(trackid));
-    var data = JSON.parse(response);
-    if (data.error != null) {
-        console.log("Cannot parse JSON");
-        itemUpdReady(index,"ERR", 0);
+
+    try {
+        var data = JSON.parse(response);
+    }
+    catch (e) {
+        PAPIData.setShipmentError(index, trackid, showdet, "Failed to parse JSON.");
         return false;
     }
 
-    insertShipdet(trackid, "HDR", "99999999999998", "hdr_service", data.shipment.product);
+    // returnMessage should only be given when an error has occured, but as the
+    // documentation isn't exactly up-to-date per the returnCode values either,
+    // this may not be the case? Anyway, it's the best we've got.
+    if (data.returnMessage != null) {
+        PAPIData.setShipmentError(index, trackid, showdet, "JSON contained an error: " + data.returnMessage);
+        return false;
+    }
+
+    PDatabase.insertShipdet(trackid, "HDR", "99999999999998", "hdr_service", data.shipment.product);
 
     var dateOptions = {day: "numeric", month: "long", year: "numeric", hour: "numeric", minute: "2-digit"}
 
@@ -20,15 +29,18 @@ function updatedet(index, trackid, showdet) {
         var ev = data.shipment.event[i];
         var dateEvent = Qt.formatDateTime(new Date(ev.date), "yyyyMMddHHmmss")
         var descriptionLabel = getTextOfCodeLaPoste(ev.code) + ": " + ev.label
-        insertShipdet(trackid, "EVT", dateEvent, descriptionLabel, "");
+        PDatabase.insertShipdet(trackid, "EVT", dateEvent, descriptionLabel, "");
     }
-    insertShipdet(trackid, "HDR", "99999999999999", "hdr_shipid", data.shipment.idShip);
+    PDatabase.insertShipdet(trackid, "HDR", "99999999999999", "hdr_shipid", data.shipment.idShip);
 
-    itemUpdReady(index, "HIT", showdet);
+    PAPIData.itemUpdReady(index, "HIT", showdet);
 }
 
-function laposteURL(koodi) {
-    return("https://api.laposte.fr/suivi/v2/idships/" + koodi + "?lang=" + getLocale(["fr_FR"]));
+function laposteURL(code) {
+    // Despite the API documentation La Poste API returns a ”code not found error” for other
+    // locales except these (the list is based on experimentation, so it may be missing some...)
+    var langs = ["en_GB", "fr_FR", "de_DE", "it_IT", "nl_NL", "es_ES"];
+    return("https://api.laposte.fr/suivi/v2/idships/" + code + "?lang=" + PHelpers.getLocale(langs, true));
 }
 
 function getTextOfCodeLaPoste(code) {

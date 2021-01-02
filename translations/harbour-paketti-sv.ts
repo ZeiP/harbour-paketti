@@ -16,27 +16,27 @@
         <translation>Version %1</translation>
     </message>
     <message>
-        <source>Source code in GitHub</source>
-        <translation>Källkod på GitHub</translation>
+        <source>Paketti is a simple shipment tracking application for SailfishOS.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Application author does not take any responsibility in case application will provide non-valid information. This is not an official application for the couriers.</source>
-        <translation>Programmets utvecklare tar inget ansvar för om programmet tillhandahåller ogiltig information. Programmet är inte ett officiellt program för fraktbolagen.</translation>
+        <source>GitHub (source codes and issues)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Author does not take any responsibility for the information provided by the application. This is not an official application for the couriers.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Thanking:
-– Jyri-Petteri ”ZeiP” Paloposki (maintainer since 2020)
-– Juhana Virkkala (original version)
+– Jyri-Petteri ”ZeiP” Paloposki (maintainer)
+– Juhana Virkkala (original author)
 – Adel Noureddine (La Poste tracking)
 – Hannu Hirvonen and Åke Engelbrektson (Swedish translation)
 – J. Lavoie (German and French translation)
 – S. Fournial (French translation)
 – Allan Nordhøy (Norwegian translation)
 – atlochowski (Polish translation)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Paketti is a simple shipment tracking application for SailfishOS. You can track the Finnish postal service (Posti), Matkahuolto, PostNord, Hermes.de, La Poste and DHL packages.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -138,6 +138,10 @@
         <source>Next step</source>
         <translation>Nästa steg</translation>
     </message>
+    <message>
+        <source>The following error was returned: %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MainPage</name>
@@ -205,6 +209,10 @@
         <source>Select</source>
         <translation>Välj</translation>
     </message>
+    <message>
+        <source>Show barcode</source>
+        <translation type="unfinished">Visa streckkod</translation>
+    </message>
 </context>
 <context>
     <name>UpdatedPage</name>
@@ -221,9 +229,10 @@
         <translation>Version %1</translation>
     </message>
     <message>
-        <source>Changelog version 1.0:
+        <source>Changelog version 0.8:
 – Added new translations for:
   – Polish – thanks to atlochowski!
+– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!
 
 Changelog versions 0.7 and 0.7.1:
 – Added La Poste (France) package tracking. Thanks to Adel Noureddine!
@@ -240,48 +249,51 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
     </message>
 </context>
 <context>
-    <name>harbour-paketti</name>
+    <name>database</name>
     <message>
         <source>less than minute ago</source>
-        <translation>mindre än en minut sedan</translation>
-    </message>
-    <message>
-        <source>Hermes (Germany)</source>
-        <translation>Hermes (Tyskland)</translation>
-    </message>
-    <message>
-        <source>Matkahuolto (Finland)</source>
-        <translation>Matkahuolto (Finland)</translation>
-    </message>
-    <message>
-        <source>La Poste/Colissimo/Chronopost (France)</source>
-        <translation>La Poste/Colissimo/Chronopost (Frankrike)</translation>
-    </message>
-    <message>
-        <source>Posti (Finland)</source>
-        <translation>Posti (Finland)</translation>
-    </message>
-    <message>
-        <source>PostNord (Nordics)</source>
-        <translation>PostNord (Norden)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
         <source>%n minute(s) ago</source>
-        <translation>
-            <numerusform>%n minut sedan</numerusform>
-            <numerusform>%n minuter sedan</numerusform>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s) ago</source>
-        <translation>
-            <numerusform>%n timma sedan</numerusform>
-            <numerusform>%n timmar sedan</numerusform>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
         </translation>
+    </message>
+</context>
+<context>
+    <name>harbour-paketti</name>
+    <message>
+        <source>Posti (Finland)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Matkahuolto (Finland)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>PostNord (Nordics)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Hermes (Germany)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>La Poste/Colissimo/Chronopost (France)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>DHL</source>
-        <translation>DHL</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

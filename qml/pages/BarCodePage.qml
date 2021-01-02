@@ -33,13 +33,16 @@ import Sailfish.Silica 1.0
 
 Page {
     id: bcpage
-    property var koodi: koodi
+    property var code: code
     property bool inverted: false
 
-    FontLoader { id: bcFont; source: "../fonts/free3of9.ttf" }
+    FontLoader {
+        id: bcFont;
+        source: "../fonts/free3of9.ttf"
+    }
 
     Rectangle {
-        id: tausta
+        id: barcodeCanvas
         rotation: 90
         width: bcpage.height
         height: bcpage.width
@@ -50,14 +53,16 @@ Page {
             text: qsTr("Read the barcode by keeping barcode scanner perpendicular to the viewing screen, about 15–20 cm away from your phone. If you can not read code try to change distance.")
             color: "#565656"
             anchors.top: parent.top
-            anchors.left: parent.left; anchors.leftMargin: Theme.paddingMedium
-            anchors.right: parent.right; anchors.rightMargin: Theme.paddingMedium
+            anchors.left: parent.left
+            anchors.leftMargin: Theme.paddingMedium
+            anchors.right: parent.right
+            anchors.rightMargin: Theme.paddingMedium
             wrapMode: Text.WordWrap
             horizontalAlignment: Text.AlignHCenter
         }
         Text {
-            id: koodi1
-            text: "*" + koodi + "*"
+            id: code1
+            text: "*" + code + "*"
             font.family: bcFont.name
             color: "black"
             font.pixelSize: 120 //Was 92
@@ -67,30 +72,29 @@ Page {
             height: contentHeight-1
         }
         Component.onCompleted: {
-            var fonttiKoko=120;
-            if ( koodi1.paintedWidth > (tausta.width-50) ) fonttiKoko = 120*((tausta.width-50) / koodi1.paintedWidth);
-            koodi1.font.pixelSize=fonttiKoko;
-            koodi2.font.pixelSize=fonttiKoko;
+            var fontSize = 120;
+            if (code1.paintedWidth > (barcodeCanvas.width - 50)) {
+                fontSize = 120 * ((barcodeCanvas.width - 50) / code1.paintedWidth);
+            }
+            code1.font.pixelSize = fontSize;
+            code2.font.pixelSize = fontSize;
         }
         Text {
-            id: koodi2
-            text: "*" + koodi + "*"
+            id: code2
+            text: "*" + code + "*"
             font.family: bcFont.name
             color: "black"
             font.pixelSize: 120 //Was 92
             anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: koodi1.bottom
+            anchors.top: code1.bottom
         }
         Text {
-            id: kooditext
-            text: koodi
+            id: codeText
+            text: code
             color: "black"
             font.pixelSize: 50
             anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: koodi2.bottom
+            anchors.top: code2.bottom
         }
     }
 }
-
-
-
