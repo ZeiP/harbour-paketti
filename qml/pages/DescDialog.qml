@@ -1,6 +1,8 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 
+import "../js/database.js" as PDatabase
+
 Dialog {
     property string description
     property string trackid
@@ -38,7 +40,7 @@ Dialog {
     onDone: {
         if (result == DialogResult.Accepted) {
             description = descField.text
-            addDesc(trackid, descField.text);
+            PDatabase.addDesc(trackid, descField.text);
         }
     }
 }

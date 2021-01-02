@@ -30,9 +30,9 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import "../pages/plug_itella.js" as PlugItella
-import "../pages/plug_mh.js" as PlugMH
-import "../pages/plug_pn.js" as PlugPN
+
+import "../js/helpers.js" as PHelpers
+import "../js/database.js" as PDatabase
 
 CoverBackground {
     id: tausta
@@ -55,7 +55,7 @@ CoverBackground {
     onStatusChanged: {
         if (status == Cover.Active) {
             addLatestEvent();
-            lupdText.text = showSinceLastUpd();
+            lupdText.text = PDatabase.showSinceLastUpd();
         }
     }
 
@@ -63,13 +63,13 @@ CoverBackground {
     //    addLatestEvent();
     //}
     Component.onCompleted: {
-        lupdText.text = showSinceLastUpd();
+        lupdText.text = PDatabase.showSinceLastUpd();
     }
 
     function addLatestEvent() {
-        var newestEvt = getNewestEvt();
+        var newestEvt = PDatabase.getNewestEvt();
         if (newestEvt) {
-            var detstr = getDesc(newestEvt.trackid);
+            var detstr = PDatabase.getDesc(newestEvt.trackid);
             if (detstr != "NULL" && detstr) {
                 coverlabel.text = detstr;
             }
@@ -80,7 +80,7 @@ CoverBackground {
             if (newestEvt.value !== null) {
                 coverEvalue.text=newestEvt.value;
             }
-            dtime.text = convertDateBack(newestEvt.datetime);
+            dtime.text = PHelpers.convertDateBack(newestEvt.datetime);
 
             if (newestEvt.status == 0) {
                 notifyimage.visible = true;
@@ -100,28 +100,20 @@ CoverBackground {
     }
 
     function refreshAll() {
+        // FIXME: This shouldn't be done separately, we need to have one method to update them.
         var db = dbConnection();
         db.transaction(
             function(tx) {
                 var rs = tx.executeSql('SELECT * FROM history ORDER BY timestamp DESC;');
                 for (var i = 0; i < rs.rows.length; i++) {
                     var trackid = rs.rows.item(i).trackid;
-                    if (rs.rows.item(i).type == "FI") {
-                        PlugItella.updatedet(0, trackid, 0);
-                    }
-                    else if (rs.rows.item(i).type == "MH") {
-                        PlugMH.updatedet(0, trackid, 0);
-                    }
-                    else if (rs.rows.item(i).type == "PN") {
-                        PlugPN.updatedet(0, trackid, 0);
-                    }
                 }
             }
         );
 
         addLatestEvent();
-        setLastUpd();
-        lupdText.text = showSinceLastUpd();
+        PDatabase.setLastUpd();
+        lupdText.text = PDatabase.showSinceLastUpd();
     }
 
     Image {
@@ -210,7 +202,7 @@ CoverBackground {
         anchors.horizontalCenter: parent.horizontalCenter
         color: Theme.highlightColor
         font.pixelSize: Theme.fontSizeSmall
-        text: showSinceLastUpd()
+        text: PDatabase.showSinceLastUpd()
     }
     Timer {
         id: lupdtimer
@@ -218,7 +210,7 @@ CoverBackground {
         repeat: true
         interval: 5000
         onTriggered: {
-            lupdText.text = showSinceLastUpd();
+            lupdText.text = PDatabase.showSinceLastUpd();
         }
     }
     Timer {

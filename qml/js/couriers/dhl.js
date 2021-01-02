@@ -14,7 +14,7 @@ function updatedet(index, trackid, showdet) {
         return false;
     }
 
-    if (httpStatusIsError(data.status)) {
+    if (PHelpers.httpStatusIsError(data.status)) {
         setShipmentError(index, "JSON contained an error: " + data.detail);
         return false;
     }
@@ -24,7 +24,7 @@ function updatedet(index, trackid, showdet) {
         return false;
     }
     var respObj = data.shipments[0];
-    insertShipdet(trackid, "HDR", "99999999999998", "hdr_service", respObj.service);
+    PDatabase.insertShipdet(trackid, "HDR", "99999999999998", "hdr_service", respObj.service);
 
     var dateOptions = {day: "numeric", month: "long", year: "numeric", hour: "numeric", minute: "2-digit"}
 
@@ -32,14 +32,14 @@ function updatedet(index, trackid, showdet) {
         var ev = respObj.events[i];
         var dateEvent = Qt.formatDateTime(new Date(ev.timestamp), "yyyyMMddHHmmss")
         var descriptionLabel = ev.description + ": " + ev.location.address.addressLocality;
-        insertShipdet(trackid, "EVT", dateEvent, descriptionLabel, "");
+        PDatabase.insertShipdet(trackid, "EVT", dateEvent, descriptionLabel, "");
     }
-    insertShipdet(trackid, "HDR", "99999999999999", "hdr_shipid", respObj.id);
-    insertShipdet(trackid, "HDR", "99999999999997", "nextStep", respObj.status.nextSteps);
+    PDatabase.insertShipdet(trackid, "HDR", "99999999999999", "hdr_shipid", respObj.id);
+    PDatabase.insertShipdet(trackid, "HDR", "99999999999997", "nextStep", respObj.status.nextSteps);
 
     itemUpdReady(index, "HIT", showdet);
 }
 
 function dhlURL(code) {
-    return("https://api-eu.dhl.com/track/shipments?trackingNumber=" + code + "&language=" + getLocale('*'));
+    return("https://api-eu.dhl.com/track/shipments?trackingNumber=" + code + "&language=" + PHelpers.getLocale('*'));
 }

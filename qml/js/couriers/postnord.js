@@ -24,21 +24,21 @@ function updatedet(index, trackid, showdet) {
 
             var rivi=999;
             if ("shipmentId" in respObj)
-                insertShipdet(trackid,"HDR","99999999999"+rivi,"hdr_shipid",respObj.shipmentId);
+                PDatabase.insertShipdet(trackid,"HDR","99999999999"+rivi,"hdr_shipid",respObj.shipmentId);
             if ("assessedNumberOfItems" in respObj)
-                insertShipdet(trackid,"HDR","99999999999"+rivi,"hdr_numberof",respObj.assessedNumberOfItems.toString());
+                PDatabase.insertShipdet(trackid,"HDR","99999999999"+rivi,"hdr_numberof",respObj.assessedNumberOfItems.toString());
             if ("name" in respObj.consignor)
-                insertShipdet(trackid,"HDR","99999999999"+rivi,"hdr_sender",respObj.consignor.name);
+                PDatabase.insertShipdet(trackid,"HDR","99999999999"+rivi,"hdr_sender",respObj.consignor.name);
             if ("city" in respObj.consignor.address)
-                insertShipdet(trackid,"HDR","99999999999"+rivi,"hdr_origin",respObj.consignor.address.city);
+                PDatabase.insertShipdet(trackid,"HDR","99999999999"+rivi,"hdr_origin",respObj.consignor.address.city);
             if ("name" in respObj.consignee)
-                insertShipdet(trackid,"HDR","99999999999"+rivi,"hdr_receiver",respObj.consignee.name);
+                PDatabase.insertShipdet(trackid,"HDR","99999999999"+rivi,"hdr_receiver",respObj.consignee.name);
             if ("city" in respObj.consignee.address)
-                insertShipdet(trackid,"HDR","99999999999"+rivi,"destinationCity",respObj.consignee.address.city);
+                PDatabase.insertShipdet(trackid,"HDR","99999999999"+rivi,"destinationCity",respObj.consignee.address.city);
             if ("name" in respObj.service)
-                insertShipdet(trackid,"HDR","99999999999"+rivi,"hdr_service",respObj.service.name);
+                PDatabase.insertShipdet(trackid,"HDR","99999999999"+rivi,"hdr_service",respObj.service.name);
             if ("totalWeight" in respObj)
-                insertShipdet(trackid,"HDR","99999999999"+rivi,"weight", respObj.totalWeight.value + " " + respObj.totalWeight.unit);
+                PDatabase.insertShipdet(trackid,"HDR","99999999999"+rivi,"weight", respObj.totalWeight.value + " " + respObj.totalWeight.unit);
 
             var extraServices;
             for (var i in respObj.additionalServices) {
@@ -49,7 +49,7 @@ function updatedet(index, trackid, showdet) {
                 extraServices = extraServices + respObj.additionalServices[i].name;
             }
             if (extraServices !== null)
-                insertShipdet(trackid,"HDR","99999999999"+rivi,"extraServices", extraServices);
+                PDatabase.insertShipdet(trackid,"HDR","99999999999"+rivi,"extraServices", extraServices);
 
             for (var j in respObj.items[0].events) {
                 var eventObj = respObj.items[0].events[j];
@@ -57,7 +57,7 @@ function updatedet(index, trackid, showdet) {
                 var tmpDate="0";
                 var tmpTitle="";
                 if ("eventTime" in eventObj) {
-                    tmpDate=Qt.formatDateTime(convertIsoDate(eventObj.eventTime), "yyyyMMddHHmmss");
+                    tmpDate=Qt.formatDateTime(PHelpers.convertIsoDate(eventObj.eventTime), "yyyyMMddHHmmss");
                     okStr="HIT";
                 }
                 if ("eventDescription" in eventObj)
@@ -66,7 +66,7 @@ function updatedet(index, trackid, showdet) {
                     if (eventObj["location"]["displayName"]) tmpDet=eventObj["location"]["displayName"];
                     if (eventObj["location"]["country"]) tmpDet=tmpDet+", "+eventObj["location"]["country"];
                 }
-                insertShipdet(trackid,"EVT",tmpDate,tmpTitle,tmpDet);
+                PDatabase.insertShipdet(trackid,"EVT",tmpDate,tmpTitle,tmpDet);
                 okStr = "HIT";
             }
 
@@ -79,6 +79,6 @@ function updatedet(index, trackid, showdet) {
 }
 
 function pnURL(code) {
-    var locale = getLocale(["en", "fi", "sv"]);
+    var locale = PHelpers.getLocale(["en", "fi", "sv"]);
     return("https://www.postnord.fi/api/pnmw/shipment/" + code + "/" + locale);
 }

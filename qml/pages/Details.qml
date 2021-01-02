@@ -31,6 +31,9 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 
+import "../js/helpers.js" as PHelpers
+import "../js/database.js" as PDatabase
+
 Page {
     id: page
 
@@ -40,23 +43,23 @@ Page {
         extramenu.text = "";
         extramenu.url = "";
         resultModel.clear();
-        setEventsShown(code);
+        PDatabase.setEventsShown(code);
         getdetails(code);
     }
 
     function getdetails(code) {
-        var db = dbVerConnection();
+        var db = dbConnection();
         db.transaction(
             function(tx) {
                 // Fetch the history table data and print out the courier.
                 var history = tx.executeSql('SELECT * FROM history WHERE trackid = ?', [code]);
                 history = history.rows.item(0);
-                resultModel.append({"type": "HDR", "label": qsTr("Courier"), "value": qsTr(couriers.getCourierByIdentifier(history.type).name), "datetime": convertDateBack("99999999999999")});
+                resultModel.append({"type": "HDR", "label": qsTr("Courier"), "value": qsTr(couriers.getCourierByIdentifier(history.type).name), "datetime": PHelpers.convertDateBack("99999999999999")});
                 // Fetch the actual headers and events and print them out.
                 var rs = tx.executeSql('SELECT * FROM shipdets WHERE trackid = ? ORDER BY datetime DESC', [code]);
                 //uid,trackid, type, datetime, label, value, status
                 for (var i = 0; i < rs.rows.length; i++) {
-                    resultModel.append({"type": rs.rows.item(i).type, "label": getHeader(rs.rows.item(i).label), "value": rs.rows.item(i).value, "datetime": convertDateBack(rs.rows.item(i).datetime)});
+                    resultModel.append({"type": rs.rows.item(i).type, "label": getHeader(rs.rows.item(i).label), "value": rs.rows.item(i).value, "datetime": PHelpers.convertDateBack(rs.rows.item(i).datetime)});
                 }
                 if (i == 0) {
                     resultModel.append({"type": "ERR", "label": qsTr("No items were found with the item code you provided"), "value" : qsTr("This may be due to one of the following reasons:

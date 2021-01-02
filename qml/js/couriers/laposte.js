@@ -13,12 +13,12 @@ function updatedet(index, trackid, showdet) {
         return false;
     }
 
-    if (httpStatusIsError(data.returnCode)) {
+    if (PHelpers.httpStatusIsError(data.returnCode)) {
         setShipmentError(index, "JSON contained an error: " + data.returnMessage);
         return false;
     }
 
-    insertShipdet(trackid, "HDR", "99999999999998", "hdr_service", data.shipment.product);
+    PDatabase.insertShipdet(trackid, "HDR", "99999999999998", "hdr_service", data.shipment.product);
 
     var dateOptions = {day: "numeric", month: "long", year: "numeric", hour: "numeric", minute: "2-digit"}
 
@@ -26,9 +26,9 @@ function updatedet(index, trackid, showdet) {
         var ev = data.shipment.event[i];
         var dateEvent = Qt.formatDateTime(new Date(ev.date), "yyyyMMddHHmmss")
         var descriptionLabel = getTextOfCodeLaPoste(ev.code) + ": " + ev.label
-        insertShipdet(trackid, "EVT", dateEvent, descriptionLabel, "");
+        PDatabase.insertShipdet(trackid, "EVT", dateEvent, descriptionLabel, "");
     }
-    insertShipdet(trackid, "HDR", "99999999999999", "hdr_shipid", data.shipment.idShip);
+    PDatabase.insertShipdet(trackid, "HDR", "99999999999999", "hdr_shipid", data.shipment.idShip);
 
     itemUpdReady(index, "HIT", showdet);
 }
@@ -37,7 +37,7 @@ function laposteURL(code) {
     // Despite the API documentation La Poste API returns a ”code not found error” for other
     // locales except these (the list is based on experimentation, so it may be missing some...)
     var langs = ["en_GB", "fr_FR", "de_DE", "it_IT", "nl_NL", "es_ES"];
-    return("https://api.laposte.fr/suivi/v2/idships/" + code + "?lang=" + getLocale(langs, true));
+    return("https://api.laposte.fr/suivi/v2/idships/" + code + "?lang=" + PHelpers.getLocale(langs, true));
 }
 
 function getTextOfCodeLaPoste(code) {

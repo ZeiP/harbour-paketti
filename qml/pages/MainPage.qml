@@ -30,12 +30,15 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import "plug_itella.js" as PlugItella
-import "plug_mh.js" as PlugMH
-import "plug_pn.js" as PlugPN
-import "plug_herde.js" as PlugHerDe
-import "plug_laposte.js" as PlugLaPoste
-import "plug_dhl.js" as PlugDHL
+import "../js/couriers/posti.js" as PlugPosti
+import "../js/couriers/matkahuolto.js" as PlugMH
+import "../js/couriers/postnord.js" as PlugPN
+import "../js/couriers/herde.js" as PlugHerDe
+import "../js/couriers/laposte.js" as PlugLaPoste
+import "../js/couriers/dhl.js" as PlugDHL
+
+import "../js/helpers.js" as PHelpers
+import "../js/database.js" as PDatabase
 
 import harbour.org.paketti 1.0
 
@@ -99,7 +102,7 @@ Page {
             pageStack.push("Details.qml", {"code": trackid});
         }
         else {
-            historyModel.set(index, {"status": getStatus(historyModel.get(index).title)});
+            historyModel.set(index, {"status": PDatabase.getStatus(historyModel.get(index).title)});
         }
         saveitem(index);
     }
@@ -127,7 +130,7 @@ Page {
             if (historyModel.get(i).title != "") {
                 updateitem(i, 0);
             }
-            setLastUpd();
+            PDatabase.setLastUpd();
         }
     }
 
@@ -137,7 +140,7 @@ Page {
 
         var trackid = historyModel.get(index).title;
         if (historyModel.get(index).type == "FI") {
-            PlugItella.updatedet(index, trackid, showdet);
+            PlugPosti.updatedet(index, trackid, showdet);
         }
         else if (historyModel.get(index).type == "MH") {
             PlugMH.updatedet(index, trackid, showdet);
@@ -190,7 +193,7 @@ Page {
                     var courierData = couriers.getCourierByIdentifier(rs.rows.item(i).type)
                     historyModel.set(i+1, {"typec" : courierData.brandColour});
 
-                    historyModel.set(i+1, {"status": getStatus(rs.rows.item(i).trackid)});
+                    historyModel.set(i+1, {"status": PDatabase.getStatus(rs.rows.item(i).trackid)});
                     lastActivityToList(i+1);
                 }
                 if (rs.rows.length != 0) {
@@ -209,7 +212,7 @@ Page {
     function setShipmentError(index, errormsg) {
         var trackid = historyModel.get(index).title;
         console.log(errormsg);
-        setStatus(trackid, errormsg);
+        PDatabase.setStatus(trackid, errormsg);
         itemUpdReady(index, "ERR", 0);
     }
 
@@ -320,8 +323,8 @@ Page {
             onPressed: {
                 if (index != 0) {
                     listitem.forceActiveFocus();
-                    setEventsShown(historyModel.get(index).title);
-                    historyModel.set(index, {"status": getStatus(historyModel.get(index).title)});
+                    PDatabase.setEventsShown(historyModel.get(index).title);
+                    historyModel.set(index, {"status": PDatabase.getStatus(historyModel.get(index).title)});
                 }
             }
             ListView.onRemove: animateRemoval(listitem)
@@ -524,7 +527,7 @@ Page {
                 }
                 Text {
                     id: timefield
-                    text: convertDateBack(datetime)
+                    text: PHelpers.convertDateBack(datetime)
                     anchors.verticalCenter: htitle.verticalCenter
                     anchors.right: pimpula.left
                     color: Theme.secondaryColor

@@ -21,7 +21,7 @@ function updatedet(index, trackid, showdet) {
                 return;
             }
 
-            var locale = getLocale(["fi", "en", "sv", "lt", "lv"]);
+            var locale = PHelpers.getLocale(["en", "fi", "sv", "lt", "lv"]);
 
             var ds = data.shipments[0];
 
@@ -40,20 +40,20 @@ function updatedet(index, trackid, showdet) {
             }
 
             for (var rd in data.shipments[0]) {
-                if (rd=="product" && ds.product.name !== null) insertShipdet(trackid,"HDR","99999999999998","hdr_service", ds.product.name[locale]);
+                if (rd=="product" && ds.product.name !== null) PDatabase.insertShipdet(trackid,"HDR","99999999999998","hdr_service", ds.product.name[locale]);
                 if (typeof ds[rd] === 'string') {
-                    if (rd=="estimatedDeliveryTime") insertShipdet(trackid,"HDR","99999999999" + headrivi,"estimatedDeliveryTime",Qt.formatDateTime(new Date(ds.estimatedDeliveryTime)),"yyyyMMddHHmmss");
-                    if (rd=="codAmount") insertShipdet(trackid,"HDR","99999999999" + headrivi,"codAmount", ds.codAmount + " " + ds.codCurrency);
-                    if (rd=="weight") insertShipdet(trackid,"HDR","99999999999" + headrivi,"weight", ds.weight + " kg");
-                    if (rd=="height") insertShipdet(trackid,"HDR","99999999999" + headrivi,"size", ds.width + " x " + ds.depth + " x " + ds.height + " cm");
-                    if (rd=="destinationPostcode") insertShipdet(trackid,"HDR","99999999999" + headrivi,"destinationCity", ds.destinationPostcode + " " + ds.destinationCity + " " + ds.destinationCountry);
+                    if (rd=="estimatedDeliveryTime") PDatabase.insertShipdet(trackid,"HDR","99999999999" + headrivi,"estimatedDeliveryTime",Qt.formatDateTime(new Date(ds.estimatedDeliveryTime)),"yyyyMMddHHmmss");
+                    if (rd=="codAmount") PDatabase.insertShipdet(trackid,"HDR","99999999999" + headrivi,"codAmount", ds.codAmount + " " + ds.codCurrency);
+                    if (rd=="weight") PDatabase.insertShipdet(trackid,"HDR","99999999999" + headrivi,"weight", ds.weight + " kg");
+                    if (rd=="height") PDatabase.insertShipdet(trackid,"HDR","99999999999" + headrivi,"size", ds.width + " x " + ds.depth + " x " + ds.height + " cm");
+                    if (rd=="destinationPostcode") PDatabase.insertShipdet(trackid,"HDR","99999999999" + headrivi,"destinationCity", ds.destinationPostcode + " " + ds.destinationCity + " " + ds.destinationCountry);
                }
 
                headrivi--;
             }
 
             if (extraServices!=null) {
-                insertShipdet(trackid,"HDR","99999999999" + headrivi,"extraServices", extraServices);
+                PDatabase.insertShipdet(trackid,"HDR","99999999999" + headrivi,"extraServices", extraServices);
             }
 
             for (var i in data.shipments[0].events) {
@@ -66,10 +66,10 @@ function updatedet(index, trackid, showdet) {
                     locline = locline + ev.locationName
                 }
                 if (ev.description !== null && ev.description !== "null") {
-                    insertShipdet(trackid,"EVT",Qt.formatDateTime(new Date(ev.timestamp), "yyyyMMddHHmmss"),ev.description[locale], locline);
+                    PDatabase.insertShipdet(trackid,"EVT",Qt.formatDateTime(new Date(ev.timestamp), "yyyyMMddHHmmss"),ev.description[locale], locline);
                 }
             }
-            insertShipdet(trackid,"HDR","99999999999999", "hdr_shipid", data.shipments[0].trackingCode);
+            PDatabase.insertShipdet(trackid,"HDR","99999999999999", "hdr_shipid", data.shipments[0].trackingCode);
 
             itemUpdReady(index,"HIT",showdet);
         }
