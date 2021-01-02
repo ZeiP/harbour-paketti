@@ -1,5 +1,5 @@
 function updatedet(index, trackid, showdet) {
-    itemUpdStarted(index);
+    PAPIData.itemUpdStarted(index);
     console.log("UPD" + trackid);
 
     var db = dbConnection();
@@ -13,17 +13,17 @@ function updatedet(index, trackid, showdet) {
                 var data = JSON.parse(response);
             }
             catch (e) {
-                setShipmentError(index, "Failed to parse JSON.");
+                PAPIData.setShipmentError(index, trackid, showdet, "Failed to parse JSON.");
                 return false;
             }
 
             if (data.notFound == true) {
-                setShipmentError(index, "MH reported not found.");
+                PAPIData.setShipmentError(index, trackid, showdet, "MH reported not found.");
                 return false;
             }
 
             if (!data.trackingEvents.length) {
-                setShipmentError(index, "Empty tracking events data");
+                PAPIData.setShipmentError(index, trackid, showdet, "Empty tracking events data");
                 return;
             }
             PDatabase.insertShipdet(trackid, "HDR", "99999999999998", "hdr_service", data.productCategory);
@@ -37,7 +37,7 @@ function updatedet(index, trackid, showdet) {
             }
             PDatabase.insertShipdet(trackid, "HDR", "99999999999999", "hdr_shipid", data.parcelNumber);
 
-            itemUpdReady(index, "HIT", showdet);
+            PAPIData.itemUpdReady(index, "HIT", showdet);
         }
     }
     doc.open("GET", mhURL(trackid));

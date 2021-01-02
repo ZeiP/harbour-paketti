@@ -21,20 +21,6 @@ function getDesc(trackid) {
     return(status);
 }
 
-function getLatestEvt(trackid) {
-    var db = dbConnection();
-    var status = 1;
-    var retArr = {"label": "Ei tietoja..", "value": "Null"};
-    db.transaction(
-        function(tx) {
-            var rs = tx.executeSql('SELECT * FROM shipdets WHERE trackid = ? AND type = "EVT" ORDER BY datetime DESC LIMIT 1;', [trackid]);
-            retArr = rs.rows.item(0);
-        }
-    );
-
-    return(retArr);
-}
-
 function getNewestEvt() {
     var db = dbConnection();
     var status = 1;

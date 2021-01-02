@@ -127,6 +127,13 @@ ApplicationWindow {
 
     initialPage: Component { MainPage { } }
 
+    ListModel {
+                id: historyModel
+                ListElement {title: ""; itemdesc: ""; det: " " ; type: "" ; itmrun: "" ; itmcolor: "" ; typec: "" ; datetime: "fuu" ; status: 0}
+            }
+
+    property var runningUpdates: 0
+
     Component.onCompleted: {
         if (chkNewVersion(version)) {
             pageStack.push("pages/UpdatedPage.qml");

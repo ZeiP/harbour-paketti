@@ -1,5 +1,5 @@
 function updatedet(index, trackid, showdet) {
-    itemUpdStarted(index);
+    PAPIData.itemUpdStarted(index);
     console.log("UPD" + trackid);
 
     var db = dbConnection();
@@ -9,7 +9,7 @@ function updatedet(index, trackid, showdet) {
         if (doc.readyState == XMLHttpRequest.DONE) {
             if (doc.status == 204) {
                 // 204 No Content means not found /expired
-                setShipmentError(index, "Not found / expired");
+                PAPIData.setShipmentError(index, trackid, showdet, "Not found / expired");
                 return false;
             }
 
@@ -18,12 +18,12 @@ function updatedet(index, trackid, showdet) {
                 var data = JSON.parse(response);
             }
             catch (e) {
-                setShipmentError(index, "Failed to parse JSON.");
+                PAPIData.setShipmentError(index, trackid, showdet, "Failed to parse JSON.");
                 return false;
             }
 
             if (data.message != null) {
-                setShipmentError(index, "JSON contained a message: " + data.message);
+                PAPIData.setShipmentError(index, trackid, showdet, "JSON contained a message: " + data.message);
                 return false;
             }
 
@@ -39,7 +39,7 @@ function updatedet(index, trackid, showdet) {
             }
             PDatabase.insertShipdet(trackid, "HDR", "99999999999999", "hdr_shipid", data.shipmentID);
 
-            itemUpdReady(index, "HIT", showdet);
+            PAPIData.itemUpdReady(index, "HIT", showdet);
         }
     }
     doc.open("GET", hermesDeURL(trackid));

@@ -1,5 +1,5 @@
 function updatedet(index, trackid, showdet) {
-    itemUpdStarted(index);
+    PAPIData.itemUpdStarted(index);
     console.log("UPD" + trackid);
 
     var okStr="ERR";
@@ -12,14 +12,46 @@ function updatedet(index, trackid, showdet) {
                 var data = JSON.parse(response);
             }
             catch (e) {
-                setShipmentError(index, "Failed to parse JSON.");
+                PAPIData.setShipmentError(index, trackid, showdet, "Failed to parse JSON.");
                 return false;
             }
 
+            // Apparently the Postnord API returns the field names sometimes capitalised and sometimes not.
+            // This kinda sucks, because the code is naturally case-sensitive, so we have to detect this idiocy
+            // and try to bare with it...
+            if (data.response == null) {
+                if (data.Response != null) {
+                    fixedResponse = response
+                        .replace('"Response":', '"response":')
+                        .replace('"TrackingInformationResponse":', '"trackingInformationResponse":')
+                        .replace('"Shipments":', '"shipments":')
+                        .replace('"ShipmentId":', '"shipmentId":')
+                        .replace('"AssessedNumberOfItems":', '"assessedNumberOfItems":')
+                        .replace('"Name":', '"name":')
+                        .replace('"City":', '"city":')
+                        .replace('"TotalWeight":', '"totalWeight":')
+                        .replace('"Consignor":', '"consignor":')
+                        .replace('"Consignee":', '"consignee":')
+                        .replace('"Address":', '"address":')
+                        .replace('"Unit":', '"unit":')
+                        .replace('"Value":', '"value":')
+                        .replace('"AdditionalServices":', '"additionalServices":')
+                        .replace('"EventTime":', '"eventTime":')
+                        .replace('"EventDescription":', '"eventDescription":')
+                        .replace('"Location":', '"location":')
+                        .replace('"DisplayName":', '"displayName":')
+                        .replace('"Country":', '"country":')
+                    console.log(fixedResponse)
+                    data = JSON.parse(fixedResponse);
+                    console.log("Did the deed to fix PostNord's broken data.")
+                }
+            }
+
             if (data.response.trackingInformationResponse.shipments.length == 0) {
-                setShipmentError(index, "Empty shipment information.");
+                PAPIData.setShipmentError(index, trackid, showdet, "Empty shipment information.");
                 return false;
             }
+
             var respObj = data.response.trackingInformationResponse.shipments[0];
 
             var rivi=999;
@@ -70,7 +102,7 @@ function updatedet(index, trackid, showdet) {
                 okStr = "HIT";
             }
 
-            itemUpdReady(index,okStr,showdet);
+            PAPIData.itemUpdReady(index, okStr, showdet);
         }
     }
 

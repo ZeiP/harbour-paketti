@@ -31,26 +31,20 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 
+import "../js/couriers/posti.js" as PlugPosti
+import "../js/couriers/matkahuolto.js" as PlugMH
+import "../js/couriers/postnord.js" as PlugPN
+import "../js/couriers/herde.js" as PlugHerDe
+import "../js/couriers/laposte.js" as PlugLaPoste
+import "../js/couriers/dhl.js" as PlugDHL
+
 import "../js/helpers.js" as PHelpers
 import "../js/database.js" as PDatabase
+import "../js/apidata.js" as PAPIData
 
 CoverBackground {
     id: tausta
-    property var bcount: 0
     property int _lastTick: 0;
-
-    function itemUpdStarted(index) {
-        pimpula.visible = true;
-        bcount = bcount + 1;
-    }
-
-    function itemUpdReady(index, okStr, showdet) {
-        addLatestEvent();
-        bcount = bcount-1;
-        if (bcount == 0) {
-            pimpula.visible = false
-        }
-    }
 
     onStatusChanged: {
         if (status == Cover.Active) {
@@ -100,19 +94,8 @@ CoverBackground {
     }
 
     function refreshAll() {
-        // FIXME: This shouldn't be done separately, we need to have one method to update them.
-        var db = dbConnection();
-        db.transaction(
-            function(tx) {
-                var rs = tx.executeSql('SELECT * FROM history ORDER BY timestamp DESC;');
-                for (var i = 0; i < rs.rows.length; i++) {
-                    var trackid = rs.rows.item(i).trackid;
-                }
-            }
-        );
-
+        PAPIData.updateData()
         addLatestEvent();
-        PDatabase.setLastUpd();
         lupdText.text = PDatabase.showSinceLastUpd();
     }
 
@@ -142,7 +125,7 @@ CoverBackground {
         anchors.left: tausta.left
         radius: 3
         falloffRadius: 0.2
-        visible: false
+        visible: runningUpdates != 0
     }
     Rectangle {
         id: evtTausta

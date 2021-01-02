@@ -58,17 +58,17 @@
 <context>
     <name>DescDialog</name>
     <message>
-        <location filename="../qml/pages/DescDialog.qml" line="13"/>
+        <location filename="../qml/pages/DescDialog.qml" line="15"/>
         <source>Save</source>
         <translation>Zapisz</translation>
     </message>
     <message>
-        <location filename="../qml/pages/DescDialog.qml" line="16"/>
+        <location filename="../qml/pages/DescDialog.qml" line="18"/>
         <source>Enter short description of item %1</source>
         <translation>Wprowadź krótki opis przedmiotu %1</translation>
     </message>
     <message>
-        <location filename="../qml/pages/DescDialog.qml" line="29"/>
+        <location filename="../qml/pages/DescDialog.qml" line="31"/>
         <source>Enter description</source>
         <translation>Wprowadź opis</translation>
     </message>
@@ -76,17 +76,17 @@
 <context>
     <name>Details</name>
     <message>
-        <location filename="../qml/pages/Details.qml" line="55"/>
+        <location filename="../qml/pages/Details.qml" line="57"/>
         <source>Courier</source>
         <translation>Kurier</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Details.qml" line="63"/>
+        <location filename="../qml/pages/Details.qml" line="65"/>
         <source>No items were found with the item code you provided</source>
         <translation>Nie znaleziono żadnych przedmiotów z podanym kodem</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Details.qml" line="63"/>
+        <location filename="../qml/pages/Details.qml" line="65"/>
         <source>This may be due to one of the following reasons:
 – Check the item code you entered. Make sure it is entered without spaces.
 – The item has not yet been handed in for delivery.
@@ -101,67 +101,72 @@
 - Wystąpił problem z systemem lub elementem</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Details.qml" line="77"/>
+        <location filename="../qml/pages/Details.qml" line="65"/>
+        <source>The following error was returned: %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Details.qml" line="79"/>
         <source>Shipping ID</source>
         <translation>Identyfikator wysyłki</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Details.qml" line="80"/>
+        <location filename="../qml/pages/Details.qml" line="82"/>
         <source>Service</source>
         <translation>Usługa</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Details.qml" line="83"/>
+        <location filename="../qml/pages/Details.qml" line="85"/>
         <source>Number of items</source>
         <translation>Ilość przedmiotów</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Details.qml" line="86"/>
+        <location filename="../qml/pages/Details.qml" line="88"/>
         <source>Sender</source>
         <translation>Nadawca</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Details.qml" line="89"/>
+        <location filename="../qml/pages/Details.qml" line="91"/>
         <source>Extra services</source>
         <translation>Usługi specjalne</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Details.qml" line="92"/>
+        <location filename="../qml/pages/Details.qml" line="94"/>
         <source>Destination</source>
         <translation>Miejsce docelowe</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Details.qml" line="95"/>
+        <location filename="../qml/pages/Details.qml" line="97"/>
         <source>Size</source>
         <translation>Rozmiar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Details.qml" line="98"/>
+        <location filename="../qml/pages/Details.qml" line="100"/>
         <source>Weight</source>
         <translation>Waga</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Details.qml" line="101"/>
+        <location filename="../qml/pages/Details.qml" line="103"/>
         <source>CoD amount</source>
         <translation>Wartość</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Details.qml" line="104"/>
+        <location filename="../qml/pages/Details.qml" line="106"/>
         <source>Estimated delivery</source>
         <translation>Przewidywany czas dostawy</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Details.qml" line="107"/>
+        <location filename="../qml/pages/Details.qml" line="109"/>
         <source>Next step</source>
         <translation>Kolejny krok</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Details.qml" line="119"/>
+        <location filename="../qml/pages/Details.qml" line="121"/>
         <source>Shipment details</source>
         <translation>szczegóły wysyłki</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Details.qml" line="140"/>
+        <location filename="../qml/pages/Details.qml" line="142"/>
         <source>Show barcode</source>
         <translation>Pokaż kod kreskowy</translation>
     </message>
@@ -169,89 +174,89 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="284"/>
+        <location filename="../qml/pages/MainPage.qml" line="84"/>
         <source>About</source>
         <translation>O</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="288"/>
+        <location filename="../qml/pages/MainPage.qml" line="88"/>
         <source>Update</source>
         <translation>Aktualizacja</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="301"/>
+        <location filename="../qml/pages/MainPage.qml" line="101"/>
         <source>Track item</source>
         <translation>Śledź przedmiot</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="331"/>
+        <location filename="../qml/pages/MainPage.qml" line="128"/>
         <source>Deleting</source>
         <translation>Usuwanie</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="361"/>
+        <location filename="../qml/pages/MainPage.qml" line="158"/>
         <source>Courier</source>
         <translation>Kurier</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="362"/>
-        <location filename="../qml/pages/MainPage.qml" line="390"/>
-        <location filename="../qml/pages/MainPage.qml" line="395"/>
+        <location filename="../qml/pages/MainPage.qml" line="159"/>
+        <location filename="../qml/pages/MainPage.qml" line="187"/>
+        <location filename="../qml/pages/MainPage.qml" line="192"/>
         <source>Select</source>
         <translation>Zaznacz</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="363"/>
+        <location filename="../qml/pages/MainPage.qml" line="160"/>
         <source>The courier is autoselected when entering a tracking code if possible.</source>
         <translation>Jeśli to możliwe, firma kurierska jest wybierana automatycznie podczas wprowadzania kodu śledzenia.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="422"/>
+        <location filename="../qml/pages/MainPage.qml" line="219"/>
         <source>Enter tracking code</source>
         <translation>Wprowadź kod śledzenia</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="462"/>
+        <location filename="../qml/pages/MainPage.qml" line="259"/>
         <source>History</source>
         <translation>Historia</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="470"/>
+        <location filename="../qml/pages/MainPage.qml" line="267"/>
         <source>Start by choosing a courier and entering the tracking code in the box above. Tracked shipments will be saved automatically</source>
         <translation>Zacznij od wybrania kuriera i wpisania kodu śledzenia w polu powyżej. Śledzone przesyłki zostaną automatycznie zapisane</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="575"/>
+        <location filename="../qml/pages/MainPage.qml" line="372"/>
         <source>No information available</source>
         <translation>Brak informacji</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="584"/>
+        <location filename="../qml/pages/MainPage.qml" line="381"/>
         <source>Add description</source>
         <translation>Dodaj opis</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="584"/>
+        <location filename="../qml/pages/MainPage.qml" line="381"/>
         <source>Modify description</source>
         <translation>Zmień opis</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="588"/>
+        <location filename="../qml/pages/MainPage.qml" line="385"/>
         <source>Show barcode</source>
         <translation type="unfinished">Pokaż kod kreskowy</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="592"/>
+        <location filename="../qml/pages/MainPage.qml" line="389"/>
         <source>Copy tracking number</source>
         <translation>Kopiuj numer śledzenia</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="596"/>
+        <location filename="../qml/pages/MainPage.qml" line="393"/>
         <source>Copy text</source>
         <translation>Kopiuj tekst</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="600"/>
+        <location filename="../qml/pages/MainPage.qml" line="397"/>
         <source>Remove item</source>
         <translation>Usuń przedmiot</translation>
     </message>
@@ -297,12 +302,12 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
 <context>
     <name>database</name>
     <message>
-        <location filename="../qml/pages/database.js" line="125"/>
+        <location filename="../qml/js/database.js" line="89"/>
         <source>less than minute ago</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/pages/database.js" line="128"/>
+        <location filename="../qml/js/database.js" line="92"/>
         <source>%n minute(s) ago</source>
         <translation type="unfinished">
             <numerusform></numerusform>
@@ -311,7 +316,7 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/pages/database.js" line="131"/>
+        <location filename="../qml/js/database.js" line="95"/>
         <source>%n hour(s) ago</source>
         <translation type="unfinished">
             <numerusform></numerusform>
@@ -323,57 +328,34 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
 <context>
     <name>harbour-paketti</name>
     <message>
-        <location filename="../qml/harbour-paketti.qml" line="49"/>
+        <location filename="../qml/harbour-paketti.qml" line="52"/>
         <source>Posti (Finland)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/harbour-paketti.qml" line="54"/>
+        <location filename="../qml/harbour-paketti.qml" line="57"/>
         <source>Matkahuolto (Finland)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/harbour-paketti.qml" line="59"/>
+        <location filename="../qml/harbour-paketti.qml" line="62"/>
         <source>PostNord (Nordics)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/harbour-paketti.qml" line="64"/>
+        <location filename="../qml/harbour-paketti.qml" line="67"/>
         <source>Hermes (Germany)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/harbour-paketti.qml" line="69"/>
+        <location filename="../qml/harbour-paketti.qml" line="72"/>
         <source>La Poste/Colissimo/Chronopost (France)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/harbour-paketti.qml" line="74"/>
+        <location filename="../qml/harbour-paketti.qml" line="77"/>
         <source>DHL</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/harbour-paketti.qml" line="170"/>
-        <source>less than minute ago</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message numerus="yes">
-        <location filename="../qml/harbour-paketti.qml" line="173"/>
-        <source>%n minute(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
-    <message numerus="yes">
-        <location filename="../qml/harbour-paketti.qml" line="176"/>
-        <source>%n hour(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
     </message>
 </context>
 </TS>

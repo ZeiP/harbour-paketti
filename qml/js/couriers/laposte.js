@@ -1,5 +1,5 @@
 function updatedet(index, trackid, showdet) {
-	itemUpdStarted(index);
+    PAPIData.itemUpdStarted(index);
 	console.log("UPD" + trackid);
 
 	var db = dbConnection();
@@ -9,12 +9,15 @@ function updatedet(index, trackid, showdet) {
         var data = JSON.parse(response);
     }
     catch (e) {
-        setShipmentError(index, "Failed to parse JSON.");
+        PAPIData.setShipmentError(index, trackid, showdet, "Failed to parse JSON.");
         return false;
     }
 
-    if (PHelpers.httpStatusIsError(data.returnCode)) {
-        setShipmentError(index, "JSON contained an error: " + data.returnMessage);
+    // returnMessage should only be given when an error has occured, but as the
+    // documentation isn't exactly up-to-date per the returnCode values either,
+    // this may not be the case? Anyway, it's the best we've got.
+    if (data.returnMessage != null) {
+        PAPIData.setShipmentError(index, trackid, showdet, "JSON contained an error: " + data.returnMessage);
         return false;
     }
 
@@ -30,7 +33,7 @@ function updatedet(index, trackid, showdet) {
     }
     PDatabase.insertShipdet(trackid, "HDR", "99999999999999", "hdr_shipid", data.shipment.idShip);
 
-    itemUpdReady(index, "HIT", showdet);
+    PAPIData.itemUpdReady(index, "HIT", showdet);
 }
 
 function laposteURL(code) {

@@ -1,5 +1,5 @@
 function updatedet(index, trackid, showdet) {
-    itemUpdStarted(index);
+    PAPIData.itemUpdStarted(index);
     console.log("UPD" + trackid);
 
     var doc = new XMLHttpRequest();
@@ -12,12 +12,12 @@ function updatedet(index, trackid, showdet) {
                 var data = JSON.parse(response);
             }
             catch (e) {
-                setShipmentError(index, "Failed to parse JSON.");
+                PAPIData.setShipmentError(index, trackid, showdet, "Failed to parse JSON.");
                 return false;
             }
 
             if (!data.shipments.length) {
-                setShipmentError(index, "Empty shipment data");
+                PAPIData.setShipmentError(index, trackid, showdet, "Empty shipment data");
                 return;
             }
 
@@ -71,7 +71,7 @@ function updatedet(index, trackid, showdet) {
             }
             PDatabase.insertShipdet(trackid,"HDR","99999999999999", "hdr_shipid", data.shipments[0].trackingCode);
 
-            itemUpdReady(index,"HIT",showdet);
+            PAPIData.itemUpdReady(index,"HIT",showdet);
         }
     }
 

@@ -93,3 +93,14 @@ function getLocale(allowedLocales, longLocale) {
     }
     return langCandidate == "" ? allowedLocales[0] : langCandidate;
 }
+
+function detectCourierByTrackingCode(trackingCode) {
+    trackingCode = trackingCode.toUpperCase();
+    if (trackingCode.match(/^(JJFI)|(MX)/)) {
+        return "FI";
+    }
+    else if (trackingCode.match(/^(MH)/)) {
+        return "MH";
+    }
+    return false;
+}

@@ -1,5 +1,5 @@
 function updatedet(index, trackid, showdet) {
-	itemUpdStarted(index);
+    PAPIData.itemUpdStarted(index);
 	console.log("UPD" + trackid);
 
 	var db = dbConnection();
@@ -10,17 +10,17 @@ function updatedet(index, trackid, showdet) {
         var data = JSON.parse(response);
     }
     catch (e) {
-        setShipmentError(index, "Failed to parse JSON.");
+        PAPIData.setShipmentError(index, trackid, showdet, "Failed to parse JSON.");
         return false;
     }
 
     if (PHelpers.httpStatusIsError(data.status)) {
-        setShipmentError(index, "JSON contained an error: " + data.detail);
+        PAPIData.setShipmentError(index, trackid, showdet, "JSON contained an error: " + data.detail);
         return false;
     }
 
     if (data.shipments.length == 0) {
-        setShipmentError(index, "Empty shipment information.");
+        PAPIData.setShipmentError(index, trackid, showdet, "Empty shipment information.");
         return false;
     }
     var respObj = data.shipments[0];
@@ -37,7 +37,7 @@ function updatedet(index, trackid, showdet) {
     PDatabase.insertShipdet(trackid, "HDR", "99999999999999", "hdr_shipid", respObj.id);
     PDatabase.insertShipdet(trackid, "HDR", "99999999999997", "nextStep", respObj.status.nextSteps);
 
-    itemUpdReady(index, "HIT", showdet);
+    PAPIData.itemUpdReady(index, "HIT", showdet);
 }
 
 function dhlURL(code) {

@@ -138,6 +138,10 @@
         <source>Next step</source>
         <translation>Nästa steg</translation>
     </message>
+    <message>
+        <source>The following error was returned: %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MainPage</name>
@@ -290,24 +294,6 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
     <message>
         <source>DHL</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>less than minute ago</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n minute(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
     </message>
 </context>
 </TS>
