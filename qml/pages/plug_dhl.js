@@ -35,5 +35,5 @@ function updatedet(index, trackid, showdet) {
 }
 
 function dhlURL(code) {
-    return("https://api-eu.dhl.com/track/shipments?trackingNumber=" + code + "&language=" + getLocale(["en"]));
+    return("https://api-eu.dhl.com/track/shipments?trackingNumber=" + code + "&language=" + getLocale('*'));
 }

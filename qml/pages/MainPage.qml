@@ -160,7 +160,7 @@ Page {
         }
     }
 
-    function addTrackable(type,trackid) {
+    function addTrackable(type, trackid) {
         if (trackid != "") {
             var index = 999;
             historyvisible = true;
@@ -168,7 +168,8 @@ Page {
 
             // Check if item is already on historylist, if not add and save to db
             for (var i = 0; i < historyModel.count; i++) {
-                if (historyModel.get(i).title.toUpperCase() == trackid) {
+                var item = historyModel.get(i);
+                if (item.title.toUpperCase() == trackid.toUpperCase() && item.type.toUpperCase() == type.toUpperCase()) {
                     index = i;
                 }
             }
@@ -307,7 +308,7 @@ Page {
             ListElement {title: ""; itemdesc: ""; det: " " ; type: "" ; itmrun: "" ; itmcolor: "" ; typec: "" ; datetime: "fuu" ; status: 0}
         }
         delegate: ListItem {
-            contentHeight: index==0 ? hrect.height : hitemrow.height+10
+            contentHeight: index==0 ? trackForm.height : hitemrow.height+10
             id: listitem
             menu: contextMenu
             width: index==0 ? 0 : parent.width
@@ -345,19 +346,19 @@ Page {
                 //onDataChanged: console.log("Changed..")
             }
             Rectangle {
-                id: hrect
+                id: trackForm
                 color: "transparent"
                 visible: index==0
                 width: lista.width
-                height: courier.height + historyhead.height + koodiInput.height
+                height: courier.height + historyhead.height + codeField.height
                 onHeightChanged: {
                     if (index == 0) {
-                        listitem.height = hrect.height
+                        listitem.height = trackForm.height
                     }
                 }
 
                 ComboBox {
-                    anchors.bottom: koodiBoksi.top
+                    anchors.bottom: codeBox.top
                     id: courier
                     width: parent.width
                     label: qsTr("Courier") + ": "
@@ -370,34 +371,48 @@ Page {
                             MenuItem {
                                 text: qsTranslate("main", model.name)
                                 onClicked: {
-                                    courier.value = name
-                                    mainpage.currentCourier = identifier
+                                    courier.setValueByIdentifier(identifier);
                                 }
                             }
                         }
                         onClicked: {
                             cautoset = false;
                             courier.valueColor = Theme.highlightColor;
-                            koodiInput.forceActiveFocus();
+                            codeField.forceActiveFocus();
                         }
+                    }
+
+                    function setValueByIdentifier(identifier) {
+                        var courierdata = couriers.getCourierByIdentifier(identifier);
+                        courier.value = courierdata.name
+                        mainpage.currentCourier = identifier
+                    }
+
+                    function setEmptyValue() {
+                        courier.value = qsTr("Select")
+                        mainpage.currentCourier = ""
+                    }
+
+                    function isEmpty() {
+                        return (courier.value == qsTr("Select"));
                     }
                 }
 
                 Rectangle {
-                    id: koodiBoksi
+                    id: codeBox
                     anchors.horizontalCenter: parent.horizontalCenter
                     width: parent.width
                     anchors.bottom: historyhead.top
-                    height: koodiInput.height
+                    height: codeField.height
                     color: "transparent"
                     //color: "#000000"
 
                     //Search
                     TextField {
-                        id: koodiInput
+                        id: codeField
                         font.pixelSize: Theme.fontSizeLarge
                         onActiveFocusChanged: {
-                            if (koodiInput.focus == true) {
+                            if (codeField.focus == true) {
                                 Qt.inputMethod.show();
                             }
                             else {
@@ -411,18 +426,18 @@ Page {
                         anchors.left: parent.left
                         onTextChanged: {
                             var cauto = detectCourierByTrackingCode(text);
-                            if (cauto && courier.currentIndex == 0) {
+                            if (cauto && courier.isEmpty()) {
                                 cautoset = true;
                                 courier.setValueByIdentifier(cauto);
                             }
                             // The courier was previously auto-set, but the code no longer matches.
                             else if (!cauto && cautoset === true) {
                                 cautoset = false;
-                                courier.currentIndex = 0;
+                                courier.setEmptyValue();
                             }
 
                             // Remind the user of setting the courier.
-                            if (courier.currentIndex == 0 && text.length != 0) {
+                            if (courier.isEmpty() && text.length != 0) {
                                 courier.valueColor = "red"
                             }
                             else {
@@ -430,28 +445,17 @@ Page {
                             }
                         }
 
-                        EnterKey.enabled: courier.currentIndex!=0 && text.length > 4
-                        //EnterKey.iconSource: "image://theme/icon-m-enter-accept"
-                        //EnterKey.iconSource: "image://theme/icon-m-enter-next"
-                        EnterKey.text: "OK"
+                        EnterKey.enabled: !courier.isEmpty() && text.length > 4
+                        EnterKey.iconSource: "image://theme/icon-m-enter-accept"
                         EnterKey.highlighted: true
-                        EnterKey.onClicked: {
-                            addTrackable(courier.currentItem.value, koodiInput.text);
-                            koodiInput.text = "";
-                            courier.currentIndex = 0;
-                        }
+                        EnterKey.onClicked: trackForm.submitTracking()
                     }
                     IconButton {
                         id: enterIcon
                         icon.source: "image://theme/icon-m-enter-accept"
                         anchors.right: parent.right
-                        onClicked: {
-                            addTrackable(mainpage.currentCourier, koodiInput.text);
-                            koodiInput.text = "";
-                            courier.value = qsTr("Select");
-                            mainpage.currentCourier = "";
-                        }
-                        enabled: courier.currentIndex!=0 && koodiInput.text.length > 4
+                        onClicked: trackForm.submitTracking()
+                        enabled: !courier.isEmpty() && codeField.text.length > 4
                     }
                 }
                 SectionHeader {
@@ -464,12 +468,18 @@ Page {
                     id: historytip
                     width: parent.width - (Theme.paddingMedium*2)
                     anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.top: koodiBoksi.bottom
+                    anchors.top: codeBox.bottom
                     text: "<br>" + qsTr("Start by choosing a courier and entering the tracking code in the box above. Tracked shipments will be saved automatically")
                     color: Theme.secondaryHighlightColor
                     font.pixelSize: Theme.fontSizeLarge
                     wrapMode: Text.WordWrap
                     visible: !historyvisible
+                }
+
+                function submitTracking() {
+                    addTrackable(mainpage.currentCourier, codeField.text);
+                    codeField.text = "";
+                    courier.setEmptyValue();
                 }
             }
 

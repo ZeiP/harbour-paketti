@@ -169,83 +169,84 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="286"/>
+        <location filename="../qml/pages/MainPage.qml" line="288"/>
         <source>About</source>
         <translation>À propos</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="290"/>
+        <location filename="../qml/pages/MainPage.qml" line="292"/>
         <source>Update</source>
         <translation>Mettre à jour</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="303"/>
+        <location filename="../qml/pages/MainPage.qml" line="305"/>
         <source>Track item</source>
         <translation>Chercher l’élément</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="333"/>
+        <location filename="../qml/pages/MainPage.qml" line="335"/>
         <source>Deleting</source>
         <translation>Suppression</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="363"/>
+        <location filename="../qml/pages/MainPage.qml" line="365"/>
         <source>Courier</source>
         <translation>Société</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="364"/>
-        <location filename="../qml/pages/MainPage.qml" line="451"/>
+        <location filename="../qml/pages/MainPage.qml" line="366"/>
+        <location filename="../qml/pages/MainPage.qml" line="393"/>
+        <location filename="../qml/pages/MainPage.qml" line="398"/>
         <source>Select</source>
         <translation>Sélectionner</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="365"/>
+        <location filename="../qml/pages/MainPage.qml" line="367"/>
         <source>The courier is autoselected when entering a tracking code if possible.</source>
         <translation>La société de livraison est sélectionnée automatiquement lors de la saisie d’un code de suivi si possible.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="409"/>
+        <location filename="../qml/pages/MainPage.qml" line="425"/>
         <source>Enter tracking code</source>
         <translation>Entrez le code de suivi</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="460"/>
+        <location filename="../qml/pages/MainPage.qml" line="466"/>
         <source>History</source>
         <translation>Historique</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="468"/>
+        <location filename="../qml/pages/MainPage.qml" line="474"/>
         <source>Start by choosing a courier and entering the tracking code in the box above. Tracked shipments will be saved automatically</source>
         <translation>Commencez par choisir une société de livraison et entrez le code de suivi dans la case ci-dessus. Les envois suivis seront enregistrés automatiquement</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="567"/>
+        <location filename="../qml/pages/MainPage.qml" line="579"/>
         <source>No information available</source>
         <translation>Aucune information disponible</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="576"/>
+        <location filename="../qml/pages/MainPage.qml" line="588"/>
         <source>Add description</source>
         <translation>Ajouter une description</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="576"/>
+        <location filename="../qml/pages/MainPage.qml" line="588"/>
         <source>Modify description</source>
         <translation>Modifier la description</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="580"/>
+        <location filename="../qml/pages/MainPage.qml" line="592"/>
         <source>Copy tracking number</source>
         <translation>Copier le numéro de suivi</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="584"/>
+        <location filename="../qml/pages/MainPage.qml" line="596"/>
         <source>Copy text</source>
         <translation>Copier le texte</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="588"/>
+        <location filename="../qml/pages/MainPage.qml" line="600"/>
         <source>Remove item</source>
         <translation>Retirer l’élément</translation>
     </message>
@@ -320,12 +321,12 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
         <translation>DHL</translation>
     </message>
     <message>
-        <location filename="../qml/harbour-paketti.qml" line="133"/>
+        <location filename="../qml/harbour-paketti.qml" line="137"/>
         <source>less than minute ago</source>
         <translation>il y a moins d’une minute</translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/harbour-paketti.qml" line="136"/>
+        <location filename="../qml/harbour-paketti.qml" line="140"/>
         <source>%n minute(s) ago</source>
         <translation>
             <numerusform>il y a %n minute</numerusform>
@@ -333,7 +334,7 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/harbour-paketti.qml" line="139"/>
+        <location filename="../qml/harbour-paketti.qml" line="143"/>
         <source>%n hour(s) ago</source>
         <translation>
             <numerusform>il y a %n heure</numerusform>

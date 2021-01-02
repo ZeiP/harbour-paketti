@@ -83,6 +83,10 @@ ApplicationWindow {
     function getLocale(allowedLocales) {
         var i = 0;
         var qtLocale = Qt.locale().name.substring(0, 2);
+        if (allowedLocales == '*') {
+            return qtLocale;
+        }
+
         // Array.includes() would be cleaner, but didn't work for me.
         while (i < allowedLocales.length){
             if (allowedLocales[i++] == qtLocale) {
