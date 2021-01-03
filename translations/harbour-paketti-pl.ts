@@ -47,12 +47,12 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="90"/>
         <source>GitHub (source codes and issues)</source>
-        <translation type="unfinished"></translation>
+        <translation>GitHub (kod źródłowy i raporty błędów)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="106"/>
         <source>Author does not take any responsibility for the information provided by the application. This is not an official application for the couriers.</source>
-        <translation type="unfinished"></translation>
+        <translation>Autor nie ponosi żadnej odpowiedzialności za informacje zawarte w aplikacji. To nie jest oficjalna aplikacja dla kurierów.</translation>
     </message>
 </context>
 <context>
@@ -111,7 +111,7 @@
     <message>
         <location filename="../qml/pages/Details.qml" line="65"/>
         <source>The following error was returned: %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>Zwrócony został następujący błąd: %1.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="79"/>
@@ -184,7 +184,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="84"/>
         <source>About</source>
-        <translation>O</translation>
+        <translation>O Paketti</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="88"/>
@@ -211,7 +211,7 @@
         <location filename="../qml/pages/MainPage.qml" line="187"/>
         <location filename="../qml/pages/MainPage.qml" line="192"/>
         <source>Select</source>
-        <translation>Zaznacz</translation>
+        <translation>Wybierz</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="160"/>
@@ -251,7 +251,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="385"/>
         <source>Show barcode</source>
-        <translation type="unfinished">Pokaż kod kreskowy</translation>
+        <translation>Pokaż kod kreskowy</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="389"/>
@@ -304,7 +304,23 @@ Changelog versions 0.7 and 0.7.1:
 ... and of course updated existing translations, see the about page for credits.
 
 The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation type="unfinished"></translation>
+        <translation>Zmiany w wesji 0.8:
+        - Dodane tłumaczenia:
+          - polskie - podziękowania dla atlochowski!
+        - Wiele zmian i poprawek w UI i API. Jeśli doświadczyłeś jakiś błędów, otwórz ticket, dzięki czemu będą one mogły byc naprawione w następnym wydaniu!
+        
+Zmiany w wersji 0.7 i 7.1:
+- Dodane śledzenie przesyłek La Poste (Francja). Podziękowania dla Adel Noureddine!
+- Dodane śledzenie przesyłek DHL.
+- Małe poprawki w UI i API
+- Dodane tłumaczenia:
+  - niemieckie - podziękowania dla J. Lavoie!
+  - francuskie - podziękowania dla J. Lavoie i S. Fournial!
+  - norweskie - podziękowania dla Allan Nordhøy!
+  ... oraz oczywiście zaktualizowane obecne tłumaczenia, zobacz na stronie O Paketti.
+            
+ Obecnie rozwijającym aplikację jest Jyri-Petteri "ZeiP" Paloposki.
+        </translation>
     </message>
 </context>
 <context>
@@ -312,24 +328,24 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
     <message>
         <location filename="../qml/js/database.js" line="89"/>
         <source>less than minute ago</source>
-        <translation type="unfinished"></translation>
+        <translation>mniej niż minutę temu</translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/js/database.js" line="92"/>
         <source>%n minute(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n minutę temu</numerusform>
+            <numerusform>%n minuty temu</numerusform>
+            <numerusform>%n minut temu</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/js/database.js" line="95"/>
         <source>%n hour(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n godzinę temu</numerusform>
+            <numerusform>%n godziny temu</numerusform>
+            <numerusform>%n godzin temu</numerusform>
         </translation>
     </message>
 </context>
