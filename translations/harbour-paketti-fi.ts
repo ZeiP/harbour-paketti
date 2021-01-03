@@ -17,15 +17,15 @@
     </message>
     <message>
         <source>Paketti is a simple shipment tracking application for SailfishOS.</source>
-        <translation type="unfinished"></translation>
+        <translation>Paketti on SailfishOS-käyttöjärjestelmälle tehty sovellus postilähetysten seurantaan.</translation>
     </message>
     <message>
         <source>GitHub (source codes and issues)</source>
-        <translation type="unfinished"></translation>
+        <translation>GitHub (lähdekoodi ja vikailmoitukset)</translation>
     </message>
     <message>
         <source>Author does not take any responsibility for the information provided by the application. This is not an official application for the couriers.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sovelluksen tekijä ei ota mitään vastuuta ohjelman tuottamasta informaatiosta. Sovellus ei ole yritysten virallinen sovellus.</translation>
     </message>
     <message>
         <source>Thanking:
@@ -37,7 +37,15 @@
 – S. Fournial (French translation)
 – Allan Nordhøy (Norwegian translation)
 – atlochowski (Polish translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>Kiitokset:
+– Jyri-Petteri ”ZeiP” Paloposki (ylläpitäjä)
+– Juhana Virkkala (alkuperäinen tekijä)
+– Adel Noureddine (La Poste -tuki)
+– Hannu Hirvonen and Åke Engelbrektson (ruotsinkielinen käännös)
+– J. Lavoie (saksan- ja ranskankielinen käännös)
+– S. Fournial (ranskankielinen käännös)
+– Allan Nordhøy (norjankielinen käännös)
+– atlochowski (puolankielinen käännös)</translation>
     </message>
 </context>
 <context>
@@ -140,7 +148,7 @@
     </message>
     <message>
         <source>The following error was returned: %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>Palvelin palautti seuraavan virheen: %1.</translation>
     </message>
 </context>
 <context>
@@ -211,7 +219,7 @@
     </message>
     <message>
         <source>Show barcode</source>
-        <translation type="unfinished">Näytä viivakoodi</translation>
+        <translation>Näytä viivakoodi</translation>
     </message>
 </context>
 <context>
@@ -245,27 +253,42 @@ Changelog versions 0.7 and 0.7.1:
 ... and of course updated existing translations, see the about page for credits.
 
 The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation type="unfinished"></translation>
+        <translation>Muutoksia versiossa 0.8:
+– Lisätty uusia käännöksiä:
+  – Puola – kiitos atlochowskille!
+– Kasa korjauksia ja muutoksia käyttöliittymään ja rajapintoihin. Jos törmäät virheisiin, teethän asiasta ilmoituksen jotta ne voidaan korjata seuraavaan julkaisuun!
+
+Muutoksia versioissa 0.7 ja 0.7.1:
+– Lisätty tuki La Posten (Ranska) seurannalle. Kiitos Adel Noureddinelle!
+– Lisätty tuki DHL:n seurannalle.
+– Korjattu pieniä käyttöliittymä- ja rajapintabugeja.
+– Lisätty uusia käännöksiä:
+  – Saksa – kiitokset J. Lavoie!
+  – Ranska – kiitokset J. Lavoie ja S. Fournial!
+  – Norja – kiitokset Allan Nordhøy!
+... ja luonnollisesti päivitetty olemassaolevia käännöksiä, katso tekijätiedot tietoja-sivulta.
+
+Sovelluksen ylläpitäjä on Jyri-Petteri ”ZeiP” Paloposki.</translation>
     </message>
 </context>
 <context>
     <name>database</name>
     <message>
         <source>less than minute ago</source>
-        <translation type="unfinished"></translation>
+        <translation>alle minuutti sitten</translation>
     </message>
     <message numerus="yes">
         <source>%n minute(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n minuutti sitten</numerusform>
+            <numerusform>%n minuuttia sitten</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n tunti sitten</numerusform>
+            <numerusform>%n tuntia sitten</numerusform>
         </translation>
     </message>
 </context>
@@ -273,27 +296,27 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
     <name>harbour-paketti</name>
     <message>
         <source>Posti (Finland)</source>
-        <translation type="unfinished"></translation>
+        <translation>Posti</translation>
     </message>
     <message>
         <source>Matkahuolto (Finland)</source>
-        <translation type="unfinished"></translation>
+        <translation>Matkahuolto</translation>
     </message>
     <message>
         <source>PostNord (Nordics)</source>
-        <translation type="unfinished"></translation>
+        <translation>PostNord (pohjoismaat)</translation>
     </message>
     <message>
         <source>Hermes (Germany)</source>
-        <translation type="unfinished"></translation>
+        <translation>Hermes (Saksa)</translation>
     </message>
     <message>
         <source>La Poste/Colissimo/Chronopost (France)</source>
-        <translation type="unfinished"></translation>
+        <translation>La Poste/Colissimo/Chronopost (Ranska)</translation>
     </message>
     <message>
         <source>DHL</source>
-        <translation type="unfinished"></translation>
+        <translation>DHL</translation>
     </message>
 </context>
 </TS>

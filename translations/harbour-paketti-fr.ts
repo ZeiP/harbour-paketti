@@ -52,7 +52,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="106"/>
         <source>Author does not take any responsibility for the information provided by the application. This is not an official application for the couriers.</source>
-        <translation type="unfinished">L’auteur de l’application n’assume aucune responsabilité au cas où l’application fournirait des informations invalides. Ceci n’est pas une application officielle pour les coursiers.</translation>
+        <translation>L’auteur de l’application n’assume aucune responsabilité au cas où l’application fournirait des informations invalides. Ceci n’est pas une application officielle pour les coursiers.</translation>
     </message>
 </context>
 <context>
@@ -111,7 +111,7 @@
     <message>
         <location filename="../qml/pages/Details.qml" line="65"/>
         <source>The following error was returned: %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>L’erreur suivante a été renvoyée : %1.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="79"/>
@@ -304,12 +304,12 @@ Changelog versions 0.7 and 0.7.1:
 ... and of course updated existing translations, see the about page for credits.
 
 The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation type="unfinished">Version du journal des modifications 0.8 :
-– Ajout de nouvelles traductions pour :
-  – Polish – thanks to atlochowski!
-– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!
+        <translation>Version du journal des modifications 0.8 :
+– Ajout de nouvelles traductions pour :
+  – polonais – grâce à atlochowski !
+– Quelques correctifs et changements apportés à l’interface utilisateur et aux API. Si vous remaquez des erreurs, veuillez le signaler  pour qu’elles puissent être corrigées dans la prochaine version !
 
-Version du journal des modifications 0.7 and 0.7.1:
+Version du journal des modifications 0.7 and 0.7.1 :
 – Ajout du suivi des colis La Poste (France). Merci à Adel Noureddine !
 – Ajout du suivi des colis DHL.
 – Correction de quelques erreurs mineures de gestion de l’interface utilisateur et de l’API.

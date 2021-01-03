@@ -34,25 +34,25 @@
 – S. Fournial (French translation)
 – Allan Nordhøy (Norwegian translation)
 – atlochowski (Polish translation)</source>
-        <translation type="unfinished">Danke:
+        <translation>Danke:
 – Jyri-Petteri „ZeiP“ Paloposki (Betreuer)
 – Juhana Virkkala (Originalversion)
 – Adel Noureddine (Verfolgung von La Poste)
 – Hannu Hirvonen und Åke Engelbrektson (schwedische Übersetzung)
-– J. Lavoie (German and French translation)
-– S. Fournial (French translation)
-– Allan Nordhøy (Norwegian translation)
-– atlochowski (Polish translation)</translation>
+– J. Lavoie (deutsche und französische Übersetzungen)
+– Swann Fournial (französische Übersetzung)
+– Allan Nordhøy (norwegische Übersetzung)
+– atlochowski (polnische Übersetzung)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="90"/>
         <source>GitHub (source codes and issues)</source>
-        <translation type="unfinished"></translation>
+        <translation>GitHub (Quellcodes und Probleme)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="106"/>
         <source>Author does not take any responsibility for the information provided by the application. This is not an official application for the couriers.</source>
-        <translation type="unfinished">Der Autor der Anwendung übernimmt keine Verantwortung für den Fall, dass die Anwendung ungültige Informationen liefert. Dies ist kein offizieller Anwendung für Kuriere.</translation>
+        <translation>Der Autor der Anwendung übernimmt keine Verantwortung für den Fall, dass die Anwendung ungültige Informationen liefert. Dies ist kein offizieller Anwendung für Kuriere.</translation>
     </message>
 </context>
 <context>
@@ -299,10 +299,10 @@ Changelog versions 0.7 and 0.7.1:
 ... and of course updated existing translations, see the about page for credits.
 
 The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation type="unfinished">Änderungsprotokollversion 0.8:
-– Added new translations for:
-  – Polish – thanks to atlochowski!
-– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!
+        <translation>Änderungsprotokollversion 0.8:
+– Neue Übersetzungen hinzugefügt:
+  – Polnisch – dank an atlochowski!
+– Eine Reihe von Korrekturen und Änderungen an der Benutzeroberfläche und den APIs vorgenommen. Wenn Sie auf Fehler stoßen, öffnen Sie bitte ein Ticket, damit diese für die nächste Version behoben werden können!
 
 Änderungsprotokollversion 0.7 und 0.7.1:
 – Paketverfolgung für La Poste (Frankreich) hinzugefügt. Vielen Dank an Adel Noureddine!

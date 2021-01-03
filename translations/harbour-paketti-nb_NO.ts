@@ -21,7 +21,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="71"/>
         <source>Paketti is a simple shipment tracking application for SailfishOS.</source>
-        <translation type="unfinished"></translation>
+        <translation>Paketti er et enkelt fraktsporingsprogram for SailfishOS.</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="78"/>
@@ -34,7 +34,15 @@
 – S. Fournial (French translation)
 – Allan Nordhøy (Norwegian translation)
 – atlochowski (Polish translation)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Takk til:
+– Jyri-Petteri ”ZeiP” Paloposki (vedlikeholder)
+– Juhana Virkkala (opprinnelig versjon)
+– Adel Noureddine (La Poste-sporing)
+– Hannu Hirvonen og Åke Engelbrektson (Svensk oversettelse)
+– J. Lavoie (German and French translation)
+– S. Fournial (French translation)
+– Allan Nordhøy (Denne oversettelsen)
+– atlochowski (Polish translation)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="90"/>
@@ -44,7 +52,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="106"/>
         <source>Author does not take any responsibility for the information provided by the application. This is not an official application for the couriers.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Programutvikleren tar ikke ansvar i fall programmet viser uriktig informasjon. Dette er ikke et offisielt program for noen av fraktfirmaene.</translation>
     </message>
 </context>
 <context>
@@ -296,7 +304,22 @@ Changelog versions 0.7 and 0.7.1:
 ... and of course updated existing translations, see the about page for credits.
 
 The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Endringslogg, versjon 0.8:
+– Added new translations for:
+  – Polish – thanks to atlochowski!
+– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!
+ 
+Endringslogg, versjon 0.7 and 0.7.1:
+– La Poste (Frankrike)-pakkesporing lagt til. Takk til Adel Noureddine!
+– DHL-pakkesporing lagt til.
+– Fikset noen små grensesnitt- og API-håndteringstingsfeil.
+– Added new translations for:
+  – German – thanks to J. Lavoie!
+  – French – thanks to J. Lavoie and S. Fournial!
+  – Norwegian – thanks to Allan Nordhøy!
+... and of course updated existing translations, see the about page for credits.
+
+Vedlikeholder for programmet er Jyri-Petteri ”ZeiP” Paloposki.</translation>
     </message>
 </context>
 <context>
@@ -304,22 +327,22 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
     <message>
         <location filename="../qml/js/database.js" line="89"/>
         <source>less than minute ago</source>
-        <translation type="unfinished"></translation>
+        <translation>mindre enn ett minutt siden</translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/js/database.js" line="92"/>
         <source>%n minute(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n minutt siden</numerusform>
+            <numerusform>%n minutter siden</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/js/database.js" line="95"/>
         <source>%n hour(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n time siden</numerusform>
+            <numerusform>%n timer siden</numerusform>
         </translation>
     </message>
 </context>
@@ -328,32 +351,32 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="52"/>
         <source>Posti (Finland)</source>
-        <translation type="unfinished"></translation>
+        <translation>Posti (Finland)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="57"/>
         <source>Matkahuolto (Finland)</source>
-        <translation type="unfinished"></translation>
+        <translation>Matkahuolto (Finland)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="62"/>
         <source>PostNord (Nordics)</source>
-        <translation type="unfinished"></translation>
+        <translation>PostNord (Norden)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="67"/>
         <source>Hermes (Germany)</source>
-        <translation type="unfinished"></translation>
+        <translation>Hermes (Tyskland)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="72"/>
         <source>La Poste/Colissimo/Chronopost (France)</source>
-        <translation type="unfinished"></translation>
+        <translation>La Poste/Colissimo/Chronopost (Frankrike)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="77"/>
         <source>DHL</source>
-        <translation type="unfinished"></translation>
+        <translation>DHL</translation>
     </message>
 </context>
 </TS>
