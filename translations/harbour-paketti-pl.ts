@@ -305,10 +305,10 @@ Changelog versions 0.7 and 0.7.1:
 
 The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
         <translation>Zmiany w wesji 0.8:
-        - Dodane tłumaczenia:
-          - polskie - podziękowania dla atlochowski!
-        - Wiele zmian i poprawek w UI i API. Jeśli doświadczyłeś jakiś błędów, otwórz ticket, dzięki czemu będą one mogły byc naprawione w następnym wydaniu!
-        
+- Dodane tłumaczenia:
+  - polskie - podziękowania dla atlochowski!
+- Wiele zmian i poprawek w UI i API. Jeśli doświadczyłeś jakiś błędów, otwórz ticket, dzięki czemu będą one mogły byc naprawione w następnym wydaniu!
+
 Zmiany w wersji 0.7 i 7.1:
 - Dodane śledzenie przesyłek La Poste (Francja). Podziękowania dla Adel Noureddine!
 - Dodane śledzenie przesyłek DHL.
@@ -317,10 +317,9 @@ Zmiany w wersji 0.7 i 7.1:
   - niemieckie - podziękowania dla J. Lavoie!
   - francuskie - podziękowania dla J. Lavoie i S. Fournial!
   - norweskie - podziękowania dla Allan Nordhøy!
-  ... oraz oczywiście zaktualizowane obecne tłumaczenia, zobacz na stronie O Paketti.
-            
- Obecnie rozwijającym aplikację jest Jyri-Petteri &quot;ZeiP&quot; Paloposki.
-        </translation>
+... oraz oczywiście zaktualizowane obecne tłumaczenia, zobacz na stronie O Paketti.
+
+Obecnie rozwijającym aplikację jest Jyri-Petteri &quot;ZeiP&quot; Paloposki.</translation>
     </message>
 </context>
 <context>
