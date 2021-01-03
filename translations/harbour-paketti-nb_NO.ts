@@ -47,7 +47,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="90"/>
         <source>GitHub (source codes and issues)</source>
-        <translation type="unfinished"></translation>
+        <translation>GitHub (kildekode og feilsporing)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="106"/>
@@ -111,7 +111,7 @@
     <message>
         <location filename="../qml/pages/Details.qml" line="65"/>
         <source>The following error was returned: %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>Fikk følgende feil: %1.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="79"/>
@@ -156,7 +156,7 @@
     <message>
         <location filename="../qml/pages/Details.qml" line="103"/>
         <source>CoD amount</source>
-        <translation type="unfinished"></translation>
+        <translation>Postoppkravsbeløp</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="106"/>
@@ -166,7 +166,7 @@
     <message>
         <location filename="../qml/pages/Details.qml" line="109"/>
         <source>Next step</source>
-        <translation type="unfinished"></translation>
+        <translation>Neste trinn</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="121"/>
