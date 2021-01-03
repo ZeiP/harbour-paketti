@@ -52,7 +52,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="106"/>
         <source>Author does not take any responsibility for the information provided by the application. This is not an official application for the couriers.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">L’auteur de l’application n’assume aucune responsabilité au cas où l’application fournirait des informations invalides. Ceci n’est pas une application officielle pour les coursiers.</translation>
     </message>
 </context>
 <context>
@@ -251,7 +251,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="385"/>
         <source>Show barcode</source>
-        <translation type="unfinished">Afficher le code-barres</translation>
+        <translation>Afficher le code-barres</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="389"/>
@@ -304,7 +304,22 @@ Changelog versions 0.7 and 0.7.1:
 ... and of course updated existing translations, see the about page for credits.
 
 The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Version du journal des modifications 0.8 :
+– Ajout de nouvelles traductions pour :
+  – Polish – thanks to atlochowski!
+– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!
+
+Version du journal des modifications 0.7 and 0.7.1:
+– Ajout du suivi des colis La Poste (France). Merci à Adel Noureddine !
+– Ajout du suivi des colis DHL.
+– Correction de quelques erreurs mineures de gestion de l’interface utilisateur et de l’API.
+– Ajout de nouvelles traductions pour :
+  – allemand – grâce à J. Lavoie !
+  – français – grâce à J. Lavoie et Swann Fournial !
+  – norvégien – grâce à Allan Nordhøy !
+... et bien sûr mise à jour des traductions existantes, voir la page À propos pour les crédits.
+
+Le mainteneur de l’application est Jyri-Petteri « ZeiP » Paloposki.</translation>
     </message>
 </context>
 <context>
@@ -312,22 +327,22 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
     <message>
         <location filename="../qml/js/database.js" line="89"/>
         <source>less than minute ago</source>
-        <translation type="unfinished"></translation>
+        <translation>il y a moins d’une minute</translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/js/database.js" line="92"/>
         <source>%n minute(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>il y a %n minute</numerusform>
+            <numerusform>il y a %n minutes</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/js/database.js" line="95"/>
         <source>%n hour(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>il y a %n heure</numerusform>
+            <numerusform>il y a %n heures</numerusform>
         </translation>
     </message>
 </context>
@@ -336,32 +351,32 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="52"/>
         <source>Posti (Finland)</source>
-        <translation type="unfinished"></translation>
+        <translation>Posti (Finlande)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="57"/>
         <source>Matkahuolto (Finland)</source>
-        <translation type="unfinished"></translation>
+        <translation>Matkahuolto (Finlande)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="62"/>
         <source>PostNord (Nordics)</source>
-        <translation type="unfinished"></translation>
+        <translation>PostNord (Pays nordiques)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="67"/>
         <source>Hermes (Germany)</source>
-        <translation type="unfinished"></translation>
+        <translation>Hermes (Allemagne)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="72"/>
         <source>La Poste/Colissimo/Chronopost (France)</source>
-        <translation type="unfinished"></translation>
+        <translation>La Poste/Colissimo/Chronopost</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="77"/>
         <source>DHL</source>
-        <translation type="unfinished"></translation>
+        <translation>DHL</translation>
     </message>
 </context>
 </TS>
