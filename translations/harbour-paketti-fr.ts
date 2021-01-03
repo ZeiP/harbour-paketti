@@ -47,7 +47,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="90"/>
         <source>GitHub (source codes and issues)</source>
-        <translation type="unfinished"></translation>
+        <translation>GitHub (codes source et signalements)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="106"/>
