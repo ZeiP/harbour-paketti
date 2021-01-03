@@ -5,7 +5,7 @@ function updatedet(index, trackid, showdet) {
     var doc = new XMLHttpRequest();
     doc.onreadystatechange = function() {
         if (doc.readyState == XMLHttpRequest.DONE) {
-            var headrivi=997;
+            var headrivi = 997;
             var response = doc.responseText;
 
             try {

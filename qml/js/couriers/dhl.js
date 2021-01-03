@@ -31,7 +31,10 @@ function updatedet(index, trackid, showdet) {
     for (var i in respObj.events) {
         var ev = respObj.events[i];
         var dateEvent = Qt.formatDateTime(new Date(ev.timestamp), "yyyyMMddHHmmss")
-        var descriptionLabel = ev.description + ": " + ev.location.address.addressLocality;
+        var descriptionLabel = ev.description
+        if (ev.location != null && ev.location.address != null) {
+            descriptionLabel = descriptionLabel + ": " + ev.location.address.addressLocality;
+        }
         PDatabase.insertShipdet(trackid, "EVT", dateEvent, descriptionLabel, "");
     }
     PDatabase.insertShipdet(trackid, "HDR", "99999999999999", "hdr_shipid", respObj.id);

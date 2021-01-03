@@ -21,7 +21,7 @@ function updatedet(index, trackid, showdet) {
             // and try to bare with it...
             if (data.response == null) {
                 if (data.Response != null) {
-                    fixedResponse = response
+                    var fixedResponse = response
                         .replace('"Response":', '"response":')
                         .replace('"TrackingInformationResponse":', '"trackingInformationResponse":')
                         .replace('"Shipments":', '"shipments":')

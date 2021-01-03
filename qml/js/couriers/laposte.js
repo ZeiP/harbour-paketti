@@ -16,6 +16,9 @@ function updatedet(index, trackid, showdet) {
     // returnMessage should only be given when an error has occured, but as the
     // documentation isn't exactly up-to-date per the returnCode values either,
     // this may not be the case? Anyway, it's the best we've got.
+    // It seems that at least authentication error doesn't have the returnMessage either,
+    // so we should check by HTTP return code (maybe?) and then print out the
+    // content OR returnMessage, whichever exists.
     if (data.returnMessage != null) {
         PAPIData.setShipmentError(index, trackid, showdet, "JSON contained an error: " + data.returnMessage);
         return false;
