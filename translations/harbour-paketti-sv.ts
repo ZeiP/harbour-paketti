@@ -25,7 +25,7 @@
     </message>
     <message>
         <source>Author does not take any responsibility for the information provided by the application. This is not an official application for the couriers.</source>
-        <translation type="unfinished">Programmets utvecklare tar inget ansvar för om programmet tillhandahåller ogiltig information. Programmet är inte ett officiellt program för fraktbolagen.</translation>
+        <translation>Programmets utvecklare tar inget ansvar för information som programmet tillhandahåller. Detta är inget officiellt program från fraktbolagen.</translation>
     </message>
     <message>
         <source>Thanking:
@@ -37,9 +37,9 @@
 – S. Fournial (French translation)
 – Allan Nordhøy (Norwegian translation)
 – atlochowski (Polish translation)</source>
-        <translation type="unfinished">Tackar:
-– Jyri-Petteri ”ZeiP” Paloposki (Programunderhåller)
-– Juhana Virkkala (Originalversion)
+        <translation>Tackar:
+– Jyri-Petteri ”ZeiP” Paloposki (Programunderhåll)
+– Juhana Virkkala (Ursprunglig utvecklare)
 – Adel Noureddine (La Poste-spårning)
 – Hannu Hirvonen och Åke Engelbrektson (Svensk översättning)
 – J. Lavoie (Tysk och Fransk översättning)
@@ -253,10 +253,10 @@ Changelog versions 0.7 and 0.7.1:
 ... and of course updated existing translations, see the about page for credits.
 
 The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation type="unfinished">Ändringslogg version 0.8:
+        <translation>Ändringslogg version 0.8:
 – Lade till nya översättnngar:
-  – Polish – thanks to atlochowski!
-– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!
+  – Polska – Tack till atlochowski!
+– En bunt fixar och ändringar i UI och API:er. Om du stöter på några fel, kan du öppna ett ärende så att de kan fixas till nästa utgåva!
 
 Ändringslogg version 0.7 och 0.7.1:
 – Lade till La Poste (Frankrike) paketspårning. Tack till Adel Noureddine!
@@ -296,11 +296,11 @@ Underhåller appen gör Jyri-Petteri ”ZeiP” Paloposki.</translation>
     <name>harbour-paketti</name>
     <message>
         <source>Posti (Finland)</source>
-        <translation type="unfinished">Posti (Finland)</translation>
+        <translation>Posti (Finland)</translation>
     </message>
     <message>
         <source>Matkahuolto (Finland)</source>
-        <translation type="unfinished">Matkahuolto (Finland)</translation>
+        <translation>Matkahuolto (Finland)</translation>
     </message>
     <message>
         <source>PostNord (Nordics)</source>
