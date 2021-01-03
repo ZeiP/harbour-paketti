@@ -21,7 +21,7 @@
     </message>
     <message>
         <source>GitHub (source codes and issues)</source>
-        <translation type="unfinished"></translation>
+        <translation>GitHub (källkod och ärendehantering)</translation>
     </message>
     <message>
         <source>Author does not take any responsibility for the information provided by the application. This is not an official application for the couriers.</source>
@@ -140,7 +140,7 @@
     </message>
     <message>
         <source>The following error was returned: %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>Följande fel returnerades: %1.</translation>
     </message>
 </context>
 <context>
