@@ -31,7 +31,7 @@
 – Adel Noureddine (La Poste tracking)
 – Hannu Hirvonen and Åke Engelbrektson (Swedish translation)
 – J. Lavoie (German and French translation)
-– S. Fournial (French translation)
+– Swann Fournial (French translation)
 – Allan Nordhøy (Norwegian translation)
 – atlochowski (Polish translation)</source>
         <translation type="unfinished">Takk til:
@@ -40,7 +40,7 @@
 – Adel Noureddine (La Poste-sporing)
 – Hannu Hirvonen og Åke Engelbrektson (Svensk oversettelse)
 – J. Lavoie (German and French translation)
-– S. Fournial (French translation)
+– Swann Fournial (French translation)
 – Allan Nordhøy (Denne oversettelsen)
 – atlochowski (Polish translation)</translation>
     </message>

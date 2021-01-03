@@ -31,11 +31,11 @@
 – Adel Noureddine (La Poste tracking)
 – Hannu Hirvonen and Åke Engelbrektson (Swedish translation)
 – J. Lavoie (German and French translation)
-– S. Fournial (French translation)
+– Swann Fournial (French translation)
 – Allan Nordhøy (Norwegian translation)
 – atlochowski (Polish translation)</source>
-        <translation>Remerciement :
-– Jyri-Petteri « ZeiP » Paloposki (mainteneur depuis 2020)
+        <translation>Remerciement :
+– Jyri-Petteri « ZeiP » Paloposki (mainteneur)
 – Juhana Virkkala (version originale)
 – Adel Noureddine (suivi La Poste)
 – Hannu Hirvonen et Åke Engelbrektson (traduction en suédois)
@@ -101,7 +101,7 @@
 – The item has not yet been entered in the system.
 – The item was posted long time ago and has been already removed from couriers system
 – There is a problem with the system or the item</source>
-        <translation>Ceci peut être dû à une des raisons suivantes :
+        <translation>Ceci peut être dû à une des raisons suivantes :
 - Vérifiez le code article que vous avez entré. Assurez-vous qu’il est entré sans espaces.
 - L’article n’a pas encore été remis pour livraison.
 - L’élément n’a pas encore été saisi dans le système.

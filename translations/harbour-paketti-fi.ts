@@ -34,7 +34,7 @@
 – Adel Noureddine (La Poste tracking)
 – Hannu Hirvonen and Åke Engelbrektson (Swedish translation)
 – J. Lavoie (German and French translation)
-– S. Fournial (French translation)
+– Swann Fournial (French translation)
 – Allan Nordhøy (Norwegian translation)
 – atlochowski (Polish translation)</source>
         <translation>Kiitokset:
@@ -43,7 +43,7 @@
 – Adel Noureddine (La Poste -tuki)
 – Hannu Hirvonen and Åke Engelbrektson (ruotsinkielinen käännös)
 – J. Lavoie (saksan- ja ranskankielinen käännös)
-– S. Fournial (ranskankielinen käännös)
+– Swann Fournial (ranskankielinen käännös)
 – Allan Nordhøy (norjankielinen käännös)
 – atlochowski (puolankielinen käännös)</translation>
     </message>

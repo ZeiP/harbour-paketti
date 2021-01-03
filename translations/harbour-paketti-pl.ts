@@ -31,7 +31,7 @@
 – Adel Noureddine (La Poste tracking)
 – Hannu Hirvonen and Åke Engelbrektson (Swedish translation)
 – J. Lavoie (German and French translation)
-– S. Fournial (French translation)
+– Swann Fournial (French translation)
 – Allan Nordhøy (Norwegian translation)
 – atlochowski (Polish translation)</source>
         <translation>Podziękowania:
@@ -40,7 +40,7 @@
 – Adel Noureddine (traking La Poste)
 – Hannu Hirvonen and Åke Engelbrektson (szwedzkie tłumaczenie)
 – J. Lavoie (niemieckie i francuskie tłumaczenie)
-– S. Fournial (francuskie tłumaczenie)
+– Swann Fournial (francuskie tłumaczenie)
 – Allan Nordhøy (norweskie tłumaczenie)
 – atlochowski (polskie tłumaczenie)</translation>
     </message>
@@ -319,7 +319,7 @@ Zmiany w wersji 0.7 i 7.1:
   - norweskie - podziękowania dla Allan Nordhøy!
   ... oraz oczywiście zaktualizowane obecne tłumaczenia, zobacz na stronie O Paketti.
             
- Obecnie rozwijającym aplikację jest Jyri-Petteri "ZeiP" Paloposki.
+ Obecnie rozwijającym aplikację jest Jyri-Petteri &quot;ZeiP&quot; Paloposki.
         </translation>
     </message>
 </context>

@@ -34,7 +34,7 @@
 – Adel Noureddine (La Poste tracking)
 – Hannu Hirvonen and Åke Engelbrektson (Swedish translation)
 – J. Lavoie (German and French translation)
-– S. Fournial (French translation)
+– Swann Fournial (French translation)
 – Allan Nordhøy (Norwegian translation)
 – atlochowski (Polish translation)</source>
         <translation>Tackar:
@@ -43,7 +43,7 @@
 – Adel Noureddine (La Poste-spårning)
 – Hannu Hirvonen och Åke Engelbrektson (Svensk översättning)
 – J. Lavoie (Tysk och Fransk översättning)
-– S. Fournial (Fransk översättning)
+– Swann Fournial (Fransk översättning)
 – Allan Nordhøy (Norsk översättning)
 – atlochowski (Polish översättning)</translation>
     </message>
