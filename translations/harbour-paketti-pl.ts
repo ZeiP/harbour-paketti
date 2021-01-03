@@ -361,10 +361,6 @@ The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
         <translation>La Poste/Colissimo/Chronopost (Francja)</translation>
     </message>
     <message>
-        <location filename="../qml/harbour-paketti.qml" line="69"/>
-        <source>DHL</source>
-    </message>
-    <message>
         <location filename="../qml/harbour-paketti.qml" line="77"/>
         <source>DHL</source>
         <translation>DHL</translation>
