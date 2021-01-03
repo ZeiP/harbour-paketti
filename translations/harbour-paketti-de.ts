@@ -21,7 +21,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="71"/>
         <source>Paketti is a simple shipment tracking application for SailfishOS.</source>
-        <translation type="unfinished"></translation>
+        <translation>Paketti ist eine einfache Sendungsverfolgungsanwendung für SailfishOS.</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="78"/>
@@ -34,7 +34,15 @@
 – S. Fournial (French translation)
 – Allan Nordhøy (Norwegian translation)
 – atlochowski (Polish translation)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Danke:
+– Jyri-Petteri „ZeiP“ Paloposki (Betreuer)
+– Juhana Virkkala (Originalversion)
+– Adel Noureddine (Verfolgung von La Poste)
+– Hannu Hirvonen und Åke Engelbrektson (schwedische Übersetzung)
+– J. Lavoie (German and French translation)
+– S. Fournial (French translation)
+– Allan Nordhøy (Norwegian translation)
+– atlochowski (Polish translation)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="90"/>
@@ -44,7 +52,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="106"/>
         <source>Author does not take any responsibility for the information provided by the application. This is not an official application for the couriers.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Der Autor der Anwendung übernimmt keine Verantwortung für den Fall, dass die Anwendung ungültige Informationen liefert. Dies ist kein offizieller Anwendung für Kuriere.</translation>
     </message>
 </context>
 <context>
@@ -238,7 +246,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="385"/>
         <source>Show barcode</source>
-        <translation type="unfinished">Strichcode anzeigen</translation>
+        <translation>Strichcode anzeigen</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="389"/>
@@ -314,22 +322,22 @@ Der Betreuer der Anwendung ist Jyri-Petteri „ZeiP“ Paloposki.</translation>
     <message>
         <location filename="../qml/js/database.js" line="89"/>
         <source>less than minute ago</source>
-        <translation type="unfinished"></translation>
+        <translation>vor weniger als einer Minute</translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/js/database.js" line="92"/>
         <source>%n minute(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>vor %n Minute</numerusform>
+            <numerusform>vor %n Minuten</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/js/database.js" line="95"/>
         <source>%n hour(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>vor %n Stunde</numerusform>
+            <numerusform>vor %n Stunden</numerusform>
         </translation>
     </message>
 </context>
@@ -338,32 +346,32 @@ Der Betreuer der Anwendung ist Jyri-Petteri „ZeiP“ Paloposki.</translation>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="52"/>
         <source>Posti (Finland)</source>
-        <translation type="unfinished"></translation>
+        <translation>Posti (Finnland)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="57"/>
         <source>Matkahuolto (Finland)</source>
-        <translation type="unfinished"></translation>
+        <translation>Matkahuolto (Finnland)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="62"/>
         <source>PostNord (Nordics)</source>
-        <translation type="unfinished"></translation>
+        <translation>PostNord (Nordische Länder)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="67"/>
         <source>Hermes (Germany)</source>
-        <translation type="unfinished"></translation>
+        <translation>Hermes</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="72"/>
         <source>La Poste/Colissimo/Chronopost (France)</source>
-        <translation type="unfinished"></translation>
+        <translation>La Poste/Colissimo/Chronopost (Frankreich)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="77"/>
         <source>DHL</source>
-        <translation type="unfinished"></translation>
+        <translation>DHL</translation>
     </message>
 </context>
 </TS>
