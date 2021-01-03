@@ -21,7 +21,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="71"/>
         <source>Paketti is a simple shipment tracking application for SailfishOS.</source>
-        <translation type="unfinished"></translation>
+        <translation>Paketti est une application de suivi d’expédition simple pour SailfishOS.</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="78"/>
@@ -34,7 +34,15 @@
 – S. Fournial (French translation)
 – Allan Nordhøy (Norwegian translation)
 – atlochowski (Polish translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>Remerciement :
+– Jyri-Petteri « ZeiP » Paloposki (mainteneur depuis 2020)
+– Juhana Virkkala (version originale)
+– Adel Noureddine (suivi La Poste)
+– Hannu Hirvonen et Åke Engelbrektson (traduction en suédois)
+– J. Lavoie (traduction en allemand et français)
+– Swann Fournial (traduction en français)
+– Allan Nordhøy (traduction en norvégien)
+– atlochowski (traduction en polonais)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="90"/>

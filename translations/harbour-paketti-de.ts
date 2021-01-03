@@ -291,7 +291,22 @@ Changelog versions 0.7 and 0.7.1:
 ... and of course updated existing translations, see the about page for credits.
 
 The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Änderungsprotokollversion 0.8:
+– Added new translations for:
+  – Polish – thanks to atlochowski!
+– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!
+
+Änderungsprotokollversion 0.7 und 0.7.1:
+– Paketverfolgung für La Poste (Frankreich) hinzugefügt. Vielen Dank an Adel Noureddine!
+– Paketverfolgung für DHL hinzugefügt.
+– Einige kleinere Fehler in der Benutzeroberfläche und API wurden behoben.
+– Neue Übersetzungen hinzugefügt:
+  – Deutsch – dank an J. Lavoie!
+  – Französisch – dank an J. Lavoie and Swann Fournial!
+  – Norwegisch – dank an Allan Nordhøy!
+... und natürlich aktualisierte vorhandene Übersetzungen, siehe auf der Info-Seite für Credits.
+
+Der Betreuer der Anwendung ist Jyri-Petteri „ZeiP“ Paloposki.</translation>
     </message>
 </context>
 <context>
