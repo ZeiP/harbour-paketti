@@ -331,11 +331,14 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../qml/pages/UpdatedPage.qml" line="99"/>
         <source>… and of course updated existing translations, see the about page for credits.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+=======
+>>>>>>> weblate/master
         <location filename="../qml/pages/UpdatedPage.qml" line="90"/>
         <source>Changelog versions %1 and %2:</source>
         <translation type="unfinished"></translation>
@@ -366,6 +369,14 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <location filename="../qml/pages/UpdatedPage.qml" line="99"/>
+        <source>... and of course updated existing translations, see the about page for credits.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+>>>>>>> weblate/master
         <location filename="../qml/pages/UpdatedPage.qml" line="101"/>
         <source>The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
         <translation type="unfinished"></translation>

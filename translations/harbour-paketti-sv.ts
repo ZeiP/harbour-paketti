@@ -289,6 +289,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -302,6 +303,21 @@
     </message>
     <message>
         <source>… and of course updated existing translations, see the about page for credits.</source>
+=======
+        <source>... and of course updated existing translations, see the about page for credits.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>– Fixed a bug in language selection.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!</source>
+>>>>>>> weblate/master
         <translation type="unfinished"></translation>
     </message>
 </context>
