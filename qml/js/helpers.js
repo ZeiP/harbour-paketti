@@ -81,15 +81,16 @@ function getLocale(allowedLocales, longLocale) {
     var langCandidate = "";
 
     // Array.includes() would be cleaner, but didn't work for me.
-    while (i < allowedLocales.length){
-        if (allowedLocales[i++] == qtLocale) {
+    while (i < allowedLocales.length) {
+        if (allowedLocales[i] == qtLocale) {
             return qtLocale;
         }
         // It wasn't an exact match, but if the language is same, save the first one
         // (ie. the most preferable by allowed order) as a fallback candidate.
-        else if (allowedLocales[i++].substring(0, 2) == qtLocale.substring(0, 2) && langCandidate == "") {
-            langCandidate = allowedLocales[i++];
+        else if (allowedLocales[i].substring(0, 2) == qtLocale.substring(0, 2) && langCandidate == "") {
+            langCandidate = allowedLocales[i];
         }
+        i++
     }
     return langCandidate == "" ? allowedLocales[0] : langCandidate;
 }
