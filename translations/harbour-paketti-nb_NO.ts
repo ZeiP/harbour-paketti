@@ -26,27 +26,27 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="78"/>
         <source>Thanking:</source>
-        <translation type="unfinished"></translation>
+        <translation>Takk til:</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="79"/>
         <source>– Jyri-Petteri ”ZeiP” Paloposki (maintainer)</source>
-        <translation type="unfinished"></translation>
+        <translation>– Jyri-Petteri ”ZeiP” Paloposki (vedlikeholder)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="80"/>
         <source>– Juhana Virkkala (original author)</source>
-        <translation type="unfinished"></translation>
+        <translation>– Juhana Virkkala (opprinnelig versjon)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="81"/>
         <source>– Adel Noureddine (La Poste tracking)</source>
-        <translation type="unfinished"></translation>
+        <translation>– Adel Noureddine (La Poste-sporing)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="82"/>
         <source>– Hannu Hirvonen and Åke Engelbrektson (Swedish translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>– Hannu Hirvonen og Åke Engelbrektson (Svensk oversettelse)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="83"/>
@@ -61,7 +61,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="85"/>
         <source>– Allan Nordhøy (Norwegian translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>– Allan Nordhøy (Denne oversettelsen)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="86"/>
@@ -313,7 +313,7 @@
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="87"/>
         <source>Changelog version %1:</source>
-        <translation type="unfinished"></translation>
+        <translation>Endringslogg, versjon %1:</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="88"/>
@@ -343,17 +343,17 @@
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="90"/>
         <source>Changelog versions %1 and %2:</source>
-        <translation type="unfinished"></translation>
+        <translation>Endringslogg, versjon %1 and %2:</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="92"/>
         <source>– Added La Poste (France) package tracking. Thanks to Adel Noureddine!</source>
-        <translation type="unfinished"></translation>
+        <translation>– La Poste (Frankrike)-pakkesporing lagt til. Takk til Adel Noureddine!</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="93"/>
         <source>– Added DHL package tracking.</source>
-        <translation type="unfinished"></translation>
+        <translation>– DHL-pakkesporing lagt til.</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="95"/>
@@ -373,7 +373,7 @@
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="101"/>
         <source>The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation type="unfinished"></translation>
+        <translation>Vedlikeholder for programmet er Jyri-Petteri ”ZeiP” Paloposki.</translation>
     </message>
 </context>
 <context>
