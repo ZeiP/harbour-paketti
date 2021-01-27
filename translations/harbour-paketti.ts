@@ -119,17 +119,17 @@
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="65"/>
-        <source>The following error was returned: %1.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Details.qml" line="65"/>
         <source>This may be due to one of the following reasons:
 – Check the item code you entered. Make sure it is entered without spaces.
 – The item has not yet been handed in for delivery.
 – The item has not yet been entered in the system.
 – The item was posted long time ago and has been already removed from couriers system
 – There is a problem with the system or the item</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Details.qml" line="65"/>
+        <source>The following error was returned: %1.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -316,13 +316,28 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="90"/>
-        <source>Changelog versions %1 and %2:</source>
+        <location filename="../qml/pages/UpdatedPage.qml" line="91"/>
+        <source>– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="91"/>
-        <source>– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!</source>
+        <location filename="../qml/pages/UpdatedPage.qml" line="94"/>
+        <source>– Added new translations for:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/UpdatedPage.qml" line="98"/>
+        <source>– Polish – thanks to atlochowski!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/UpdatedPage.qml" line="99"/>
+        <source>… and of course updated existing translations, see the about page for credits.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/UpdatedPage.qml" line="90"/>
+        <source>Changelog versions %1 and %2:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -333,11 +348,6 @@
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="93"/>
         <source>– Added DHL package tracking.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="94"/>
-        <source>– Added new translations for:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -353,16 +363,6 @@
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="97"/>
         <source>– Norwegian – thanks to Allan Nordhøy!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="98"/>
-        <source>– Polish – thanks to atlochowski!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="99"/>
-        <source>… and of course updated existing translations, see the about page for credits.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
