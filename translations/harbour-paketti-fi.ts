@@ -1,444 +1,429 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="fi">
+<TS version="2.1">
 <context>
     <name>AboutPage</name>
     <message>
+        <location filename="../qml/pages/AboutPage.qml" line="45"/>
         <source>About</source>
-        <translation>Tietoja</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/AboutPage.qml" line="57"/>
         <source>Paketti</source>
-        <translation>Paketti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/AboutPage.qml" line="64"/>
         <source>Version %1</source>
-        <translation>Versio %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/AboutPage.qml" line="71"/>
         <source>Paketti is a simple shipment tracking application for SailfishOS.</source>
-        <translation>Paketti on SailfishOS-käyttöjärjestelmälle tehty sovellus postilähetysten seurantaan.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>GitHub (source codes and issues)</source>
-        <translation>GitHub (lähdekoodi ja vikailmoitukset)</translation>
-    </message>
-    <message>
-        <source>Author does not take any responsibility for the information provided by the application. This is not an official application for the couriers.</source>
-        <translation>Sovelluksen tekijä ei ota mitään vastuuta ohjelman tuottamasta informaatiosta. Sovellus ei ole yritysten virallinen sovellus.</translation>
-    </message>
-    <message>
+        <location filename="../qml/pages/AboutPage.qml" line="78"/>
         <source>Thanking:</source>
-<<<<<<< HEAD
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/AboutPage.qml" line="79"/>
         <source>– Jyri-Petteri ”ZeiP” Paloposki (maintainer)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/AboutPage.qml" line="80"/>
         <source>– Juhana Virkkala (original author)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/AboutPage.qml" line="81"/>
         <source>– Adel Noureddine (La Poste tracking)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/AboutPage.qml" line="82"/>
         <source>– Hannu Hirvonen and Åke Engelbrektson (Swedish translation)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/AboutPage.qml" line="83"/>
         <source>– J. Lavoie (German and French translation)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/AboutPage.qml" line="84"/>
         <source>– Swann Fournial (French translation)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/AboutPage.qml" line="85"/>
         <source>– Allan Nordhøy (Norwegian translation)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/AboutPage.qml" line="86"/>
         <source>– atlochowski (Polish translation)</source>
         <translation type="unfinished"></translation>
-=======
-        <translation>Kiitokset:</translation>
     </message>
     <message>
-        <source>– Jyri-Petteri ”ZeiP” Paloposki (maintainer)</source>
-        <translation>– Jyri-Petteri ”ZeiP” Paloposki (ylläpitäjä)</translation>
+        <location filename="../qml/pages/AboutPage.qml" line="90"/>
+        <source>GitHub (source codes and issues)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>– Juhana Virkkala (original author)</source>
-        <translation>– Juhana Virkkala (alkuperäinen tekijä)</translation>
-    </message>
-    <message>
-        <source>– Adel Noureddine (La Poste tracking)</source>
-        <translation>– Adel Noureddine (La Poste -tuki)</translation>
-    </message>
-    <message>
-        <source>– Hannu Hirvonen and Åke Engelbrektson (Swedish translation)</source>
-        <translation>– Hannu Hirvonen ja Åke Engelbrektson (ruotsinkielinen käännös)</translation>
-    </message>
-    <message>
-        <source>– J. Lavoie (German and French translation)</source>
-        <translation>– J. Lavoie (saksan- ja ranskankielinen käännös)</translation>
-    </message>
-    <message>
-        <source>– Swann Fournial (French translation)</source>
-        <translation>– Swann Fournial (ranskankielinen käännös)</translation>
-    </message>
-    <message>
-        <source>– Allan Nordhøy (Norwegian translation)</source>
-        <translation>– Allan Nordhøy (norjankielinen käännös)</translation>
-    </message>
-    <message>
-        <source>– atlochowski (Polish translation)</source>
-        <translation>– atlochowski (puolankielinen käännös)</translation>
->>>>>>> weblate/master
+        <location filename="../qml/pages/AboutPage.qml" line="106"/>
+        <source>Author does not take any responsibility for the information provided by the application. This is not an official application for the couriers.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>BarCodePage</name>
     <message>
+        <location filename="../qml/pages/BarCodePage.qml" line="53"/>
         <source>Read the barcode by keeping barcode scanner perpendicular to the viewing screen, about 15–20 cm away from your phone. If you can not read code try to change distance.</source>
-        <translation>Lue viivakoodi pitämällä viivakoodin lukija kohtisuorassa näyttöä kohti noin 15–20 cm etäisyydellä puhelimesta. Mikäli lukeminen ei onnistu muuta etäisyyttä.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>DescDialog</name>
     <message>
-        <source>Enter description</source>
-        <translation>Kirjoita kuvaus</translation>
-    </message>
-    <message>
-        <source>Enter short description of item %1</source>
-        <translation>Anna lyhyt kuvaus lähetykselle %1</translation>
-    </message>
-    <message>
+        <location filename="../qml/pages/DescDialog.qml" line="15"/>
         <source>Save</source>
-        <translation>Tallenna</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/DescDialog.qml" line="18"/>
+        <source>Enter short description of item %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/DescDialog.qml" line="31"/>
+        <source>Enter description</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Details</name>
     <message>
+        <location filename="../qml/pages/Details.qml" line="57"/>
+        <source>Courier</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Details.qml" line="65"/>
         <source>No items were found with the item code you provided</source>
-        <translation>Antamallasi lähetystunnuksella ei löytynyt yhtään lähetystä</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Shipment details</source>
-        <translation>Lähetyksen tiedot</translation>
+        <location filename="../qml/pages/Details.qml" line="65"/>
+        <source>The following error was returned: %1.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Show barcode</source>
-        <translation>Näytä viivakoodi</translation>
-    </message>
-    <message>
-        <source>Shipping ID</source>
-        <translation>Lähetystunnus</translation>
-    </message>
-    <message>
-        <source>Service</source>
-        <translation>Palvelu</translation>
-    </message>
-    <message>
-        <source>Extra services</source>
-        <translation>Lisäpalvelut</translation>
-    </message>
-    <message>
-        <source>Destination</source>
-        <translation>Kohde</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>Koko</translation>
-    </message>
-    <message>
-        <source>Weight</source>
-        <translation>Paino</translation>
-    </message>
-    <message>
-        <source>CoD amount</source>
-        <translation>Postiennakkosumma</translation>
-    </message>
-    <message>
-        <source>Estimated delivery</source>
-        <translation>Arvioitu toimitusaika</translation>
-    </message>
-    <message>
-        <source>Number of items</source>
-        <translation>Paketteja</translation>
-    </message>
-    <message>
-        <source>Sender</source>
-        <translation>Lähettäjä</translation>
-    </message>
-    <message>
+        <location filename="../qml/pages/Details.qml" line="65"/>
         <source>This may be due to one of the following reasons:
 – Check the item code you entered. Make sure it is entered without spaces.
 – The item has not yet been handed in for delivery.
 – The item has not yet been entered in the system.
 – The item was posted long time ago and has been already removed from couriers system
 – There is a problem with the system or the item</source>
-        <translation>Syynä saattaa olla jokin seuraavista:
-– Näppäilyvirhe. Tarkista syöttämäsi lähetystunnus. Syötä tunnus ilman välilyöntejä.
-– Lähetystä ei ole vielä jätetty kuljetettavaksi.
-– Lähetystä ei vielä ole kirjattu järjestelmään.
-– Lähetyksen postittamisesta on aikaa niin paljon että lähetys on jo poistettu kuriirin järjestelmästä.
-– Järjestelmässä tai lähetyksessä on poikkeavuuksia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Courier</source>
-        <translation>Kuriiri</translation>
+        <location filename="../qml/pages/Details.qml" line="79"/>
+        <source>Shipping ID</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/Details.qml" line="82"/>
+        <source>Service</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Details.qml" line="85"/>
+        <source>Number of items</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Details.qml" line="88"/>
+        <source>Sender</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Details.qml" line="91"/>
+        <source>Extra services</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Details.qml" line="94"/>
+        <source>Destination</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Details.qml" line="97"/>
+        <source>Size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Details.qml" line="100"/>
+        <source>Weight</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Details.qml" line="103"/>
+        <source>CoD amount</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Details.qml" line="106"/>
+        <source>Estimated delivery</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Details.qml" line="109"/>
         <source>Next step</source>
-        <translation>Seuraavaksi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The following error was returned: %1.</source>
-        <translation>Palvelin palautti seuraavan virheen: %1.</translation>
+        <location filename="../qml/pages/Details.qml" line="121"/>
+        <source>Shipment details</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Details.qml" line="142"/>
+        <source>Show barcode</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>MainPage</name>
     <message>
+        <location filename="../qml/pages/MainPage.qml" line="84"/>
         <source>About</source>
-        <translation>Tietoja</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/MainPage.qml" line="88"/>
         <source>Update</source>
-        <translation>Päivitä</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/MainPage.qml" line="101"/>
         <source>Track item</source>
-        <translation>Etsi lähetys</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/MainPage.qml" line="128"/>
         <source>Deleting</source>
-        <translation>Poistetaan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/MainPage.qml" line="158"/>
         <source>Courier</source>
-        <translation>Kuriiri</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The courier is autoselected when entering a tracking code if possible.</source>
-        <translation>Kuriiri valitaan automaattisesti seurantakoodia syötettäessä jos mahdollista.</translation>
-    </message>
-    <message>
-        <source>Enter tracking code</source>
-        <translation>Syötä seurantakoodi</translation>
-    </message>
-    <message>
-        <source>History</source>
-        <translation>Historia</translation>
-    </message>
-    <message>
-        <source>Start by choosing a courier and entering the tracking code in the box above. Tracked shipments will be saved automatically</source>
-        <translation>Aloita valitsemalla kuriiri ja kirjoittamalla seurantakoodi ylläolevaan kenttään. Haetut lähetykset tallennetaan automaattisesti</translation>
-    </message>
-    <message>
-        <source>No information available</source>
-        <translation>Ei tietoja saatavilla</translation>
-    </message>
-    <message>
-        <source>Add description</source>
-        <translation>Lisää kuvaus</translation>
-    </message>
-    <message>
-        <source>Modify description</source>
-        <translation>Muokkaa kuvausta</translation>
-    </message>
-    <message>
-        <source>Copy tracking number</source>
-        <translation>Kopioi seurantakoodi</translation>
-    </message>
-    <message>
-        <source>Copy text</source>
-        <translation>Kopioi teksti</translation>
-    </message>
-    <message>
-        <source>Remove item</source>
-        <translation>Poista</translation>
-    </message>
-    <message>
+        <location filename="../qml/pages/MainPage.qml" line="159"/>
+        <location filename="../qml/pages/MainPage.qml" line="187"/>
+        <location filename="../qml/pages/MainPage.qml" line="192"/>
         <source>Select</source>
-        <translation>Valitse</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/MainPage.qml" line="160"/>
+        <source>The courier is autoselected when entering a tracking code if possible.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="219"/>
+        <source>Enter tracking code</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="259"/>
+        <source>History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="267"/>
+        <source>Start by choosing a courier and entering the tracking code in the box above. Tracked shipments will be saved automatically</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="372"/>
+        <source>No information available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="381"/>
+        <source>Add description</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="381"/>
+        <source>Modify description</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="385"/>
         <source>Show barcode</source>
-        <translation>Näytä viivakoodi</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="389"/>
+        <source>Copy tracking number</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="393"/>
+        <source>Copy text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="397"/>
+        <source>Remove item</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>UpdatedPage</name>
     <message>
+        <location filename="../qml/pages/UpdatedPage.qml" line="37"/>
         <source>Continue</source>
-        <translation>Jatka</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Application updated</source>
-        <translation>Sovellus päivitetty</translation>
-    </message>
-    <message>
+        <location filename="../qml/pages/UpdatedPage.qml" line="70"/>
         <source>Version %1</source>
-        <translation>Versio %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/UpdatedPage.qml" line="77"/>
+        <source>Application updated</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/UpdatedPage.qml" line="87"/>
         <source>Changelog version %1:</source>
-<<<<<<< HEAD
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>– Added new translations for:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>– Polish – thanks to atlochowski!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Changelog versions %1 and %2:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>– Added La Poste (France) package tracking. Thanks to Adel Noureddine!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>– Added DHL package tracking.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>– German – thanks to J. Lavoie!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>– French – thanks to J. Lavoie and S. Fournial!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>– Norwegian – thanks to Allan Nordhøy!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
+        <location filename="../qml/pages/UpdatedPage.qml" line="88"/>
         <source>– Fixed a bug in language selection.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/UpdatedPage.qml" line="90"/>
+        <source>Changelog versions %1 and %2:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/UpdatedPage.qml" line="91"/>
         <source>– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/UpdatedPage.qml" line="92"/>
+        <source>– Added La Poste (France) package tracking. Thanks to Adel Noureddine!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/UpdatedPage.qml" line="93"/>
+        <source>– Added DHL package tracking.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/UpdatedPage.qml" line="94"/>
+        <source>– Added new translations for:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/UpdatedPage.qml" line="95"/>
+        <source>– German – thanks to J. Lavoie!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/UpdatedPage.qml" line="96"/>
+        <source>– French – thanks to J. Lavoie and S. Fournial!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/UpdatedPage.qml" line="97"/>
+        <source>– Norwegian – thanks to Allan Nordhøy!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/UpdatedPage.qml" line="98"/>
+        <source>– Polish – thanks to atlochowski!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/UpdatedPage.qml" line="99"/>
         <source>… and of course updated existing translations, see the about page for credits.</source>
         <translation type="unfinished"></translation>
-=======
-        <translation>Muutoksia versiossa %1:</translation>
     </message>
     <message>
-        <source>– Added new translations for:</source>
-        <translation>– Lisätty uusia käännöksiä:</translation>
-    </message>
-    <message>
-        <source>– Polish – thanks to atlochowski!</source>
-        <translation>– Puola – kiitos atlochowskille!</translation>
-    </message>
-    <message>
-        <source>Changelog versions %1 and %2:</source>
-        <translation>Muutoksia versioissa %1 ja %2:</translation>
-    </message>
-    <message>
-        <source>– Added La Poste (France) package tracking. Thanks to Adel Noureddine!</source>
-        <translation>– Lisätty tuki La Posten (Ranska) seurannalle. Kiitos Adel Noureddinelle!</translation>
-    </message>
-    <message>
-        <source>– Added DHL package tracking.</source>
-        <translation>– Lisätty tuki DHL:n seurannalle.</translation>
-    </message>
-    <message>
-        <source>– German – thanks to J. Lavoie!</source>
-        <translation>– Saksa – kiitokset J. Lavoie!</translation>
-    </message>
-    <message>
-        <source>– French – thanks to J. Lavoie and S. Fournial!</source>
-        <translation>Ranska – kiitokset J. Lavoie ja S. Fournial!</translation>
-    </message>
-    <message>
-        <source>– Norwegian – thanks to Allan Nordhøy!</source>
-        <translation>– Norja – kiitokset Allan Nordhøy!</translation>
-    </message>
-    <message>
-        <source>... and of course updated existing translations, see the about page for credits.</source>
-        <translation>… ja luonnollisesti päivitetty olemassaolevia käännöksiä, katso tekijätiedot tietoja-sivulta.</translation>
-    </message>
-    <message>
+        <location filename="../qml/pages/UpdatedPage.qml" line="101"/>
         <source>The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation>Sovelluksen ylläpitäjä on Jyri-Petteri ”ZeiP” Paloposki.</translation>
-    </message>
-    <message>
-        <source>– Fixed a bug in language selection.</source>
-        <translation>– Korjattu bugi kielentunnistuksessa.</translation>
-    </message>
-    <message>
-        <source>– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!</source>
-        <translation>– Kasa korjauksia ja muutoksia käyttöliittymään ja rajapintoihin. Jos törmäät virheisiin, teethän asiasta ilmoituksen jotta ne voidaan korjata seuraavaan julkaisuun!</translation>
->>>>>>> weblate/master
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>database</name>
     <message>
+        <location filename="../qml/js/database.js" line="89"/>
         <source>less than minute ago</source>
-        <translation>alle minuutti sitten</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
+        <location filename="../qml/js/database.js" line="92"/>
         <source>%n minute(s) ago</source>
-        <translation>
-            <numerusform>%n minuutti sitten</numerusform>
-            <numerusform>%n minuuttia sitten</numerusform>
+        <translation type="unfinished">
+            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
+        <location filename="../qml/js/database.js" line="95"/>
         <source>%n hour(s) ago</source>
-        <translation>
-            <numerusform>%n tunti sitten</numerusform>
-            <numerusform>%n tuntia sitten</numerusform>
+        <translation type="unfinished">
+            <numerusform></numerusform>
         </translation>
     </message>
 </context>
 <context>
     <name>harbour-paketti</name>
     <message>
+        <location filename="../qml/harbour-paketti.qml" line="52"/>
         <source>Posti (Finland)</source>
-        <translation>Posti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/harbour-paketti.qml" line="57"/>
         <source>Matkahuolto (Finland)</source>
-        <translation>Matkahuolto</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/harbour-paketti.qml" line="62"/>
         <source>PostNord (Nordics)</source>
-        <translation>PostNord (pohjoismaat)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/harbour-paketti.qml" line="67"/>
         <source>Hermes (Germany)</source>
-        <translation>Hermes (Saksa)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/harbour-paketti.qml" line="72"/>
         <source>La Poste/Colissimo/Chronopost (France)</source>
-        <translation>La Poste/Colissimo/Chronopost (Ranska)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/harbour-paketti.qml" line="77"/>
         <source>DHL</source>
-        <translation>DHL</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
