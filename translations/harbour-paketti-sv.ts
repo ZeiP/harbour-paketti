@@ -28,24 +28,40 @@
         <translation>Programmets utvecklare tar inget ansvar för information som programmet tillhandahåller. Detta är inget officiellt program från fraktbolagen.</translation>
     </message>
     <message>
-        <source>Thanking:
-– Jyri-Petteri ”ZeiP” Paloposki (maintainer)
-– Juhana Virkkala (original author)
-– Adel Noureddine (La Poste tracking)
-– Hannu Hirvonen and Åke Engelbrektson (Swedish translation)
-– J. Lavoie (German and French translation)
-– Swann Fournial (French translation)
-– Allan Nordhøy (Norwegian translation)
-– atlochowski (Polish translation)</source>
-        <translation>Tackar:
-– Jyri-Petteri ”ZeiP” Paloposki (Programunderhåll)
-– Juhana Virkkala (Ursprunglig utvecklare)
-– Adel Noureddine (La Poste-spårning)
-– Hannu Hirvonen och Åke Engelbrektson (Svensk översättning)
-– J. Lavoie (Tysk och Fransk översättning)
-– Swann Fournial (Fransk översättning)
-– Allan Nordhøy (Norsk översättning)
-– atlochowski (Polish översättning)</translation>
+        <source>Thanking:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>– Jyri-Petteri ”ZeiP” Paloposki (maintainer)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>– Juhana Virkkala (original author)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>– Adel Noureddine (La Poste tracking)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>– Hannu Hirvonen and Åke Engelbrektson (Swedish translation)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>– J. Lavoie (German and French translation)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>– Swann Fournial (French translation)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>– Allan Nordhøy (Norwegian translation)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>– atlochowski (Polish translation)</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -237,38 +253,56 @@
         <translation>Version %1</translation>
     </message>
     <message>
-        <source>Changelog version 0.8:
-– Added new translations for:
-  – Polish – thanks to atlochowski!
-– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!
-
-Changelog versions 0.7 and 0.7.1:
-– Added La Poste (France) package tracking. Thanks to Adel Noureddine!
-– Added DHL package tracking.
-– Fixed some minor UI and API handling bugs.
-– Added new translations for:
-  – German – thanks to J. Lavoie!
-  – French – thanks to J. Lavoie and S. Fournial!
-  – Norwegian – thanks to Allan Nordhøy!
-... and of course updated existing translations, see the about page for credits.
-
-The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation>Ändringslogg version 0.8:
-– Lade till nya översättnngar:
-  – Polska – Tack till atlochowski!
-– En bunt fixar och ändringar i UI och API:er. Om du stöter på några fel, kan du öppna ett ärende så att de kan fixas till nästa utgåva!
-
-Ändringslogg version 0.7 och 0.7.1:
-– Lade till La Poste (Frankrike) paketspårning. Tack till Adel Noureddine!
-– Lade till DHL paketspårning.
-– Fixade några mindre UI- och API-hanteringsfel.
-– Lade till nya översättnngar:
-  – Tyska – Tack till J. Lavoie!
-  – Franska – Tack till J. Lavoie och S. Fournial!
-  – Norska – Tack till Allan Nordhøy!
-... och självklart uppdatering av tidigare översättningar, se Om-sidan för översättare.
-
-Underhåller appen gör Jyri-Petteri ”ZeiP” Paloposki.</translation>
+        <source>Changelog version %1:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>– Added new translations for:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>– Polish – thanks to atlochowski!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Changelog versions %1 and %2:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>– Added La Poste (France) package tracking. Thanks to Adel Noureddine!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>– Added DHL package tracking.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>– German – thanks to J. Lavoie!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>– French – thanks to J. Lavoie and S. Fournial!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>– Norwegian – thanks to Allan Nordhøy!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>– Fixed a bug in language selection.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>… and of course updated existing translations, see the about page for credits.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

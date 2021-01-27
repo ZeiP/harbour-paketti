@@ -76,14 +76,14 @@ Page {
                 color: Theme.secondaryColor
                 wrapMode: Text.WordWrap
                 text: qsTr("Thanking:") +
-qsTr("– Jyri-Petteri ”ZeiP” Paloposki (maintainer)") +
-qsTr("– Juhana Virkkala (original author)") +
-qsTr("– Adel Noureddine (La Poste tracking)") +
-qsTr("– Hannu Hirvonen and Åke Engelbrektson (Swedish translation)") +
-qsTr("– J. Lavoie (German and French translation)") +
-qsTr("– Swann Fournial (French translation)") +
-qsTr("– Allan Nordhøy (Norwegian translation)") +
-qsTr("– atlochowski (Polish translation)")
+"\n" + qsTr("– Jyri-Petteri ”ZeiP” Paloposki (maintainer)") +
+"\n" + qsTr("– Juhana Virkkala (original author)") +
+"\n" + qsTr("– Adel Noureddine (La Poste tracking)") +
+"\n" + qsTr("– Hannu Hirvonen and Åke Engelbrektson (Swedish translation)") +
+"\n" + qsTr("– J. Lavoie (German and French translation)") +
+"\n" + qsTr("– Swann Fournial (French translation)") +
+"\n" + qsTr("– Allan Nordhøy (Norwegian translation)") +
+"\n" + qsTr("– atlochowski (Polish translation)")
             }
             Button {
                 anchors.horizontalCenter: parent.horizontalCenter
