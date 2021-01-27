@@ -29,39 +29,39 @@
     </message>
     <message>
         <source>Thanking:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tackar:</translation>
     </message>
     <message>
         <source>– Jyri-Petteri ”ZeiP” Paloposki (maintainer)</source>
-        <translation type="unfinished"></translation>
+        <translation>– Jyri-Petteri ”ZeiP” Paloposki (Programunderhåll)</translation>
     </message>
     <message>
         <source>– Juhana Virkkala (original author)</source>
-        <translation type="unfinished"></translation>
+        <translation>– Juhana Virkkala (Ursprunglig utvecklare)</translation>
     </message>
     <message>
         <source>– Adel Noureddine (La Poste tracking)</source>
-        <translation type="unfinished"></translation>
+        <translation>– Adel Noureddine (La Poste-spårning)</translation>
     </message>
     <message>
         <source>– Hannu Hirvonen and Åke Engelbrektson (Swedish translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>– Hannu Hirvonen och Åke Engelbrektson (Svensk översättning)</translation>
     </message>
     <message>
         <source>– J. Lavoie (German and French translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>– J. Lavoie (Tysk och Fransk översättning)</translation>
     </message>
     <message>
         <source>– Swann Fournial (French translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>– Swann Fournial (Fransk översättning)</translation>
     </message>
     <message>
         <source>– Allan Nordhøy (Norwegian translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>– Allan Nordhøy (Norsk översättning)</translation>
     </message>
     <message>
         <source>– atlochowski (Polish translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>– atlochowski (Polish översättning)</translation>
     </message>
 </context>
 <context>
@@ -254,43 +254,43 @@
     </message>
     <message>
         <source>Changelog version %1:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ändringslogg version %1:</translation>
     </message>
     <message>
         <source>– Added new translations for:</source>
-        <translation type="unfinished"></translation>
+        <translation>– Lade till nya översättnngar:</translation>
     </message>
     <message>
         <source>– Polish – thanks to atlochowski!</source>
-        <translation type="unfinished"></translation>
+        <translation>– Polska – Tack till atlochowski!</translation>
     </message>
     <message>
         <source>Changelog versions %1 and %2:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ändringslogg version %1 och %2:</translation>
     </message>
     <message>
         <source>– Added La Poste (France) package tracking. Thanks to Adel Noureddine!</source>
-        <translation type="unfinished"></translation>
+        <translation>– Lade till La Poste (Frankrike) paketspårning. Tack till Adel Noureddine!</translation>
     </message>
     <message>
         <source>– Added DHL package tracking.</source>
-        <translation type="unfinished"></translation>
+        <translation>– Lade till DHL paketspårning.</translation>
     </message>
     <message>
         <source>– German – thanks to J. Lavoie!</source>
-        <translation type="unfinished"></translation>
+        <translation>– Tyska – Tack till J. Lavoie!</translation>
     </message>
     <message>
         <source>– French – thanks to J. Lavoie and S. Fournial!</source>
-        <translation type="unfinished"></translation>
+        <translation>– Franska – Tack till J. Lavoie och S. Fournial!</translation>
     </message>
     <message>
         <source>– Norwegian – thanks to Allan Nordhøy!</source>
-        <translation type="unfinished"></translation>
+        <translation>– Norska – Tack till Allan Nordhøy!</translation>
     </message>
     <message>
         <source>The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation type="unfinished"></translation>
+        <translation>Underhåller appen gör Jyri-Petteri ”ZeiP” Paloposki.</translation>
     </message>
     <message>
         <source>– Fixed a bug in language selection.</source>
@@ -298,11 +298,11 @@
     </message>
     <message>
         <source>– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!</source>
-        <translation type="unfinished"></translation>
+        <translation>– En bunt fixar och ändringar i UI och API:er. Om du stöter på några fel, kan du öppna ett ärende så att de kan fixas till nästa utgåva!</translation>
     </message>
     <message>
         <source>… and of course updated existing translations, see the about page for credits.</source>
-        <translation type="unfinished"></translation>
+        <translation>… och självklart uppdatering av tidigare översättningar, se Om-sidan för översättare.</translation>
     </message>
 </context>
 <context>
