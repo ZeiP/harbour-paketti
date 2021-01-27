@@ -69,22 +69,22 @@ Dialog {
             Label {
                 anchors.left: parent.left; anchors.leftMargin: Theme.paddingMedium
                 anchors.right: parent.right; anchors.rightMargin: Theme.paddingMedium
-                text: qsTr("Changelog version 0.8:
-– Added new translations for:
-  – Polish – thanks to atlochowski!
-– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!
+                text: qsTr("Changelog version %1:").arg("0.8") +
+qsTr("– Added new translations for:") +
+"  " + qsTr("– Polish – thanks to atlochowski!") +
+qsTr("– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!") +
+"\n\n" +
+qsTr("Changelog versions %1 and %2:").arg("0.7").arg("0.7.1") +
+qsTr("– Added La Poste (France) package tracking. Thanks to Adel Noureddine!") +
+qsTr("– Added DHL package tracking.") +
+qsTr("– Fixed some minor UI and API handling bugs.") +
+qsTr("– Added new translations for:") +
+  qsTr("– German – thanks to J. Lavoie!") +
+  qsTr("– French – thanks to J. Lavoie and S. Fournial!") +
+  qsTr("– Norwegian – thanks to Allan Nordhøy!") +
+qsTr("... and of course updated existing translations, see the about page for credits.") +
 
-Changelog versions 0.7 and 0.7.1:
-– Added La Poste (France) package tracking. Thanks to Adel Noureddine!
-– Added DHL package tracking.
-– Fixed some minor UI and API handling bugs.
-– Added new translations for:
-  – German – thanks to J. Lavoie!
-  – French – thanks to J. Lavoie and S. Fournial!
-  – Norwegian – thanks to Allan Nordhøy!
-... and of course updated existing translations, see the about page for credits.
-
-The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.")
+qsTr("The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.")
                 wrapMode: Text.WordWrap
                 font.pixelSize: Theme.fontSizeSmall
             }
