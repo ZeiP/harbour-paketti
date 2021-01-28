@@ -294,7 +294,7 @@
     </message>
     <message>
         <source>– Fixed a bug in language selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Fixade ett fel i språkvalet.</translation>
     </message>
     <message>
         <source>– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!</source>
