@@ -12,6 +12,12 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sun Jan 31 2021 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi> 0.8.2
+– Fixed a bug in language selection.
+
+* Sun Jan 03 2021 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi> 0.8.1
+– Small fixes to DHL and Postnord APIs and translation updates.
+
 * Sun Jan 03 2021 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi> 0.8
 – Added new translations for Polish – thanks to atlochowski!
 – Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!
