@@ -4,3 +4,4 @@ qml-w
 *.pro.user
 rpm/harbour-paketti.changes.run.in
 harbour-paketti.pro.user.*
+*.diff
