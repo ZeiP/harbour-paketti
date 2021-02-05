@@ -318,7 +318,7 @@
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="88"/>
         <source>– Fixed a bug in language selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>– Correction d&apos;une erreur dans la sélection de la langue.</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="91"/>
