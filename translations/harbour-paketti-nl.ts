@@ -6,77 +6,77 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="45"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Over</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="57"/>
         <source>Paketti</source>
-        <translation type="unfinished"></translation>
+        <translation>Paketti</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="64"/>
         <source>Version %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Versie %1</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="71"/>
         <source>Paketti is a simple shipment tracking application for SailfishOS.</source>
-        <translation type="unfinished"></translation>
+        <translation>Paketti is een eenvoudige app voor SailfishOS waarmee je pakketten kunt volgen.</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="78"/>
         <source>Thanking:</source>
-        <translation type="unfinished"></translation>
+        <translation>Met dank aan:</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="79"/>
         <source>– Jyri-Petteri ”ZeiP” Paloposki (maintainer)</source>
-        <translation type="unfinished"></translation>
+        <translation>– Jyri-Petteri ”ZeiP” Paloposki (beheerder)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="80"/>
         <source>– Juhana Virkkala (original author)</source>
-        <translation type="unfinished"></translation>
+        <translation>– Juhana Virkkala (oorspronkelijke maker)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="81"/>
         <source>– Adel Noureddine (La Poste tracking)</source>
-        <translation type="unfinished"></translation>
+        <translation>– Adel Noureddine (La Poste-pakketvolging)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="82"/>
         <source>– Hannu Hirvonen and Åke Engelbrektson (Swedish translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>– Hannu Hirvonen en Åke Engelbrektson (Zweedse vertaling)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="83"/>
         <source>– J. Lavoie (German and French translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>– J. Lavoie (Duitse en Franse vertaling)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="84"/>
         <source>– Swann Fournial (French translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>– Swann Fournial (Franse vertaling)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="85"/>
         <source>– Allan Nordhøy (Norwegian translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>– Allan Nordhøy (Noorse vertaling)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="86"/>
         <source>– atlochowski (Polish translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>– atlochowski (Poolse vertaling)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="90"/>
         <source>GitHub (source codes and issues)</source>
-        <translation type="unfinished"></translation>
+        <translation>GitHub (broncode en &apos;issues&apos;)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="106"/>
         <source>Author does not take any responsibility for the information provided by the application. This is not an official application for the couriers.</source>
-        <translation type="unfinished"></translation>
+        <translation>De maker neemt geen enkele verantwoordelijkheid voor de door de app verstrekte informatie. Dit is geen officiële app.</translation>
     </message>
 </context>
 <context>
