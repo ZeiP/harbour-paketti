@@ -84,7 +84,7 @@
     <message>
         <location filename="../qml/pages/BarCodePage.qml" line="53"/>
         <source>Read the barcode by keeping barcode scanner perpendicular to the viewing screen, about 15–20 cm away from your phone. If you can not read code try to change distance.</source>
-        <translation type="unfinished"></translation>
+        <translation>Lees de barcode uit door de barcodescanner loodrecht voor het weergavevlak te houden, ong. 15-20 cm van je telefoon af. Als het niet lukt, probeer dan de afstand te vergroten.</translation>
     </message>
 </context>
 <context>
@@ -92,17 +92,17 @@
     <message>
         <location filename="../qml/pages/DescDialog.qml" line="15"/>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>Opslaan</translation>
     </message>
     <message>
         <location filename="../qml/pages/DescDialog.qml" line="18"/>
         <source>Enter short description of item %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Voer een korte omschrijving in van item %1</translation>
     </message>
     <message>
         <location filename="../qml/pages/DescDialog.qml" line="31"/>
         <source>Enter description</source>
-        <translation type="unfinished"></translation>
+        <translation>Omschrijving invoeren</translation>
     </message>
 </context>
 <context>
@@ -110,12 +110,12 @@
     <message>
         <location filename="../qml/pages/Details.qml" line="57"/>
         <source>Courier</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezorgdienst</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="65"/>
         <source>No items were found with the item code you provided</source>
-        <translation type="unfinished"></translation>
+        <translation>Geen items gevonden met de opgegeven itemcode</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="65"/>
@@ -125,77 +125,82 @@
 – The item has not yet been entered in the system.
 – The item was posted long time ago and has been already removed from couriers system
 – There is a problem with the system or the item</source>
-        <translation type="unfinished"></translation>
+        <translation>Dit kan één van de volgende oorzaken hebben:
+– Controleer de ingevoerde itemcode en zorg dat deze geen spaties bevat;
+– Het item is nog niet afgegeven aan de bezorgdienst;
+– Het item is nog niet ingevoerd in het systeem;
+– Het item is een tijd geleden afgegeven en reeds verwijderd uit het systeem;
+– Er is een systeem- of itemprobleem.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="65"/>
         <source>The following error was returned: %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>Er is een fout opgetreden: %1.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="79"/>
         <source>Shipping ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Verzendcode</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="82"/>
         <source>Service</source>
-        <translation type="unfinished"></translation>
+        <translation>Dienst</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="85"/>
         <source>Number of items</source>
-        <translation type="unfinished"></translation>
+        <translation>Aantal items</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="88"/>
         <source>Sender</source>
-        <translation type="unfinished"></translation>
+        <translation>Afzender</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="91"/>
         <source>Extra services</source>
-        <translation type="unfinished"></translation>
+        <translation>Aanvullende diensten</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="94"/>
         <source>Destination</source>
-        <translation type="unfinished"></translation>
+        <translation>Bestemming</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="97"/>
         <source>Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Afmetingen</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="100"/>
         <source>Weight</source>
-        <translation type="unfinished"></translation>
+        <translation>Gewicht</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="103"/>
         <source>CoD amount</source>
-        <translation type="unfinished"></translation>
+        <translation>Remboursbedrag</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="106"/>
         <source>Estimated delivery</source>
-        <translation type="unfinished"></translation>
+        <translation>Geschatte leverdatum</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="109"/>
         <source>Next step</source>
-        <translation type="unfinished"></translation>
+        <translation>Volgende stap</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="121"/>
         <source>Shipment details</source>
-        <translation type="unfinished"></translation>
+        <translation>Verzenddetails</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="142"/>
         <source>Show barcode</source>
-        <translation type="unfinished"></translation>
+        <translation>Barcode tonen</translation>
     </message>
 </context>
 <context>
@@ -203,89 +208,89 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="84"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Over</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="88"/>
         <source>Update</source>
-        <translation type="unfinished"></translation>
+        <translation>Bijwerken</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="101"/>
         <source>Track item</source>
-        <translation type="unfinished"></translation>
+        <translation>Item volgen</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="128"/>
         <source>Deleting</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met verwijderen</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="158"/>
         <source>Courier</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezorgdienst</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="159"/>
         <location filename="../qml/pages/MainPage.qml" line="187"/>
         <location filename="../qml/pages/MainPage.qml" line="192"/>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecteren</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="160"/>
         <source>The courier is autoselected when entering a tracking code if possible.</source>
-        <translation type="unfinished"></translation>
+        <translation>Na het invoeren van een trackingcode wordt de bezorgdienst, indien mogelijk, automatisch geselecteerd.</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="219"/>
         <source>Enter tracking code</source>
-        <translation type="unfinished"></translation>
+        <translation>Trackingcode invoeren</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="259"/>
         <source>History</source>
-        <translation type="unfinished"></translation>
+        <translation>Geschiedenis</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="267"/>
         <source>Start by choosing a courier and entering the tracking code in the box above. Tracked shipments will be saved automatically</source>
-        <translation type="unfinished"></translation>
+        <translation>Kies een bezorgdienst en voer hierboven de trackingcode in. Hierna worden gevolgde verzendingen automatisch opgeslagen.</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="372"/>
         <source>No information available</source>
-        <translation type="unfinished"></translation>
+        <translation>Geen informatie beschikbaar</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="381"/>
         <source>Add description</source>
-        <translation type="unfinished"></translation>
+        <translation>Omschrijving toevoegen</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="381"/>
         <source>Modify description</source>
-        <translation type="unfinished"></translation>
+        <translation>Omschrijving aanpassen</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="385"/>
         <source>Show barcode</source>
-        <translation type="unfinished"></translation>
+        <translation>Barcode tonen</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="389"/>
         <source>Copy tracking number</source>
-        <translation type="unfinished"></translation>
+        <translation>Trackingcode kopiëren</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="393"/>
         <source>Copy text</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekst kopiëren</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="397"/>
         <source>Remove item</source>
-        <translation type="unfinished"></translation>
+        <translation>Item verwijderen</translation>
     </message>
 </context>
 <context>
@@ -293,27 +298,27 @@
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="37"/>
         <source>Continue</source>
-        <translation type="unfinished"></translation>
+        <translation>Doorgaan</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="70"/>
         <source>Version %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Versie %1</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="77"/>
         <source>Application updated</source>
-        <translation type="unfinished"></translation>
+        <translation>De app is bijgewerkt</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="87"/>
         <source>Changelog version %1:</source>
-        <translation type="unfinished"></translation>
+        <translation>Wijzigingslog van versie %1:</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="88"/>
         <source>– Fixed a bug in language selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>-Fout opgelost omtrent de taaldetectie.</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="91"/>
