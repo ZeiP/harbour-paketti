@@ -69,12 +69,17 @@
         <translation>– atlochowski (traduction en polonais)</translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="90"/>
+        <location filename="../qml/pages/AboutPage.qml" line="87"/>
+        <source>– Heimen Stoffels (Dutch translation)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/AboutPage.qml" line="91"/>
         <source>GitHub (source codes and issues)</source>
         <translation>GitHub (codes source et signalements)</translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="106"/>
+        <location filename="../qml/pages/AboutPage.qml" line="107"/>
         <source>Author does not take any responsibility for the information provided by the application. This is not an official application for the couriers.</source>
         <translation>L’auteur de l’application n’assume aucune responsabilité au cas où l’application fournirait des informations invalides. Ceci n’est pas une application officielle pour les coursiers.</translation>
     </message>
@@ -316,62 +321,68 @@
         <translation>Version du journal des modifications %1 :</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="88"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="92"/>
         <source>– Fixed a bug in language selection.</source>
         <translation>– Correction d&apos;une erreur dans la sélection de la langue.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="91"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="93"/>
         <source>– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!</source>
         <translation>– Quelques correctifs et changements apportés à l’interface utilisateur et aux API. Si vous remaquez des erreurs, veuillez le signaler pour qu’elles puissent être corrigées dans la prochaine version !</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="94"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="88"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="96"/>
         <source>– Added new translations for:</source>
         <translation>– Ajout de nouvelles traductions pour :</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="98"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="100"/>
         <source>– Polish – thanks to atlochowski!</source>
         <translation>– polonais – grâce à atlochowski !</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="99"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="101"/>
         <source>… and of course updated existing translations, see the about page for credits.</source>
         <translation>… et bien sûr mise à jour des traductions existantes, voir la page À propos pour les crédits.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="90"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="91"/>
         <source>Changelog versions %1 and %2:</source>
         <translation>Version du journal des modifications %1 and %2 :</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="92"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="89"/>
+        <source>– Dutch – thanks to Heimen Stoffels!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/UpdatedPage.qml" line="94"/>
         <source>– Added La Poste (France) package tracking. Thanks to Adel Noureddine!</source>
         <translation>– Ajout du suivi des colis La Poste (France). Merci à Adel Noureddine !</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="93"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="95"/>
         <source>– Added DHL package tracking.</source>
         <translation>– Ajout du suivi des colis DHL.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="95"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="97"/>
         <source>– German – thanks to J. Lavoie!</source>
         <translation>– allemand – grâce à J. Lavoie !</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="96"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="98"/>
         <source>– French – thanks to J. Lavoie and S. Fournial!</source>
         <translation>– français – grâce à J. Lavoie et Swann Fournial !</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="97"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="99"/>
         <source>– Norwegian – thanks to Allan Nordhøy!</source>
         <translation>– norvégien – grâce à Allan Nordhøy !</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="101"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="103"/>
         <source>The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
         <translation>Le mainteneur de l’application est Jyri-Petteri « ZeiP » Paloposki.</translation>
     </message>

@@ -63,6 +63,10 @@
         <source>– atlochowski (Polish translation)</source>
         <translation>– atlochowski (Polish översättning)</translation>
     </message>
+    <message>
+        <source>– Heimen Stoffels (Dutch translation)</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>BarCodePage</name>
@@ -303,6 +307,10 @@
     <message>
         <source>… and of course updated existing translations, see the about page for credits.</source>
         <translation>… och självklart uppdatering av tidigare översättningar, se Om-sidan för översättare.</translation>
+    </message>
+    <message>
+        <source>– Dutch – thanks to Heimen Stoffels!</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

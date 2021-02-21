@@ -84,10 +84,12 @@ Dialog {
                 id: changelogStr
                 anchors.left: parent.left; anchors.leftMargin: Theme.paddingMedium
                 anchors.right: parent.right; anchors.rightMargin: Theme.paddingMedium
-                text: qsTr("Changelog version %1:").arg("0.8.2") +
-"\n" + qsTr("– Fixed a bug in language selection.") +
+                text: qsTr("Changelog version %1:").arg("1.0") +
+"\n" + qsTr("– Added new translations for:") +
+"\n  " + qsTr("– Dutch – thanks to Heimen Stoffels!") +
 "\n" +
 "\n" + qsTr("Changelog versions %1 and %2:").arg("0.7").arg("0.8") +
+"\n" + qsTr("– Fixed a bug in language selection.") +
 "\n" + qsTr("– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!") +
 "\n" + qsTr("– Added La Poste (France) package tracking. Thanks to Adel Noureddine!") +
 "\n" + qsTr("– Added DHL package tracking.") +
