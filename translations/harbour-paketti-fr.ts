@@ -71,7 +71,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="87"/>
         <source>– Heimen Stoffels (Dutch translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>- Heimen Stoffels (traduction en néerlandais)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="91"/>
@@ -354,7 +354,7 @@
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="89"/>
         <source>– Dutch – thanks to Heimen Stoffels!</source>
-        <translation type="unfinished"></translation>
+        <translation>– néerlandais – grâce à Heimen Stoffels !</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="94"/>
