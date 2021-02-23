@@ -65,7 +65,7 @@
     </message>
     <message>
         <source>– Heimen Stoffels (Dutch translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>– Heimen Stoffels (hollanninkielinen käännös)</translation>
     </message>
 </context>
 <context>
@@ -310,7 +310,7 @@
     </message>
     <message>
         <source>– Dutch – thanks to Heimen Stoffels!</source>
-        <translation type="unfinished"></translation>
+        <translation>– Hollanti – kiitokset Heimen Stoffels!</translation>
     </message>
 </context>
 <context>

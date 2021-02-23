@@ -51,12 +51,12 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="83"/>
         <source>– J. Lavoie (German and French translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>– J. Lavoie (tysk og fransk oversettelse)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="84"/>
         <source>– Swann Fournial (French translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>– Swann Fournial (fransk oversettelse)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="85"/>
@@ -66,12 +66,12 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="86"/>
         <source>– atlochowski (Polish translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>– atlochowski (polsk oversettelse)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="87"/>
         <source>– Heimen Stoffels (Dutch translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>– Heimen Stoffels (nederlandsk oversettelse)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="91"/>
@@ -323,7 +323,7 @@
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="92"/>
         <source>– Fixed a bug in language selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>– Fikset feil i språkvelger.</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="93"/>
