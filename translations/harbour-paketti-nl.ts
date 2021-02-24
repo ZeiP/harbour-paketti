@@ -71,7 +71,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="87"/>
         <source>– Heimen Stoffels (Dutch translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>– Heimen Stoffels (Nederlandse vertaling)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="91"/>
@@ -328,63 +328,63 @@
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="93"/>
         <source>– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!</source>
-        <translation type="unfinished"></translation>
+        <translation>-Vele foutoplossingen aan de vormgeving en api&apos;s. Als je fouten tegenkomt, open dan een ticket zodat de volgende versie foutloos kan werken!</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="88"/>
         <location filename="../qml/pages/UpdatedPage.qml" line="96"/>
         <source>– Added new translations for:</source>
-        <translation type="unfinished"></translation>
+        <translation>-Nieuwe vertalingen:</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="100"/>
         <source>– Polish – thanks to atlochowski!</source>
-        <translation type="unfinished"></translation>
+        <translation>-Pools, met dank aan @atlochowski!</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="101"/>
         <source>… and of course updated existing translations, see the about page for credits.</source>
-        <translation type="unfinished"></translation>
+        <translation>... en natuurlijk bestaande vertalingen bijgewerkt - zie de pagina &apos;Over&apos;.</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="91"/>
         <source>Changelog versions %1 and %2:</source>
-        <translation type="unfinished"></translation>
+        <translation>Wijzigingslog van versies %1 en %2:</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="89"/>
         <source>– Dutch – thanks to Heimen Stoffels!</source>
-        <translation type="unfinished"></translation>
+        <translation>-Nederlands, met dank aan Heimen Stoffels!</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="94"/>
         <source>– Added La Poste (France) package tracking. Thanks to Adel Noureddine!</source>
-        <translation type="unfinished"></translation>
+        <translation>-Nieuw: La Poste-tracking (Frankrijk), met dank aan Adel Noureddine!</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="95"/>
         <source>– Added DHL package tracking.</source>
-        <translation type="unfinished"></translation>
+        <translation>-Nieuw: DHL-tracking.</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="97"/>
         <source>– German – thanks to J. Lavoie!</source>
-        <translation type="unfinished"></translation>
+        <translation>-Duits, met dank aan J. Lavoie!</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="98"/>
         <source>– French – thanks to J. Lavoie and S. Fournial!</source>
-        <translation type="unfinished"></translation>
+        <translation>-Frans, met dank aan J. Lavoie en S. Fournial!</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="99"/>
         <source>– Norwegian – thanks to Allan Nordhøy!</source>
-        <translation type="unfinished"></translation>
+        <translation>-Noors, met dank aan Allan Nordhøy!</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="103"/>
         <source>The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
-        <translation type="unfinished"></translation>
+        <translation>The beheerder van de app is Jyri-Petteri &quot;ZeiP&quot; Paloposki.</translation>
     </message>
 </context>
 <context>
@@ -392,22 +392,22 @@
     <message>
         <location filename="../qml/js/database.js" line="89"/>
         <source>less than minute ago</source>
-        <translation type="unfinished"></translation>
+        <translation>zojuist</translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/js/database.js" line="92"/>
         <source>%n minute(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n minuut geleden</numerusform>
+            <numerusform>%n minuten geleden</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/js/database.js" line="95"/>
         <source>%n hour(s) ago</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n uur geleden</numerusform>
+            <numerusform>%n uur geleden</numerusform>
         </translation>
     </message>
 </context>
@@ -416,32 +416,32 @@
     <message>
         <location filename="../qml/harbour-paketti.qml" line="52"/>
         <source>Posti (Finland)</source>
-        <translation type="unfinished"></translation>
+        <translation>Posti (Finland)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="57"/>
         <source>Matkahuolto (Finland)</source>
-        <translation type="unfinished"></translation>
+        <translation>Matkahuolto (Finland)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="62"/>
         <source>PostNord (Nordics)</source>
-        <translation type="unfinished"></translation>
+        <translation>PostNord (Noordse landen)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="67"/>
         <source>Hermes (Germany)</source>
-        <translation type="unfinished"></translation>
+        <translation>Hermes (Duitsland)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="72"/>
         <source>La Poste/Colissimo/Chronopost (France)</source>
-        <translation type="unfinished"></translation>
+        <translation>La Poste/Colissimo/Chronopost (Frankrijk)</translation>
     </message>
     <message>
         <location filename="../qml/harbour-paketti.qml" line="77"/>
         <source>DHL</source>
-        <translation type="unfinished"></translation>
+        <translation>DHL</translation>
     </message>
 </context>
 </TS>
