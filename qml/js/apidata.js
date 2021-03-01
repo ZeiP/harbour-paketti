@@ -98,6 +98,9 @@ function updateitem(index, trackid, showdet, type) {
         case 'LAPOSTE':
             PlugLaPoste.updatedet(index, trackid, showdet);
             break;
+        case 'BRING':
+            PlugBring.updatedet(index, trackid, showdet);
+            break;
     }
 }
 

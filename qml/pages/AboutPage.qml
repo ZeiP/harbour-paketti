@@ -82,7 +82,7 @@ Page {
 "\n" + qsTr("– Hannu Hirvonen and Åke Engelbrektson (Swedish translation)") +
 "\n" + qsTr("– J. Lavoie (German and French translation)") +
 "\n" + qsTr("– Swann Fournial (French translation)") +
-"\n" + qsTr("– Allan Nordhøy (Norwegian translation)") +
+"\n" + qsTr("– Allan Nordhøy (Norwegian Bokmål translation)") +
 "\n" + qsTr("– atlochowski (Polish translation)") +
 "\n" + qsTr("– Heimen Stoffels (Dutch translation)")
             }

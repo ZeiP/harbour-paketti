@@ -20,6 +20,7 @@ SOURCES += src/harbour-paketti.cpp \
 
 DISTFILES += qml/harbour-paketti.qml \
     qml/cover/CoverPage.qml \
+    qml/js/couriers/bring.js \
     rpm/harbour-paketti.changes.in \
     rpm/harbour-paketti.changes.run.in \
     rpm/harbour-paketti.spec \

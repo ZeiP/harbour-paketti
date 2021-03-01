@@ -87,6 +87,7 @@ Dialog {
                 text: qsTr("Changelog version %1:").arg("1.0") +
 "\n" + qsTr("– Added new translations for:") +
 "\n  " + qsTr("– Dutch – thanks to Heimen Stoffels!") +
+"\n" + qsTr("… and of course updated existing translations, see the about page for credits.") +
 "\n" +
 "\n" + qsTr("Changelog versions %1 and %2:").arg("0.7").arg("0.8") +
 "\n" + qsTr("– Fixed a bug in language selection.") +
@@ -98,7 +99,7 @@ Dialog {
 "\n  " + qsTr("– French – thanks to J. Lavoie and S. Fournial!") +
 "\n  " + qsTr("– Norwegian – thanks to Allan Nordhøy!") +
 "\n  " + qsTr("– Polish – thanks to atlochowski!") +
-"\n" + qsTr("… and of course updated existing translations, see the about page for credits.") +
+
 "\n\n" +
 qsTr("The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.")
                 wrapMode: Text.WordWrap

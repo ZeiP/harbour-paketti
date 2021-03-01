@@ -78,6 +78,11 @@ ApplicationWindow {
             identifier: "DHL"
             brandColour: "#D40511"
         }
+        ListElement {
+            name: QT_TR_NOOP("Bring")
+            identifier: "BRING"
+            brandColour: "#69BC46"
+        }
         function getCourierByIdentifier(identifier) {
             for (var i = 0; i < couriers.count; i++) {
                 var value = couriers.get(i);

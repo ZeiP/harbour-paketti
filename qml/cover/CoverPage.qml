@@ -37,6 +37,7 @@ import "../js/couriers/postnord.js" as PlugPN
 import "../js/couriers/herde.js" as PlugHerDe
 import "../js/couriers/laposte.js" as PlugLaPoste
 import "../js/couriers/dhl.js" as PlugDHL
+import "../js/couriers/bring.js" as PlugBring
 
 import "../js/helpers.js" as PHelpers
 import "../js/database.js" as PDatabase
