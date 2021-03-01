@@ -51,10 +51,16 @@ function updatedet(index, trackid, showdet) {
             PDatabase.insertShipdet(trackid, "HDR", "99999999999998", "weight", setData.totalWeightInKgs + " kg");
             PDatabase.insertShipdet(trackid, "HDR", "99999999999998", "size", qsTr("%1 × %2 × %3 cm").arg(packageData.lengthInCm).arg(packageData.widthInCm).arg(packageData.heightInCm));
 
-            for (var i in packageData.eventSet) {
-                var ev = packageData.eventSet[i];
-                var date = Qt.formatDateTime(new Date(ev.dateIso), "yyyyMMddHHmmss")
-                PDatabase.insertShipdet(trackid, "EVT", date, ev.description, ev.city);
+            var lastDate = '';
+            for (var j in packageData.eventSet) {
+                var ev = packageData.eventSet[j];
+                var date = new Date(ev.dateIso);
+                while (date.toString() == lastDate.toString()) {
+                    date.setSeconds(date.getSeconds() + 1);
+                }
+
+                PDatabase.insertShipdet(trackid, "EVT", Qt.formatDateTime(date, "yyyyMMddHHmmss"), ev.description, ev.city);
+                lastDate = date;
             }
 
             PAPIData.itemUpdReady(index, "HIT", showdet);

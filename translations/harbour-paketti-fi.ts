@@ -56,16 +56,16 @@
         <translation>– Swann Fournial (ranskankielinen käännös)</translation>
     </message>
     <message>
-        <source>– Allan Nordhøy (Norwegian translation)</source>
-        <translation>– Allan Nordhøy (norjankielinen käännös)</translation>
-    </message>
-    <message>
         <source>– atlochowski (Polish translation)</source>
         <translation>– atlochowski (puolankielinen käännös)</translation>
     </message>
     <message>
         <source>– Heimen Stoffels (Dutch translation)</source>
         <translation>– Heimen Stoffels (hollanninkielinen käännös)</translation>
+    </message>
+    <message>
+        <source>– Allan Nordhøy (Norwegian Bokmål translation)</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -314,6 +314,13 @@
     </message>
 </context>
 <context>
+    <name>bring</name>
+    <message>
+        <source>%1 × %2 × %3 cm</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>database</name>
     <message>
         <source>less than minute ago</source>
@@ -359,6 +366,10 @@
     <message>
         <source>DHL</source>
         <translation>DHL</translation>
+    </message>
+    <message>
+        <source>Bring</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

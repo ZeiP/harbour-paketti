@@ -60,8 +60,8 @@
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="85"/>
-        <source>– Allan Nordhøy (Norwegian translation)</source>
-        <translation>– Allan Nordhøy (Denne oversettelsen)</translation>
+        <source>– Allan Nordhøy (Norwegian Bokmål translation)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="86"/>
@@ -211,89 +211,89 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="84"/>
+        <location filename="../qml/pages/MainPage.qml" line="85"/>
         <source>About</source>
         <translation>Om</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="88"/>
+        <location filename="../qml/pages/MainPage.qml" line="89"/>
         <source>Update</source>
         <translation>Oppdater</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="101"/>
+        <location filename="../qml/pages/MainPage.qml" line="102"/>
         <source>Track item</source>
         <translation>Spor forsendelse</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="128"/>
+        <location filename="../qml/pages/MainPage.qml" line="129"/>
         <source>Deleting</source>
         <translation>Sletter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="158"/>
+        <location filename="../qml/pages/MainPage.qml" line="159"/>
         <source>Courier</source>
         <translation>Fraktfirma</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="159"/>
-        <location filename="../qml/pages/MainPage.qml" line="187"/>
-        <location filename="../qml/pages/MainPage.qml" line="192"/>
+        <location filename="../qml/pages/MainPage.qml" line="160"/>
+        <location filename="../qml/pages/MainPage.qml" line="188"/>
+        <location filename="../qml/pages/MainPage.qml" line="193"/>
         <source>Select</source>
         <translation>Velg</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="160"/>
+        <location filename="../qml/pages/MainPage.qml" line="161"/>
         <source>The courier is autoselected when entering a tracking code if possible.</source>
         <translation>Fraktfirma velges automatisk ved innskriving av sporingskoden hvis det er mulig.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="219"/>
+        <location filename="../qml/pages/MainPage.qml" line="220"/>
         <source>Enter tracking code</source>
         <translation>Skriv inn sporingskode</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="259"/>
+        <location filename="../qml/pages/MainPage.qml" line="260"/>
         <source>History</source>
         <translation>Historikk</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="267"/>
+        <location filename="../qml/pages/MainPage.qml" line="268"/>
         <source>Start by choosing a courier and entering the tracking code in the box above. Tracked shipments will be saved automatically</source>
         <translation>Start ved å velge fraktfirma og skriv inn sporingskoden ovenfor. Forsendelser med sporings vil bli lagret automatisk.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="372"/>
+        <location filename="../qml/pages/MainPage.qml" line="373"/>
         <source>No information available</source>
         <translation>Ingen info tilgjengelig</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="381"/>
+        <location filename="../qml/pages/MainPage.qml" line="382"/>
         <source>Add description</source>
         <translation>Legg til beskrivelse</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="381"/>
+        <location filename="../qml/pages/MainPage.qml" line="382"/>
         <source>Modify description</source>
         <translation>Endre beskrivelse</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="385"/>
+        <location filename="../qml/pages/MainPage.qml" line="386"/>
         <source>Show barcode</source>
         <translation type="unfinished">Vis strekkode</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="389"/>
+        <location filename="../qml/pages/MainPage.qml" line="390"/>
         <source>Copy tracking number</source>
         <translation>Kopier sporingsnummer</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="393"/>
+        <location filename="../qml/pages/MainPage.qml" line="394"/>
         <source>Copy text</source>
         <translation>Kopier tekst</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="397"/>
+        <location filename="../qml/pages/MainPage.qml" line="398"/>
         <source>Remove item</source>
         <translation type="unfinished">Fjern</translation>
     </message>
@@ -321,33 +321,33 @@
         <translation>Endringslogg, versjon %1:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="92"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="93"/>
         <source>– Fixed a bug in language selection.</source>
         <translation>– Fikset feil i språkvelger.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="93"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="94"/>
         <source>– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="88"/>
-        <location filename="../qml/pages/UpdatedPage.qml" line="96"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="97"/>
         <source>– Added new translations for:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="100"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="101"/>
         <source>– Polish – thanks to atlochowski!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="101"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="90"/>
         <source>… and of course updated existing translations, see the about page for credits.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="91"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="92"/>
         <source>Changelog versions %1 and %2:</source>
         <translation>Endringslogg, versjon %1 and %2:</translation>
     </message>
@@ -357,34 +357,42 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="94"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="95"/>
         <source>– Added La Poste (France) package tracking. Thanks to Adel Noureddine!</source>
         <translation>– La Poste (Frankrike)-pakkesporing lagt til. Takk til Adel Noureddine!</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="95"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="96"/>
         <source>– Added DHL package tracking.</source>
         <translation>– DHL-pakkesporing lagt til.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="97"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="98"/>
         <source>– German – thanks to J. Lavoie!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="98"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="99"/>
         <source>– French – thanks to J. Lavoie and S. Fournial!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="99"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="100"/>
         <source>– Norwegian – thanks to Allan Nordhøy!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="103"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="104"/>
         <source>The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
         <translation>Vedlikeholder for programmet er Jyri-Petteri ”ZeiP” Paloposki.</translation>
+    </message>
+</context>
+<context>
+    <name>bring</name>
+    <message>
+        <location filename="../qml/js/couriers/bring.js" line="52"/>
+        <source>%1 × %2 × %3 cm</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -442,6 +450,11 @@
         <location filename="../qml/harbour-paketti.qml" line="77"/>
         <source>DHL</source>
         <translation>DHL</translation>
+    </message>
+    <message>
+        <location filename="../qml/harbour-paketti.qml" line="82"/>
+        <source>Bring</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
