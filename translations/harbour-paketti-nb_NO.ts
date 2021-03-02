@@ -392,7 +392,7 @@
     <message>
         <location filename="../qml/js/couriers/bring.js" line="52"/>
         <source>%1 × %2 × %3 cm</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 × %2 × %3 cm</translation>
     </message>
 </context>
 <context>
@@ -454,7 +454,7 @@
     <message>
         <location filename="../qml/harbour-paketti.qml" line="82"/>
         <source>Bring</source>
-        <translation type="unfinished"></translation>
+        <translation>Bring</translation>
     </message>
 </context>
 </TS>
