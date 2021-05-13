@@ -12,6 +12,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Thu May 13 2021 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi> 1.0
+– Minor fixes to translations.
+
 * Sun Jan 31 2021 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi> 0.8.2
 – Fixed a bug in language selection.
 
