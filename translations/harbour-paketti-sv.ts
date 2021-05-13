@@ -65,7 +65,7 @@
     </message>
     <message>
         <source>– Allan Nordhøy (Norwegian Bokmål translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>– Allan Nordhøy (Norska Bokmål)</translation>
     </message>
 </context>
 <context>
@@ -317,7 +317,7 @@
     <name>bring</name>
     <message>
         <source>%1 × %2 × %3 cm</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 × %2 × %3 cm</translation>
     </message>
 </context>
 <context>
@@ -369,7 +369,7 @@
     </message>
     <message>
         <source>Bring</source>
-        <translation type="unfinished"></translation>
+        <translation>Bring</translation>
     </message>
 </context>
 </TS>
