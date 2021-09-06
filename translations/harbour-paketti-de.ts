@@ -89,7 +89,7 @@
     <message>
         <location filename="../qml/pages/BarCodePage.qml" line="53"/>
         <source>Read the barcode by keeping barcode scanner perpendicular to the viewing screen, about 15–20 cm away from your phone. If you can not read code try to change distance.</source>
-        <translation>Lesen Sie den Strichcode, indem Sie den Strichcode-Scanner senkrecht zum Bildschirm halten, etwa 15 bis 20 cm von Ihrem Telefon entfernt. Wenn Sie den Code nicht lesen können, versuchen Sie, die Entfernung zu ändern.</translation>
+        <translation>Lesen Sie den Strichcode, indem Sie den Strichcode-Scanner senkrecht zum Bildschirm halten, etwa 15 bis 20&#xa0;cm von Ihrem Telefon entfernt. Wenn Sie den Code nicht lesen können, versuchen Sie, die Entfernung zu ändern.</translation>
     </message>
 </context>
 <context>
@@ -115,7 +115,7 @@
     <message>
         <location filename="../qml/pages/Details.qml" line="57"/>
         <source>Courier</source>
-        <translation type="unfinished"></translation>
+        <translation>Lieferdienst</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="65"/>
@@ -130,12 +130,17 @@
 – The item has not yet been entered in the system.
 – The item was posted long time ago and has been already removed from couriers system
 – There is a problem with the system or the item</source>
-        <translation type="unfinished"></translation>
+        <translation>Dies kann folgende Gründe haben:
+- Überprüfe den eingegebenen Paketcode. Vergewissere dich, dass er ohne Leerzeichen eingegeben wurde.
+- Das Paket ist noch nicht zur Lieferung abgegeben worden.
+- Die Sendung wurde noch nicht in das System eingegeben.
+- Die Sendung wurde vor langer Zeit aufgegeben und bereits aus dem Lieferdienstsystem entfernt.
+- Es liegt ein Problem mit dem System oder der Sendung vor.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="65"/>
         <source>The following error was returned: %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>Es ist folgender Fehler aufgetreten: %1.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="79"/>
@@ -145,7 +150,7 @@
     <message>
         <location filename="../qml/pages/Details.qml" line="82"/>
         <source>Service</source>
-        <translation type="unfinished"></translation>
+        <translation>Dienst</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="85"/>
@@ -160,7 +165,7 @@
     <message>
         <location filename="../qml/pages/Details.qml" line="91"/>
         <source>Extra services</source>
-        <translation type="unfinished"></translation>
+        <translation>Zusätzliche Dienste</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="94"/>
@@ -190,7 +195,7 @@
     <message>
         <location filename="../qml/pages/Details.qml" line="109"/>
         <source>Next step</source>
-        <translation type="unfinished"></translation>
+        <translation>Nächster Schritt</translation>
     </message>
     <message>
         <location filename="../qml/pages/Details.qml" line="121"/>
@@ -223,29 +228,29 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="129"/>
         <source>Deleting</source>
-        <translation>Löschen …</translation>
+        <translation>Lösche</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="159"/>
         <source>Courier</source>
-        <translation type="unfinished"></translation>
+        <translation>Lieferdienst</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="160"/>
         <location filename="../qml/pages/MainPage.qml" line="188"/>
         <location filename="../qml/pages/MainPage.qml" line="193"/>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>Auswahl</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="161"/>
         <source>The courier is autoselected when entering a tracking code if possible.</source>
-        <translation type="unfinished"></translation>
+        <translation>The Lieferdienst wird falls möglich automatisch ausgesucht wenn ein Code eingegeben wurde.</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="220"/>
         <source>Enter tracking code</source>
-        <translation type="unfinished"></translation>
+        <translation>Tracking-Code eingeben</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="260"/>
@@ -255,7 +260,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="268"/>
         <source>Start by choosing a courier and entering the tracking code in the box above. Tracked shipments will be saved automatically</source>
-        <translation type="unfinished"></translation>
+        <translation>Wähle einen Kurierdienstes und gib den Tracking-Code in das obige Feld ein. Verfolgte Sendungen werden automatisch gespeichert</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="373"/>
@@ -318,7 +323,7 @@
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="93"/>
         <source>– Fixed a bug in language selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>– Fehler bei der Sprachauswahl behoben.</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="94"/>
@@ -349,7 +354,7 @@
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="89"/>
         <source>– Dutch – thanks to Heimen Stoffels!</source>
-        <translation type="unfinished"></translation>
+        <translation>– Niederländisch – danke an Heimen Stoffels!</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="95"/>
@@ -387,7 +392,7 @@
     <message>
         <location filename="../qml/js/couriers/bring.js" line="52"/>
         <source>%1 × %2 × %3 cm</source>
-        <translation>%1 × %2 × %3 cm</translation>
+        <translation>%1 × %2 × %3&#xa0;cm</translation>
     </message>
 </context>
 <context>
@@ -449,7 +454,7 @@
     <message>
         <location filename="../qml/harbour-paketti.qml" line="82"/>
         <source>Bring</source>
-        <translation type="unfinished"></translation>
+        <translation>Bring</translation>
     </message>
 </context>
 </TS>
