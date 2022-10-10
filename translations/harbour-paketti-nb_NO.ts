@@ -61,7 +61,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="85"/>
         <source>– Allan Nordhøy (Norwegian Bokmål translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>– Allan Nordhøy (norsk oversettelse)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="86"/>
@@ -328,23 +328,23 @@
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="94"/>
         <source>– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!</source>
-        <translation type="unfinished"></translation>
+        <translation>– Mange fikser og endringer i grensesnitt og API-er. Hvis du opplever feil kan du lage en feilrapport slik at de kan fikses i neste utgave.</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="88"/>
         <location filename="../qml/pages/UpdatedPage.qml" line="97"/>
         <source>– Added new translations for:</source>
-        <translation type="unfinished"></translation>
+        <translation>– Nye oversettelser:</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="101"/>
         <source>– Polish – thanks to atlochowski!</source>
-        <translation type="unfinished"></translation>
+        <translation>– Polish – takket være atlochowski.</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="90"/>
         <source>… and of course updated existing translations, see the about page for credits.</source>
-        <translation type="unfinished"></translation>
+        <translation>… samt oppdatering av andre oversettelser. Respektive oversettelser er å finne i «Bidragsytere».</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="92"/>
@@ -354,7 +354,7 @@
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="89"/>
         <source>– Dutch – thanks to Heimen Stoffels!</source>
-        <translation type="unfinished"></translation>
+        <translation>– Nederlandsk – takket være Heimen Stoffels.</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="95"/>
@@ -369,17 +369,17 @@
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="98"/>
         <source>– German – thanks to J. Lavoie!</source>
-        <translation type="unfinished"></translation>
+        <translation>– Tysk – takket være J. Lavoie.</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="99"/>
         <source>– French – thanks to J. Lavoie and S. Fournial!</source>
-        <translation type="unfinished"></translation>
+        <translation>– Fransk – takket være J. Lavoie og S. Fournial.</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="100"/>
         <source>– Norwegian – thanks to Allan Nordhøy!</source>
-        <translation type="unfinished"></translation>
+        <translation>– Norsk bokmål – takket være Allan Nordhøy.</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="104"/>
