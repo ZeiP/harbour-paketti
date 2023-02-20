@@ -89,7 +89,7 @@
     <message>
         <location filename="../qml/pages/BarCodePage.qml" line="53"/>
         <source>Read the barcode by keeping barcode scanner perpendicular to the viewing screen, about 15–20 cm away from your phone. If you can not read code try to change distance.</source>
-        <translation>Lesen Sie den Strichcode, indem Sie den Strichcode-Scanner senkrecht zum Bildschirm halten, etwa 15 bis 20&#xa0;cm von Ihrem Telefon entfernt. Wenn Sie den Code nicht lesen können, versuchen Sie, die Entfernung zu ändern.</translation>
+        <translation>Lesen Sie den Strichcode, indem Sie den Strichcode-Scanner senkrecht zum Bildschirm halten, etwa 15 bis 20 cm von Ihrem Telefon entfernt. Wenn Sie den Code nicht lesen können, versuchen Sie, die Entfernung zu ändern.</translation>
     </message>
 </context>
 <context>
@@ -392,7 +392,7 @@
     <message>
         <location filename="../qml/js/couriers/bring.js" line="52"/>
         <source>%1 × %2 × %3 cm</source>
-        <translation>%1 × %2 × %3&#xa0;cm</translation>
+        <translation>%1 × %2 × %3 cm</translation>
     </message>
 </context>
 <context>

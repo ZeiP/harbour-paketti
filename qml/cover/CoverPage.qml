@@ -73,7 +73,7 @@ CoverBackground {
             }
             coverElabel.text = newestEvt.label;
             if (newestEvt.value !== null) {
-                coverEvalue.text=newestEvt.value;
+                coverEvalue.text = newestEvt.value;
             }
             dtime.text = PHelpers.convertDateBack(newestEvt.datetime);
 
