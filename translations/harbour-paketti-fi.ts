@@ -278,15 +278,15 @@
     </message>
     <message>
         <source>– Removed Postnord tracking because of broken API.</source>
-        <translation type="unfinished"></translation>
+        <translation>– Poistettu Postnord-seuranta rikotun rajapinnan takia.</translation>
     </message>
     <message>
         <source>– Fix Posti tracking. Because of degraded public API only basic information can be shown. If you encounter any errors, please open a ticket so they can be fixed for the next release!</source>
-        <translation type="unfinished"></translation>
+        <translation>– Korjattu Posti-seuranta. Heikentyneen julkisen rajapinnan takia näkyviin saadaan vain perustiedot. Jos huomaat muita virheitä, avaa tiketti jotta ne voidaan korjata seuraavaan julkaisuun!</translation>
     </message>
     <message>
         <source>– Updated existing translations, see the about page for credits.</source>
-        <translation type="unfinished"></translation>
+        <translation>– Päivitetty olemassaolevia käännöksiä, kurkkaa Tietoja-sivu nähdäksesi tekijätiedot.</translation>
     </message>
 </context>
 <context>
