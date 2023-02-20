@@ -265,44 +265,8 @@
         <translation>– Lisätty uusia käännöksiä:</translation>
     </message>
     <message>
-        <source>– Polish – thanks to atlochowski!</source>
-        <translation>– Puola – kiitos atlochowskille!</translation>
-    </message>
-    <message>
-        <source>Changelog versions %1 and %2:</source>
-        <translation>Muutoksia versioissa %1 ja %2:</translation>
-    </message>
-    <message>
-        <source>– Added La Poste (France) package tracking. Thanks to Adel Noureddine!</source>
-        <translation>– Lisätty tuki La Posten (Ranska) seurannalle. Kiitos Adel Noureddinelle!</translation>
-    </message>
-    <message>
-        <source>– Added DHL package tracking.</source>
-        <translation>– Lisätty tuki DHL:n seurannalle.</translation>
-    </message>
-    <message>
-        <source>– German – thanks to J. Lavoie!</source>
-        <translation>– Saksa – kiitokset J. Lavoie!</translation>
-    </message>
-    <message>
-        <source>– French – thanks to J. Lavoie and S. Fournial!</source>
-        <translation>– Ranska – kiitokset J. Lavoie ja S. Fournial!</translation>
-    </message>
-    <message>
-        <source>– Norwegian – thanks to Allan Nordhøy!</source>
-        <translation>– Norja – kiitokset Allan Nordhøy!</translation>
-    </message>
-    <message>
         <source>The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
         <translation>Sovelluksen ylläpitäjä on Jyri-Petteri ”ZeiP” Paloposki.</translation>
-    </message>
-    <message>
-        <source>– Fixed a bug in language selection.</source>
-        <translation>– Korjattu virhe kielen valinnassa.</translation>
-    </message>
-    <message>
-        <source>– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!</source>
-        <translation>– Kasa korjauksia ja muutoksia käyttöliittymään ja rajapintoihin. Jos törmäät virheisiin, teethän asiasta ilmoituksen jotta ne voidaan korjata seuraavaan julkaisuun!</translation>
     </message>
     <message>
         <source>… and of course updated existing translations, see the about page for credits.</source>
@@ -311,6 +275,18 @@
     <message>
         <source>– Dutch – thanks to Heimen Stoffels!</source>
         <translation>– Hollanti – kiitokset Heimen Stoffels!</translation>
+    </message>
+    <message>
+        <source>– Removed Postnord tracking because of broken API.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>– Fix Posti tracking. Because of degraded public API only basic information can be shown. If you encounter any errors, please open a ticket so they can be fixed for the next release!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>– Updated existing translations, see the about page for credits.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -350,10 +326,6 @@
     <message>
         <source>Matkahuolto (Finland)</source>
         <translation>Matkahuolto</translation>
-    </message>
-    <message>
-        <source>PostNord (Nordics)</source>
-        <translation>PostNord (pohjoismaat)</translation>
     </message>
     <message>
         <source>Hermes (Germany)</source>

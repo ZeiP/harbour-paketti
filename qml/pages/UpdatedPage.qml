@@ -84,22 +84,15 @@ Dialog {
                 id: changelogStr
                 anchors.left: parent.left; anchors.leftMargin: Theme.paddingMedium
                 anchors.right: parent.right; anchors.rightMargin: Theme.paddingMedium
-                text: qsTr("Changelog version %1:").arg("1.0") +
+                text: qsTr("Changelog version %1:").arg("1.1") +
+"\n" + qsTr("– Removed Postnord tracking because of broken API.") +
+"\n" + qsTr("– Fix Posti tracking. Because of degraded public API only basic information can be shown. If you encounter any errors, please open a ticket so they can be fixed for the next release!") +
+"\n" + qsTr("– Updated existing translations, see the about page for credits.") +
+"\n" +
+"\n" + qsTr("Changelog version %1:").arg("1.0") +
 "\n" + qsTr("– Added new translations for:") +
 "\n  " + qsTr("– Dutch – thanks to Heimen Stoffels!") +
 "\n" + qsTr("… and of course updated existing translations, see the about page for credits.") +
-"\n" +
-"\n" + qsTr("Changelog versions %1 and %2:").arg("0.7").arg("0.8") +
-"\n" + qsTr("– Fixed a bug in language selection.") +
-"\n" + qsTr("– Made a bunch of fixes and changes to UI and APIs. If you encounter any errors, please open a ticket so they can be fixed for the next release!") +
-"\n" + qsTr("– Added La Poste (France) package tracking. Thanks to Adel Noureddine!") +
-"\n" + qsTr("– Added DHL package tracking.") +
-"\n" + qsTr("– Added new translations for:") +
-"\n  " + qsTr("– German – thanks to J. Lavoie!") +
-"\n  " + qsTr("– French – thanks to J. Lavoie and S. Fournial!") +
-"\n  " + qsTr("– Norwegian – thanks to Allan Nordhøy!") +
-"\n  " + qsTr("– Polish – thanks to atlochowski!") +
-
 "\n\n" +
 qsTr("The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.")
                 wrapMode: Text.WordWrap

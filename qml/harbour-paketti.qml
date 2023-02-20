@@ -40,7 +40,7 @@ import "js/database.js" as PDatabase
 ApplicationWindow {
     id: paketti
 
-    property string version: "1.0"
+    property string version: "1.1"
     property string dbName: "pakettidb"
     property string dbDescription: dbName
     property string dbVersion: "1.0"
@@ -58,11 +58,11 @@ ApplicationWindow {
             identifier: "MH"
             brandColour: "#1e00ff"
         }
-        ListElement {
+/*        ListElement {
             name: QT_TR_NOOP("PostNord (Nordics)")
             identifier: "PN"
             brandColour: "#00a9cd"
-        }
+        } */
         ListElement {
             name: QT_TR_NOOP("Hermes (Germany)")
             identifier: "HERDE"
