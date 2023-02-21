@@ -324,17 +324,17 @@
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="88"/>
         <source>– Removed Postnord tracking because of broken API.</source>
-        <translation type="unfinished"></translation>
+        <translation>-Verwijderd: Postnord track-en-trace wegens niet-werkende api.</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="89"/>
         <source>– Fix Posti tracking. Because of degraded public API only basic information can be shown. If you encounter any errors, please open a ticket so they can be fixed for the next release!</source>
-        <translation type="unfinished"></translation>
+        <translation>-Opgelost: Posti track-en-trace. Vanwege een afgeslankte api kan er alleen algemene informatie worden getoond. Als je foutmeldingen tegenkomt, open dan een ticket!</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="90"/>
         <source>– Updated existing translations, see the about page for credits.</source>
-        <translation type="unfinished"></translation>
+        <translation>-Bijgewerkt: bestaande vertalingen - zie pagina ‘Over’.</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="93"/>
