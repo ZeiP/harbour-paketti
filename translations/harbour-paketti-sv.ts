@@ -278,15 +278,15 @@
     </message>
     <message>
         <source>– Removed Postnord tracking because of broken API.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tog bort Postnord på grund av felaktig API.</translation>
     </message>
     <message>
         <source>– Fix Posti tracking. Because of degraded public API only basic information can be shown. If you encounter any errors, please open a ticket so they can be fixed for the next release!</source>
-        <translation type="unfinished"></translation>
+        <translation>Fixade Posti-spårning. På grund av försämrad offentlig API kan endast grundläggande information visas. Om du stöter på några fel, vänligen öppna ett ärende så att de kan fixas till nästa utgåva!</translation>
     </message>
     <message>
         <source>– Updated existing translations, see the about page for credits.</source>
-        <translation type="unfinished"></translation>
+        <translation>- Uppdaterade befintliga översättningar, se Om-sidan för erkännanden.</translation>
     </message>
 </context>
 <context>
