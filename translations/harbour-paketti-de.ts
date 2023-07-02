@@ -89,7 +89,7 @@
     <message>
         <location filename="../qml/pages/BarCodePage.qml" line="53"/>
         <source>Read the barcode by keeping barcode scanner perpendicular to the viewing screen, about 15–20 cm away from your phone. If you can not read code try to change distance.</source>
-        <translation>Lesen Sie den Strichcode, indem Sie den Strichcode-Scanner senkrecht zum Bildschirm halten, etwa 15 bis 20 cm von Ihrem Telefon entfernt. Wenn Sie den Code nicht lesen können, versuchen Sie, die Entfernung zu ändern.</translation>
+        <translation>Lesen Sie den Strichcode, indem Sie den Strichcode-Scanner senkrecht zum Bildschirm halten, etwa 15 bis 20&#xa0;cm von Ihrem Telefon entfernt. Wenn Sie den Code nicht lesen können, versuchen Sie, die Entfernung zu ändern.</translation>
     </message>
 </context>
 <context>
@@ -329,17 +329,17 @@
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="91"/>
         <source>– Removed Postnord tracking because of broken API.</source>
-        <translation type="unfinished"></translation>
+        <translation>– Postnord tracking entfernt (kaputte API).</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="92"/>
         <source>– Fix Posti tracking. Because of degraded public API only basic information can be shown. If you encounter any errors, please open a ticket so they can be fixed for the next release!</source>
-        <translation type="unfinished"></translation>
+        <translation>– Fix Posti Tracking. Wegen der abgespeckten öffentlichen API können nur Basisinfos angezeigt werden. Falls du irgendwelche Fehler findest, bitte eröffne ein Ticket damit das im nächsten Release gefixt werden kann!</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="93"/>
         <source>– Updated existing translations, see the about page for credits.</source>
-        <translation type="unfinished"></translation>
+        <translation>- Übersetzungen aktualisiert, siehe die Info-Seite zu den Credits.</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="95"/>
@@ -352,7 +352,7 @@
     <message>
         <location filename="../qml/js/couriers/bring.js" line="52"/>
         <source>%1 × %2 × %3 cm</source>
-        <translation>%1 × %2 × %3 cm</translation>
+        <translation>%1 × %2 × %3&#xa0;cm</translation>
     </message>
 </context>
 <context>
