@@ -84,15 +84,13 @@ Dialog {
                 id: changelogStr
                 anchors.left: parent.left; anchors.leftMargin: Theme.paddingMedium
                 anchors.right: parent.right; anchors.rightMargin: Theme.paddingMedium
-                text: qsTr("Changelog version %1:").arg("1.1") +
+                text: qsTr("Changelog version %1:").arg("1.1.1") +
+"\n" + qsTr("– (Only in Harbour) Fixed the Sailjail metadata") +
+"\n" +
+qsTr("Changelog version %1:").arg("1.1") +
 "\n" + qsTr("– Removed Postnord tracking because of broken API.") +
 "\n" + qsTr("– Fix Posti tracking. Because of degraded public API only basic information can be shown. If you encounter any errors, please open a ticket so they can be fixed for the next release!") +
 "\n" + qsTr("– Updated existing translations, see the about page for credits.") +
-"\n" +
-"\n" + qsTr("Changelog version %1:").arg("1.0") +
-"\n" + qsTr("– Added new translations for:") +
-"\n  " + qsTr("– Dutch – thanks to Heimen Stoffels!") +
-"\n" + qsTr("… and of course updated existing translations, see the about page for credits.") +
 "\n\n" +
 qsTr("The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.")
                 wrapMode: Text.WordWrap

@@ -317,42 +317,32 @@
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="87"/>
-        <location filename="../qml/pages/UpdatedPage.qml" line="92"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="90"/>
         <source>Changelog version %1:</source>
         <translation>Version du journal des modifications %1 :</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="88"/>
+        <source>– (Only in Harbour) Fixed the Sailjail metadata</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/UpdatedPage.qml" line="91"/>
         <source>– Removed Postnord tracking because of broken API.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="89"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="92"/>
         <source>– Fix Posti tracking. Because of degraded public API only basic information can be shown. If you encounter any errors, please open a ticket so they can be fixed for the next release!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="90"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="93"/>
         <source>– Updated existing translations, see the about page for credits.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="93"/>
-        <source>– Added new translations for:</source>
-        <translation>– Ajout de nouvelles traductions pour :</translation>
-    </message>
-    <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="95"/>
-        <source>… and of course updated existing translations, see the about page for credits.</source>
-        <translation>… et bien sûr mise à jour des traductions existantes, voir la page À propos pour les crédits.</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="94"/>
-        <source>– Dutch – thanks to Heimen Stoffels!</source>
-        <translation>– néerlandais – grâce à Heimen Stoffels !</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="97"/>
         <source>The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
         <translation>Le mainteneur de l’application est Jyri-Petteri « ZeiP » Paloposki.</translation>
     </message>

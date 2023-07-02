@@ -40,7 +40,7 @@ import "js/database.js" as PDatabase
 ApplicationWindow {
     id: paketti
 
-    property string version: "1.1"
+    property string version: "1.1.1"
     property string dbName: "pakettidb"
     property string dbDescription: dbName
     property string dbVersion: "1.0"

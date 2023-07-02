@@ -261,20 +261,8 @@
         <translation>Muutoksia versiossa %1:</translation>
     </message>
     <message>
-        <source>– Added new translations for:</source>
-        <translation>– Lisätty uusia käännöksiä:</translation>
-    </message>
-    <message>
         <source>The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
         <translation>Sovelluksen ylläpitäjä on Jyri-Petteri ”ZeiP” Paloposki.</translation>
-    </message>
-    <message>
-        <source>… and of course updated existing translations, see the about page for credits.</source>
-        <translation>… ja luonnollisesti päivitetty olemassaolevia käännöksiä, katso tekijätiedot tietoja-sivulta.</translation>
-    </message>
-    <message>
-        <source>– Dutch – thanks to Heimen Stoffels!</source>
-        <translation>– Hollanti – kiitokset Heimen Stoffels!</translation>
     </message>
     <message>
         <source>– Removed Postnord tracking because of broken API.</source>
@@ -287,6 +275,10 @@
     <message>
         <source>– Updated existing translations, see the about page for credits.</source>
         <translation>– Päivitetty olemassaolevia käännöksiä, kurkkaa Tietoja-sivu nähdäksesi tekijätiedot.</translation>
+    </message>
+    <message>
+        <source>– (Only in Harbour) Fixed the Sailjail metadata</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

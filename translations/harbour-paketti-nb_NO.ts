@@ -317,42 +317,32 @@
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="87"/>
-        <location filename="../qml/pages/UpdatedPage.qml" line="92"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="90"/>
         <source>Changelog version %1:</source>
         <translation>Endringslogg, versjon %1:</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="88"/>
+        <source>– (Only in Harbour) Fixed the Sailjail metadata</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/UpdatedPage.qml" line="91"/>
         <source>– Removed Postnord tracking because of broken API.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="89"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="92"/>
         <source>– Fix Posti tracking. Because of degraded public API only basic information can be shown. If you encounter any errors, please open a ticket so they can be fixed for the next release!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="90"/>
+        <location filename="../qml/pages/UpdatedPage.qml" line="93"/>
         <source>– Updated existing translations, see the about page for credits.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="93"/>
-        <source>– Added new translations for:</source>
-        <translation>– Nye oversettelser:</translation>
-    </message>
-    <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="95"/>
-        <source>… and of course updated existing translations, see the about page for credits.</source>
-        <translation>… samt oppdatering av andre oversettelser. Respektive oversettelser er å finne i «Bidragsytere».</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="94"/>
-        <source>– Dutch – thanks to Heimen Stoffels!</source>
-        <translation>– Nederlandsk – takket være Heimen Stoffels.</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/UpdatedPage.qml" line="97"/>
         <source>The maintainer of the application is Jyri-Petteri ”ZeiP” Paloposki.</source>
         <translation>Vedlikeholder for programmet er Jyri-Petteri ”ZeiP” Paloposki.</translation>
     </message>

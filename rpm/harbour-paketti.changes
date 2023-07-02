@@ -12,6 +12,14 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Mon Jul 3 2023 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi> 1.1.1
+– (Only in Harbour) Fixed the Sailjail metadata
+
+* Tue Feb 21 2023 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi> 1.1
+– Minor fixes to translations.
+- Removed Postnord tracking because of broken API.
+- Fix Posti tracking. Because of degraded public API only basic information can be shown. If you encounter any errors, please open a ticket so they can be fixed for the next release!
+
 * Thu May 13 2021 Jyri-Petteri Paloposki <jyri-petteri.paloposki@iki.fi> 1.0
 – Minor fixes to translations.
 
