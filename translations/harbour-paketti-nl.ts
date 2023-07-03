@@ -324,7 +324,7 @@
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="88"/>
         <source>– (Only in Harbour) Fixed the Sailjail metadata</source>
-        <translation type="unfinished"></translation>
+        <translation>–(Alleen in Harbour) Opgelost: Sailjail-metagegevens</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="91"/>
