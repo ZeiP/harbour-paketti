@@ -324,22 +324,22 @@
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="88"/>
         <source>– (Only in Harbour) Fixed the Sailjail metadata</source>
-        <translation type="unfinished"></translation>
+        <translation>– (Kun i Harbour) Fikset i Sailjail-metadata</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="91"/>
         <source>– Removed Postnord tracking because of broken API.</source>
-        <translation type="unfinished"></translation>
+        <translation>- Fjernet Postnord-sporing som følge av knekt API.</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="92"/>
         <source>– Fix Posti tracking. Because of degraded public API only basic information can be shown. If you encounter any errors, please open a ticket so they can be fixed for the next release!</source>
-        <translation type="unfinished"></translation>
+        <translation>– Fikset Posti-sporing. Som følge av degradert offentlig API kan kun grunnleggende info vises. Hvis du støter på feil kan du åpne en feilrapport slik at de kan fikses i neste utgivelse.</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="93"/>
         <source>– Updated existing translations, see the about page for credits.</source>
-        <translation type="unfinished"></translation>
+        <translation>- Oversettelser oppdatert. Bidragsyterne er å finne på «Om»-siden.</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="95"/>

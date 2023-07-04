@@ -278,7 +278,7 @@
     </message>
     <message>
         <source>– (Only in Harbour) Fixed the Sailjail metadata</source>
-        <translation type="unfinished"></translation>
+        <translation>- (Endast i Harbour) Fixat Sailjail metadata</translation>
     </message>
 </context>
 <context>
