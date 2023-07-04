@@ -11,4 +11,4 @@ Name[en_IE]=harbour-paketti.desktop
 [X-Sailjail]
 OrganizationName=eu.zeip
 ApplicationName=Paketti
-Permissions=
+Permissions=Internet
