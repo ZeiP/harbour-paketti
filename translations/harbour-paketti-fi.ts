@@ -278,7 +278,7 @@
     </message>
     <message>
         <source>– (Only in Harbour) Fixed the Sailjail metadata</source>
-        <translation type="unfinished"></translation>
+        <translation>– Lisätty Sailjail-metatiedot</translation>
     </message>
 </context>
 <context>
