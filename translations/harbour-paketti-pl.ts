@@ -31,7 +31,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="79"/>
         <source>– Jyri-Petteri ”ZeiP” Paloposki (maintainer)</source>
-        <translation type="unfinished">– Jyri-Petteri ”ZeiP” Paloposki (utrzymania)</translation>
+        <translation>– Jyri-Petteri ”ZeiP” Paloposki (osoba rozwijająca projekt)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="80"/>
@@ -61,7 +61,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="85"/>
         <source>– Allan Nordhøy (Norwegian Bokmål translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>– Allan Nordhøy (tłumaczenie na język norweski Bokmål)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="86"/>
@@ -71,7 +71,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="87"/>
         <source>– Heimen Stoffels (Dutch translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>– Heimen Stoffels (Tłumaczenie na język holenderski)</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="91"/>
@@ -324,22 +324,22 @@
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="88"/>
         <source>– (Only in Harbour) Fixed the Sailjail metadata</source>
-        <translation type="unfinished"></translation>
+        <translation>- (Tylko w Harbour) Naprawiono metadane Sailjail</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="91"/>
         <source>– Removed Postnord tracking because of broken API.</source>
-        <translation type="unfinished"></translation>
+        <translation>- Usunięto śledzenie Postnord z powodu uszkodzonego interfejsu API.</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="92"/>
         <source>– Fix Posti tracking. Because of degraded public API only basic information can be shown. If you encounter any errors, please open a ticket so they can be fixed for the next release!</source>
-        <translation type="unfinished"></translation>
+        <translation>- Naprawiono śledzenie Posti. Ze względu na zdegradowany publiczny interfejs API można wyświetlić tylko podstawowe informacje. Jeśli napotkasz jakiekolwiek błędy, utwórz zgłoszenie, aby można je było naprawić w następnej wersji!</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="93"/>
         <source>– Updated existing translations, see the about page for credits.</source>
-        <translation type="unfinished"></translation>
+        <translation>- Zaktualizowano istniejące tłumaczenia, zasługi znajdują się na stronie informacyjnej.</translation>
     </message>
     <message>
         <location filename="../qml/pages/UpdatedPage.qml" line="95"/>
@@ -352,7 +352,7 @@
     <message>
         <location filename="../qml/js/couriers/bring.js" line="52"/>
         <source>%1 × %2 × %3 cm</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 × %2 × %3 cm</translation>
     </message>
 </context>
 <context>
@@ -411,7 +411,7 @@
     <message>
         <location filename="../qml/harbour-paketti.qml" line="82"/>
         <source>Bring</source>
-        <translation type="unfinished"></translation>
+        <translation>Bring</translation>
     </message>
 </context>
 </TS>
